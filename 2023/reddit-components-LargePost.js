@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d4e9060eab95d3ebadcc.js
-// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c97f8bf1ff0802802c1.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6640,12 +6640,13 @@
 					shouldShowSubscribeButton: S,
 					subredditOrProfile: I,
 					tooltipType: N
-				} = e, w = !!C, P = Object(_.a)(), T = Object(r.e)(e => !!I && Object(a.i)(e, I.id));
+				} = e, w = !!C, P = Object(_.a)(), T = Object(r.e)(e => !!I && Object(a.i)(e, I.id)), R = !(!I || !Object(g.i)(I));
 				return o.a.createElement("div", {
 					className: y.a.metaContainer
 				}, !n && !k.isSponsored && I && o.a.createElement(d.a, {
 					postId: k.id,
-					subredditName: I.name
+					subredditName: I.name,
+					isProfile: R
 				}, o.a.createElement(b.a, {
 					className: y.a.subredditName,
 					"data-click-id": "subreddit",
@@ -7206,10 +7207,9 @@
 					onFollowPostClick: q,
 					onSubscribed: Q
 				} = e;
-				const Y = D;
-				let J = H && Object(y.i)(H);
-				null == J && (J = !1);
-				const Z = Object(a.e)(e => {
+				const Y = D,
+					J = !(!H || !Object(y.i)(H)),
+					Z = Object(a.e)(e => {
 						if (!J) return !0;
 						const t = Object(C.Jb)(e, F.author || "");
 						return !t || t.enableFollowers
@@ -7239,8 +7239,7 @@
 					tooltipType: L ? p.f.Lightbox : void 0,
 					post: F,
 					showSub: W,
-					subredditOrProfile: H,
-					isProfile: J
+					subredditOrProfile: H
 				}), r.a.createElement(m.a, {
 					className: S.a.postBadges,
 					displayText: H ? H.displayText : null,
@@ -10485,4 +10484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d4e9060eab95d3ebadcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c97f8bf1ff0802802c1.js.map

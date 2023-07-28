@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4bff143cd884ff0d076e.js
-// Retrieved at 7/27/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d881a3b37808ad66d0f3.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -12409,12 +12409,13 @@
 					shouldShowSubscribeButton: S,
 					subredditOrProfile: T,
 					tooltipType: w
-				} = e, I = !!k, P = Object(E.a)(), N = Object(s.e)(e => !!T && Object(i.i)(e, T.id));
+				} = e, I = !!k, P = Object(E.a)(), N = Object(s.e)(e => !!T && Object(i.i)(e, T.id)), R = !(!T || !Object(y.i)(T));
 				return r.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !o && !j.isSponsored && T && r.a.createElement(d.a, {
 					postId: j.id,
-					subredditName: T.name
+					subredditName: T.name,
+					isProfile: R
 				}, r.a.createElement(h.a, {
 					className: O.a.subredditName,
 					"data-click-id": "subreddit",
@@ -40254,4 +40255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4bff143cd884ff0d076e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d881a3b37808ad66d0f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.d25abdaa0e3094cb90f3.js
-// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.de3ac683000675799e48.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2488,9 +2488,8 @@
 						showTimestamp: L = !0,
 						subredditOrProfile: R,
 						tooltipType: J,
-						onClick: X,
-						isProfile: re
-					} = e, ae = Object(n.d)(), ie = Object(n.e)(q.d), de = Object(n.e)(q.g) || ["popular", "all"].includes(ie || ""), ce = k.isSponsored || Object(a.u)(P);
+						onClick: X
+					} = e, re = !(!R || !Object(W.i)(R)), ae = Object(n.d)(), ie = Object(n.e)(q.d), de = Object(n.e)(q.g) || ["popular", "all"].includes(ie || ""), ce = k.isSponsored || Object(a.u)(P);
 					Object(s.useEffect)(() => {
 						ce && ae(Object(u.d)(k.author))
 					}, [ce, ae, k.author]);
@@ -2603,23 +2602,18 @@
 						className: Object(i.a)($.a.container, t),
 						"data-adclicklocation": V.a.TOP_BAR,
 						onClick: X
-					}, M && R && (re ? o.a.createElement(T.a, {
-						"data-click-id": "subreddit",
-						to: {
-							pathname: R.url,
-							state: pe
-						}
-					}, R.displayText) : o.a.createElement(O.a, {
+					}, M && R && o.a.createElement(O.a, {
 						postId: k.id,
 						subredditName: R.name,
-						tooltipType: J
+						tooltipType: J,
+						isProfile: re
 					}, o.a.createElement(T.a, {
 						"data-click-id": "subreddit",
 						to: {
 							pathname: R.url,
 							state: pe
 						}
-					}, R.displayText))), R && R.isQuarantined && o.a.createElement(C.a, null), M && !xe && o.a.createElement(Ie, null), ce ? o.a.createElement(o.a.Fragment, null, (null == R ? void 0 : R.icon) && Ee && o.a.createElement(b.a, {
+					}, R.displayText)), R && R.isQuarantined && o.a.createElement(C.a, null), M && !xe && o.a.createElement(Ie, null), ce ? o.a.createElement(o.a.Fragment, null, (null == R ? void 0 : R.icon) && Ee && o.a.createElement(b.a, {
 						author: k.author,
 						isUnstyled: !0,
 						forceOpenInNewTab: r,
@@ -3841,4 +3835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.d25abdaa0e3094cb90f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.de3ac683000675799e48.js.map

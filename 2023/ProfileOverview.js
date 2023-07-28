@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.bdf4bde96ae3bc2cbac9.js
-// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.55a870974aab9e19c444.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -6611,12 +6611,13 @@
 					shouldShowSubscribeButton: P,
 					subredditOrProfile: I,
 					tooltipType: w
-				} = e, S = !!_, N = Object(g.a)(), T = Object(r.e)(e => !!I && Object(a.i)(e, I.id));
+				} = e, S = !!_, N = Object(g.a)(), T = Object(r.e)(e => !!I && Object(a.i)(e, I.id)), M = !(!I || !Object(E.i)(I));
 				return o.a.createElement("div", {
 					className: j.a.metaContainer
 				}, !n && !k.isSponsored && I && o.a.createElement(c.a, {
 					postId: k.id,
-					subredditName: I.name
+					subredditName: I.name,
+					isProfile: M
 				}, o.a.createElement(b.a, {
 					className: j.a.subredditName,
 					"data-click-id": "subreddit",
@@ -6793,10 +6794,9 @@
 					onFollowPostClick: q,
 					onSubscribed: Q
 				} = e;
-				const Z = D;
-				let J = G && Object(j.i)(G);
-				null == J && (J = !1);
-				const X = Object(a.e)(e => {
+				const Z = D,
+					J = !(!G || !Object(j.i)(G)),
+					X = Object(a.e)(e => {
 						if (!J) return !0;
 						const t = Object(_.Jb)(e, B.author || "");
 						return !t || t.enableFollowers
@@ -6826,8 +6826,7 @@
 					tooltipType: A ? p.f.Lightbox : void 0,
 					post: B,
 					showSub: W,
-					subredditOrProfile: G,
-					isProfile: J
+					subredditOrProfile: G
 				}), r.a.createElement(u.a, {
 					className: P.a.postBadges,
 					displayText: G ? G.displayText : null,
@@ -9304,4 +9303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.bdf4bde96ae3bc2cbac9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.55a870974aab9e19c444.js.map

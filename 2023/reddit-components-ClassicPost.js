@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.97c7a734bc31bc785dd2.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a8e839540dd77cdbcb7a.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1869,12 +1869,13 @@
 					shouldShowSubscribeButton: j,
 					subredditOrProfile: k,
 					tooltipType: N
-				} = e, I = !!g, T = Object(O.a)(), L = Object(r.e)(e => !!k && Object(a.i)(e, k.id));
+				} = e, I = !!g, T = Object(O.a)(), L = Object(r.e)(e => !!k && Object(a.i)(e, k.id)), w = !(!k || !Object(C.i)(k));
 				return o.a.createElement("div", {
 					className: S.a.metaContainer
 				}, !n && !P.isSponsored && k && o.a.createElement(d.a, {
 					postId: P.id,
-					subredditName: k.name
+					subredditName: k.name,
+					isProfile: w
 				}, o.a.createElement(b.a, {
 					className: S.a.subredditName,
 					"data-click-id": "subreddit",
@@ -3512,4 +3513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.97c7a734bc31bc785dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a8e839540dd77cdbcb7a.js.map

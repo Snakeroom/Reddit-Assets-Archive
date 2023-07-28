@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f6cf4ecfc79cffa3f082.js
-// Retrieved at 7/27/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4907d1c31149bc1728b2.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -46482,12 +46482,13 @@
 					shouldShowSubscribeButton: k,
 					subredditOrProfile: _,
 					tooltipType: S
-				} = e, w = !!j, T = Object(E.a)(), P = Object(o.e)(e => !!_ && Object(i.i)(e, _.id));
+				} = e, w = !!j, T = Object(E.a)(), P = Object(o.e)(e => !!_ && Object(i.i)(e, _.id)), N = !(!_ || !Object(O.i)(_));
 				return r.a.createElement("div", {
 					className: A.a.metaContainer
 				}, !s && !I.isSponsored && _ && r.a.createElement(c.a, {
 					postId: I.id,
-					subredditName: _.name
+					subredditName: _.name,
+					isProfile: N
 				}, r.a.createElement(b.a, {
 					className: A.a.subredditName,
 					"data-click-id": "subreddit",
@@ -81640,4 +81641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f6cf4ecfc79cffa3f082.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4907d1c31149bc1728b2.js.map

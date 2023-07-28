@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ce3ef96e0c436f0ff1fd.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f458d5e9d47ed51ba9d9.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2045,12 +2045,13 @@
 					shouldShowSubscribeButton: C,
 					subredditOrProfile: w,
 					tooltipType: P
-				} = e, S = !!j, T = Object(x.a)(), N = Object(o.e)(e => !!w && Object(i.i)(e, w.id));
+				} = e, S = !!j, T = Object(x.a)(), N = Object(o.e)(e => !!w && Object(i.i)(e, w.id)), M = !(!w || !Object(y.i)(w));
 				return s.a.createElement("div", {
 					className: k.a.metaContainer
 				}, !r && !I.isSponsored && w && s.a.createElement(d.a, {
 					postId: I.id,
-					subredditName: w.name
+					subredditName: w.name,
+					isProfile: M
 				}, s.a.createElement(b.a, {
 					className: k.a.subredditName,
 					"data-click-id": "subreddit",
@@ -5556,4 +5557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ce3ef96e0c436f0ff1fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f458d5e9d47ed51ba9d9.js.map

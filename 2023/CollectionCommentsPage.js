@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16bf7c90910affcfcfb2.js
-// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d3e4a34b6882e5cda090.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5820,12 +5820,13 @@
 					shouldShowSubscribeButton: P,
 					subredditOrProfile: w,
 					tooltipType: I
-				} = e, N = !!k, S = Object(_.a)(), T = Object(o.e)(e => !!w && Object(i.i)(e, w.id));
+				} = e, N = !!k, S = Object(_.a)(), T = Object(o.e)(e => !!w && Object(i.i)(e, w.id)), L = !(!w || !Object(y.i)(w));
 				return r.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !n && !j.isSponsored && w && r.a.createElement(c.a, {
 					postId: j.id,
-					subredditName: w.name
+					subredditName: w.name,
+					isProfile: L
 				}, r.a.createElement(b.a, {
 					className: O.a.subredditName,
 					"data-click-id": "subreddit",
@@ -5995,10 +5996,9 @@
 					onFollowPostClick: G,
 					onSubscribed: Y
 				} = e;
-				const J = R;
-				let Z = z && Object(O.i)(z);
-				null == Z && (Z = !1);
-				const X = Object(i.e)(e => {
+				const J = R,
+					Z = !(!z || !Object(O.i)(z)),
+					X = Object(i.e)(e => {
 						if (!Z) return !0;
 						const t = Object(k.Jb)(e, D.author || "");
 						return !t || t.enableFollowers
@@ -6028,8 +6028,7 @@
 					tooltipType: A ? p.f.Lightbox : void 0,
 					post: D,
 					showSub: H,
-					subredditOrProfile: z,
-					isProfile: Z
+					subredditOrProfile: z
 				}), o.a.createElement(u.a, {
 					className: P.a.postBadges,
 					displayText: z ? z.displayText : null,
@@ -11491,4 +11490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16bf7c90910affcfcfb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d3e4a34b6882e5cda090.js.map

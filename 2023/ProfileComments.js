@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4cfa56c4c57605723080.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.31531cb37f94fbfc7de6.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -2288,12 +2288,13 @@
 					shouldShowSubscribeButton: I,
 					subredditOrProfile: _,
 					tooltipType: k
-				} = e, L = !!y, N = Object(O.a)(), M = Object(r.e)(e => !!_ && Object(i.i)(e, _.id));
+				} = e, L = !!y, N = Object(O.a)(), M = Object(r.e)(e => !!_ && Object(i.i)(e, _.id)), T = !(!_ || !Object(g.i)(_));
 				return n.a.createElement("div", {
 					className: P.a.metaContainer
 				}, !o && !w.isSponsored && _ && n.a.createElement(c.a, {
 					postId: w.id,
-					subredditName: _.name
+					subredditName: _.name,
+					isProfile: T
 				}, n.a.createElement(h.a, {
 					className: P.a.subredditName,
 					"data-click-id": "subreddit",
@@ -3316,4 +3317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4cfa56c4c57605723080.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.31531cb37f94fbfc7de6.js.map

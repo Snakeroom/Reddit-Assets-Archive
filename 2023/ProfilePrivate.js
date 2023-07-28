@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.09bad2cbb435665171d8.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b1ba93ede5403969c38c.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3112,12 +3112,13 @@
 					shouldShowSubscribeButton: w,
 					subredditOrProfile: k,
 					tooltipType: P
-				} = e, S = !!j, N = Object(y.a)(), L = Object(r.e)(e => !!k && Object(i.i)(e, k.id));
+				} = e, S = !!j, N = Object(y.a)(), L = Object(r.e)(e => !!k && Object(i.i)(e, k.id)), T = !(!k || !Object(C.i)(k));
 				return o.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !n && !I.isSponsored && k && o.a.createElement(c.a, {
 					postId: I.id,
-					subredditName: k.name
+					subredditName: k.name,
+					isProfile: T
 				}, o.a.createElement(b.a, {
 					className: O.a.subredditName,
 					"data-click-id": "subreddit",
@@ -7034,4 +7035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.09bad2cbb435665171d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b1ba93ede5403969c38c.js.map

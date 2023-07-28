@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.112be0c7bbc856568883.js
-// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.22a35a55e5f6af5fce1b.js
+// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4802,10 +4802,9 @@
 					onFollowPostClick: Q,
 					onSubscribed: K
 				} = e;
-				const Y = L;
-				let Z = q && Object(y.i)(q);
-				null == Z && (Z = !1);
-				const X = Object(a.e)(e => {
+				const Y = L,
+					Z = !(!q || !Object(y.i)(q)),
+					X = Object(a.e)(e => {
 						if (!Z) return !0;
 						const t = Object(k.Jb)(e, B.author || "");
 						return !t || t.enableFollowers
@@ -4835,8 +4834,7 @@
 					tooltipType: D ? p.f.Lightbox : void 0,
 					post: B,
 					showSub: V,
-					subredditOrProfile: q,
-					isProfile: Z
+					subredditOrProfile: q
 				}), r.a.createElement(m.a, {
 					className: j.a.postBadges,
 					displayText: q ? q.displayText : null,
@@ -6828,4 +6826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.112be0c7bbc856568883.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.22a35a55e5f6af5fce1b.js.map
