@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.0c04ac311f3d7a1398c2.js
-// Retrieved at 6/22/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.36b4b2af6797b4bb0f31.js
+// Retrieved at 7/31/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/MatrixChat/LoadingState/index.m.less": function(e, t, a) {
@@ -114,9 +114,9 @@
 					className: M.a.titleContainer
 				}, n.fbt._("Chat", null, {
 					hk: "2Joznw"
-				}), i && i > 0 && r.a.createElement("span", {
+				}), i && i > 0 ? r.a.createElement("span", {
 					className: M.a.notificationsBadge
-				}, Object(O.b)(i))), r.a.createElement("button", {
+				}, Object(O.b)(i)) : null), r.a.createElement("button", {
 					type: "button",
 					onClick: e => {
 						null == e || e.stopPropagation(), s(Object(l.d)({
@@ -242,4 +242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.0c04ac311f3d7a1398c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.36b4b2af6797b4bb0f31.js.map
