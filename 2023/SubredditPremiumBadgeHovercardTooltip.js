@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.0a1a606972ede90c87cb.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e5b3049a3d611798fbe0.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -86,8 +86,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_badge_hover_open_learn_more",
-								...E.p(e),
-								subreddit: E.mb(e)
+								...E.q(e),
+								subreddit: E.nb(e)
 							})), e.onOpen()
 						};
 					return n.a.createElement("footer", {
@@ -136,8 +136,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_badge_hover_open_gallery",
-								...E.p(e),
-								subreddit: E.mb(e)
+								...E.q(e),
+								subreddit: E.nb(e)
 							})), e.onOpen()
 						}
 					}, _.fbt._("Get", null, {
@@ -165,8 +165,8 @@
 								source: "meta",
 								action: "click",
 								noun: "lfg_badge_start_chat",
-								...E.p(e),
-								subreddit: E.mb(e)
+								...E.q(e),
+								subreddit: E.nb(e)
 							})), e.onStartChat()
 						}
 					}, _.fbt._("start chat", null, {
@@ -215,8 +215,8 @@
 						action: "open",
 						noun: "badges_hover_card",
 						correlationId: this.correlationId,
-						...E.p(e),
-						subreddit: E.mb(e)
+						...E.q(e),
+						subreddit: E.nb(e)
 					}))
 				}
 				render() {
@@ -271,8 +271,8 @@
 				}
 			});
 			var R = Object(p.c)(Object(o.b)(K)(J));
-			const U = Object(i.a)(R, [a.a.Click, a.a.Keydown]);
-			const X = Object(d.c)({
+			const q = Object(i.a)(R, [a.a.Click, a.a.Keydown]);
+			const U = Object(d.c)({
 				isOpen: (e, t) => {
 					let {
 						tooltipId: r
@@ -280,8 +280,8 @@
 					return Object(c.b)(r)(e)
 				}
 			});
-			t.default = Object(o.b)(X)((function(e) {
-				return e.isOpen ? n.a.createElement(U, e) : null
+			t.default = Object(o.b)(U)((function(e) {
+				return e.isOpen ? n.a.createElement(q, e) : null
 			}))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less": function(e, t, r) {
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.0a1a606972ede90c87cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e5b3049a3d611798fbe0.js.map

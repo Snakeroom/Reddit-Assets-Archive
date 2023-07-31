@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.744d005e93d632fa79f8.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.ef96bc4e54414a4f96d6.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -69,7 +69,7 @@
 						action: "view",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...u.p(t).actionInfo,
+							...u.q(t).actionInfo,
 							paneName: e
 						}
 					}
@@ -80,13 +80,13 @@
 						action: "click",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...u.p(t).actionInfo,
+							...u.q(t).actionInfo,
 							paneName: e
 						}
 					}
 				},
 				f = e => t => {
-					const n = u.p(t),
+					const n = u.q(t),
 						a = e.id,
 						s = e.id.toUpperCase();
 					if (p.includes(s)) {
@@ -349,14 +349,14 @@
 				A = n("./src/redditGQL/operations/GetModPnSettingsLayout.json"),
 				T = n("./src/redditGQL/operations/UpdateModPnSettingStatus.json"),
 				B = n("./src/redditGQL/operations/UpdateModPnSettingThreshold.json");
-			const I = (e, t) => Object(D.a)(e, {
+			const q = (e, t) => Object(D.a)(e, {
 					...A,
 					variables: {
 						subredditIds: [t]
 					}
 				}),
-				V = (e, t) => "threshold" in t ? q(e, t) : G(e, t),
-				q = (e, t) => Object(D.a)(e, {
+				I = (e, t) => "threshold" in t ? V(e, t) : G(e, t),
+				V = (e, t) => Object(D.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -429,7 +429,7 @@
 				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, S] = Object(o.useState)(!0), y = Object(Y.a)(), E = Object(r.d)(), x = Object(h.a)(), [C, v] = Object(o.useState)(["page__root"]);
 				Object(o.useEffect)(() => {
 					(async () => {
-						const e = await I(y(), t);
+						const e = await q(y(), t);
 						if (e && e.ok) {
 							const n = e.body,
 								a = H(n.data)[t],
@@ -487,7 +487,7 @@
 						}
 					}(a, t);
 					if (!s) return;
-					const o = await V(y(), s);
+					const o = await I(y(), s);
 					if (o.ok && x(f(a)), !o.ok) {
 						const {
 							id: e
@@ -683,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.744d005e93d632fa79f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.ef96bc4e54414a4f96d6.js.map

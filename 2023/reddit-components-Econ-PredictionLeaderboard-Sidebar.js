@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.57396494a3a1a702c47d.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.4ae03b71f5be26fb2883.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx": function(e, t, a) {
@@ -760,8 +760,8 @@
 			}));
 			var c = a("./src/reddit/selectors/telemetry.ts");
 			const n = e => ({
-					...Object(c.p)(e),
-					subreddit: Object(c.mb)(e)
+					...Object(c.q)(e),
+					subreddit: Object(c.nb)(e)
 				}),
 				r = {
 					source: "global",
@@ -797,20 +797,20 @@
 					}
 				}),
 				o = () => e => ({
-					...Object(c.p)(e, {
+					...Object(c.q)(e, {
 						isGVSEvent: !0
 					}),
-					subreddit: Object(c.mb)(e),
+					subreddit: Object(c.nb)(e),
 					...r,
 					actionInfo: {
 						pageType: "all_time_community_predictors_preview"
 					}
 				}),
 				i = e => t => ({
-					...Object(c.p)(t, {
+					...Object(c.q)(t, {
 						isGVSEvent: !0
 					}),
-					subreddit: Object(c.mb)(t),
+					subreddit: Object(c.nb)(t),
 					...r,
 					actionInfo: {
 						pageType: "tournament_leaderboard_preview",
@@ -821,20 +821,20 @@
 					}
 				}),
 				m = () => e => ({
-					...Object(c.p)(e, {
+					...Object(c.q)(e, {
 						isGVSEvent: !0
 					}),
-					subreddit: Object(c.mb)(e),
+					subreddit: Object(c.nb)(e),
 					...r,
 					actionInfo: {
 						pageType: "previous_tournaments"
 					}
 				}),
 				f = () => e => ({
-					...Object(c.p)(e, {
+					...Object(c.q)(e, {
 						isGVSEvent: !0
 					}),
-					subreddit: Object(c.mb)(e),
+					subreddit: Object(c.nb)(e),
 					...r,
 					actionInfo: {
 						pageType: "all_time_community_predictors"
@@ -850,10 +850,10 @@
 					}
 				},
 				p = (e, t, a) => n => ({
-					...Object(c.p)(n, {
+					...Object(c.q)(n, {
 						isGVSEvent: !0
 					}),
-					subreddit: Object(c.mb)(n),
+					subreddit: Object(c.nb)(n),
 					...r,
 					actionInfo: {
 						pageType: "tournament_leaderboard",
@@ -883,4 +883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.57396494a3a1a702c47d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.4ae03b71f5be26fb2883.js.map

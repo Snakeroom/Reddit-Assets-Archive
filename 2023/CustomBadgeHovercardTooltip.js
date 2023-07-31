@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e1869a7fcf5b85f8143e.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.5ff4d32f9624aec2b691.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -103,8 +103,8 @@
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
-						...E.p(e),
-						subreddit: E.mb(e)
+						...E.q(e),
+						subreddit: E.nb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -148,8 +148,8 @@
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
-								...E.p(e),
-								subreddit: E.mb(e)
+								...E.q(e),
+								subreddit: E.nb(e)
 							}))
 						}
 					}, n.a.createElement(y.a, {
@@ -642,9 +642,9 @@
 			})), r.d(t, "s", (function() {
 				return H
 			})), r.d(t, "t", (function() {
-				return J
-			})), r.d(t, "g", (function() {
 				return q
+			})), r.d(t, "g", (function() {
+				return Z
 			})), r.d(t, "m", (function() {
 				return W
 			}));
@@ -862,33 +862,33 @@
 				H = (e, t) => !!t && !!Object(f.a)(e, {
 					subredditId: t
 				}),
-				J = (e, t, r) => {
+				q = (e, t, r) => {
 					if (Object(b.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
-					})) || (!!Z(e, t) || !(!s.d.spGiphy(e) || !K(e, r)));
+					})) || (!!K(e, t) || !(!s.d.spGiphy(e) || !J(e, r)));
 					if (!Object(h.a)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(f.f)(e, {
 							subredditId: t
 						})) return !0;
-					if (K(e, r)) return !0;
+					if (J(e, r)) return !0;
 					const n = s.d.spGiphy(e),
 						o = Y(e, t);
-					return !!Z(e, t) || n && o
+					return !!K(e, t) || n && o
 				},
-				K = (e, t) => {
+				J = (e, t) => {
 					const r = "replyToPost" !== t && Object(p.c)(e, {
 						commentId: t
 					});
 					if (r && Object(o.a)(r)) return !0
 				},
-				Z = (e, t) => {
+				K = (e, t) => {
 					const r = s.d.spGiphy(e),
 						n = Y(e, t);
 					return r && n
 				},
-				q = (e, t, r) => {
+				Z = (e, t, r) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[r]
@@ -972,4 +972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e1869a7fcf5b85f8143e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.5ff4d32f9624aec2b691.js.map

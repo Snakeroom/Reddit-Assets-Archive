@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f28d682c754a61f31376.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.dab6d439f06116da7a1e.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -325,8 +325,8 @@
 				R = o("./src/reddit/controls/LoadingIcon/index.tsx"),
 				P = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				S = o("./src/reddit/models/Toast/index.ts"),
-				U = o("./src/reddit/selectors/gold/powerups/index.ts"),
-				L = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				L = o("./src/reddit/selectors/gold/powerups/index.ts"),
+				U = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
 				A = o("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				D = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
 				V = o.n(D);
@@ -376,13 +376,13 @@
 					[b, h] = Object(s.useState)(null),
 					E = () => h(null),
 					[j, f] = Object(s.useState)(!1),
-					x = Object(l.e)(e => Object(U.g)(e, {
+					x = Object(l.e)(e => Object(L.g)(e, {
 						subredditId: o
 					})),
-					k = Object(l.e)(e => Object(U.b)(e, {
+					k = Object(l.e)(e => Object(L.b)(e, {
 						subredditId: o
 					})),
-					g = Object(l.e)(e => Object(U.c)(e, {
+					g = Object(l.e)(e => Object(L.c)(e, {
 						subredditId: o
 					})),
 					{
@@ -514,7 +514,7 @@
 					disabled: v
 				}, i.a.createElement(P.a, {
 					className: V.a.addIcon
-				}))), k.map(e => i.a.createElement(L.a, {
+				}))), k.map(e => i.a.createElement(U.a, {
 					key: e.id,
 					className: V.a.emoteButton,
 					imageClassName: V.a.customEmoteImage,
@@ -534,7 +534,7 @@
 					className: Object(u.a)(V.a.emotes, {
 						[V.a.disabled]: !d
 					})
-				}, g.map(e => i.a.createElement(L.a, {
+				}, g.map(e => i.a.createElement(U.a, {
 					key: e.id,
 					className: V.a.emoteButton,
 					imagePath: e.emoji.path,
@@ -675,12 +675,12 @@
 			var s = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = o("./src/reddit/selectors/telemetry.ts");
 			const n = (e, t, o) => ({
-					...i.p(e),
+					...i.q(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
-					profile: i.U(e),
-					subreddit: i.mb(e),
+					profile: i.V(e),
+					subreddit: i.nb(e),
 					powerups: {
-						...i.rb(e),
+						...i.sb(e),
 						freeCount: t,
 						paidCount: o
 					}
@@ -697,7 +697,7 @@
 					noun: "add_custom_emojis",
 					...n(o),
 					powerups: {
-						...i.rb(o),
+						...i.sb(o),
 						emojiCount: e
 					}
 				}),
@@ -707,7 +707,7 @@
 					noun: "custom_emojis",
 					...n(o),
 					powerups: {
-						...i.rb(o),
+						...i.sb(o),
 						emojiCount: e
 					}
 				}),
@@ -720,7 +720,7 @@
 						noun: "custom_emojis",
 						...n(o),
 						powerups: {
-							...i.rb(o),
+							...i.sb(o),
 							emojiCount: e
 						}
 					})
@@ -729,7 +729,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? i.nb(o, t) : void 0,
+					subreddit: t ? i.ob(o, t) : void 0,
 					...n(o),
 					correlationId: e
 				})
@@ -775,4 +775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f28d682c754a61f31376.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.dab6d439f06116da7a1e.js.map

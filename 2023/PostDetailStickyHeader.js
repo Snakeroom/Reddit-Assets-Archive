@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1285b7cf7d4e83e4c8f8.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.fd045b308e895e6279de.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -176,8 +176,8 @@
 				k = s("./src/reddit/models/Media/index.ts"),
 				S = s("./src/reddit/models/Vote/index.ts"),
 				L = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				B = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				M = s("./src/reddit/selectors/platform.ts"),
+				M = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				B = s("./src/reddit/selectors/platform.ts"),
 				N = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/selectors/telemetry.ts"),
 				w = s("./src/reddit/contexts/Post/index.tsx"),
@@ -190,14 +190,14 @@
 							post: n
 						} = e;
 						if (!s && !n) return null;
-						const o = n || Object(M.n)(t, {
+						const o = n || Object(B.n)(t, {
 							page: s
 						});
 						return (null == o ? void 0 : o.belongsTo) ? Object(N.Q)(t, {
 							identifier: o.belongsTo
 						}) : null
 					},
-					post: M.n,
+					post: B.n,
 					joinOptimizationsLightboxHeaderEnabled: t => Object(L.a)(t) || Object(L.d)(t) || Object(L.c)(t),
 					isVoteCountAnimation: (t, e) => {
 						let {
@@ -205,10 +205,10 @@
 							post: n
 						} = e;
 						if (!s && !n) return !1;
-						const o = s && Object(M.n)(t, {
+						const o = s && Object(B.n)(t, {
 							page: s
 						}) || n;
-						return !!o && Object(B.g)(t, {
+						return !!o && Object(M.g)(t, {
 							post: o
 						})
 					}
@@ -272,7 +272,7 @@
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: s ? P.L(t, s.id) : void 0,
+								post: s ? P.M(t, s.id) : void 0,
 								subreddit: e
 							}
 						})
@@ -471,13 +471,13 @@
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					post: n.L(s, e)
+					post: n.M(s, e)
 				}),
 				r = (t, e) => s => ({
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					comment: n.i({
+					comment: n.j({
 						state: s,
 						commentId: e
 					})
@@ -540,4 +540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1285b7cf7d4e83e4c8f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.fd045b308e895e6279de.js.map

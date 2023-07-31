@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.ac5dac3de6618ee7c6bb.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.27ae64f876fb90bb99a8.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -358,13 +358,13 @@
 				}).join(", ") : (() => a.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
-				z = Object(c.c)({
+				q = Object(c.c)({
 					changeUsernameModalOpen: Object(V.b)(R.b),
 					confirmSaveUsernameModalOpen: Object(V.b)(R.d),
 					interceptActionModalOpen: Object(V.b)(R.e),
 					welcomeBackModalOpen: Object(V.b)(R.r)
 				}),
-				X = Object(r.b)(z, (e, t) => ({
+				z = Object(r.b)(q, (e, t) => ({
 					closeModal: () => {
 						e(Object(p.f)()), e(Object(u.d)())
 					},
@@ -402,7 +402,7 @@
 						}, b.a)
 					}
 				})),
-				Y = Object(i.a)(Object(P.b)(X(e => {
+				X = Object(i.a)(Object(P.b)(z(e => {
 					let {
 						apiContext: t,
 						changeUsernameModalOpen: n,
@@ -480,7 +480,7 @@
 						username: N
 					}))
 				})));
-			t.default = Y
+			t.default = X
 		},
 		"./src/reddit/components/Settings/ChangeUsernameModal.tsx": function(e, t, n) {
 			"use strict";
@@ -873,7 +873,7 @@
 				},
 				f = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				g = (e, t) => n => ({
-					...Object(u.p)(n),
+					...Object(u.q)(n),
 					action: l.c.VIEW,
 					actionInfo: Object(u.d)(n, {
 						reason: t ? h(Object(m.a)(n)) : void 0
@@ -882,7 +882,7 @@
 					source: e
 				}),
 				C = (e, t) => n => ({
-					...Object(u.p)(n),
+					...Object(u.q)(n),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -891,13 +891,13 @@
 					source: e
 				}),
 				_ = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.q)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
 				E = e => t => ({
-					...Object(u.p)(t),
+					...Object(u.q)(t),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p,
@@ -906,13 +906,13 @@
 					}
 				}),
 				O = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.q)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				N = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.q)(e),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -921,13 +921,13 @@
 					source: p
 				}),
 				v = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.q)(e),
 					action: l.c.SELECT,
 					noun: a.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				x = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.q)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.ac5dac3de6618ee7c6bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.27ae64f876fb90bb99a8.js.map

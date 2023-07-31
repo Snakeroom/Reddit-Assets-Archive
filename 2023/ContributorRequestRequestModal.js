@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.fe9ffba90686d8920033.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.45ca492f5eddd0a5cb09.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -48,8 +48,8 @@
 				f = a("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
 				C = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
-				E = a("./src/reddit/models/Theme/index.ts"),
-				q = a("./src/reddit/selectors/platform.ts"),
+				q = a("./src/reddit/models/Theme/index.ts"),
+				E = a("./src/reddit/selectors/platform.ts"),
 				R = a("./src/reddit/selectors/structuredStyles.ts"),
 				y = a("./src/reddit/selectors/subreddit.ts"),
 				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
@@ -79,7 +79,7 @@
 					if (!this.props.subreddit || !this.props.subredditAboutInfo) return null;
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
-						a = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
+						a = this.props.theme ? Object(q.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return o.a.createElement(S, {
 						className: F.a.requestModal
 					}, o.a.createElement(j, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(k, {
@@ -132,7 +132,7 @@
 			t.default = I.a.wrapped(Object(s.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: y.g,
 				restrictions: y.q,
-				subreddit: q.e,
+				subreddit: E.e,
 				subredditIcon: R.b
 			}), e => ({
 				makeContributorRequest: (t, a, r) => e(Object(u.n)(t, a, r)),
@@ -290,20 +290,20 @@
 			}));
 			var r = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...r.p(t),
+					...r.q(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.mb(t)
+					subreddit: r.nb(t)
 				}),
 				n = e => t => ({
-					...r.p(t),
+					...r.q(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.mb(t)
+					subreddit: r.nb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.fe9ffba90686d8920033.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.45ca492f5eddd0a5cb09.js.map

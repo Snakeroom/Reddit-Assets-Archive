@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.12059143bb8f0cd23059.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.ebc4d86463a6e5dd220b.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, s) {
@@ -7,21 +7,21 @@
 			s.d(t, "a", (function() {
 				return r
 			}));
-			var o = s("./node_modules/react/index.js"),
-				n = s("./src/reddit/hooks/useGqlContext.ts");
+			var n = s("./node_modules/react/index.js"),
+				o = s("./src/reddit/hooks/useGqlContext.ts");
 
 			function r(e) {
-				const t = Object(n.a)(),
-					[s, r] = Object(o.useState)(!1),
-					[a, c] = Object(o.useState)(!1),
-					[i, d] = Object(o.useState)(null),
-					[u, l] = Object(o.useState)(null);
-				return [Object(o.useCallback)(async s => {
-					let o, n;
+				const t = Object(o.a)(),
+					[s, r] = Object(n.useState)(!1),
+					[a, c] = Object(n.useState)(!1),
+					[i, d] = Object(n.useState)(null),
+					[u, l] = Object(n.useState)(null);
+				return [Object(n.useCallback)(async s => {
+					let n, o;
 					r(!0), c(!0);
 					try {
-						if ((n = (o = await e(t(), s)).body).error) throw new Error(n.error.message);
-						l(n.data)
+						if ((o = (n = await e(t(), s)).body).error) throw new Error(o.error.message);
+						l(o.data)
 					} catch (i) {
 						d(i)
 					} finally {
@@ -60,9 +60,9 @@
 		"./src/reddit/components/EditCommunityDescriptionModal/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
 				a = s("./node_modules/react-redux/es/index.js"),
 				c = s("./src/higherOrderComponents/asModal/index.tsx"),
 				i = s("./src/lib/hooks/useMutation.ts"),
@@ -83,7 +83,7 @@
 			t.default = Object(c.a)(() => {
 				const e = Object(a.e)(C.c),
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
-					[s, c] = Object(n.useState)(""),
+					[s, c] = Object(o.useState)(""),
 					g = Object(a.d)(),
 					M = Object(j.a)(),
 					[E] = Object(i.a)(_.a);
@@ -95,7 +95,7 @@
 					className: x.a.ModalHeader
 				}, r.a.createElement(f.a, {
 					className: x.a.ExpandLeft
-				}, r.a.createElement(m.q, null, o.fbt._("Write a description", null, {
+				}, r.a.createElement(m.q, null, n.fbt._("Write a description", null, {
 					hk: "1aXT9M"
 				})), r.a.createElement(b.t, {
 					className: x.a.CloseButton,
@@ -106,19 +106,19 @@
 				}, r.a.createElement(m.t, {
 					className: x.a.TextArea,
 					onChange: e => c(e.currentTarget.value),
-					placeholder: o.fbt._("Tell people what your community is about...", null, {
+					placeholder: n.fbt._("Tell people what your community is about...", null, {
 						hk: "17XTOW"
 					}),
 					value: s
 				}), r.a.createElement("label", {
 					className: x.a.TextAreaLabel
-				}, o.fbt._("description", null, {
+				}, n.fbt._("description", null, {
 					hk: "Pkdpn"
 				}))), r.a.createElement(m.g, {
 					className: x.a.modalFooter
 				}, r.a.createElement(m.a, {
 					onClick: k
-				}, o.fbt._("Cancel", null, {
+				}, n.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), r.a.createElement(b.t, {
 					className: x.a.SaveButton,
@@ -132,7 +132,7 @@
 							}
 						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
 					}
-				}, o.fbt._("Save", null, {
+				}, n.fbt._("Save", null, {
 					hk: "4yMsMq"
 				}))))
 			})
@@ -150,8 +150,8 @@
 			})), s.d(t, "c", (function() {
 				return p
 			}));
-			var o = s("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
-				n = s("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
+			var n = s("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
+				o = s("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
 				r = s("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
 				a = s("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
 				c = s("./src/lib/makeGqlRequest/index.ts"),
@@ -165,17 +165,17 @@
 					variables: t
 				}),
 				l = (e, t) => Object(c.a)(e, {
-					...o,
-					variables: t
-				}),
-				m = (e, t) => Object(c.a)(e, {
 					...n,
 					variables: t
 				}),
-				p = (e, t) => async (s, o, n) => {
+				m = (e, t) => Object(c.a)(e, {
+					...o,
+					variables: t
+				}),
+				p = (e, t) => async (s, n, o) => {
 					let {
 						gqlContext: r
-					} = n;
+					} = o;
 					const a = {
 						input: {
 							subredditId: e,
@@ -202,96 +202,96 @@
 			})), s.d(t, "d", (function() {
 				return l
 			}));
-			var o = s("./src/reddit/selectors/telemetry.ts");
+			var n = s("./src/reddit/selectors/telemetry.ts");
 
-			function n(e, t) {
+			function o(e, t) {
 				return {
 					moduleName: e.id,
 					cardName: t
 				}
 			}
 			const r = (e, t) => s => ({
-					...Object(o.p)(s),
+					...Object(n.q)(s),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
-					progressModule: n(e),
+					progressModule: o(e),
 					actionInfo: {
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(n.nb)(s)
 				}),
 				a = (e, t, s) => r => ({
-					...Object(o.p)(r),
+					...Object(n.q)(r),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
-					progressModule: n(e, t),
+					progressModule: o(e, t),
 					actionInfo: {
 						pageType: "community",
 						...s && {
 							reason: s
 						}
 					},
-					subreddit: Object(o.mb)(r)
+					subreddit: Object(n.nb)(r)
 				}),
 				c = e => t => ({
-					...Object(o.p)(t),
+					...Object(n.q)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
-					progressModule: n(e),
+					progressModule: o(e),
 					actionInfo: {
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(o.mb)(t)
+					subreddit: Object(n.nb)(t)
 				}),
 				i = e => t => ({
-					...Object(o.p)(t),
+					...Object(n.q)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
-					progressModule: n(e),
+					progressModule: o(e),
 					actionInfo: {
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(o.mb)(t)
+					subreddit: Object(n.nb)(t)
 				}),
 				d = (e, t) => s => ({
-					...Object(o.p)(s),
+					...Object(n.q)(s),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
-					progressModule: n(e, t),
+					progressModule: o(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(n.nb)(s)
 				}),
 				u = (e, t) => s => ({
-					...Object(o.p)(s),
+					...Object(n.q)(s),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
-					progressModule: n(e, t),
+					progressModule: o(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(n.nb)(s)
 				}),
 				l = (e, t) => s => ({
-					...Object(o.p)(s),
+					...Object(n.q)(s),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
-					progressModule: n(e, t),
+					progressModule: o(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(n.nb)(s)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.12059143bb8f0cd23059.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.ebc4d86463a6e5dd220b.js.map

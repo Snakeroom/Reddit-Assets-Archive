@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.b12135cdb30ce3fcbdea.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.bb9d899bfff2376d22b9.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -387,7 +387,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = "nsfw_dialog_bypassable",
 				r = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: a,
@@ -396,7 +396,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: a,
@@ -406,7 +406,7 @@
 					}
 				}),
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: a,
@@ -416,7 +416,7 @@
 					}
 				}),
 				i = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: a,
@@ -438,7 +438,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = "nsfw_dialog",
 				r = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: a,
@@ -447,7 +447,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: a,
@@ -456,7 +456,7 @@
 					}
 				}),
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: a,
@@ -536,4 +536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.b12135cdb30ce3fcbdea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.bb9d899bfff2376d22b9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.414adf4bdf8f9b703490.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.17b48e47b044d283b9d1.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -1845,9 +1845,9 @@
 			}(n || (n = {}));
 			const f = "discovery_unit",
 				O = (e, t, s) => ({
-					...b.p(e),
+					...b.q(e),
 					source: f,
-					screen: b.db(e),
+					screen: b.eb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -1868,11 +1868,11 @@
 				},
 				E = (e, t) => s => _(s, e, t),
 				y = (e, t, s, n) => "unitName" in t ? O(e, t, n) : ((e, t, s) => ({
-					...b.p(e),
+					...b.q(e),
 					source: "search",
-					screen: b.db(e),
+					screen: b.eb(e),
 					search: s ? {
-						...b.eb(e, s, d.a.SERP),
+						...b.fb(e, s, d.a.SERP),
 						structureType: b.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -1886,7 +1886,7 @@
 					...y(e, t, i, r),
 					action: "view",
 					noun: n.ITEM_POST,
-					post: b.L(e, s)
+					post: b.M(e, s)
 				}),
 				I = e => {
 					let {
@@ -1936,7 +1936,7 @@
 						a = T[r],
 						l = Object(m.a)(i, a).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === o.id) + s;
 					return {
-						...b.p(i),
+						...b.q(i),
 						source: "search",
 						action: t,
 						noun: n.TRENDING,
@@ -1951,7 +1951,7 @@
 							paneName: d,
 							position: l
 						}),
-						search: b.fb(i, {
+						search: b.gb(i, {
 							searchQuery: o.rawQuery,
 							structureType: b.c.Trending,
 							originElement: d === x.SEARCH_DROPDOWN ? b.a.SearchDropdown : void 0,
@@ -1961,7 +1961,7 @@
 				},
 				k = (e, t, s, n, i, r, d) => {
 					Object(h.a)({
-						...b.p(e),
+						...b.q(e),
 						...Object(a.l)({
 							state: e,
 							postId: s,
@@ -1995,7 +1995,7 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_POST,
-						post: b.L(r, t)
+						post: b.M(r, t)
 					}
 				},
 				R = function() {
@@ -2024,7 +2024,7 @@
 					source: f,
 					action: o.c.CLICK,
 					noun: n.ITEM_POST,
-					post: b.L(i, s)
+					post: b.M(i, s)
 				}),
 				F = (e, t, s, n) => {
 					Object(h.a)(q(t, s, n)(e))
@@ -2040,7 +2040,7 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: "item_post_subreddit",
-						post: b.L(i, t)
+						post: b.M(i, t)
 					}
 				},
 				H = () => ({
@@ -2062,7 +2062,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
+						subreddit: b.ob(e, t) || null,
 						source: f,
 						action: o.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
@@ -2073,7 +2073,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
+						subreddit: b.ob(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
@@ -2084,8 +2084,8 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
-						post: i ? b.L(e, i) : null,
+						subreddit: b.ob(e, t) || null,
+						post: i ? b.M(e, i) : null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
@@ -2096,8 +2096,8 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
-						post: i ? b.L(e, i) : null,
+						subreddit: b.ob(e, t) || null,
+						post: i ? b.M(e, i) : null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -2258,4 +2258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.414adf4bdf8f9b703490.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.17b48e47b044d283b9d1.js.map

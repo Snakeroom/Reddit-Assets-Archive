@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e11f56ac9773854db895.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.47d2504ffb407653a10a.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2589,7 +2589,7 @@
 						subreddit: {
 							id: t
 						},
-						...n.p(e),
+						...n.q(e),
 						...r && {
 							post: {
 								id: r
@@ -2609,7 +2609,7 @@
 						subreddit: {
 							id: t
 						},
-						...n.p(e),
+						...n.q(e),
 						...r && {
 							post: {
 								id: r
@@ -2756,4 +2756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e11f56ac9773854db895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.47d2504ffb407653a10a.js.map

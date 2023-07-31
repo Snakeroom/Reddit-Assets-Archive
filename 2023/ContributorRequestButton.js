@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestButton.753c98166055d8b90225.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestButton.75abe8c2d115ac6c0ebf.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestButton"], {
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(t, e, s) {
@@ -21,21 +21,21 @@
 				l = s("./src/reddit/constants/modals.ts"),
 				a = s("./src/reddit/controls/Button/index.tsx"),
 				b = s("./src/reddit/helpers/trackers/privateCommunity.ts"),
-				m = s("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
-				_ = s("./src/reddit/models/SubredditRestrictions/index.ts"),
-				p = s("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less"),
-				R = s.n(p);
-			const q = () => ({
-				[_.b.Comment]: n.fbt._("Request to Comment", null, {
+				_ = s("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
+				m = s("./src/reddit/models/SubredditRestrictions/index.ts"),
+				q = s("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less"),
+				R = s.n(q);
+			const p = () => ({
+				[m.b.Comment]: n.fbt._("Request to Comment", null, {
 					hk: "3KRhw5"
 				}),
-				[_.b.IdCard]: n.fbt._("Request to Post", null, {
+				[m.b.IdCard]: n.fbt._("Request to Post", null, {
 					hk: "2xsrGd"
 				}),
-				[_.b.PostSubmission]: n.fbt._("Request to Post", null, {
+				[m.b.PostSubmission]: n.fbt._("Request to Post", null, {
 					hk: "2xsrGd"
 				}),
-				[_.b.ContentGate]: n.fbt._("Request to Join", null, {
+				[m.b.ContentGate]: n.fbt._("Request to Join", null, {
 					hk: "1nK8Vv"
 				})
 			});
@@ -48,7 +48,7 @@
 							openRequestToJoinSubredditModal: s,
 							openContributorRequestModal: n
 						} = this.props;
-						e === _.b.ContentGate ? (t(Object(b.a)(e)), s()) : (t(Object(m.a)(e)), n())
+						e === m.b.ContentGate ? (t(Object(b.a)(e)), s()) : (t(Object(_.a)(e)), n())
 					}
 				}
 				render() {
@@ -59,14 +59,14 @@
 						isContributorRequestPending: r
 					} = this.props;
 					return o.a.createElement(a.t, {
-						priority: t === _.b.ContentGate ? a.c.Secondary : a.c.Primary,
+						priority: t === m.b.ContentGate ? a.c.Secondary : a.c.Primary,
 						className: Object(u.a)(e ? null : R.a.RequestButton, s),
 						onClick: this.onRequest,
 						size: e ? a.d.S : a.d.M,
 						disabled: r
 					}, r ? n.fbt._("Request Pending", null, {
 						hk: "hVswi"
-					}) : q()[t])
+					}) : p()[t])
 				}
 			}
 			e.default = Object(i.b)(null, t => ({
@@ -83,18 +83,18 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const r = t => e => ({
-					...n.p(e),
+					...n.q(e),
 					source: t,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.mb(e)
+					subreddit: n.nb(e)
 				}),
 				o = t => e => ({
-					...n.p(e),
+					...n.q(e),
 					source: t,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.mb(e)
+					subreddit: n.nb(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(t, e, s) {
@@ -106,20 +106,20 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const r = t => e => ({
-					...n.p(e),
+					...n.q(e),
 					source: t,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: n.mb(e)
+					subreddit: n.nb(e)
 				}),
 				o = t => e => ({
-					...n.p(e),
+					...n.q(e),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: t,
-					subreddit: n.mb(e)
+					subreddit: n.nb(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.753c98166055d8b90225.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.75abe8c2d115ac6c0ebf.js.map

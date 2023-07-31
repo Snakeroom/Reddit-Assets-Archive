@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.3c2becc7986412ee8618.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.05ef0fcd1dc926b5351c.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -287,20 +287,20 @@
 					targetUser: {
 						id: e
 					},
-					...h.p(t)
+					...h.q(t)
 				}),
 				R = e => t => ({
 					source: "report_modal",
 					action: f.d.Click,
 					noun: "comment",
-					comment: h.i({
+					comment: h.j({
 						state: t,
 						commentId: e
 					}),
 					media: {
-						mimetype: h.k(t, e)
+						mimetype: h.l(t, e)
 					},
-					...h.p(t)
+					...h.q(t)
 				});
 			var O = o("./src/reddit/components/FormBuilder/async.tsx"),
 				w = o("./src/reddit/actions/userBlocks.ts"),
@@ -325,8 +325,8 @@
 				G = o("./src/lib/lessComponent.tsx"),
 				N = o("./src/reddit/components/ReportFlow/index.m.less"),
 				B = o.n(N);
-			const U = G.a.div("ReportLoaderWrapper", B.a),
-				q = G.a.img("LoadingIcon", B.a),
+			const q = G.a.div("ReportLoaderWrapper", B.a),
+				U = G.a.img("LoadingIcon", B.a),
 				D = "2.1";
 			var $;
 			! function(e) {
@@ -594,7 +594,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(h, f),
 						onResize: this.props.onResize
-					}) : c.a.createElement(U, null, c.a.createElement(q, {
+					}) : c.a.createElement(q, null, c.a.createElement(U, {
 						src: t ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: s.fbt._("Loading", null, {
 							hk: "wiY7"
@@ -996,4 +996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.3c2becc7986412ee8618.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.05ef0fcd1dc926b5351c.js.map

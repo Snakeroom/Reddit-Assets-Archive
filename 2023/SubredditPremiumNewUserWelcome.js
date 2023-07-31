@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.3c93d7e6d54d06f4f9d0.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.5a18209496864c09439a.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -794,8 +794,8 @@
 							action: "click",
 							noun: "new_user_welcome_learn_more",
 							correlationId: e.correlationId,
-							...E.p(t),
-							subreddit: E.mb(t)
+							...E.q(t),
+							subreddit: E.nb(t)
 						}))
 					}, O.fbt._("You can learn more here", null, {
 						hk: "49vQ0b"
@@ -811,20 +811,20 @@
 				$ = n("./src/reddit/selectors/products.ts"),
 				W = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
 				V = n.n(W);
-			const H = "newbie_badge";
-			class Y extends s.a.Component {
+			const q = "newbie_badge";
+			class H extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(G.a)(this.props.apiContext(), {
-							productId: H,
+							productId: q,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => ({
 							source: "meta",
 							action: "click",
 							noun: "new_user_welcome_claim_badge",
 							correlationId: this.props.correlationId,
-							...E.p(e),
-							subreddit: E.mb(e)
+							...E.q(e),
+							subreddit: E.nb(e)
 						})))
 					}
 				}
@@ -854,23 +854,23 @@
 					})))) : null
 				}
 			}
-			const q = Object(c.c)({
-				newbieBadge: e => Object($.a)(e, H)
+			const Y = Object(c.c)({
+				newbieBadge: e => Object($.a)(e, q)
 			});
-			var z = Object(m.b)(Object(u.c)(Object(o.b)(q, (e, t) => {
+			var z = Object(m.b)(Object(u.c)(Object(o.b)(Y, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
 					return {
 						onBadgeApplied: () => {
 							e(Object(U.d)(n, {
-								id: H
+								id: q
 							})), e(Object(R.b)(_.a.Achievement)), e(Object(R.c)({
 								subredditId: n
 							}))
 						}
 					}
-				})(Y))),
+				})(H))),
 				K = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
 				Q = n.n(K);
 			class Z extends s.a.Component {
@@ -901,8 +901,8 @@
 						action: "view",
 						noun: "new_user_welcome",
 						correlationId: this.correlationId,
-						...E.p(e),
-						subreddit: E.mb(e)
+						...E.q(e),
+						subreddit: E.nb(e)
 					}))), s.a.createElement("article", {
 						className: Object(d.a)(Q.a.container, e)
 					}, s.a.createElement(S, {
@@ -937,7 +937,7 @@
 						if (Object(b.U)(e, t) !== l.g.Large) return !1;
 						if (r) {
 							const t = Object(g.f)(e, r.id)[_.a.Achievement];
-							if (t && t.type === H) return !1
+							if (t && t.type === q) return !1
 						}
 						return !0
 					},
@@ -2118,7 +2118,7 @@
 			})), n.d(t, "t", (function() {
 				return V
 			})), n.d(t, "g", (function() {
-				return q
+				return Y
 			})), n.d(t, "m", (function() {
 				return z
 			}));
@@ -2339,30 +2339,30 @@
 				V = (e, t, n) => {
 					if (Object(p.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
-					})) || (!!Y(e, t) || !(!r.d.spGiphy(e) || !H(e, n)));
+					})) || (!!H(e, t) || !(!r.d.spGiphy(e) || !q(e, n)));
 					if (!Object(_.a)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(f.f)(e, {
 							subredditId: t
 						})) return !0;
-					if (H(e, n)) return !0;
+					if (q(e, n)) return !0;
 					const s = r.d.spGiphy(e),
 						o = $(e, t);
-					return !!Y(e, t) || s && o
+					return !!H(e, t) || s && o
 				},
-				H = (e, t) => {
+				q = (e, t) => {
 					const n = "replyToPost" !== t && Object(b.c)(e, {
 						commentId: t
 					});
 					if (n && Object(o.a)(n)) return !0
 				},
-				Y = (e, t) => {
+				H = (e, t) => {
 					const n = r.d.spGiphy(e),
 						s = $(e, t);
 					return n && s
 				},
-				q = (e, t, n) => {
+				Y = (e, t, n) => {
 					if (t) {
 						const r = e.economics.banners.dismissedBanners[t];
 						if (r && r.data) return !!r.data[n]
@@ -2478,4 +2478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.3c93d7e6d54d06f4f9d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.5a18209496864c09439a.js.map

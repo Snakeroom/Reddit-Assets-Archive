@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.bd37e818861749b39673.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.bf56f90992c412c47e17.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -299,7 +299,7 @@
 					chat_comments: S.F.ChatComment
 				};
 
-			function P(e) {
+			function M(e) {
 				let {
 					getState: t,
 					queueType: o,
@@ -342,10 +342,10 @@
 					includeDevPlatformMetadata: !!s.includeDevPlatformMetadata
 				}
 			}
-			var M;
+			var P;
 			! function(e) {
 				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost", e.ChatComment = "ModQueueItemChatComment"
-			}(M || (M = {}));
+			}(P || (P = {}));
 			const C = e => ({
 					access: (null == e ? void 0 : e.isAccessEnabled) || !1,
 					all: (null == e ? void 0 : e.isAllAllowed) || !1,
@@ -511,7 +511,7 @@
 							})) || {}
 						}
 					}
-					if (u === M.Comment || u === M.ChatComment) {
+					if (u === P.Comment || u === P.ChatComment) {
 						const {
 							commentInfo: e
 						} = i;
@@ -549,7 +549,7 @@
 							})
 						}), c.reports[t.id] = u
 					}
-					if (u === M.Post) {
+					if (u === P.Post) {
 						const {
 							postInfo: e
 						} = i;
@@ -687,15 +687,15 @@
 							return e
 					}
 				},
-				Y = Object(G.c)({
+				X = Object(G.c)({
 					models: K,
 					order: J
 				}),
-				Z = o("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
-				X = o("./src/reddit/reducers/pages/modHub/index.ts");
+				Y = o("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
+				Z = o("./src/reddit/reducers/pages/modHub/index.ts");
 			Object(U.a)({
 				pages: {
-					modHub: X.a
+					modHub: Z.a
 				}
 			}), Object(U.a)({
 				features: {
@@ -703,11 +703,11 @@
 				}
 			}), Object(U.a)({
 				features: {
-					modPreviousActions: Y
+					modPreviousActions: X
 				}
 			}), Object(U.a)({
 				features: {
-					realtimeModqueue: Z.a
+					realtimeModqueue: Y.a
 				}
 			});
 			const ee = Object(d.a)($.k),
@@ -757,7 +757,7 @@
 						const e = null === (f = (await Object(b.b)(i(), o.profile)).body[o.profile]) || void 0 === f ? void 0 : f.profileId;
 						o.profile = e
 					}
-					const g = P({
+					const g = M({
 							getState: d,
 							queueType: t,
 							options: o
@@ -794,7 +794,7 @@
 							pageName: p
 						} = a.platform.currentPage.urlParams;
 					if (e && l || b || !u) return;
-					const f = P({
+					const f = M({
 							getState: o,
 							queueType: p,
 							options: {
@@ -825,12 +825,12 @@
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...Q.p(l),
+						...Q.q(l),
 						actionInfo: Q.d(l, {
 							count: b.length,
 							paneName: l.platform.currentPage ? l.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: Q.db(l),
+						screen: Q.eb(l),
 						correlationId: v
 					});
 					for (let t = 0; t < b.length; t++) {
@@ -840,19 +840,19 @@
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...Q.p(l),
+							...Q.q(l),
 							actionInfo: Q.d(l, {
 								count: b.length,
 								paneName: l.platform.currentPage ? l.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: Q.i({
+							comment: Q.j({
 								state: l,
 								commentId: o
 							}),
-							post: Q.L(l, o),
-							profile: Q.W(l, o),
-							screen: Q.db(l),
-							subreddit: Q.pb(l, o),
+							post: Q.M(l, o),
+							profile: Q.X(l, o),
+							screen: Q.eb(l),
+							subreddit: Q.qb(l, o),
 							correlationId: v
 						})
 					}
@@ -1069,7 +1069,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "removalReasonsPending", (function() {
-				return X
+				return Z
 			})), o.d(t, "removalReasonsLoaded", (function() {
 				return ee
 			})), o.d(t, "removalReasonsFailed", (function() {
@@ -1293,8 +1293,8 @@
 				k = o("./src/lib/makeCommentsPageKey/index.ts"),
 				x = o("./src/lib/makeDraftKey/index.ts"),
 				I = o("./src/reddit/actions/bulkActions/index.ts"),
-				P = o("./src/reddit/actions/comment/index.ts"),
-				M = o("./src/reddit/actions/comment/authoring.ts"),
+				M = o("./src/reddit/actions/comment/index.ts"),
+				P = o("./src/reddit/actions/comment/authoring.ts"),
 				C = o("./src/reddit/actions/comment/moderation.ts"),
 				w = o("./src/reddit/actions/modal.ts"),
 				N = o("./src/reddit/actions/post.ts"),
@@ -1328,14 +1328,14 @@
 				K = o("./src/reddit/models/PostDraft/index.ts"),
 				W = o("./src/reddit/models/RemovalReason/index.ts"),
 				J = o("./src/reddit/models/Toast/index.ts"),
-				Y = o("./src/reddit/selectors/comments.ts"),
-				Z = o("./src/reddit/selectors/platform.ts");
+				X = o("./src/reddit/selectors/comments.ts"),
+				Y = o("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
 					removalReasons: R
 				}
 			});
-			const X = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Z = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
 				ee = Object(E.a)(d),
 				te = Object(E.a)("REMOVALREASONS__LOAD_FAILED"),
 				oe = e => async (t, o, s) => {
@@ -1343,7 +1343,7 @@
 						apiContext: r
 					} = s;
 					const n = o().subreddits.models[e].name;
-					t(X());
+					t(Z());
 					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.ob.GET
@@ -1440,7 +1440,7 @@
 						m = e[0],
 						b = Object(G.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === W.e.Post ? N.Q : P.j;
+						f = b === W.e.Post ? N.Q : M.j;
 					if (!p || !l) return !1;
 					d(ve()), d(f({
 						[m]: {
@@ -1474,7 +1474,7 @@
 												comment: e,
 												parentId: m
 											},
-											o = Object(Z.f)(u),
+											o = Object(Y.f)(u),
 											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
 										let r = o && s && Object($.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(k.a)(e.postId, null, {
@@ -1482,9 +1482,9 @@
 												hasSortParam: !0
 											})), b === W.e.Post) {
 											const o = Object(x.a)(K.c.replyToPost, m);
-											d(Object(M.r)({
+											d(Object(P.r)({
 												...t,
-												headCommentId: Object(Y.w)(u, {
+												headCommentId: Object(X.w)(u, {
 													commentsPageKey: r
 												}),
 												commentsPageKey: r,
@@ -1495,18 +1495,18 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && d(Object(P.j)({
+											})), s && s !== e.id && d(Object(M.j)({
 												[s]: {
 													isStickied: !1
 												}
 											}))
 										} else if (b === W.e.Comment) {
 											const e = Object(x.a)(K.c.replyToComment, p.id),
-												o = Object(Y.j)(u, {
+												o = Object(X.j)(u, {
 													commentId: m,
 													commentsPageKey: r
 												});
-											d(Object(M.p)({
+											d(Object(P.p)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1915,4 +1915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.bd37e818861749b39673.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.bf56f90992c412c47e17.js.map

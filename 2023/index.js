@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.c336ff7f07b60cbd3e1b.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.43155478a48382fe32d5.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -185,11 +185,11 @@
 				r = n("./src/reddit/helpers/predictions/index.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const c = (e, t) => ({
-				...Object(a.p)(e),
-				poll: Object(a.Q)(e, t),
-				post: Object(a.L)(e, t),
-				predictions: Object(a.R)(e, t),
-				subreddit: Object(a.mb)(e)
+				...Object(a.q)(e),
+				poll: Object(a.R)(e, t),
+				post: Object(a.M)(e, t),
+				predictions: Object(a.S)(e, t),
+				subreddit: Object(a.nb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -259,9 +259,9 @@
 			};
 			var y = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				T = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
-				A = n.n(T);
+				S = n.n(T);
 			const {
-				fbt: S
+				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = e => {
 				let {
 					header: t,
@@ -269,15 +269,15 @@
 					cta: o
 				} = e;
 				return i.a.createElement("section", {
-					className: A.a.container
+					className: S.a.container
 				}, i.a.createElement(_.a, {
-					className: A.a.confetti
+					className: S.a.confetti
 				}), i.a.createElement(y.a, {
-					className: A.a.image
+					className: S.a.image
 				}), i.a.createElement("div", {
-					className: A.a.label
+					className: S.a.label
 				}, i.a.createElement("div", {
-					className: A.a.header
+					className: S.a.header
 				}, t), i.a.createElement("div", null, n)), o)
 			}, w = e => {
 				let {
@@ -287,16 +287,16 @@
 					postId: t
 				}));
 				return i.a.createElement(N, {
-					header: S._("Tournament has ended!", null, {
+					header: A._("Tournament has ended!", null, {
 						hk: "2mCj47"
 					}),
-					description: S._("Your destiny has been decided", null, {
+					description: A._("Your destiny has been decided", null, {
 						hk: "vGyB7"
 					}),
 					cta: i.a.createElement(g.default, {
-						className: A.a.cta,
+						className: S.a.cta,
 						to: `${null==n?void 0:n.url}predictions/`
-					}, S._("View Results", null, {
+					}, A._("View Results", null, {
 						hk: "1UFWjc"
 					}))
 				})
@@ -305,21 +305,21 @@
 					postId: t
 				} = e;
 				return i.a.createElement(N, {
-					header: S._("Your predictions are in!", null, {
+					header: A._("Your predictions are in!", null, {
 						hk: "FZJZS"
 					}),
-					description: S._("May the odds be ever in your favor", null, {
+					description: A._("May the odds be ever in your favor", null, {
 						hk: "1Brw70"
 					}),
 					cta: i.a.createElement(C, {
-						className: A.a.cta,
+						className: S.a.cta,
 						postId: t
 					})
 				})
 			};
 			var L = n("./node_modules/fbt/lib/FbtPublic.js"),
-				B = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
-				M = n.n(B);
+				M = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
+				B = n.n(M);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -340,18 +340,18 @@
 				const a = Object(s.e)(v.fb),
 					c = Math.floor(100 * t / n);
 				return i.a.createElement("div", V({
-					className: Object(p.a)(M.a.container, o, {
-						[M.a.isNightMode]: a
+					className: Object(p.a)(B.a.container, o, {
+						[B.a.isNightMode]: a
 					})
 				}, r), i.a.createElement("div", {
-					className: M.a.bar
+					className: B.a.bar
 				}, i.a.createElement("div", {
-					className: M.a.progress,
+					className: B.a.progress,
 					style: {
 						width: `${c}%`
 					}
 				})), i.a.createElement("div", {
-					className: M.a.label
+					className: B.a.label
 				}, L.fbt._("{progress} of {count} predicted", [L.fbt._param("progress", t.toString()), L.fbt._param("count", n.toString())], {
 					hk: "1dMoEh"
 				})))
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.c336ff7f07b60cbd3e1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.43155478a48382fe32d5.js.map

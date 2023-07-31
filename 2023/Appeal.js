@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.0d4d3adf4987e87fe761.js
-// Retrieved at 7/26/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.a377be11d039f3faec6f.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, t, a) {
@@ -10,6 +10,35 @@
 			const n = (e, t) => {
 				if (!e && t) return !0;
 				return /^.+\@.+\..+$/.test(e)
+			}
+		},
+		"./src/reddit/actions/appeals/index.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return i
+			})), a.d(t, "b", (function() {
+				return l
+			}));
+			var n = a("./src/reddit/selectors/telemetry.ts"),
+				r = a("./src/telemetry/index.ts");
+			const i = e => async (t, a) => {
+				const i = a();
+				Object(r.a)({
+					source: "appeal",
+					action: "view",
+					noun: "error",
+					...n.q(i),
+					appeal: e
+				})
+			}, l = (e, t) => async (a, i) => {
+				const l = i();
+				Object(r.a)({
+					source: "appeal",
+					action: "submit",
+					noun: t ? "success" : "error",
+					...n.q(l),
+					appeal: e
+				})
 			}
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
@@ -282,23 +311,27 @@
 				o = a("./src/lib/validateEmail/index.ts"),
 				c = a("./src/reddit/pages/AppealPage/index.m.less"),
 				d = a.n(c),
-				p = a("./src/reddit/actions/users.ts"),
-				m = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				u = a("./src/reddit/contexts/ApiContext.tsx"),
-				h = a("./src/reddit/controls/Button/index.tsx"),
-				b = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				f = a("./src/reddit/controls/Form/index.tsx"),
-				g = a("./src/reddit/endpoints/appeal/index.ts"),
-				x = a("./src/reddit/selectors/user.ts");
-			const k = "https://www.redditinc.com/policies/content-policy",
-				y = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
-				C = Object(s.c)({
-					currentUser: x.m
+				p = a("./src/reddit/actions/appeals/index.ts"),
+				m = a("./src/reddit/actions/users.ts"),
+				u = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				h = a("./src/reddit/contexts/ApiContext.tsx"),
+				b = a("./src/reddit/controls/Button/index.tsx"),
+				f = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				g = a("./src/reddit/controls/Form/index.tsx"),
+				x = a("./src/reddit/endpoints/appeal/index.ts"),
+				k = a("./src/reddit/selectors/user.ts");
+			const y = "https://www.redditinc.com/policies/content-policy",
+				_ = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
+				E = Object(s.c)({
+					currentUser: k.m
 				}),
-				_ = Object(l.b)(C, e => ({
-					logoutUser: () => e(Object(p.p)())
+				C = Object(l.b)(E, e => ({
+					logoutUser: () => e(Object(m.p)()),
+					appealViewErrorEvent: () => {
+						e(Object(p.a)({}))
+					}
 				}));
-			class E extends i.a.Component {
+			class v extends i.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
 						appealError: null,
@@ -315,11 +348,11 @@
 						policyCheckboxDirty: !0,
 						submitWasClicked: !1
 					}, this.componentDidMount = async () => {
-						const e = await Object(g.b)(this.props.apiContext());
-						e.ok && !this.isUnmounted && this.setState({
+						const e = await Object(x.b)(this.props.apiContext());
+						e.ok && !this.isUnmounted && (this.setState({
 							canShowWarning: !0,
 							eligibleForAppeal: !!e.body
-						})
+						}), !1 == !!e.body && this.props.appealViewErrorEvent())
 					}, this.handleDescriptionChange = e => {
 						this.setState({
 							description: e.currentTarget.value,
@@ -352,7 +385,7 @@
 							this.setState({
 								appealPending: !0
 							});
-							const a = await Object(g.a)(e.apiContext(), t.description, t.email ? t.email : void 0);
+							const a = await Object(x.a)(e.apiContext(), t.description, t.email ? t.email : void 0);
 							a.ok ? this.setState({
 								appealSuccess: !0
 							}) : this.setState({
@@ -363,20 +396,20 @@
 					}, this.getCheckboxText = () => i.a.createElement("label", null, n.fbt._("I have read the {=Reddit Content Policy} and the {=Suspensions help article} .", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
 						className: d.a.link,
 						target: "_blank",
-						href: k,
+						href: y,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Reddit Content Policy", null, {
 						hk: "1zrL2W"
 					}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
 						className: d.a.link,
 						target: "_blank",
-						href: y,
+						href: _,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Suspensions help article", null, {
 						hk: "1M9zrX"
 					})))], {
 						hk: "3Fr8Lf"
-					})), this.renderConfirmationPage = () => i.a.createElement(f.a, {
+					})), this.renderConfirmationPage = () => i.a.createElement(g.a, {
 						className: d.a.appealForm
 					}, i.a.createElement("div", {
 						className: d.a.appealFormHeader
@@ -397,11 +430,11 @@
 							email: o,
 							emailDirty: c,
 							emailValid: p,
-							policyCheckboxChecked: u,
-							policyCheckboxDirty: g,
+							policyCheckboxChecked: m,
+							policyCheckboxDirty: h,
 							submitWasClicked: x
 						} = a;
-						return i.a.createElement(i.a.Fragment, null, r && e && this.renderWarning(), i.a.createElement(f.a, {
+						return i.a.createElement(i.a.Fragment, null, r && e && this.renderWarning(), i.a.createElement(g.a, {
 							className: d.a.appealForm,
 							onSubmit: this.handleSubmit
 						}, i.a.createElement("div", {
@@ -413,14 +446,14 @@
 						}, n.fbt._("If you have reviewed the {=Reddit Content Policy} and our {=Suspensions help article} and believe your account has been wrongfully suspended, submit this form and we'll review your request.", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
 							className: d.a.link,
 							target: "_blank",
-							href: k,
+							href: y,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Reddit Content Policy", null, {
 							hk: "4qL67J"
 						}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
 							className: d.a.link,
 							target: "_blank",
-							href: y,
+							href: _,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Suspensions help article", null, {
 							hk: "3LTtzC"
@@ -428,13 +461,13 @@
 							hk: "2Unawp"
 						})), i.a.createElement("fieldset", {
 							className: d.a.appealFormFieldSet
-						}, i.a.createElement(m.b, {
+						}, i.a.createElement(u.b, {
 							className: d.a.labeledInput,
 							disabled: !0,
 							label: n.fbt._("Username", null, {
 								hk: "1vE7k6"
 							}),
-							state: x ? m.d.Valid : void 0,
+							state: x ? u.d.Valid : void 0,
 							value: t.currentUser.displayText
 						}), i.a.createElement("div", {
 							className: d.a.appealFormFieldComment
@@ -449,7 +482,7 @@
 							hk: "39gK6E"
 						}))), t.currentUser.hasVerifiedEmail ? null : i.a.createElement("fieldset", {
 							className: d.a.appealFormFieldSet
-						}, i.a.createElement(m.b, {
+						}, i.a.createElement(u.b, {
 							className: d.a.labeledInput,
 							disabled: e || a.appealPending,
 							label: n.fbt._("Email address (optional)", null, {
@@ -457,7 +490,7 @@
 							}),
 							maxLength: 100,
 							onChange: this.handleEmailChange,
-							state: !o || c ? void 0 : p ? m.d.Valid : m.d.Invalid,
+							state: !o || c ? void 0 : p ? u.d.Valid : u.d.Invalid,
 							type: "email",
 							value: o
 						}), p || c ? null : i.a.createElement("div", {
@@ -476,7 +509,7 @@
 							hk: "AxUTy"
 						})), i.a.createElement("div", {
 							className: d.a.appealFormField
-						}, i.a.createElement(m.c, {
+						}, i.a.createElement(u.c, {
 							className: d.a.labeledTextArea,
 							disabled: e || a.appealPending,
 							label: n.fbt._("Brief description", null, {
@@ -484,7 +517,7 @@
 							}),
 							maxLength: 250,
 							onChange: this.handleDescriptionChange,
-							state: s ? void 0 : l ? m.d.Valid : m.d.Invalid,
+							state: s ? void 0 : l ? u.d.Valid : u.d.Invalid,
 							value: l
 						}), !l && !s && i.a.createElement("div", {
 							className: d.a.errorMessage
@@ -496,13 +529,13 @@
 							hk: "3fYpQM"
 						}), "/ ", 250..toString()))), i.a.createElement("div", {
 							className: d.a.policyCheckboxWrapper
-						}, i.a.createElement(b.a, {
+						}, i.a.createElement(f.a, {
 							className: d.a.policyCheckbox,
 							disabled: e || a.appealPending,
-							isSelected: u,
+							isSelected: m,
 							text: this.getCheckboxText(),
 							onClick: this.handlePolicyCheckboxClick
-						}), u || g ? null : i.a.createElement("div", {
+						}), m || h ? null : i.a.createElement("div", {
 							className: d.a.checkboxErrorMessage
 						}, n.fbt._("Required", null, {
 							hk: "zBEsu"
@@ -511,7 +544,7 @@
 							key: e.field
 						}, e.msg)), i.a.createElement("fieldset", {
 							className: d.a.submitButtonPanel
-						}, i.a.createElement(h.l, {
+						}, i.a.createElement(b.l, {
 							className: d.a.submitButton,
 							disabled: e || a.appealPending
 						}, a.appealPending ? n.fbt._("Pending", null, {
@@ -569,7 +602,7 @@
 					})), t.appealSuccess ? this.renderConfirmationPage() : this.renderForm(a))
 				}
 			}
-			t.default = Object(u.b)(_(E))
+			t.default = Object(h.b)(C(v))
 		},
 		"./src/reddit/pages/AppealUniquePage/index.tsx": function(e, t, a) {
 			"use strict";
@@ -578,7 +611,7 @@
 				r = a("./node_modules/react/index.js"),
 				i = a.n(r),
 				l = a("./node_modules/react-redux/es/index.js"),
-				s = a("./node_modules/reselect/es/index.js"),
+				s = a("./src/reddit/actions/appeals/index.ts"),
 				o = a("./src/reddit/actions/toaster.ts"),
 				c = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
 				d = a("./src/reddit/contexts/ApiContext.tsx"),
@@ -589,19 +622,27 @@
 				b = a("./src/reddit/pages/AppealPage/index.m.less"),
 				f = a.n(b),
 				g = a("./src/reddit/selectors/user.ts"),
-				x = a("./src/redditGQL/types.ts");
-			const k = "https://www.redditinc.com/policies/content-policy",
-				y = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
-				C = {
+				x = a("./src/redditGQL/types.ts"),
+				k = a("./node_modules/reselect/es/index.js");
+			const y = "https://www.redditinc.com/policies/content-policy",
+				_ = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
+				E = {
 					[x.m.PrescriptivePeriodExpired]: "You've passed the six-month period for submitting an appeal on this decision",
 					[x.m.ExistingAppeal]: "You've already appealed this decision",
 					[x.m.NoMatchingDecision]: "This appeal is not connected to this account"
 				},
-				_ = Object(s.c)({
+				C = Object(k.c)({
 					currentUser: g.m
 				}),
-				E = Object(l.b)(_);
-			class v extends i.a.Component {
+				v = Object(l.b)(C, e => ({
+					appealViewErrorEvent: t => {
+						e(Object(s.a)(t))
+					},
+					submitAppealEvent: (t, a) => {
+						e(Object(s.b)(t, a))
+					}
+				}));
+			class F extends i.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
 						appealError: !1,
@@ -620,11 +661,14 @@
 							id: e
 						} = this.props.match.params, t = await Object(h.c)(this.props.gqlContext(), e);
 						if (!this.isUnmounted && t.ok && Object(h.d)(t.body)) {
-							const e = t.body.data.identity.adminDecisions[0].appealEligibility;
+							const a = t.body.data.identity.adminDecisions[0].appealEligibility;
 							this.setState({
 								canShowWarning: !0,
-								eligibleForAppeal: e === x.m.Eligible,
-								appealEligibility: e
+								eligibleForAppeal: a === x.m.Eligible,
+								appealEligibility: a
+							}), a !== x.m.Eligible && this.props.appealViewErrorEvent({
+								decision_external_id: e,
+								submission_error: a
 							})
 						} else Object(o.d)()
 					}, this.handleDescriptionChange = e => {
@@ -643,7 +687,9 @@
 							state: t
 						} = this, {
 							id: a
-						} = e.match.params;
+						} = e.match.params, {
+							submitAppealEvent: n
+						} = e;
 						if (this.setState({
 								descriptionDirty: !1,
 								policyCheckboxDirty: !1,
@@ -657,24 +703,30 @@
 								message: t.description,
 								id: a
 							});
-							e.ok && Object(h.e)(e.body) ? this.setState({
+							e.ok && Object(h.e)(e.body) ? (this.setState({
 								appealSuccess: !0
-							}) : this.setState({
+							}), n({
+								decision_external_id: a,
+								plea: t.description
+							}, !0)) : (this.setState({
 								appealError: !0,
 								appealPending: !1
-							})
+							}), n({
+								decision_external_id: a,
+								plea: t.description
+							}, !1))
 						}
 					}, this.getCheckboxText = () => i.a.createElement("label", null, n.fbt._("I have read the {=Reddit Content Policy} and the {=Suspensions help article} .", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
 						className: f.a.link,
 						target: "_blank",
-						href: k,
+						href: y,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Reddit Content Policy", null, {
 						hk: "1zrL2W"
 					}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
 						className: f.a.link,
 						target: "_blank",
-						href: y,
+						href: _,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Suspensions help article", null, {
 						hk: "1M9zrX"
@@ -715,14 +767,14 @@
 						}, n.fbt._("If you have reviewed the {=Reddit Content Policy} and our {=Suspensions help article} and believe your account has been wrongfully suspended, submit this form and we'll review your request.", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
 							className: f.a.link,
 							target: "_blank",
-							href: k,
+							href: y,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Reddit Content Policy", null, {
 							hk: "4qL67J"
 						}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
 							className: f.a.link,
 							target: "_blank",
-							href: y,
+							href: _,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Suspensions help article", null, {
 							hk: "3LTtzC"
@@ -805,7 +857,7 @@
 						className: f.a.appealFormWarning
 					}, i.a.createElement("div", {
 						className: f.a.appealFormWarningHeader
-					}, n.fbt._("{text}", [n.fbt._param("text", `${C[e]}`)], {
+					}, n.fbt._("{text}", [n.fbt._param("text", `${E[e]}`)], {
 						hk: "1l5LDo"
 					})))
 				}
@@ -828,7 +880,7 @@
 					})), t.appealSuccess ? this.renderConfirmationPage() : this.renderForm(a))
 				}
 			}
-			t.default = Object(d.b)(E(v))
+			t.default = Object(d.b)(v(F))
 		},
 		"./src/redditGQL/operations/AppealEligibility.json": function(e) {
 			e.exports = JSON.parse('{"id":"5b6b7dbe1d77"}')
@@ -838,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.0d4d3adf4987e87fe761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.a377be11d039f3faec6f.js.map

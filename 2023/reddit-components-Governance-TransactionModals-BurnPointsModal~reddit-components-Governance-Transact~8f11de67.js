@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90fa0381525b7562a053.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.3b66d4a7728b33614e6a.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -414,16 +414,16 @@
 			var P = t("./node_modules/lottie-web/build/player/lottie.js"),
 				S = t.n(P),
 				G = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json"),
-				W = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
-				Y = t.n(W);
+				q = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
+				W = t.n(q);
 
-			function q(A) {
+			function Y(A) {
 				return a.a.createElement(C, {
 					onClose: A.onClose
 				}, a.a.createElement("div", {
-					className: Y.a.container
+					className: W.a.container
 				}, a.a.createElement("div", {
-					className: Y.a.image,
+					className: W.a.image,
 					ref: A => {
 						A && !A.children.length && S.a.loadAnimation({
 							container: A,
@@ -591,7 +591,7 @@
 				switch (x) {
 					case cA.LOADING_BACKUP:
 					case cA.TRANSACTION_PENDING:
-						return a.a.createElement(q, {
+						return a.a.createElement(Y, {
 							onClose: e
 						});
 					case cA.PUSH_NOTIFICATION_SENT:
@@ -1267,14 +1267,14 @@
 			}));
 			var i = t("./src/reddit/selectors/telemetry.ts");
 			const a = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.q)(e),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(i.nb)(e, A)
+					subreddit: Object(i.ob)(e, A)
 				}),
 				r = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.q)(e),
 					source: "meta",
 					action: "generate",
 					noun: "broken_wallet",
@@ -1283,7 +1283,7 @@
 					}
 				}),
 				n = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.q)(e),
 					source: "meta",
 					action: "generate",
 					noun: "unexpected_wallet",
@@ -1306,11 +1306,11 @@
 			var i = t("./src/reddit/selectors/telemetry.ts");
 			const a = (A, e, t, a, r) => n => {
 					const s = {
-						...Object(i.p)(n),
+						...Object(i.q)(n),
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(i.nb)(n, t),
+						subreddit: Object(i.ob)(n, t),
 						actionInfo: {
 							settingValue: e,
 							reason: r
@@ -1326,19 +1326,19 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(i.nb)(t, e) : void 0,
+					subreddit: e ? Object(i.ob)(t, e) : void 0,
 					correlationId: A,
-					...Object(i.p)(t)
+					...Object(i.q)(t)
 				}),
 				o = (A, e) => t => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(i.nb)(t, e) : void 0,
+					subreddit: e ? Object(i.ob)(t, e) : void 0,
 					correlationId: A,
-					...Object(i.p)(t)
+					...Object(i.q)(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90fa0381525b7562a053.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.3b66d4a7728b33614e6a.js.map

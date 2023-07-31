@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.b2bb4b6f01045374aabb.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.fb7bbb5296e1e8d5ca08.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -185,9 +185,9 @@
 				P = s("./src/reddit/icons/fonts/index.tsx");
 			var U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				V = s.n(U);
-			const F = 4,
-				A = a()(g.b);
-			class H extends d.a.Component {
+			const q = 4,
+				F = a()(g.b);
+			class A extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						columns: [
@@ -232,13 +232,13 @@
 					this.mounted = !1
 				}
 				loadTrendingGifs() {
-					A().then(e => {
+					F().then(e => {
 						this.state.query || this.addGiphyResults(e)
 					}).catch(() => {
 						this.mounted && (this.setState({
 							showReload: !0,
 							loading: !1
-						}), A.cache.clear())
+						}), F.cache.clear())
 					})
 				}
 				async loadMoreResults() {
@@ -290,7 +290,7 @@
 						}(e);
 						if (i) {
 							const e = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-							t[e].push(i), s[e] += i.fixedWidthHeight + F
+							t[e].push(i), s[e] += i.fixedWidthHeight + q
 						}
 					});
 					const i = e.pagination.offset + e.pagination.count;
@@ -370,7 +370,7 @@
 					})))
 				}
 			}
-			const q = Object(u.c)({
+			const H = Object(u.c)({
 				hasGifProduct: (e, t) => {
 					let {
 						subreddit: s
@@ -378,13 +378,13 @@
 					return Object(E.w)(e, s.id)
 				}
 			});
-			t.a = Object(m.c)(Object(h.b)(q, e => ({
+			t.a = Object(m.c)(Object(h.b)(H, e => ({
 				showErrorToast: t => e(Object(p.f)({
 					text: t,
 					kind: x.b.Error,
 					duration: 5e3
 				}))
-			}))(H))
+			}))(A))
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -515,11 +515,11 @@
 			var i = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t, s, o, n) => a => {
 					const r = {
-						...Object(i.p)(a),
+						...Object(i.q)(a),
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.nb)(a, s),
+						subreddit: Object(i.ob)(a, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -535,17 +535,17 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.nb)(s, t) : void 0,
+					subreddit: t ? Object(i.ob)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.p)(s)
+					...Object(i.q)(s)
 				}),
 				c = (e, t) => s => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.nb)(s, t) : void 0,
+					subreddit: t ? Object(i.ob)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.p)(s)
+					...Object(i.q)(s)
 				})
 		},
 		"./src/reddit/helpers/trackers/features/gifTooltip.ts": function(e, t, s) {
@@ -561,23 +561,23 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? i.nb(o, t) : void 0,
-					post: i.l(o),
+					subreddit: t ? i.ob(o, t) : void 0,
+					post: i.m(o),
 					search: {
 						query: e
 					},
-					...i.p(o)
+					...i.q(o)
 				}),
 				n = (e, t, s) => o => {
-					const n = i.p(o);
+					const n = i.q(o);
 					return {
 						...n,
 						source: "meta",
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? i.nb(o, t) : void 0,
-						post: i.l(o),
+						subreddit: t ? i.ob(o, t) : void 0,
+						post: i.m(o),
 						actionInfo: {
 							...n.actionInfo,
 							reason: e ? "has-gif-product" : "gif-train"
@@ -602,4 +602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.b2bb4b6f01045374aabb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.fb7bbb5296e1e8d5ca08.js.map

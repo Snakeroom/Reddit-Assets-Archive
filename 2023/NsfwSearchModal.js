@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.b6af435909188b63df38.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.b4ea038426591dab8545.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -15,8 +15,8 @@
 				d = n("./node_modules/react-redux/es/index.js"),
 				u = n("./src/reddit/actions/contentGate.ts"),
 				b = n("./src/reddit/actions/modal.ts"),
-				p = n("./src/reddit/actions/search.ts"),
-				m = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.tsx"),
+				m = n("./src/reddit/actions/search.ts"),
+				p = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.tsx"),
 				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = n("./src/reddit/constants/modals.ts"),
 				O = n("./src/reddit/controls/Button/index.tsx"),
@@ -52,9 +52,9 @@
 						priority: O.c.Primary,
 						className: _.a.continue,
 						onClick: async () => {
-							t(Object(j.b)()), Object(g.b)(g.a.Continue), n ? (e(Object(u.r)()), e(Object(p.l)({
+							t(Object(j.b)()), Object(g.b)(g.a.Continue), n ? (e(Object(u.r)()), e(Object(m.l)({
 								searchOver18: !0
-							}))) : (Object(u.q)(), Object(m.b)()), Object(h.d)(), window.location.reload()
+							}))) : (Object(u.q)(), Object(p.b)()), Object(h.d)(), window.location.reload()
 						},
 						"data-testid": "continue-button"
 					}, (() => l.fbt._("Yes, I'm over 18", null, {
@@ -159,7 +159,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = "nsfw_dialog_bypassable",
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: r,
@@ -168,7 +168,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -178,7 +178,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: r,
@@ -188,7 +188,7 @@
 					}
 				}),
 				i = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -210,7 +210,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = "nsfw_dialog",
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: r,
@@ -219,7 +219,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -228,7 +228,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: r,
@@ -294,13 +294,13 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(c.b.XpromoConsolidation), !0) : Date.now() > t + d
 				},
-				p = (e, t) => t === a.a.NoPreview && (e === o.nb.SkippableButtons || e === o.nb.SkippableText),
-				m = (e, t) => t === a.a.NoPreview && e === o.nb.NoUpsell,
+				m = (e, t) => t === a.a.NoPreview && (e === o.nb.SkippableButtons || e === o.nb.SkippableText),
+				p = (e, t) => t === a.a.NoPreview && e === o.nb.NoUpsell,
 				C = Object(l.a)(a.h, a.g, (e, t) => {
 					return {
-						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !m(e, t))(e, t),
-						isNewDesignVariant: !(!e || !t) && p(e, t),
-						isOldDesignVariant: !(!e || !t) && m(e, t),
+						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
+						isNewDesignVariant: !(!e || !t) && m(e, t),
+						isOldDesignVariant: !(!e || !t) && p(e, t),
 						variant: e
 					}
 				}),
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.b6af435909188b63df38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.b4ea038426591dab8545.js.map

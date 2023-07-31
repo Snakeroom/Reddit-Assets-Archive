@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.95160a46dfbb66b0ecd0.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.a7560daac611aacb96e3.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1136,10 +1136,10 @@
 				T = n("./src/reddit/selectors/telemetry.ts");
 			const L = "prediction_sneak_peek",
 				B = (e, t) => ({
-					...T.p(e),
-					post: T.L(e, t),
-					subreddit: T.mb(e),
-					predictions: T.R(e, t)
+					...T.q(e),
+					post: T.M(e, t),
+					subreddit: T.nb(e),
+					predictions: T.S(e, t)
 				});
 			var U = n("./src/reddit/hooks/useTracking.ts"),
 				D = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
@@ -1238,8 +1238,8 @@
 			var z = n("./src/reddit/controls/Button/index.tsx"),
 				V = n("./src/reddit/icons/svgs/Undo/index.tsx");
 			const {
-				fbt: Z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = e => {
+				fbt: q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = e => {
 				let {
 					postId: t,
 					options: n,
@@ -1250,7 +1250,7 @@
 					i = Object(U.a)(),
 					l = Object(o.e)(f.y),
 					[u, m] = Object(a.useState)(!1),
-					p = Z._("Change your prediction", null, {
+					p = q._("Change your prediction", null, {
 						hk: "hleE5"
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(z.k, {
@@ -1283,8 +1283,8 @@
 					onClose: () => m(!1)
 				}))
 			};
-			var K = n("./src/reddit/hooks/useLocalStorage.ts"),
-				$ = n("./src/reddit/icons/svgs/EyeDouble/index.tsx"),
+			var $ = n("./src/reddit/hooks/useLocalStorage.ts"),
+				K = n("./src/reddit/icons/svgs/EyeDouble/index.tsx"),
 				Y = n("./src/reddit/icons/svgs/Star6/index.m.less"),
 				Q = n.n(Y);
 			var J = e => {
@@ -1435,7 +1435,7 @@
 				const u = Object(o.d)(),
 					m = Object(U.a)(),
 					[p, _] = Object(a.useState)(!1),
-					[h, b] = Object(K.a)("hasSeenPredictionSneakPeek", !1),
+					[h, b] = Object($.a)("hasSeenPredictionSneakPeek", !1),
 					g = !!d,
 					O = s && !c,
 					j = Object(o.e)(f.y),
@@ -1482,7 +1482,7 @@
 							noun: L
 						}))(i)), h ? l() : _(!0)
 					}
-				}, r.a.createElement($.a, {
+				}, r.a.createElement(K.a, {
 					className: E.a.icon
 				}), oe._("See what others predicted", null, {
 					hk: "s0o8s"
@@ -1569,7 +1569,7 @@
 					tournamentId: b,
 					postId: t.postId,
 					onReveal: () => A(!0)
-				}), !w && v && r.a.createElement(q, {
+				}), !w && v && r.a.createElement(Z, {
 					isLimitReached: 0 === O,
 					postId: t.postId,
 					options: p,
@@ -1818,10 +1818,10 @@
 				z = n.n(G);
 			const {
 				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = Object(s.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = Object(s.c)({
 				userCoins: E.g
 			});
-			t.a = Object(o.b)(Z)(Object(c.a)(e => {
+			t.a = Object(o.b)(q)(Object(c.a)(e => {
 				let {
 					isCreatingVote: t,
 					onCancel: n,
@@ -1876,12 +1876,12 @@
 					T = (null == P ? void 0 : P.currency) === b.a.Coins,
 					L = T && O < ((null == P ? void 0 : P.amount) || 0),
 					G = !!P && null !== v && v < P.amount,
-					Z = L || G,
-					q = Z || M;
+					q = L || G,
+					Z = q || M;
 				Object(a.useEffect)(() => {
 					I || (y(h.p), k(!0))
 				}, [I, y]);
-				const K = Object(a.useCallback)(() => {
+				const $ = Object(a.useCallback)(() => {
 					y(Object(h.l)({
 						pollId: E,
 						currency: null == P ? void 0 : P.currency,
@@ -1891,7 +1891,7 @@
 				return g && !x ? null : r.a.createElement("div", {
 					className: z.a.modalWrapper
 				}, r.a.createElement(A, {
-					onCancel: K,
+					onCancel: $,
 					selectedChipPack: P
 				}), r.a.createElement("div", {
 					className: z.a.modalContent
@@ -1950,13 +1950,13 @@
 					}
 				}, r.a.createElement(_.a, {
 					className: z.a.wagerSelectorButtonIcon
-				}))), q && r.a.createElement("div", {
+				}))), Z && r.a.createElement("div", {
 					className: z.a.amountMessage
 				}, L && V._("Insufficient coins", null, {
 					hk: "2Mo83P"
 				}), G && V._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), M && !Z && V._("Max amount", null, {
+				}), M && !q && V._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), r.a.createElement("button", {
 					className: Object(d.a)(z.a.predictButton, {
@@ -2877,7 +2877,7 @@
 			const o = "poll",
 				s = "predictions",
 				c = e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: o,
 					action: "view",
 					noun: "predict_option_modal"
@@ -2889,11 +2889,11 @@
 						totalStakeAmount: a
 					} = e;
 					return e => ({
-						...Object(r.p)(e),
+						...Object(r.q)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.K)(e, t, !1, void 0, n),
+						poll: Object(r.L)(e, t, !1, void 0, n),
 						goldPurchase: {
 							numberCoins: a
 						}
@@ -2905,11 +2905,11 @@
 						selectedNumberTokens: n
 					} = e;
 					return e => ({
-						...Object(r.p)(e),
+						...Object(r.q)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.K)(e, t, !1, void 0, void 0, n)
+						poll: Object(r.L)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				l = e => {
@@ -2922,16 +2922,16 @@
 						const c = n === a.a.Coins ? s : void 0,
 							d = n === a.a.Tokens ? s : void 0;
 						return {
-							...Object(r.p)(e),
+							...Object(r.q)(e),
 							source: o,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.K)(e, t, !1, c, d)
+							poll: Object(r.L)(e, t, !1, c, d)
 						}
 					}
 				},
 				u = e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: o,
 					action: "click",
 					noun: "add_coins"
@@ -2941,7 +2941,7 @@
 						targetUserId: t
 					} = e;
 					return e => ({
-						...Object(r.p)(e),
+						...Object(r.q)(e),
 						source: s,
 						action: "click",
 						noun: "leaderboard_profile",
@@ -2955,7 +2955,7 @@
 						pageType: t
 					} = e;
 					return e => ({
-						...Object(r.p)(e),
+						...Object(r.q)(e),
 						source: s,
 						action: "click",
 						noun: "tournament",
@@ -2965,7 +2965,7 @@
 					})
 				},
 				_ = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2974,19 +2974,19 @@
 					}
 				}),
 				h = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				f = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				b = e => t => ({
-					...Object(r.p)(t),
+					...Object(r.q)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -2997,38 +2997,38 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.mb)(t)
+					subreddit: Object(r.nb)(t)
 				}),
 				E = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
 				g = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
 				O = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				j = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				v = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.mb)(e)
+					subreddit: Object(r.nb)(e)
 				})
 		},
 		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, n) {
@@ -3233,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.95160a46dfbb66b0ecd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.a7560daac611aacb96e3.js.map

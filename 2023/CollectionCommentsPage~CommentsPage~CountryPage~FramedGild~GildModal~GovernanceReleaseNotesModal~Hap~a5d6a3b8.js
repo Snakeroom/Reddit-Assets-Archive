@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.49c8430e734d6326dd23.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.01280098c7d28758a8fd.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1046,7 +1046,7 @@
 					return d.a.createElement(St.a, {
 						className: It.a.ctaLink,
 						onClick: e => i(e => ({
-							...Object(Pt.p)(e),
+							...Object(Pt.q)(e),
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -2436,7 +2436,7 @@
 						reactionsEnabled: o
 					} = e;
 					return e => {
-						const a = s ? i.D(e, s) : void 0;
+						const a = s ? i.E(e, s) : void 0;
 						return {
 							source: "post_detail",
 							action: "click",
@@ -2448,7 +2448,7 @@
 								...a,
 								reactionsEnabled: o
 							},
-							...i.p(e)
+							...i.q(e)
 						}
 					}
 				},
@@ -2460,7 +2460,7 @@
 						reactSourceMediaId: a
 					} = e;
 					return e => {
-						const n = s ? i.D(e, s) : void 0;
+						const n = s ? i.E(e, s) : void 0;
 						return {
 							source: "post",
 							action: "click",
@@ -2475,7 +2475,7 @@
 							media: {
 								...n
 							},
-							...i.p(e)
+							...i.q(e)
 						}
 					}
 				}
@@ -3120,4 +3120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.49c8430e734d6326dd23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.01280098c7d28758a8fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.2cd86aec065672376d86.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.f402d3f4b71c6777004b.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -170,16 +170,16 @@
 						formattedMinDatetime: k
 					} = Object(u.a)(t, n),
 					F = t < P,
-					y = () => C(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
+					M = () => C(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
 				return s.a.createElement(d.a, {
 					withOverlay: !0,
-					onOverlayClick: y,
-					toggleModal: y,
+					onOverlayClick: M,
+					toggleModal: M,
 					onConfirm: () => {
 						g(Object(h.f)(o)), C(Object(a.a)({
 							postId: o,
 							closedAt: t
-						})), y()
+						})), M()
 					},
 					actionText: f._("Update", null, {
 						hk: "3HPLX5"
@@ -657,10 +657,10 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = (e, t) => ({
-					...Object(o.p)(e),
-					post: Object(o.L)(e, t),
-					predictions: Object(o.R)(e, t),
-					subreddit: Object(o.mb)(e)
+					...Object(o.q)(e),
+					post: Object(o.M)(e, t),
+					predictions: Object(o.S)(e, t),
+					subreddit: Object(o.nb)(e)
 				}),
 				r = e => t => ({
 					...s(t, e),
@@ -701,4 +701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.2cd86aec065672376d86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.f402d3f4b71c6777004b.js.map

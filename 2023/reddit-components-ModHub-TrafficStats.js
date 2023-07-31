@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.29953acd54613ae768a0.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.f74bb79ff8353d2d5775.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -255,9 +255,9 @@
 				m = a("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				u = a("./src/reddit/selectors/telemetry.ts");
 			const h = e => ({
-					subreddit: u.mb(e),
-					profile: u.U(e),
-					userSubreddit: u.vb(e)
+					subreddit: u.nb(e),
+					profile: u.V(e),
+					userSubreddit: u.wb(e)
 				}),
 				f = {
 					[m.d.Uniques]: "uniques",
@@ -605,21 +605,21 @@
 				}
 			}
 			var I = Object(d.c)(F),
-				W = a("./src/reddit/components/ModHub/TrafficStats/index.m.less"),
-				q = a.n(W);
-			const V = Object(c.c)({
+				V = a("./src/reddit/components/ModHub/TrafficStats/index.m.less"),
+				W = a.n(V);
+			const q = Object(c.c)({
 					trafficStats: e => e.trafficStats ? e.trafficStats.trafficStats : null,
 					isTrafficStatsPending: e => e.trafficStats.pending
 				}),
-				B = Object(r.b)(V);
+				B = Object(r.b)(q);
 			t.default = B(e => i.a.createElement("div", {
-				className: q.a.trafficStats
+				className: W.a.trafficStats
 			}, i.a.createElement("span", {
-				className: q.a.titleText
+				className: W.a.titleText
 			}, i.a.createElement(o.b, null, s.fbt._("Traffic Stats", null, {
 				hk: "1TAYOH"
 			})), i.a.createElement("span", {
-				className: q.a.updateText
+				className: W.a.updateText
 			}, s.fbt._("updating every hour", null, {
 				hk: "4h5onW"
 			}))), i.a.createElement(L, {
@@ -631,4 +631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.29953acd54613ae768a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.f74bb79ff8353d2d5775.js.map

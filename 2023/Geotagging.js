@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.6e8f18ff7f81fe543213.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.68f70aed078b5465502b.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -355,7 +355,7 @@
 				}, [I]);
 				const G = e => {
 						d("skip" === e ? (e => t => ({
-							...Object(g.p)(t),
+							...Object(g.q)(t),
 							source: h,
 							action: p.c.CLICK,
 							noun: f.SKIP,
@@ -364,7 +364,7 @@
 								type: e
 							}
 						}))(m) : (e => t => ({
-							...Object(g.p)(t),
+							...Object(g.q)(t),
 							source: h,
 							action: p.c.CLICK,
 							noun: f.LATER,
@@ -380,7 +380,7 @@
 					B = () => {
 						const e = Object.keys(v).join();
 						d(((e, t) => n => ({
-							...Object(g.p)(n),
+							...Object(g.q)(n),
 							source: h,
 							action: p.c.CLICK,
 							noun: f.ADD,
@@ -411,7 +411,7 @@
 						}))
 					};
 				return L = L.filter(e => !w.includes(e)), E && 0 !== L.length ? (d((e => t => ({
-					...Object(g.p)(t),
+					...Object(g.q)(t),
 					source: h,
 					action: p.c.VIEW,
 					noun: p.b.SCREEN,
@@ -1617,37 +1617,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: a.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.zb)(n, {
+					widget: Object(o.Ab)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.p
+					...o.q
 				}),
 				c = (e, t) => n => ({
 					source: r.POST,
 					action: a.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.L(n, e),
-					subreddit: o.mb(n),
+					post: o.M(n, e),
+					subreddit: o.nb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...o.p(n)
+					...o.q(n)
 				}),
 				d = () => e => ({
 					source: r.SIDEBAR,
 					action: a.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...o.p(e)
+					...o.q(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: a.c.CLICK,
 					noun: s.TOPIC,
-					...o.p(t),
+					...o.q(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -1864,13 +1864,13 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: R
 				}),
-				A = q("select_location"),
-				M = q("confirm_location"),
-				W = q("undo_location"),
-				H = J("verify_location"),
-				z = J("reject_location");
+				A = z("select_location"),
+				M = z("confirm_location"),
+				W = z("undo_location"),
+				q = J("verify_location"),
+				H = J("reject_location");
 
-			function q(e) {
+			function z(e) {
 				return (t, n) => () => ({
 					source: G,
 					noun: e,
@@ -1959,12 +1959,12 @@
 				})), r.a.createElement(_.o, {
 					className: E.a.rejectButton,
 					onClick: function() {
-						b(!0), S(z(t, t.geoPlace.id))
+						b(!0), S(H(t, t.geoPlace.id))
 					}
 				}, "No"), r.a.createElement(_.l, {
 					className: E.a.verifyButton,
 					onClick: function() {
-						Y(t.id), S(H(t, t.geoPlace.id)), f(), n(t.id), y()
+						Y(t.id), S(q(t, t.geoPlace.id)), f(), n(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -2126,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.6e8f18ff7f81fe543213.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.68f70aed078b5465502b.js.map

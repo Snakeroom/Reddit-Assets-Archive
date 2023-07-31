@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.96016c46943adde550f6.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.aa9ff7302f30eef16c1c.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -2450,7 +2450,7 @@
 				d = i("./src/telemetry/index.ts");
 			const o = e => {
 					Object(d.a)({
-						...s.p(e),
+						...s.q(e),
 						action: r.c.CLICK,
 						noun: "multi_detail",
 						source: "id_card"
@@ -2462,7 +2462,7 @@
 						profile: a
 					} = Object(n.b)(e, t);
 					Object(d.a)({
-						...s.p(e),
+						...s.q(e),
 						action: r.c.CLICK,
 						noun: "multi_detail_subreddit",
 						profile: a,
@@ -2477,7 +2477,7 @@
 					action: r.c.CLICK,
 					source: "id_card",
 					noun: e ? "enable_community_styles" : "disable_community_styles",
-					subreddit: s.mb(t)
+					subreddit: s.nb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/ImagePost/index.m.less": function(e, t, i) {
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.96016c46943adde550f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.aa9ff7302f30eef16c1c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.ed33509fc1449a20c912.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.67bf4dc78e502e3e72f2.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -281,7 +281,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(c || (c = {}));
 			const n = e => ({
-					...r.p(e),
+					...r.q(e),
 					noun: "desktop_notification_permissions"
 				}),
 				l = e => e ? "enable" : "disable",
@@ -314,7 +314,7 @@
 					})
 				},
 				u = (e, a, t) => ({
-					...r.p(e),
+					...r.q(e),
 					actionInfo: r.d(e, {
 						success: a,
 						reason: t
@@ -343,18 +343,18 @@
 					})
 				},
 				h = e => ({
-					...r.p(e),
+					...r.q(e),
 					noun: "push_notification"
 				}),
 				v = e => ({
 					...h(e),
-					notification: r.G(e, void 0, void 0),
+					notification: r.H(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				E = (e, a) => t => ({
-					...r.p(t),
+					...r.q(t),
 					action: l(e),
 					email: {
 						type: a
@@ -363,7 +363,7 @@
 					source: "email_app_settings"
 				}),
 				_ = (e, a) => t => ({
-					...r.p(t),
+					...r.q(t),
 					action: l(e),
 					notification: {
 						type: a
@@ -372,7 +372,7 @@
 					source: "notification_app_settings"
 				}),
 				O = e => a => ({
-					...r.p(a),
+					...r.q(a),
 					source: "email_app_settings",
 					action: l(e),
 					noun: "email",
@@ -381,7 +381,7 @@
 					}
 				}),
 				j = (e, a, t) => i => ({
-					...r.p(i),
+					...r.q(i),
 					action: "set_frequency",
 					noun: t,
 					source: "community_notifications",
@@ -391,7 +391,7 @@
 					}
 				}),
 				k = () => e => ({
-					...r.p(e),
+					...r.q(e),
 					action: s.c.View,
 					noun: "screen",
 					source: "global",
@@ -400,13 +400,13 @@
 					}
 				}),
 				C = () => e => ({
-					...r.p(e),
+					...r.q(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				N = () => e => ({
-					...r.p(e),
+					...r.q(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -760,15 +760,15 @@
 					}))))
 				},
 				Z = t("./src/reddit/pages/Recap/Components/LoadingIcon/index.m.less"),
-				z = t.n(Z);
-			var V = () => c.a.createElement("div", {
-					className: z.a.circle
+				q = t.n(Z);
+			var z = () => c.a.createElement("div", {
+					className: q.a.circle
 				}, c.a.createElement("img", {
-					className: z.a.image,
+					className: q.a.image,
 					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
-				q = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
-				Q = t.n(q);
+				V = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
+				Q = t.n(V);
 			var K = e => {
 					let {
 						cards: a,
@@ -2031,7 +2031,7 @@
 				[r.WHITE]: [Ue.MANGO_500, Ue.MANGO_300, Ue.MANGO_100],
 				[r.YELLOW]: [Ue.WHITE, Ue.MANGO_300, Ue.MANGO_500]
 			};
-			var Ze, ze = e => {
+			var Ze, qe = e => {
 				let {
 					card: {
 						title: a,
@@ -2091,8 +2091,8 @@
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
 			}(Ze || (Ze = {}));
-			const Ve = [Ze.WHITE, Ze.MANGO_300, Ze.MANGO_500];
-			var qe = e => {
+			const ze = [Ze.WHITE, Ze.MANGO_300, Ze.MANGO_500];
+			var Ve = e => {
 				let {
 					card: {
 						title: a,
@@ -2120,7 +2120,7 @@
 					}),
 					style: {
 						width: `${s?Xe[a]:0}px`,
-						backgroundColor: Ve[a],
+						backgroundColor: ze[a],
 						transitionDelay: `${.25*a+.4}s`
 					}
 				}, c.a.createElement("div", {
@@ -2205,7 +2205,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === R)(a) ? c.a.createElement(ze, {
+					}) : (e => e.__typename === R)(a) ? c.a.createElement(qe, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2213,7 +2213,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === L)(a) ? c.a.createElement(qe, {
+					}) : (e => e.__typename === L)(a) ? c.a.createElement(Ve, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2449,11 +2449,11 @@
 							trailing: !1
 						})),
 						Z = Object(s.useRef)(null),
-						z = Object(s.useCallback)(() => {
+						q = Object(s.useCallback)(() => {
 							(null == Z ? void 0 : Z.current) && y.length && (R(!1), F(Z.current.clientHeight / y.length))
 						}, [y]);
-					Object(s.useEffect)(() => (z(), addEventListener("resize", z), () => removeEventListener("resize", z)), [Z, y.length, z]);
-					const q = Object(s.useCallback)(e => {
+					Object(s.useEffect)(() => (q(), addEventListener("resize", q), () => removeEventListener("resize", q)), [Z, y.length, q]);
+					const V = Object(s.useCallback)(e => {
 							if (null !== e && y.length && !i) {
 								if (e.focus(), W && !N && !E) return S(!0);
 								e.onwheel = e => {
@@ -2489,8 +2489,8 @@
 						}, [k, C, e, a]);
 					return o ? c.a.createElement(G, {
 						onRetry: H
-					}) : l || !T ? c.a.createElement(V, null) : c.a.createElement(c.a.Fragment, null, y.length ? c.a.createElement("div", {
-						ref: q,
+					}) : l || !T ? c.a.createElement(z, null) : c.a.createElement(c.a.Fragment, null, y.length ? c.a.createElement("div", {
+						ref: V,
 						className: oa.a.cardsContainer,
 						tabIndex: 0
 					}, c.a.createElement("div", {
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.ed33509fc1449a20c912.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.67bf4dc78e502e3e72f2.js.map

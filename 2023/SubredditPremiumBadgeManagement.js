@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.22edf1f67f30c5bccc5e.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.6bf4de7af2ccb22074b6.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -1312,8 +1312,8 @@
 									action: "click",
 									noun: "badge_gallery_paypal_purchase",
 									correlationId: this.props.correlationId,
-									...p.p(e),
-									subreddit: p.mb(e)
+									...p.q(e),
+									subreddit: p.nb(e)
 								}))
 							},
 							onSuccess: () => this.props.onPaymentSuccessful()
@@ -1692,8 +1692,8 @@
 						onSelect: e.onSelectBadge
 					}))))
 				})),
-				$ = s("./node_modules/lodash/curry.js"),
-				q = s.n($),
+				q = s("./node_modules/lodash/curry.js"),
+				$ = s.n(q),
 				K = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				Y = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeTypeSelector/Tab/index.m.less"),
 				Q = s.n(Y);
@@ -1719,7 +1719,7 @@
 			}
 			var J = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeTypeSelector/index.m.less"),
 				Z = s.n(J);
-			const ee = q()((e, t, s) => `${C.a.assetPath}/img/memberships/badges/management/tabs/${e}/${t}-${s?"on":"off"}-v2.png`),
+			const ee = $()((e, t, s) => `${C.a.assetPath}/img/memberships/badges/management/tabs/${e}/${t}-${s?"on":"off"}-v2.png`),
 				te = [{
 					type: u.a.Loyalty,
 					text: () => g.fbt._("Loyalty", null, {
@@ -1920,8 +1920,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_myBadges_open_learn_more",
-								...ve.p(e),
-								subreddit: ve.mb(e)
+								...ve.q(e),
+								subreddit: ve.nb(e)
 							})), e.onCloseModal()
 						}
 					}, g.fbt._("Learn More", null, {
@@ -2075,8 +2075,8 @@
 				We = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				Ve = s("./src/reddit/icons/svgs/Twinkle/index.tsx"),
 				ze = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserPreview/index.tsx"),
-				$e = s("./node_modules/lodash/last.js"),
-				qe = s.n($e),
+				qe = s("./node_modules/lodash/last.js"),
+				$e = s.n(qe),
 				Ke = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				Ye = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.tsx"),
 				Qe = s("./src/lib/localizeCurrency/index.ts"),
@@ -2185,8 +2185,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_gallery_open_learn_more",
-								...ve.p(e),
-								subreddit: ve.mb(e)
+								...ve.q(e),
+								subreddit: ve.nb(e)
 							})), e.onCloseModal()
 						}
 					}, g.fbt._("Learn More", null, {
@@ -2282,7 +2282,7 @@
 						subredditId: s
 					} = t;
 					const n = Object(p.n)(e, s, u.a.Loyalty)[0];
-					if (n) return qe()(n.unlocked)
+					if (n) return $e()(n.unlocked)
 				}
 			});
 			var _t = Object(r.b)(ft)((function(e) {
@@ -3330,7 +3330,7 @@
 			})), s.d(t, "t", (function() {
 				return V
 			})), s.d(t, "g", (function() {
-				return q
+				return $
 			})), s.d(t, "m", (function() {
 				return K
 			}));
@@ -3551,7 +3551,7 @@
 				V = (e, t, s) => {
 					if (Object(b.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
-					})) || (!!$(e, t) || !(!n.d.spGiphy(e) || !z(e, s)));
+					})) || (!!q(e, t) || !(!n.d.spGiphy(e) || !z(e, s)));
 					if (!Object(h.a)(e, {
 							subredditId: t
 						})) return !1;
@@ -3561,7 +3561,7 @@
 					if (z(e, s)) return !0;
 					const a = n.d.spGiphy(e),
 						r = G(e, t);
-					return !!$(e, t) || a && r
+					return !!q(e, t) || a && r
 				},
 				z = (e, t) => {
 					const s = "replyToPost" !== t && Object(p.c)(e, {
@@ -3569,12 +3569,12 @@
 					});
 					if (s && Object(r.a)(s)) return !0
 				},
-				$ = (e, t) => {
+				q = (e, t) => {
 					const s = n.d.spGiphy(e),
 						a = G(e, t);
 					return s && a
 				},
-				q = (e, t, s) => {
+				$ = (e, t, s) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[s]
@@ -3690,4 +3690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.22edf1f67f30c5bccc5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.6bf4de7af2ccb22074b6.js.map

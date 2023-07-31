@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.6643d70a82584a0baf80.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a094f822d120b7bed27b.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -1462,9 +1462,9 @@
 			var U = n("./node_modules/lodash/sample.js"),
 				G = n.n(U),
 				$ = n("./node_modules/react-motion/lib/react-motion.js"),
-				V = n("./src/reddit/icons/svgs/Replay/index.tsx"),
-				W = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
-				q = n.n(W);
+				q = n("./src/reddit/icons/svgs/Replay/index.tsx"),
+				V = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
+				W = n.n(V);
 			const Y = {
 				stiffness: 210,
 				damping: 20
@@ -1488,11 +1488,11 @@
 						region: n
 					} = this.state, s = A.a[e], a = A.b[t], i = A.c[n];
 					return o.a.createElement("article", {
-						className: Object(d.a)(q.a.container, this.props.className)
+						className: Object(d.a)(W.a.container, this.props.className)
 					}, o.a.createElement("div", {
-						className: q.a.cover
+						className: W.a.cover
 					}), o.a.createElement("header", {
-						className: q.a.title
+						className: W.a.title
 					}, r.fbt._("Example", null, {
 						hk: "1siPoi"
 					})), o.a.createElement($.TransitionMotion, {
@@ -1521,18 +1521,18 @@
 							rotation: Object($.spring)(180, Y)
 						})
 					}, e => o.a.createElement("div", {
-						className: q.a.preview
+						className: W.a.preview
 					}, e.map(e => o.a.createElement("img", {
-						className: q.a.image,
+						className: W.a.image,
 						key: e.key,
 						src: e.key,
 						style: {
 							transform: `rotateY(${e.style.rotation}deg)`
 						}
 					})))), o.a.createElement("footer", {
-						className: q.a.description
-					}, `${i}, ${s}, ${a}`), o.a.createElement(V.a, {
-						className: q.a.redo,
+						className: W.a.description
+					}, `${i}, ${s}, ${a}`), o.a.createElement(q.a, {
+						className: W.a.redo,
 						onClick: () => this.setState(H())
 					}))
 				}
@@ -1626,7 +1626,7 @@
 						displayText: String(e.type[t]),
 						onClick: () => {
 							e.onChange(t), e.sendEvent(n => {
-								const r = N.p(n);
+								const r = N.q(n);
 								return {
 									source: "meta",
 									action: "click",
@@ -1638,7 +1638,7 @@
 										paneName: le.get(e.type),
 										reason: t
 									},
-									subreddit: N.mb(n)
+									subreddit: N.nb(n)
 								}
 							})
 						}
@@ -1729,8 +1729,8 @@
 									action: "click",
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId,
-									...N.p(e),
-									subreddit: N.mb(e)
+									...N.q(e),
+									subreddit: N.nb(e)
 								})))
 							}
 						}, r.fbt._("Generate Badge", null, {
@@ -1763,7 +1763,7 @@
 						i.ok ? (this.setState({
 							show: pe.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(a)) : this.props.onError(i.error), e && this.props.onOpenLandingPage(n, this.correlationId), this.props.sendEvent(t => {
-							const n = N.p(t);
+							const n = N.q(t);
 							return {
 								source: "meta",
 								action: "click",
@@ -1775,7 +1775,7 @@
 									reason: a,
 									paneName: E.a.LFG
 								},
-								subreddit: N.mb(t)
+								subreddit: N.nb(t)
 							}
 						})
 					}, this.handleDismiss = () => {
@@ -1784,7 +1784,7 @@
 						}) : (this.setState({
 							show: pe.Dismissed
 						}), this.props.sendEvent(e => {
-							const t = N.p(e);
+							const t = N.q(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1795,14 +1795,14 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.mb(e)
+								subreddit: N.nb(e)
 							}
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
 						this.setState({
 							show: pe.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
-							const t = N.p(e);
+							const t = N.q(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1813,7 +1813,7 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.mb(e)
+								subreddit: N.nb(e)
 							}
 						})
 					}, this.state = {
@@ -1830,7 +1830,7 @@
 					this.setState({
 						show: pe.Select
 					}), this.props.sendEvent(e => {
-						const t = N.p(e);
+						const t = N.q(e);
 						return {
 							source: "meta",
 							action: "view",
@@ -1841,7 +1841,7 @@
 								...t.actionInfo,
 								paneName: E.a.LFG
 							},
-							subreddit: N.mb(e)
+							subreddit: N.nb(e)
 						}
 					})
 				}
@@ -2859,9 +2859,9 @@
 			})), n.d(t, "w", (function() {
 				return $
 			})), n.d(t, "s", (function() {
-				return V
+				return q
 			})), n.d(t, "t", (function() {
-				return W
+				return V
 			})), n.d(t, "g", (function() {
 				return H
 			})), n.d(t, "m", (function() {
@@ -3078,25 +3078,25 @@
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
-				V = (e, t) => !!t && !!Object(b.a)(e, {
+				q = (e, t) => !!t && !!Object(b.a)(e, {
 					subredditId: t
 				}),
-				W = (e, t, n) => {
+				V = (e, t, n) => {
 					if (Object(f.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
-					})) || (!!Y(e, t) || !(!r.d.spGiphy(e) || !q(e, n)));
+					})) || (!!Y(e, t) || !(!r.d.spGiphy(e) || !W(e, n)));
 					if (!Object(y.a)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(b.f)(e, {
 							subredditId: t
 						})) return !0;
-					if (q(e, n)) return !0;
+					if (W(e, n)) return !0;
 					const s = r.d.spGiphy(e),
 						o = $(e, t);
 					return !!Y(e, t) || s && o
 				},
-				q = (e, t) => {
+				W = (e, t) => {
 					const n = "replyToPost" !== t && Object(p.c)(e, {
 						commentId: t
 					});
@@ -3223,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.6643d70a82584a0baf80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a094f822d120b7bed27b.js.map

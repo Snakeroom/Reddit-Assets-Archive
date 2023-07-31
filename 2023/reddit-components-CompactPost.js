@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.91361dd045e53fff40b0.js
-// Retrieved at 7/28/2023, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.edcc8156fe66c4d5b881.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2700,10 +2700,10 @@
 			var n = s("./src/reddit/models/ScheduledPost/index.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					...o.p(e),
-					screen: o.db(e),
-					subreddit: o.mb(e),
-					userSubreddit: o.vb(e)
+					...o.q(e),
+					screen: o.eb(e),
+					subreddit: o.nb(e),
+					userSubreddit: o.wb(e)
 				}),
 				a = e => ({
 					id: e.id,
@@ -3377,4 +3377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.91361dd045e53fff40b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.edcc8156fe66c4d5b881.js.map

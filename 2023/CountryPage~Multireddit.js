@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c24e90937436904b45ef.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7fb3c88d8ff766f7aa5d.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2488,7 +2488,7 @@
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = "nsfw_dialog_bypassable",
 				i = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: s,
@@ -2497,7 +2497,7 @@
 					}
 				}),
 				o = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: s,
@@ -2507,7 +2507,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: s,
@@ -2517,7 +2517,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: s,
@@ -2539,7 +2539,7 @@
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = "nsfw_dialog",
 				i = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "view",
 					noun: s,
@@ -2548,7 +2548,7 @@
 					}
 				}),
 				o = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "click",
 					noun: s,
@@ -2557,7 +2557,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.q)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: s,
@@ -3329,4 +3329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c24e90937436904b45ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7fb3c88d8ff766f7aa5d.js.map

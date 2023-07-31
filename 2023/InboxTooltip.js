@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.746b433f375d61742ac3.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.1e5bc30f2d26908a29ef.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,15 +63,15 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return B
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return A
+				return q
 			})), i.d(t, "subscribeForPNs", (function() {
-				return R
+				return A
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return L
+				return R
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return U
+				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return T
+				return U
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -130,7 +130,7 @@
 					command: "registerClient",
 					v2EventBoilerPlate: j.c(e)
 				})
-			}, A = function(e, t) {
+			}, q = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, o) => {
 					const c = s(),
@@ -147,16 +147,16 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.o)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(R()), e && j.d(c), i()
+						n(Object(d.p)()), n(A()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, R = e => async (t, i, s) => {
+			}, A = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					j.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, L = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -191,17 +191,17 @@
 						})))
 					}
 				} catch (s) {}
-			}, U = e => async (t, i) => {
+			}, L = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(A(!0, !0));
+						await t(q(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, T = () => async (e, t) => {
+			}, U = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -212,13 +212,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(L(d.a.Denied)), j.e(n);
+							e(R(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(R()), j.d(n);
+							e(A()), j.d(n);
 							break;
 						default:
-							e(L(d.a.Default))
+							e(R(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -403,7 +403,7 @@
 					userId: P
 				} = e;
 				const B = Object(f.a)(),
-					[C, A] = Object(n.useState)("");
+					[C, q] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
 					if (S && !I.length && x) {
 						c({
@@ -437,7 +437,7 @@
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
-					setActiveOverflowMenuId: A,
+					setActiveOverflowMenuId: q,
 					showBrowserNotificationsPermissionSettings: E,
 					userId: P
 				})
@@ -484,7 +484,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(r || (r = {}));
 			const c = e => ({
-					...n.p(e),
+					...n.q(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -517,7 +517,7 @@
 					})
 				},
 				f = (e, t, i) => ({
-					...n.p(e),
+					...n.q(e),
 					actionInfo: n.d(e, {
 						success: t,
 						reason: i
@@ -546,18 +546,18 @@
 					})
 				},
 				O = e => ({
-					...n.p(e),
+					...n.q(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...O(e),
-					notification: n.G(e, void 0, void 0),
+					notification: n.H(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				j = (e, t) => i => ({
-					...n.p(i),
+					...n.q(i),
 					action: a(e),
 					email: {
 						type: t
@@ -566,7 +566,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => i => ({
-					...n.p(i),
+					...n.q(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -575,7 +575,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...n.p(t),
+					...n.q(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -584,7 +584,7 @@
 					}
 				}),
 				S = (e, t, i) => s => ({
-					...n.p(s),
+					...n.q(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -594,7 +594,7 @@
 					}
 				}),
 				k = () => e => ({
-					...n.p(e),
+					...n.q(e),
 					action: o.c.View,
 					noun: "screen",
 					source: "global",
@@ -603,13 +603,13 @@
 					}
 				}),
 				N = () => e => ({
-					...n.p(e),
+					...n.q(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				w = () => e => ({
-					...n.p(e),
+					...n.q(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.746b433f375d61742ac3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.1e5bc30f2d26908a29ef.js.map

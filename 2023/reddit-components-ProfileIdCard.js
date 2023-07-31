@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f6bd1d3fc7da20d0952c.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6e82af46733719497807.js
+// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2425,8 +2425,8 @@
 				e.FOLLOW = "follow", e.UNFOLLOW = "unfollow", e.CREATE_POST = "create_post"
 			}(n || (n = {}));
 			const g = (e, t) => ({
-				...Object(h.p)(t),
-				profile: Object(h.m)(t),
+				...Object(h.q)(t),
+				profile: Object(h.n)(t),
 				subreddit: {
 					id: e
 				}
@@ -3311,13 +3311,13 @@
 			var n = r("./src/reddit/constants/tracking.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(s.p)(t),
+					...Object(s.q)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -3351,19 +3351,19 @@
 			var n = r("./src/reddit/selectors/avatarPushcard.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				i = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.q)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -3373,7 +3373,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(c || (c = {}));
 			const d = e => t => {
-					const r = Object(s.p)(t);
+					const r = Object(s.q)(t);
 					return {
 						...r,
 						source: "marketplace",
@@ -3389,7 +3389,7 @@
 				l = (e, t, r) => o => {
 					const a = Object(n.a)(o).id;
 					return {
-						...Object(s.p)(o),
+						...Object(s.q)(o),
 						source: e,
 						action: t,
 						noun: r,
@@ -3430,9 +3430,9 @@
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => ({
-					screen: s.db(e),
-					profile: s.U(e),
-					subreddit: s.mb(e)
+					screen: s.eb(e),
+					profile: s.V(e),
+					subreddit: s.nb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -3444,7 +3444,7 @@
 					source: "nav",
 					action: "click",
 					actionInfo: {
-						pageType: t.platform.currentPage ? s.w(t.platform.currentPage) : void 0,
+						pageType: t.platform.currentPage ? s.x(t.platform.currentPage) : void 0,
 						settingValue: e ? "online" : "hidden"
 					},
 					noun: "online_presence_toggle",
@@ -3485,7 +3485,7 @@
 							userName: e
 						}).id
 					},
-					...s.p(t)
+					...s.q(t)
 				}),
 				f = e => t => ({
 					source: "profile",
@@ -3496,7 +3496,7 @@
 							userName: e
 						}).id
 					},
-					...s.p(t)
+					...s.q(t)
 				}),
 				b = () => e => ({
 					...a(e),
@@ -3750,4 +3750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f6bd1d3fc7da20d0952c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6e82af46733719497807.js.map
