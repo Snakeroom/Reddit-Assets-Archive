@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3dd74c72ebb0547e2acc.js
-// Retrieved at 7/31/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.516913f746222b9ecbbf.js
+// Retrieved at 7/31/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14996,10 +14996,34 @@
 						t = Object(Ee.d)(),
 						n = Object(Ee.e)(Am.c),
 						r = Object(Ee.e)(Am.b),
-						a = Object(Ee.e)(Am.a);
+						a = Object(Ee.e)(Am.a),
+						o = Object(Ee.e)(O.k),
+						i = Object(Ee.e)(Yc.c),
+						c = m.a.useMemo(() => i ? (e => ({
+							...e,
+							arrowProps: {
+								...e.arrowProps,
+								style: {
+									...e.arrowProps.style,
+									borderBottom: `3px solid ${zi.a.alien600}`
+								}
+							},
+							popperProps: {
+								...e.popperProps,
+								style: {
+									...e.popperProps.style,
+									background: zi.a.alien600
+								}
+							},
+							visible: !0
+						}))(e) : e, [e, i]);
 					return m.a.useEffect(() => {
 						void 0 === a && r === Tm.b.CLOSED && t(Im())
-					}, [a, r, t]), m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
+					}, [a, r, t]), m.a.useEffect(() => {
+						o && t(Object(xm.b)(o))
+					}, [o, t]), m.a.useEffect(() => {
+						o && i && Object(xm.c)(o)
+					}, [o, i]), m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
 						className: Ec.a.iconWrapper,
 						onMouseEnter: () => {
 							e.show()
@@ -15010,11 +15034,11 @@
 					}, m.a.createElement("a", {
 						className: Ec.a.link,
 						href: n,
-						onClick: e => {
-							const n = r !== Tm.b.NORMAL ? Tm.b.NORMAL : Tm.b.CLOSED;
-							e.preventDefault(), t(Object(Nm.d)({
-								state: n
-							}))
+						onClick: n => {
+							const s = r !== Tm.b.NORMAL ? Tm.b.NORMAL : Tm.b.CLOSED;
+							n.preventDefault(), t(Object(Nm.d)({
+								state: s
+							})), i && (t(Object(xm.d)(!1)), e.hide())
 						}
 					}, !!a && a > 0 && m.a.createElement(ea.a, {
 						isActive: !0,
@@ -15024,10 +15048,17 @@
 						name: "chat",
 						className: Ec.a.icon2020
 					}))), m.a.createElement(vr.a, {
-						arrowProps: e.arrowProps,
-						popperProps: e.popperProps,
-						visible: e.visible
-					}, s.fbt._("Chat", null, {
+						arrowProps: c.arrowProps,
+						popperProps: c.popperProps,
+						visible: c.visible
+					}, i ? m.a.createElement("span", {
+						className: Ec.a.chatButtonTooltipText,
+						onClick: e => {
+							e.preventDefault(), t(Object(xm.d)(!1))
+						}
+					}, s.fbt._("NEW! Chat with your community", null, {
+						hk: "ym9yE"
+					})) : s.fbt._("Chat", null, {
 						hk: "4nXRWH"
 					})))
 				},
@@ -21388,4 +21419,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3dd74c72ebb0547e2acc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.516913f746222b9ecbbf.js.map
