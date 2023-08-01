@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.76fb32ca218dec069bd3.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.c962858353a4a4b03c9a.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -705,7 +705,7 @@
 						const j = i();
 						let P, _, w = "";
 						try {
-							w = await e(O(n, a, s, c, h.K.Stripe))
+							w = await e(O(n, a, s, c, h.J.Stripe))
 						} catch (N) {
 							return d.c.captureException(N), void(N.message && e(Object(u.stripeApiError)(N.message)))
 						}
@@ -715,7 +715,7 @@
 							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(p.p)(j)) try {
 								const r = await Object(y.g)(f(), {
 									orderId: w,
-									provider: h.K.Stripe
+									provider: h.J.Stripe
 								});
 								if (!(null == r ? void 0 : r.ok)) return void e(E);
 								const {
@@ -790,7 +790,7 @@
 						var b;
 						let v = "";
 						try {
-							v = await e(O(t, r, n, a, h.K.Paypal))
+							v = await e(O(t, r, n, a, h.J.Paypal))
 						} catch (E) {
 							return d.c.captureException(E), E.message && e(Object(u.paypalApiError)(E.message)), null
 						}
@@ -1208,8 +1208,8 @@
 				l = r("./src/reddit/components/PaymentMethodSelector/index.m.less"),
 				u = r.n(l);
 			const p = {
-					[c.Mb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
-					[c.Nb]: ["paypal.png"]
+					[c.Lb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
+					[c.Mb]: ["paypal.png"]
 				},
 				m = e => o.a.createElement("label", {
 					className: Object(s.a)(e.className, u.a.paymentOption, {
@@ -1237,10 +1237,10 @@
 								sendEvent: a
 							} = this.props;
 						switch (t) {
-							case c.Mb:
+							case c.Lb:
 								a(Object(d.e)(r));
 								break;
-							case c.Nb:
+							case c.Mb:
 								a(Object(d.f)(r))
 						}
 						return n(t)
@@ -1843,7 +1843,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(c.a)(u);
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: p,
 					data: l
 				}).then(i.a)
@@ -1860,7 +1860,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(i.a)
@@ -1879,7 +1879,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(i.a)
@@ -1900,7 +1900,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(i.a)
@@ -1929,7 +1929,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(i.a)
@@ -1952,7 +1952,7 @@
 					thing_id: p
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.a)
@@ -2237,9 +2237,9 @@
 				a = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(o.if),
-				i = Object(s.a)(o.jf),
-				d = Object(n.a)([c, i], (e, t) => new Set([t && a.Mb, e && a.Nb].filter(e => !!e)))
+			const c = Object(s.a)(o.df),
+				i = Object(s.a)(o.ef),
+				d = Object(n.a)([c, i], (e, t) => new Set([t && a.Lb, e && a.Mb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -2248,7 +2248,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Gd)
+			const o = Object(a.a)(n.Bd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.76fb32ca218dec069bd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.c962858353a4a4b03c9a.js.map

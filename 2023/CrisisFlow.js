@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.889a251c05cee11abbac.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.63cb269272c1f67fa81b.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -12,9 +12,9 @@
 				return o
 			}));
 			var n = t("./src/lib/loadableAction/index.ts");
-			const r = Object(n.a)(() => Promise.all([t.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), t.e("Governance~ModListing~Reddit~ReportFlow"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				i = Object(n.a)(() => Promise.all([t.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), t.e("Governance~ModListing~Reddit~ReportFlow"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				o = Object(n.a)(() => Promise.all([t.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), t.e("Governance~ModListing~Reddit~ReportFlow"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const r = Object(n.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				i = Object(n.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				o = Object(n.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less": function(e, s, t) {
 			e.exports = {
@@ -80,8 +80,8 @@
 				_ = t.n(f);
 			const {
 				fbt: b
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", _.a), E = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), k = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var F = e => r.a.createElement(v, null, r.a.createElement(E, null, r.a.createElement(L, {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), E = g.a.div("CrisisContent", _.a), v = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), k = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
+			var F = e => r.a.createElement(E, null, r.a.createElement(v, null, r.a.createElement(L, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
 				})), r.a.createElement(k, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
@@ -93,19 +93,19 @@
 				}))), b._param("username", r.a.createElement("strong", null, "u/", e.username))], {
 					hk: "3eDxpt"
 				}))),
-				P = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
-				T = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
+				T = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
+				P = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
 				j = t("./src/reddit/icons/svgs/Person/index.tsx"),
 				O = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
-				S = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
-				y = t.n(S);
+				y = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
+				S = t.n(y);
 			const {
 				fbt: D
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = g.a.div("CrisisImageContainer", x.a), A = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", y.a), V = g.a.h4("CrisisOtherActionsTitle", y.a), H = g.a.div("CrisisLinkIconContainer", y.a), M = g.a.div("CrisisLinkText", y.a), q = g.a.h3("CrisisLinkTitle", y.a), G = g.a.p("CrisisLinkDescription", y.a);
-			var Y = e => r.a.createElement("div", {
-					className: y.a.CrisisThankYouPage
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = g.a.div("CrisisImageContainer", x.a), A = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", S.a), V = g.a.h4("CrisisOtherActionsTitle", S.a), H = g.a.div("CrisisLinkIconContainer", S.a), q = g.a.div("CrisisLinkText", S.a), M = g.a.h3("CrisisLinkTitle", S.a), Y = g.a.p("CrisisLinkDescription", S.a);
+			var W = e => r.a.createElement("div", {
+					className: S.a.CrisisThankYouPage
 				}, r.a.createElement(I, null, r.a.createElement(O.a, {
-					className: y.a.CrisisTickImage
+					className: S.a.CrisisTickImage
 				})), r.a.createElement(A, null, D._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
 				})), r.a.createElement(N, null, D._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [D._param("username", r.a.createElement("span", null, "u/", e.username))], {
@@ -115,27 +115,27 @@
 				})), r.a.createElement(C.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
-					className: y.a.CrisisLink
-				}, r.a.createElement(H, null, r.a.createElement(T.a, null)), r.a.createElement(M, null, r.a.createElement(q, null, D._("Learn how to help someone in crisis", null, {
+					className: S.a.CrisisLink
+				}, r.a.createElement(H, null, r.a.createElement(P.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, D._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
-				})), r.a.createElement(G, null, D._("Get advice on what you can say and how to be supportive.", null, {
+				})), r.a.createElement(Y, null, D._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
-				}))), r.a.createElement(P.a, {
-					className: y.a.CrisisLinkArrow
+				}))), r.a.createElement(T.a, {
+					className: S.a.CrisisLinkArrow
 				})), r.a.createElement(C.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
-					className: y.a.CrisisLink
-				}, r.a.createElement(H, null, r.a.createElement(j.a, null)), r.a.createElement(M, null, r.a.createElement(q, null, D._("Get yourself support", null, {
+					className: S.a.CrisisLink
+				}, r.a.createElement(H, null, r.a.createElement(j.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, D._("Get yourself support", null, {
 					hk: "kTT0U"
-				})), r.a.createElement(G, null, D._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+				})), r.a.createElement(Y, null, D._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
-				}))), r.a.createElement(P.a, {
-					className: y.a.CrisisLinkArrow
+				}))), r.a.createElement(T.a, {
+					className: S.a.CrisisLinkArrow
 				})))),
-				W = t("./src/reddit/actions/reportFlow/index.ts"),
+				$ = t("./src/reddit/actions/reportFlow/index.ts"),
 				B = t("./src/reddit/endpoints/post/report.ts");
-			const $ = {
+			const G = {
 					usernamesInputTitle: "Username",
 					reasonTextToShow: "Someone is considering suicide or serious self-harm.",
 					canSpecifyUsernames: !0,
@@ -151,7 +151,7 @@
 					} = s;
 					return {
 						onReportPostOrComment: (s, n, r) => {
-							e(Object(W.a)({
+							e(Object($.a)({
 								id: s,
 								reportFlowPayload: n,
 								timestamp: t
@@ -170,10 +170,10 @@
 								rule: "self harm",
 								kind: "siteRule"
 							};
-							e.onReportPostOrComment(e.thingId, s, $)
+							e.onReportPostOrComment(e.thingId, s, G)
 						} else {
 							const s = {
-								reason: $,
+								reason: G,
 								usernames: [this.props.username]
 							};
 							e.fromUserProfile ? Object(B.c)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(B.c)(e.apiContext(), s, !0)
@@ -194,7 +194,7 @@
 						props: s,
 						onCrisisFlowSubmit: t
 					} = this;
-					return r.a.createElement(K, null, e.showThankYouPage ? r.a.createElement(Y, {
+					return r.a.createElement(K, null, e.showThankYouPage ? r.a.createElement(W, {
 						username: s.username
 					}) : r.a.createElement(F, {
 						username: s.username
@@ -382,7 +382,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
 			const p = (e, s) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: C(s)
 				}),
@@ -415,7 +415,7 @@
 					}
 				},
 				h = (e, s, t) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: g(s, t)
 				}),
@@ -499,11 +499,11 @@
 							}
 						}
 					const {
-						reason: v
+						reason: E
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: v.reasonText,
+						site_reason: E.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: g,
@@ -638,4 +638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.889a251c05cee11abbac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.63cb269272c1f67fa81b.js.map

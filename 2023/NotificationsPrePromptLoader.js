@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.711143d314a96382c286.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.9376ff11bf2c33b296bd.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(t, n, e) {
@@ -66,7 +66,7 @@
 			})), e.d(n, "m", (function() {
 				return _
 			})), e.d(n, "k", (function() {
-				return O
+				return b
 			})), e.d(n, "c", (function() {
 				return j
 			})), e.d(n, "b", (function() {
@@ -99,28 +99,28 @@
 				u = t => {
 					Object(i.a)({
 						...s(t),
-						action: c.c.View,
+						action: c.b.View,
 						source: "popup"
 					})
 				},
 				d = t => {
 					Object(i.a)({
 						...s(t),
-						action: c.c.Allow,
+						action: c.b.Allow,
 						source: "popup"
 					})
 				},
 				f = t => {
 					Object(i.a)({
 						...s(t),
-						action: c.c.Block,
+						action: c.b.Block,
 						source: "popup"
 					})
 				},
 				l = t => {
 					Object(i.a)({
 						...s(t),
-						action: c.c.Close,
+						action: c.b.Close,
 						source: "popup"
 					})
 				},
@@ -135,30 +135,30 @@
 				m = t => {
 					Object(i.a)({
 						...p(t, !0),
-						action: c.c.Request,
+						action: c.b.Request,
 						source: "notification"
 					})
 				},
 				_ = t => {
 					Object(i.a)({
 						...p(t, !0),
-						action: c.c.Register,
+						action: c.b.Register,
 						source: "notification"
 					})
 				},
-				O = (t, n) => {
+				b = (t, n) => {
 					Object(i.a)({
 						...p(t, !1, n),
-						action: c.c.Bail,
+						action: c.b.Bail,
 						source: "notification"
 					})
 				},
-				b = t => ({
+				O = t => ({
 					...o.q(t),
 					noun: "push_notification"
 				}),
 				j = t => ({
-					...b(t),
+					...O(t),
 					notification: o.H(t, void 0, void 0),
 					action: void 0,
 					source: "notification",
@@ -203,7 +203,7 @@
 				}),
 				q = () => t => ({
 					...o.q(t),
-					action: c.c.View,
+					action: c.b.View,
 					noun: "screen",
 					source: "global",
 					actionInfo: {
@@ -225,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.711143d314a96382c286.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.9376ff11bf2c33b296bd.js.map

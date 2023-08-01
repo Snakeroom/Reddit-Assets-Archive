@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0a8d64f9232b20ec693f.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.da13c01a3a9034688519.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -1972,7 +1972,7 @@
 						l = a.lastIndexOf(" ", c - 1) + 1,
 						p = a.slice(l, c);
 					if (!p) return;
-					const h = r.f.match(p);
+					const h = r.c.match(p);
 					if (!h) return;
 					const m = h[h.length - 1],
 						g = l + m.index,
@@ -3557,7 +3557,7 @@
 						this.state.active ? this.rootContainer.contains(n) || this.setState({
 							active: !1
 						}) : this.rootContainer && this.rootContainer.contains(n) && this.selectBlock(), this.setState({
-							isInSelection: Object(U.g)(e, this.rootContainer)
+							isInSelection: Object(U.h)(e, this.rootContainer)
 						})
 					}, this.selectBlock = () => {
 						const t = document.createRange();
@@ -4001,7 +4001,7 @@
 						} = e;
 					if (n !== o && r && t) {
 						const n = e.getRangeAt(0);
-						return Object(U.g)(n, t) && !t.contains(n.commonAncestorContainer)
+						return Object(U.h)(n, t) && !t.contains(n.commonAncestorContainer)
 					}
 					return !1
 				},
@@ -4588,7 +4588,7 @@
 					return s.forEach((e, n) => {
 						if (n) {
 							if (e === i.get(n)) return;
-							c = qo(c, n, F.a.SUBREDDIT_LINK, Wo.g), c = qo(c, n, F.a.USER_LINK, Wo.j), c = qo(c, n, F.a.USER_MENTION, Wo.e, t, e => t = e)
+							c = qo(c, n, F.a.SUBREDDIT_LINK, Wo.d), c = qo(c, n, F.a.USER_LINK, Wo.g), c = qo(c, n, F.a.USER_MENTION, Wo.b, t, e => t = e)
 						}
 					}), t.getCurrentContent() === c ? t : (c = c.merge({
 						selectionAfter: t.getCurrentContent().getSelectionAfter(),
@@ -4961,7 +4961,7 @@
 							o = e;
 						return e.forEach(t => {
 							const e = t.getText(),
-								r = Wo.f.match(e);
+								r = Wo.c.match(e);
 							if (!r) return;
 							let s = t;
 							r.forEach(t => {
@@ -5028,7 +5028,7 @@
 					super(t), this.focused = !1, this.focusLostTimer = 0, this.textInputElementRef = null, this.urlInputElementRef = null, this.onEdited = () => {
 						const t = this.state.url.trim(),
 							e = ds(t),
-							n = Object(Wo.i)(e);
+							n = Object(Wo.f)(e);
 						if (!n) return this.setState({
 							isInvalidUrl: !0
 						}), void(this.urlInputElementRef && this.urlInputElementRef.focus());
@@ -5047,7 +5047,7 @@
 						let {
 							isInvalidUrl: n
 						} = this.state;
-						n && Object(Wo.h)(Wo.f, e) && (n = !1), this.setState({
+						n && Object(Wo.e)(Wo.c, e) && (n = !1), this.setState({
 							url: e,
 							isInvalidUrl: n
 						})
@@ -5064,7 +5064,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(Wo.h)(Wo.f, this.state.displayText) ? cs(this.textInputElementRef) : cs(this.urlInputElementRef)
+					Object(Wo.e)(Wo.c, this.state.displayText) ? cs(this.textInputElementRef) : cs(this.urlInputElementRef)
 				}
 				componentWillUnmount() {
 					this.focusLostTimer && clearTimeout(this.focusLostTimer)
@@ -5126,7 +5126,7 @@
 						if (t.getStartKey() !== t.getEndKey()) throw new Error("Selection must be in a single block");
 						return t.isCollapsed() ? "" : e.getBlockForKey(t.getStartKey()).getText().slice(t.getStartOffset(), t.getEndOffset())
 					}(e, t.getCurrentContent());
-					const n = Object(Wo.h)(Wo.f, r.text);
+					const n = Object(Wo.e)(Wo.c, r.text);
 					n && (r.url = n.url)
 				}
 				return r
@@ -7805,7 +7805,7 @@
 			function i(t, e) {
 				return Object(s.a)(t, {
 					endpoint: `${o.a.metaUrl}/communities/${e.subredditId}/me`,
-					method: r.ob.GET
+					method: r.nb.GET
 				})
 			}
 		},
@@ -8065,4 +8065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0a8d64f9232b20ec693f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.da13c01a3a9034688519.js.map

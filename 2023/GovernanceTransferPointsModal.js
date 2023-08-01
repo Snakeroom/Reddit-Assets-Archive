@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.79014ad6a84eafc6bb51.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.fd8493fca428d317a4cc.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -575,8 +575,8 @@
 				S = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/selectors/gov.ts"),
-				G = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				R = n.n(G),
+				R = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
+				G = n.n(R),
 				D = n("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(T.c)({
 				isMainnetEnabled: j.a,
@@ -602,16 +602,16 @@
 						wallet: u
 					} = e, m = (null == u ? void 0 : u.unlockedAmount) || "0", p = new s.BigNumber(t || "0"), h = new s.BigNumber(m), b = h.isGreaterThanOrEqualTo(p), f = e.submissionEnabled && !h.isZero() && b;
 					return c.a.createElement("div", {
-						className: Object(O.a)(R.a.container, n, {
-							[R.a.centered]: a
+						className: Object(O.a)(G.a.container, n, {
+							[G.a.centered]: a
 						})
 					}, !a && c.a.createElement("div", {
-						className: R.a.available
+						className: G.a.available
 					}, c.a.createElement("div", null, D.fbt._("Available", null, {
 						hk: "4haScm"
 					})), c.a.createElement(M.a, {
 						grey: !0,
-						className: R.a.token,
+						className: G.a.token,
 						subredditId: o
 					}), c.a.createElement("div", {
 						style: {
@@ -619,11 +619,11 @@
 						}
 					}, Object(P.a)(Object(_.c)(m, null == i ? void 0 : i.displayConversion)))), c.a.createElement(S.l, {
 						disabled: !f,
-						className: a ? R.a.fullButton : R.a.button,
+						className: a ? G.a.fullButton : G.a.button,
 						tabIndex: l,
 						onClick: r
 					}, d ? c.a.createElement(F.a, {
-						className: R.a.loadingIcon,
+						className: G.a.loadingIcon,
 						sizePx: 20
 					}) : a ? D.fbt._("Continue", null, {
 						hk: "3wb99N"
@@ -952,18 +952,18 @@
 				Se = n.n(Ae);
 			const Fe = 42,
 				Be = /^0x[0-9a-fA-F]+$/;
-			var Ge;
+			var Re;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Searching = 1] = "Searching", e[e.Valid = 2] = "Valid", e[e.UserDoesNotHaveAWallet = 3] = "UserDoesNotHaveAWallet", e[e.InputtedWalletAddress = 4] = "InputtedWalletAddress", e[e.InvalidUsername = 5] = "InvalidUsername", e[e.Error = 6] = "Error"
-			}(Ge || (Ge = {}));
-			const Re = async (e, t, n, s, a) => {
+			}(Re || (Re = {}));
+			const Ge = async (e, t, n, s, a) => {
 				const r = t.current;
-				if (!r || r.length <= _e.b) return void a(Ge.Empty);
+				if (!r || r.length <= _e.b) return void a(Re.Empty);
 				const i = Be.test(r);
 				if (i) try {
-					if (!!Object(ke.getAddress)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
+					if (!!Object(ke.getAddress)(r)) return void a(e ? Re.InputtedWalletAddress : Re.Valid)
 				} catch {}
-				r.length <= _e.a ? (a(Ge.Searching), s(((e, t) => async (n, s, a) => {
+				r.length <= _e.a ? (a(Re.Searching), s(((e, t) => async (n, s, a) => {
 					let {
 						apiContext: r
 					} = a, i = s(), o = Object(Te.Db)(i, {
@@ -994,10 +994,10 @@
 						userId: n,
 						wallet: s
 					} = e;
-					t.current === r && a(n ? s ? Ge.Valid : Ge.UserDoesNotHaveAWallet : i ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
+					t.current === r && a(n ? s ? Re.Valid : Re.UserDoesNotHaveAWallet : i ? Re.InputtedWalletAddress : Re.InvalidUsername)
 				}).catch(() => {
-					a(Ge.Error)
-				})) : a(i ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
+					a(Re.Error)
+				})) : a(i ? Re.InputtedWalletAddress : Re.InvalidUsername)
 			};
 
 			function De(e) {
@@ -1007,8 +1007,8 @@
 					subredditId: s,
 					tabIndex: a,
 					onChange: r
-				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Ge.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.a), v = () => Re(f, m, s, b, e => {
-					h(e), e === Ge.Valid && r(m.current, !0)
+				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Re.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.a), v = () => Ge(f, m, s, b, e => {
+					h(e), e === Re.Valid && r(m.current, !0)
 				}), x = Object(o.useMemo)(() => i()(v, 300), [m, s, b, h, r, v]);
 				return Object(o.useEffect)(() => {
 					n && v()
@@ -1035,28 +1035,28 @@
 					}
 				}), function(e) {
 					switch (e) {
-						case Ge.UserDoesNotHaveAWallet:
+						case Re.UserDoesNotHaveAWallet:
 							return c.a.createElement(ce.a, {
 								className: Se.a.icon,
 								style: {
 									fill: A.a.notice
 								}
 							});
-						case Ge.InputtedWalletAddress:
-						case Ge.InvalidUsername:
-						case Ge.Error:
+						case Re.InputtedWalletAddress:
+						case Re.InvalidUsername:
+						case Re.Error:
 							return c.a.createElement(Me.a, {
 								className: Se.a.icon,
 								style: {
 									fill: A.a.warning
 								}
 							});
-						case Ge.Searching:
+						case Re.Searching:
 							return c.a.createElement(F.a, {
 								className: Se.a.loadingIcon,
 								sizePx: 8
 							});
-						case Ge.Valid:
+						case Re.Valid:
 							return c.a.createElement(Pe.a, {
 								className: Se.a.icon
 							});
@@ -1070,21 +1070,21 @@
 					}
 				}, function(e, t) {
 					switch (e) {
-						case Ge.UserDoesNotHaveAWallet:
+						case Re.UserDoesNotHaveAWallet:
 							return D.fbt._("That user does not yet have a Vault.", null, {
 								hk: "ucZYj"
 							});
-						case Ge.InputtedWalletAddress:
+						case Re.InputtedWalletAddress:
 							return t ? D.fbt._("Cannot tip to vault addresses.", null, {
 								hk: "2PW4iA"
 							}) : D.fbt._("Invalid Vault address.", null, {
 								hk: "1puAgb"
 							});
-						case Ge.InvalidUsername:
+						case Re.InvalidUsername:
 							return D.fbt._("That user does not exist.", null, {
 								hk: "4f8vh9"
 							});
-						case Ge.Error:
+						case Re.Error:
 							return D.fbt._("There was an error retrieving that user.", null, {
 								hk: "2F521p"
 							});
@@ -1096,11 +1096,11 @@
 
 			function Ve(e) {
 				switch (e) {
-					case Ge.UserDoesNotHaveAWallet:
+					case Re.UserDoesNotHaveAWallet:
 						return A.a.notice;
-					case Ge.InputtedWalletAddress:
-					case Ge.InvalidUsername:
-					case Ge.Error:
+					case Re.InputtedWalletAddress:
+					case Re.InvalidUsername:
+					case Re.Error:
 						return A.a.warning
 				}
 			}
@@ -2048,8 +2048,8 @@
 			const r = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Ke
-				}) === s.Wd
+					experimentName: s.Fe
+				}) === s.Rd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2106,4 +2106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.79014ad6a84eafc6bb51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.fd8493fca428d317a4cc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/6.b3787899dd3a0f334dd4.js
-// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/6.287eb2bf2d76e95ecc6f.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[6], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -27,9 +27,9 @@
 				h = n("./src/reddit/controls/Input/index.tsx"),
 				f = n("./src/reddit/controls/NumberInput/index.tsx"),
 				v = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				g = n("./src/devPlatform/components/FormRenderer/index.m.less"),
-				x = n.n(g);
-			const b = u.a.div("FormFooterWrapper", x.a),
+				b = n("./src/devPlatform/components/FormRenderer/index.m.less"),
+				x = n.n(b);
+			const g = u.a.div("FormFooterWrapper", x.a),
 				C = u.a.div("FormHeaderWrapper", x.a),
 				E = u.a.div("FormRendererWrapper", x.a),
 				I = u.a.div("FormRow", x.a),
@@ -40,8 +40,8 @@
 				S = u.a.div("HelpText", x.a),
 				k = u.a.div("LabelAndHelpTextWrapper", x.a),
 				T = u.a.div("NumberInputWrapper", x.a),
-				y = u.a.div("SelectionRow", x.a),
-				R = u.a.p("TextWrapper", x.a),
+				R = u.a.div("SelectionRow", x.a),
+				y = u.a.p("TextWrapper", x.a),
 				F = u.a.div("Wrapper", x.a);
 			class D extends a.a.Component {
 				constructor(e) {
@@ -204,7 +204,7 @@
 							}
 						})) && void 0 !== s ? s : [],
 						i = l.filter(e => e.isSelected).map(e => e.displayText).join(", ");
-					return a.a.createElement(y, {
+					return a.a.createElement(R, {
 						key: e.fieldId
 					}, a.a.createElement("label", {
 						htmlFor: e.fieldId
@@ -261,7 +261,7 @@
 						form: n,
 						onCloseClick: s
 					} = this.props, l = this.getMissingRequiredFields(n.fields);
-					return a.a.createElement(F, null, a.a.createElement(E, null, n.title && a.a.createElement(C, null, n.title), n.shortDescription && a.a.createElement(R, null, n.shortDescription), this.renderFields(n.fields), a.a.createElement(b, null, a.a.createElement(p.t, {
+					return a.a.createElement(F, null, a.a.createElement(E, null, n.title && a.a.createElement(C, null, n.title), n.shortDescription && a.a.createElement(y, null, n.shortDescription), this.renderFields(n.fields), a.a.createElement(g, null, a.a.createElement(p.t, {
 						priority: p.c.Secondary,
 						onClick: s
 					}, null !== (e = n.cancelLabel) && void 0 !== e ? e : d.fbt._("Cancel", null, {
@@ -605,9 +605,9 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				g = n("./src/reddit/controls/ErrorText/index.m.less"),
-				x = n.n(g);
-			class b extends d.a.Component {
+				b = n("./src/reddit/controls/ErrorText/index.m.less"),
+				x = n.n(b);
+			class g extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.setState({
@@ -674,7 +674,7 @@
 					} = e, i = l.length ? l : a ? [a] : [];
 					return i.length ? d.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => d.a.createElement(b, {
+					}, i.map((e, t) => d.a.createElement(g, {
 						className: n,
 						errorModalTitle: s,
 						key: t
@@ -686,7 +686,7 @@
 					}),
 					messages: e
 				});
-			t.b = b
+			t.b = g
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -714,7 +714,7 @@
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return b
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -789,7 +789,7 @@
 						})
 					}, t), n)
 				},
-				g = e => a.a.createElement("div", {
+				b = e => a.a.createElement("div", {
 					className: Object(l.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", a.a.createElement(r.a, {
@@ -799,7 +799,7 @@
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
 			}(x || (x = {}));
-			class b extends a.a.Component {
+			class g extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
@@ -876,10 +876,10 @@
 					const r = !(!!s && n.length >= s) && !o;
 					return a.a.createElement("div", {
 						className: Object(l.a)(u.a.multiInputWrapper, e)
-					}, t && r && a.a.createElement(g, {
+					}, t && r && a.a.createElement(b, {
 						onClick: this.addValue,
 						text: i
-					}), this.renderFields(), !t && r && a.a.createElement(g, {
+					}), this.renderFields(), !t && r && a.a.createElement(b, {
 						onClick: this.addValue,
 						text: i
 					}))
@@ -1067,34 +1067,6 @@
 				}))
 			}))
 		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, a.a.createElement("g", null, a.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", null, a.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -1153,4 +1125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.b3787899dd3a0f334dd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.287eb2bf2d76e95ecc6f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.a377be11d039f3faec6f.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.de087a0d2ff16801a63c.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, t, a) {
@@ -235,7 +235,7 @@
 				c = a("./src/redditGQL/operations/AppealEligibility.json"),
 				d = a("./src/redditGQL/operations/RequestAppeal.json");
 			const p = (e, t, a) => Object(r.a)(Object(l.a)(e, [s.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: Object(o.a)(`${e.apiUrl}/api/appeal`),
 					data: {
 						api_type: "json",
@@ -244,7 +244,7 @@
 					}
 				}),
 				m = e => Object(r.a)(Object(l.a)(e, [s.a]), {
-					method: n.ob.GET,
+					method: n.nb.GET,
 					endpoint: Object(o.a)(`${e.apiUrl}/api/eligible_for_appeal`),
 					data: {
 						api_type: "json"
@@ -627,9 +627,9 @@
 			const y = "https://www.redditinc.com/policies/content-policy",
 				_ = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
 				E = {
-					[x.m.PrescriptivePeriodExpired]: "You've passed the six-month period for submitting an appeal on this decision",
-					[x.m.ExistingAppeal]: "You've already appealed this decision",
-					[x.m.NoMatchingDecision]: "This appeal is not connected to this account"
+					[x.l.PrescriptivePeriodExpired]: "You've passed the six-month period for submitting an appeal on this decision",
+					[x.l.ExistingAppeal]: "You've already appealed this decision",
+					[x.l.NoMatchingDecision]: "This appeal is not connected to this account"
 				},
 				C = Object(k.c)({
 					currentUser: g.m
@@ -664,9 +664,9 @@
 							const a = t.body.data.identity.adminDecisions[0].appealEligibility;
 							this.setState({
 								canShowWarning: !0,
-								eligibleForAppeal: a === x.m.Eligible,
+								eligibleForAppeal: a === x.l.Eligible,
 								appealEligibility: a
-							}), a !== x.m.Eligible && this.props.appealViewErrorEvent({
+							}), a !== x.l.Eligible && this.props.appealViewErrorEvent({
 								decision_external_id: e,
 								submission_error: a
 							})
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.a377be11d039f3faec6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.de087a0d2ff16801a63c.js.map

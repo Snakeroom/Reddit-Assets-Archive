@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bbe291b557062728e8ca.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ef66d2d9d0f4198a1c3d.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -191,29 +191,29 @@
 				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				R = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				U = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				W = n("./node_modules/lodash/sampleSize.js"),
-				B = n.n(W),
+				B = n("./node_modules/lodash/sampleSize.js"),
+				W = n.n(B),
 				I = n("./node_modules/request-idle-callback/index.js"),
 				D = n("./src/lib/constants/index.ts"),
 				K = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Q = n("./src/reddit/constants/localStorage.ts"),
-				G = n("./src/reddit/contexts/ApiContext.tsx"),
-				H = n("./src/reddit/featureFlags/component.tsx"),
-				J = n("./src/reddit/helpers/localStorage/index.ts"),
+				H = n("./src/reddit/contexts/ApiContext.tsx"),
+				J = n("./src/reddit/featureFlags/component.tsx"),
+				G = n("./src/reddit/helpers/localStorage/index.ts"),
 				M = n("./src/reddit/helpers/name/index.ts"),
 				X = n("./src/lib/makeApiRequest/index.ts"),
 				q = n("./src/lib/omitHeaders/index.ts"),
 				Z = n("./src/reddit/constants/headers.ts");
-			const z = e => Object(X.a)(Object(q.a)(e, [Z.a]), {
+			const V = e => Object(X.a)(Object(q.a)(e, [Z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: D.ob.GET,
+				method: D.nb.GET,
 				type: "json"
 			});
-			var V = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
-				Y = n.n(V);
+			var z = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
+				Y = n.n(z);
 			const {
 				fbt: $
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ee = 3, te = 30 * D.pb, ne = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ee = 3, te = 30 * D.ob, ne = "SubredditAdoption";
 			class se extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -221,13 +221,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = se.cachedData || Object(J.G)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = se.cachedData || Object(G.F)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > te) {
-						const t = await z(this.props.apiContext());
+						const t = await V(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(J.Lb)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(G.Jb)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return se.cachedData = e, e ? e.subreddits : []
 				}
@@ -235,7 +235,7 @@
 					Object(I.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: B()(e, ee)
+							subredditNames: W()(e, ee)
 						})
 					})
 				}
@@ -266,7 +266,7 @@
 				}
 			}
 			se.cachedData = null;
-			var ae = Object(H.a)("srAdoptionWeek", Object(G.b)(se)),
+			var ae = Object(J.a)("srAdoptionWeek", Object(H.b)(se)),
 				re = n("./src/reddit/actions/post.ts"),
 				ie = n("./src/reddit/components/MiniPost/index.tsx"),
 				oe = n("./src/reddit/components/Widgets/Base/index.tsx");
@@ -613,25 +613,25 @@
 					}))))
 				}),
 				Ue = n("./src/reddit/constants/experiments.ts"),
-				We = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				Be = n("./src/reddit/selectors/user.ts");
+				Be = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				We = n("./src/reddit/selectors/user.ts");
 			var Ie = n("./src/reddit/selectors/seo/linksModule.ts"),
 				De = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ke = Object(o.c)({
-					isLoggedIn: Be.R,
-					currentUser: Be.m,
+					isLoggedIn: We.R,
+					currentUser: We.m,
 					frontpageLinks: Ie.b,
 					shouldShowTopicsWidget: e => (function(e) {
-						return Object(We.c)(e, {
-							experimentEligibilitySelector: Be.S,
-							experimentName: Ue.ad
-						}) === Ue.Wd
+						return Object(Be.c)(e, {
+							experimentEligibilitySelector: We.S,
+							experimentName: Ue.Vc
+						}) === Ue.Rd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
 				Qe = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				Ge = e => !(!e.currentUser || e.currentUser.isGold);
-			class He extends a.a.Component {
+				He = e => !(!e.currentUser || e.currentUser.isGold);
+			class Je extends a.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
 						this.setState({
@@ -661,7 +661,7 @@
 						position: De.a.FIRST,
 						sizes: D.j,
 						placementIndex: e++
-					}), Ge(this.props) && a.a.createElement(f, null), i && a.a.createElement(m.a, null, a.a.createElement(Re, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
+					}), He(this.props) && a.a.createElement(f, null), i && a.a.createElement(m.a, null, a.a.createElement(Re, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
 					})), Qe(this.props) && a.a.createElement(Ne, null), n && l && a.a.createElement(m.a, null, a.a.createElement(A, {
 						links: n
@@ -676,10 +676,10 @@
 					}, s && a.a.createElement(ae, null)))
 				}
 			}
-			const Je = Object(r.b)(Ke, e => ({
+			const Ge = Object(r.b)(Ke, e => ({
 				subredditAboutRequested: t => e(Object(l.u)(t))
 			}));
-			t.default = Je(He)
+			t.default = Ge(Je)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -921,4 +921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bbe291b557062728e8ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ef66d2d9d0f4198a1c3d.js.map

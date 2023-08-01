@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.bdcb427cb887070c1701.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.a25f3802710b7c522307.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -352,8 +352,8 @@
 					B = k("paymentRequestButton", E),
 					R = k("linkAuthentication", E),
 					G = k("shippingAddress", E),
-					U = k("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = U, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = C, e.CardNumberElement = _, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = L, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = M, e.PaymentElement = T, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
+					D = k("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = C, e.CardNumberElement = _, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = L, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = M, e.PaymentElement = T, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -639,7 +639,7 @@
 						const P = c();
 						let w, x, _ = "";
 						try {
-							_ = await e(j(n, a, i, s, g.K.Stripe))
+							_ = await e(j(n, a, i, s, g.J.Stripe))
 						} catch (N) {
 							return d.c.captureException(N), void(N.message && e(Object(u.stripeApiError)(N.message)))
 						}
@@ -649,7 +649,7 @@
 							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(m.p)(P)) try {
 								const r = await Object(h.g)(f(), {
 									orderId: _,
-									provider: g.K.Stripe
+									provider: g.J.Stripe
 								});
 								if (!(null == r ? void 0 : r.ok)) return void e(E);
 								const {
@@ -724,7 +724,7 @@
 						var b;
 						let v = "";
 						try {
-							v = await e(j(t, r, n, a, g.K.Paypal))
+							v = await e(j(t, r, n, a, g.J.Paypal))
 						} catch (E) {
 							return d.c.captureException(E), E.message && e(Object(u.paypalApiError)(E.message)), null
 						}
@@ -1125,7 +1125,7 @@
 						apiContext: i
 					} = o;
 					const l = Object(b.a)(n()),
-						u = (null == l ? void 0 : l.pennies) || s.Eb,
+						u = (null == l ? void 0 : l.pennies) || s.Db,
 						m = Object(f.c)(f.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
 					const h = await r(Object(d.validateAndCreateStripeToken)(e, t));
@@ -1507,7 +1507,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(s.a)(u);
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: m,
 					data: l
 				}).then(c.a)
@@ -1524,7 +1524,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(c.a)
@@ -1543,7 +1543,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(c.a)
@@ -1564,7 +1564,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(c.a)
@@ -1593,7 +1593,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(c.a)
@@ -1616,7 +1616,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.a)
@@ -2401,7 +2401,7 @@
 					})),
 					premiumProductOffersRequested: () => e(Object(E.d)(C.c.Premium))
 				}));
-			class U extends i.a.Component {
+			class D extends i.a.Component {
 				constructor() {
 					super(...arguments), this.correlationId = Object(f.d)(f.a.GoldPayment, !1), this.onClickPrice = (e, t) => {
 						this.onPurchase(e, h.c, t)
@@ -2422,7 +2422,7 @@
 						sendEvent: a
 					} = this.props;
 					e.length || t || r(this.correlationId), n(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const o = l.Tb.PREMIUM;
+					const o = l.Sb.PREMIUM;
 					y.c.has(o) && (a(Object(g.m)(v.TimerType.InApp, y.c.end(o))), a(Object(g.l)())), Object(m.a)()
 				}
 				render() {
@@ -2521,7 +2521,7 @@
 					Object(f.b)(f.a.GoldPayment)
 				}
 			}
-			t.default = G(Object(p.c)(U))
+			t.default = G(Object(p.c)(D))
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2638,4 +2638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.bdcb427cb887070c1701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.a25f3802710b7c522307.js.map

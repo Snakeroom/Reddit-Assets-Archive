@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.250680c2f0876863e1c9.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.305267249b8c97ffa6da.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -85,7 +85,7 @@
 						h = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						b = Object(c.a)(h);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.ob.POST,
+						method: n.nb.POST,
 						endpoint: b,
 						data: g
 					}).then(p)
@@ -121,7 +121,7 @@
 						correlation_id: d
 					}, v = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, j = u ? v : Object(c.a)(v);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.ob.POST,
+						method: n.nb.POST,
 						endpoint: j,
 						data: O
 					}).then(p)
@@ -153,7 +153,7 @@
 						correlation_id: t
 					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, O = o ? _ : Object(c.a)(_);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.ob.POST,
+						method: n.nb.POST,
 						endpoint: O,
 						data: y
 					}).then(p)
@@ -172,7 +172,7 @@
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(c.a)(l);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.ob.POST,
+						method: n.nb.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -197,7 +197,7 @@
 			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./src/lib/constants/index.ts");
 			r.a = () => ({
-				type: a.K.SERVER_ERROR,
+				type: a.J.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -311,4 +311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.250680c2f0876863e1c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.305267249b8c97ffa6da.js.map

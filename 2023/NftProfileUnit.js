@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.1d03840546052d4f14ce.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.169c3012074b2ff9c190.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -9,16 +9,16 @@
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
-				i = r("./node_modules/react/index.js"),
-				c = r("./node_modules/react-redux/es/index.js"),
+				c = r("./node_modules/react/index.js"),
+				o = r("./node_modules/react-redux/es/index.js"),
 				a = r("./src/reddit/endpoints/governance/crypto.ts"),
-				o = r("./src/reddit/hooks/useTracking.ts"),
+				i = r("./src/reddit/hooks/useTracking.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				l = r("./src/reddit/selectors/telemetry.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				u = r("./src/reddit/selectors/telemetry.ts"),
 				m = r("./src/reddit/selectors/user.ts");
 			const p = !(Object(s.c)() || Object(s.b)()),
-				b = {
+				O = {
 					GRAPHQL_URL: n.a.gqlUrl,
 					IS_DEVELOPMENT: p,
 					IS_PRODUCTION: !p,
@@ -27,33 +27,33 @@
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
 				f = () => {
-					const e = Object(c.e)(u.a),
-						t = Object(c.e)(d.b),
-						r = Object(c.e)(e => e.user.session),
+					const e = Object(o.e)(l.a),
+						t = Object(o.e)(d.b),
+						r = Object(o.e)(e => e.user.session),
 						s = r ? r.accessToken : "",
 						f = r ? new Date(r.expires).getTime() : 1,
-						h = Object(c.e)(m.fb),
-						E = Object(o.a)(),
-						O = p ? a.a.Rinkeby : a.a.Ethereum,
-						k = Object(i.useMemo)(() => ({
+						_ = Object(o.e)(m.fb),
+						b = Object(i.a)(),
+						E = p ? a.a.Rinkeby : a.a.Ethereum,
+						x = Object(c.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${s}`
 							},
 							expiration: f
 						}), [s, f]),
-						_ = {
-							...b,
+						j = {
+							...O,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: n.a.stripe.apiVersion(!0),
 							ACCESS_TOKEN: s,
-							BLOCKCHAIN_PROVIDER: O,
+							BLOCKCHAIN_PROVIDER: E,
 							OVERRIDES: t ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						y = Object(i.useCallback)(e => {
-							E(t => {
-								const r = l.q(t);
+						k = Object(c.useCallback)(e => {
+							b(t => {
+								const r = u.q(t);
 								return {
 									...r,
 									...e,
@@ -65,13 +65,13 @@
 									}
 								}
 							})
-						}, [E]);
-					return Object(i.useMemo)(() => ({
-						authHeaders: k,
-						config: _,
-						isNightMode: h,
-						sendEvent: y
-					}), [k, _, h, y])
+						}, [b]);
+					return Object(c.useMemo)(() => ({
+						authHeaders: x,
+						config: j,
+						isNightMode: _,
+						sendEvent: k
+					}), [x, j, _, k])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(e, t, r) {
@@ -84,47 +84,47 @@
 			r.r(t);
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
-				i = r("./node_modules/react-redux/es/index.js"),
-				c = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				o = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				a = r("./src/reddit/actions/modal.ts"),
-				o = r("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				i = r("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				d = r("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				u = r("./src/reddit/constants/modals.ts");
-			const l = () => r.e("NftProductDetailsModal").then(r.bind(null, "./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx")),
-				m = Object(o.a)(l, {
+				l = r("./src/reddit/constants/modals.ts");
+			const u = () => r.e("NftProductDetailsModal").then(r.bind(null, "./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx")),
+				m = Object(i.a)(u, {
 					ssr: !1
 				});
-			Object(d.b)(u.a.ECON_NFT_PRODUCT_DETAILS, e => s.a.createElement(m, {
+			Object(d.b)(l.a.ECON_NFT_PRODUCT_DETAILS, e => s.a.createElement(m, {
 				onClose: e,
 				onOverlayClick: e
 			}));
 			var p = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
-				b = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				O = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
 				f = r("./src/reddit/hooks/usePreloadModal.ts"),
-				h = r("./src/reddit/hooks/useTracking.ts"),
-				E = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
-				O = r.n(E);
+				_ = r("./src/reddit/hooks/useTracking.ts"),
+				b = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
+				E = r.n(b);
 			t.default = e => {
 				let {
 					className: t,
 					imageUrl: r,
 					origin: n,
-					showDetailsCta: o
+					showDetailsCta: i
 				} = e;
-				const d = Object(i.d)(),
-					m = Object(h.a)();
-				Object(f.a)(l);
-				const E = Object(c.l)(r);
-				return E ? s.a.createElement("div", {
+				const d = Object(c.d)(),
+					m = Object(_.a)();
+				Object(f.a)(u);
+				const b = Object(o.l)(r);
+				return b ? s.a.createElement("div", {
 					className: t
-				}, s.a.createElement(p.a, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(c.h, {
+				}, s.a.createElement(p.a, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(o.h, {
 					imageUrl: r,
 					hideCardNaming: !0
-				}), o && s.a.createElement(c.g, {
-					className: O.a.detailsButton,
+				}), i && s.a.createElement(o.g, {
+					className: E.a.detailsButton,
 					onClick: () => {
-						m(Object(b.k)(n)), d(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
-							itemId: E
+						m(Object(O.k)(n)), d(Object(a.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
+							itemId: b
 						}))
 					}
 				})))) : null
@@ -133,31 +133,31 @@
 		"./src/reddit/components/GlobalModalContainer/registry.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return i
-			})), r.d(t, "a", (function() {
 				return c
+			})), r.d(t, "a", (function() {
+				return o
 			}));
 			const n = {},
 				s = () => null;
 
-			function i(e, t) {
+			function c(e, t) {
 				if (e in n) throw new Error(`Modal with id ${e} already registered!`);
 				n[e] = t
 			}
 
-			function c(e) {
+			function o(e) {
 				return e && e in n ? n[e] : s
 			}
 		},
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return o
+				return i
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/react/index.js"),
-				i = r.n(s),
-				c = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				c = r.n(s),
+				o = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function a() {
 				return (a = Object.assign || function(e) {
@@ -168,161 +168,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const o = e => {
+			const i = e => {
 				let {
 					children: t
 				} = e;
-				const r = Object(c.a)();
-				return i.a.createElement(n.d, a({}, r, {
+				const r = Object(o.a)();
+				return c.a.createElement(n.d, a({}, r, {
 					shouldContainModal: !1
 				}), t)
-			}
-		},
-		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return n
-			})), r.d(t, "j", (function() {
-				return c
-			})), r.d(t, "i", (function() {
-				return a
-			})), r.d(t, "h", (function() {
-				return o
-			})), r.d(t, "l", (function() {
-				return d
-			})), r.d(t, "k", (function() {
-				return u
-			})), r.d(t, "m", (function() {
-				return l
-			})), r.d(t, "g", (function() {
-				return m
-			})), r.d(t, "b", (function() {
-				return p
-			})), r.d(t, "d", (function() {
-				return b
-			})), r.d(t, "c", (function() {
-				return f
-			})), r.d(t, "e", (function() {
-				return h
-			})), r.d(t, "f", (function() {
-				return E
-			})), r.d(t, "n", (function() {
-				return O
-			}));
-			var n, s = r("./src/config.ts"),
-				i = r("./src/reddit/endpoints/governance/requester.ts");
-
-			function c(e) {
-				switch (e) {
-					case n.Ethereum:
-					case n.EthTraderEthereum:
-						return "Ethereum Main Network";
-					case n.Rinkeby:
-					case n.EthTraderRinkeby:
-						return "Rinkeby Test Network"
-				}
-				return e + " Network"
-			}
-
-			function a(e) {
-				switch (e) {
-					case n.Ethereum:
-					case n.EthTraderEthereum:
-						return "https://meta-api.reddit.com/ethereum/ethereum";
-					case n.Rinkeby:
-					case n.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby";
-					case n.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
-					case n.ArbitrumNitroDevnet:
-						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
-					case n.ArbitrumMainnet:
-						return "https://a4ba.arbitrum.io/rpc";
-					default:
-						return `https://meta-api.reddit.com/ethereum/${e}`
-				}
-			}
-
-			function o(e) {
-				switch (e) {
-					case n.Ethereum:
-					case n.EthTraderEthereum:
-						return "homestead";
-					case n.Rinkeby:
-					case n.EthTraderRinkeby:
-						return "rinkeby";
-					case n.ArbitrumRinkeby:
-						return 5391184;
-					case n.ArbitrumNitroDevnet:
-						return 421612;
-					case n.ArbitrumMainnet:
-						return 42170;
-					default: {
-						const [, t] = e.split(":");
-						return t
-					}
-				}
-			}
-
-			function d(e) {
-				return e === n.ArbitrumRinkeby ? 5e3 : 3e4
-			}
-			async function u(e, t, r) {
-				return Object(i.a)(e, {
-					method: "post",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
-					data: {
-						challengeType: "registration-challenge-EIP712",
-						address: r
-					}
-				})
-			}
-			async function l(e, t, r) {
-				return await Object(i.a)(e, {
-					method: "post",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
-					data: r
-				})
-			}
-			async function m(e, t, r) {
-				return await Object(i.a)(e, {
-					method: "delete",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${r}`
-				})
-			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumNova = "ethereum:42170", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
-			}(n || (n = {}));
-			const p = (e, t, r) => ({
-					type: "burn-link",
-					subredditId: e,
-					amount: t,
-					burnMemo: r
-				}),
-				b = e => ({
-					type: "convert-to-coins",
-					subredditId: e
-				}),
-				f = e => ({
-					type: "claim",
-					subredditId: e
-				}),
-				h = e => ({
-					type: "subscribe",
-					subredditId: e
-				}),
-				E = (e, t, r, n) => ({
-					type: "transfer",
-					subredditId: e,
-					recipient: t,
-					recipientAddress: r,
-					amount: n
-				});
-			async function O(e, t) {
-				return await Object(i.a)(e, {
-					method: "put",
-					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
-					data: t
-				})
 			}
 		},
 		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, r) {
@@ -341,31 +194,31 @@
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return o
 			})), r.d(t, "b", (function() {
 				return a
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = e => {
+				c = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ie
-					}) === n.Wd)
+						experimentName: n.De
+					}) === n.Rd)
 				},
-				a = Object(i.a)(n.Je)
+				a = Object(c.a)(n.Ee)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return c
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(s.a)(n.Gd)
+			const c = Object(s.a)(n.Bd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.1d03840546052d4f14ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.169c3012074b2ff9c190.js.map

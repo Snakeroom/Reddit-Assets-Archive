@@ -1,7 +1,17 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.e4fa29bb4dddeb5dc1c4.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.7fbd42e292fb446ff419.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
+		"./src/lib/isDefined.ts": function(e, t, r) {
+			"use strict";
+
+			function i(e) {
+				return !!e
+			}
+			r.d(t, "a", (function() {
+				return i
+			}))
+		},
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
@@ -32,8 +42,8 @@
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/isDefined.ts"),
-				d = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/lib/sentry/index.ts"),
+				n = r("./src/lib/makeActionCreator/index.ts"),
+				d = r("./src/lib/sentry/index.ts"),
 				c = r("./src/lib/makeGqlRequest/index.ts"),
 				o = r("./src/redditGQL/operations/SubredditUserAchievements.json"),
 				a = r("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
@@ -63,14 +73,14 @@
 					powerups: y.a
 				}
 			});
-			const I = Object(d.a)(j.d),
-				v = Object(d.a)(j.f),
-				U = Object(d.a)(j.g),
-				F = Object(d.a)(j.e),
-				S = Object(d.a)(j.h),
+			const I = Object(n.a)(j.d),
+				v = Object(n.a)(j.f),
+				U = Object(n.a)(j.g),
+				F = Object(n.a)(j.e),
+				S = Object(n.a)(j.h),
 				A = (e, t) => async (r, i, s) => {
 					let {
-						gqlContext: d
+						gqlContext: n
 					} = s;
 					const a = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (a.length) try {
@@ -86,40 +96,40 @@
 							});
 							if (!i.ok) throw new Error("Unable to fetch user achievements");
 							return i.body.data
-						})(d(), e, a);
+						})(n(), e, a);
 						await r(I(t))
 					} catch (u) {
-						n.c.captureException(u)
+						d.c.captureException(u)
 					}
 				}, P = (e, t) => async (r, i) => {
 					if (!e) return;
 					const s = i(),
-						d = Object(h.m)(s);
-					if (!d || !Object(m.e)(s, {
+						n = Object(h.m)(s);
+					if (!n || !Object(m.e)(s, {
 							subredditId: e
 						})) return;
-					const n = !!Object(w.e)(s, {
+					const d = !!Object(w.e)(s, {
 						subredditId: e,
-						userId: d.id
+						userId: n.id
 					});
-					!t && n || await r(A(e, [d.id]))
+					!t && d || await r(A(e, [n.id]))
 				}, x = e => async (t, r) => !!e && (await t(Object(l.c)(e)), !!Object(w.c)(r(), {
 					subredditId: e
 				})), _ = e => async (t, r) => {
 					var i;
 					const s = r(),
-						d = e.map(e => {
+						n = e.map(e => {
 							let {
 								id: t
 							} = e;
 							return t
 						}),
-						n = Object(p.e)(s, {
-							commentIds: d
+						d = Object(p.e)(s, {
+							commentIds: n
 						}),
-						c = null === (i = n.find(e => e && e.subredditId)) || void 0 === i ? void 0 : i.subredditId;
+						c = null === (i = d.find(e => e && e.subredditId)) || void 0 === i ? void 0 : i.subredditId;
 					if (!(await t(x(c)))) return;
-					const o = new Set(n.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
+					const o = new Set(d.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
 						let {
 							authorId: t
 						} = e;
@@ -135,18 +145,18 @@
 					}), await r(A(e, Array.from(s)))
 				}, C = (e, t) => async (r, i) => {
 					const s = i(),
-						d = Object(h.m)(s);
-					if (!d) return;
-					const n = d.id;
+						n = Object(h.m)(s);
+					if (!n) return;
+					const d = n.id;
 					r(E({
 						subredditId: e,
-						userId: n,
+						userId: d,
 						achievementFlairType: t
 					}))
-				}, E = e => async (t, r, d) => {
+				}, E = e => async (t, r, n) => {
 					let {
 						gqlContext: c
-					} = d;
+					} = n;
 					const o = r(),
 						a = Object(h.m)(o);
 					if (!a) return;
@@ -162,7 +172,7 @@
 					try {
 						await u(c(), p, j, O), t(U(e))
 					} catch (y) {
-						t(F(e)), n.c.captureException(y), t(Object(b.f)({
+						t(F(e)), d.c.captureException(y), t(Object(b.f)({
 							duration: b.a,
 							kind: f.b.Error,
 							text: i.fbt._("Failed to set preferred achievement flair", null, {
@@ -170,11 +180,11 @@
 							})
 						}))
 					}
-				}, L = (e, t) => async (r, d, c) => {
+				}, L = (e, t) => async (r, n, c) => {
 					let {
 						gqlContext: o
 					} = c;
-					const a = d(),
+					const a = n(),
 						l = Object(h.m)(a);
 					if (!l) return;
 					const p = l.id,
@@ -193,7 +203,7 @@
 						r(S({
 							...m,
 							isHidden: !t
-						})), n.c.captureException(O), r(Object(b.f)({
+						})), d.c.captureException(O), r(Object(b.f)({
 							duration: b.a,
 							kind: f.b.Error,
 							text: i.fbt._("Failed to change flair visibility", null, {
@@ -211,4 +221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.e4fa29bb4dddeb5dc1c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.7fbd42e292fb446ff419.js.map

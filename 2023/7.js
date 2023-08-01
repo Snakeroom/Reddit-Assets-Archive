@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/7.f449cedea9e2cb1fd7ca.js
-// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/7.26fb422d7b188f536fd9.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[7], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -57,28 +57,28 @@
 				v = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				f = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				x = n("./src/devPlatform/components/ConfigFormRenderer/header/index.m.less"),
-				g = n.n(x);
-			const b = u.a.div("ConfigFormHeaderWrapper", g.a),
-				C = u.a.wrapped(f.a, "Close", g.a);
+				b = n.n(x);
+			const g = u.a.div("ConfigFormHeaderWrapper", b.a),
+				C = u.a.wrapped(f.a, "Close", b.a);
 
 			function E(e) {
 				const {
 					title: t,
 					onCloseClick: n
 				} = e;
-				return a.a.createElement(b, null, t, a.a.createElement(C, {
+				return a.a.createElement(g, null, t, a.a.createElement(C, {
 					onClick: n
 				}))
 			}
-			var w = n("./src/devPlatform/components/ConfigFormRenderer/index.m.less"),
-				k = n.n(w);
-			const y = u.a.div("Wrapper", k.a),
-				N = u.a.div("ConfigFormRendererWrapper", k.a),
-				_ = u.a.p("TextWrapper", k.a),
-				O = u.a.div("ConfigFormRow", k.a),
-				I = u.a.div("ConfigFormStringRow", k.a),
-				R = u.a.div("NumberInputWrapper", k.a),
-				j = u.a.div("ConfigFormFooterWrapper", k.a);
+			var k = n("./src/devPlatform/components/ConfigFormRenderer/index.m.less"),
+				w = n.n(k);
+			const y = u.a.div("Wrapper", w.a),
+				O = u.a.div("ConfigFormRendererWrapper", w.a),
+				_ = u.a.p("TextWrapper", w.a),
+				I = u.a.div("ConfigFormRow", w.a),
+				N = u.a.div("ConfigFormStringRow", w.a),
+				R = u.a.div("NumberInputWrapper", w.a),
+				j = u.a.div("ConfigFormFooterWrapper", w.a);
 			class M extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -110,7 +110,7 @@
 					} = this.props, u = [];
 					for (const c of i.fields) switch (Object(d.gb)(c.fieldType)) {
 						case d.d.STRING:
-							u.push(a.a.createElement(I, {
+							u.push(a.a.createElement(N, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -121,7 +121,7 @@
 							})));
 							break;
 						case d.d.PARAGRAPH:
-							u.push(a.a.createElement(I, {
+							u.push(a.a.createElement(N, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -132,7 +132,7 @@
 							})));
 							break;
 						case d.d.NUMBER:
-							u.push(a.a.createElement(O, {
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -145,7 +145,7 @@
 							break;
 						case d.d.BOOLEAN:
 							const r = null !== (s = this.state.values.get(c.key)) && void 0 !== s && s;
-							u.push(a.a.createElement(O, {
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -157,7 +157,7 @@
 							break;
 						case d.d.UNRECOGNIZED:
 					}
-					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
+					return a.a.createElement(y, null, a.a.createElement(O, null, a.a.createElement(E, {
 						title: r,
 						onCloseClick: l
 					}), a.a.createElement(_, null, o), u, a.a.createElement(j, null, a.a.createElement(p.t, {
@@ -228,18 +228,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = Object(o.c)({
+			const V = Object(o.c)({
 					action: e => e.features.devPlatform.userInputModal.action,
 					onAction: e => e.features.devPlatform.userInputModal.onAction
 				}),
-				V = Object(r.b)(B, e => ({
+				L = Object(r.b)(V, e => ({
 					closeUserInputModal: () => e(Object(l.a)())
 				})),
-				L = Object(i.a)(e => e.action && e.onAction ? a.a.createElement(D, {
+				B = Object(i.a)(e => e.action && e.onAction ? a.a.createElement(D, {
 					action: e.action,
 					onAction: e.onAction
 				}) : null);
-			t.default = V(e => a.a.createElement(L, P({}, e, {
+			t.default = L(e => a.a.createElement(B, P({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeUserInputModal
 			})))
@@ -301,8 +301,8 @@
 					}))))
 				}),
 				x = n("./src/reddit/controls/ErrorText/index.m.less"),
-				g = n.n(x);
-			class b extends c.a.Component {
+				b = n.n(x);
+			class g extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.setState({
@@ -346,12 +346,12 @@
 						isModalOpen: i
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(d.a)(g.a.wrapper, t)
+						className: Object(d.a)(b.a.wrapper, t)
 					}, c.a.createElement("span", {
-						className: g.a.description,
+						className: b.a.description,
 						ref: this.spanRef
 					}, e), o && c.a.createElement("span", {
-						className: g.a.moreText,
+						className: b.a.moreText,
 						onClick: this.toggleModal
 					}, r), i && c.a.createElement(f, {
 						onConfirmed: this.toggleModal,
@@ -369,7 +369,7 @@
 					} = e, o = r.length ? r : a ? [a] : [];
 					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(b, {
+					}, o.map((e, t) => c.a.createElement(g, {
 						className: n,
 						errorModalTitle: s,
 						key: t
@@ -381,7 +381,7 @@
 					}),
 					messages: e
 				});
-			t.b = b
+			t.b = g
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -409,7 +409,7 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
-				return b
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -490,18 +490,18 @@
 				}, e.text, " ", a.a.createElement(l.a, {
 					className: u.a.plus
 				}));
-			var g;
+			var b;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(g || (g = {}));
-			class b extends a.a.Component {
+			}(b || (b = {}));
+			class g extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: g.ADD
+							action: b.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -510,7 +510,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: g.REMOVE,
+							action: b.REMOVE,
 							value: n,
 							index: e
 						})
@@ -731,34 +731,6 @@
 				}))
 			}))
 		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, a.a.createElement("g", null, a.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", null, a.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -817,4 +789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.f449cedea9e2cb1fd7ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.26fb422d7b188f536fd9.js.map

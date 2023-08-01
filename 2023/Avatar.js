@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.d28dc627f09af7a69e9e.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.c829a5b641d83ec5b39f.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -62,18 +62,18 @@
 					j(!0)
 				}, []);
 				const {
-					activeDetails: h,
-					activeTab: R,
+					activeDetails: R,
+					activeTab: h,
 					activeMeSubpage: k,
 					shopTabState: N
 				} = r, T = Object(n.useMemo)(() => ({
-					activeTab: R || void 0,
+					activeTab: h || void 0,
 					activeMeSubpage: k || void 0,
-					activeDetails: h || void 0,
+					activeDetails: R || void 0,
 					shopTabState: N || void 0
-				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+				}), [R, h, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !E) return null;
-				if (I) return a.a.createElement("div", {
+				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
 					})
@@ -81,7 +81,7 @@
 					openLogin: S,
 					fancyBackground: !0
 				}));
-				const C = {
+				const I = {
 					...M,
 					config: {
 						...M.config,
@@ -96,7 +96,7 @@
 						[x.a.snoovatarModalBuilderV2]: t,
 						[x.a.containerExp]: A
 					})
-				}, a.a.createElement(s.a, v({}, C, {
+				}, a.a.createElement(s.a, v({}, I, {
 					navState: T,
 					isModal: t
 				}), a.a.createElement(s.b, {
@@ -202,10 +202,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ie
-					}) === s.Wd)
+						experimentName: s.De
+					}) === s.Rd)
 				},
-				o = Object(a.a)(s.Je)
+				o = Object(a.a)(s.Ee)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -214,9 +214,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.Gd)
+			const a = Object(n.a)(s.Bd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d28dc627f09af7a69e9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.c829a5b641d83ec5b39f.js.map

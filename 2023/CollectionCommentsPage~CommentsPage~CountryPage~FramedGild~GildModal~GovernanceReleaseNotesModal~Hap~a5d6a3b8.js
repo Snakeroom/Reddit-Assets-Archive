@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.4bd5a392abceaf53a083.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.a3a71c0621e50503f7eb.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -286,9 +286,9 @@
 				j = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/reddit/selectors/posts.ts"),
 				U = s("./src/reddit/selectors/user.ts"),
-				W = s("./src/reddit/selectors/video.ts"),
-				D = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
-				z = s.n(D),
+				D = s("./src/reddit/selectors/video.ts"),
+				W = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
+				z = s.n(W),
 				G = s("./src/lib/lessComponent.tsx"),
 				Y = G.a.img("Component", z.a),
 				Z = s("./src/reddit/icons/svgs/VideoCollapse/index.tsx"),
@@ -675,9 +675,9 @@
 				je = G.a.div("NormalControl", He.a),
 				Ae = G.a.wrapped(Oe, "ControlSnoo", He.a),
 				Ue = G.a.wrapped(Oe, "ControlPlay", He.a),
-				We = G.a.wrapped(je, "Time", He.a),
-				De = G.a.wrapped(We, "LeftTime", He.a),
-				ze = G.a.wrapped(We, "RightTime", He.a),
+				De = G.a.wrapped(je, "Time", He.a),
+				We = G.a.wrapped(De, "LeftTime", He.a),
+				ze = G.a.wrapped(De, "RightTime", He.a),
 				Ge = G.a.div("LiveLabel", He.a),
 				Ye = G.a.wrapped(je, "ControlScrubber", He.a),
 				Ze = G.a.wrapped(je, "ControlVolume", He.a),
@@ -759,7 +759,7 @@
 						"aria-label": f,
 						className: He.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? d.a.createElement(q.a, null) : d.a.createElement(Q.a, null))), d.a.createElement(De, null, le(v, g)), d.a.createElement(Ye, null, d.a.createElement(ye, {
+					}, this.props.isPaused ? d.a.createElement(q.a, null) : d.a.createElement(Q.a, null))), d.a.createElement(We, null, le(v, g)), d.a.createElement(Ye, null, d.a.createElement(ye, {
 						active: n === Zt.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -1064,8 +1064,8 @@
 			const jt = G.a.div("Centered", Ot.a),
 				At = G.a.div("EndedOverlay", Ot.a),
 				Ut = G.a.span("ReplayText", Ot.a),
-				Wt = G.a.button("ReplayButton", Ot.a);
-			var Dt = e => {
+				Dt = G.a.button("ReplayButton", Ot.a);
+			var Wt = e => {
 					const {
 						onClick: t,
 						source: s,
@@ -1074,7 +1074,7 @@
 					} = e;
 					return d.a.createElement(At, {
 						onClick: t
-					}, d.a.createElement(jt, null, d.a.createElement(Wt, null, d.a.createElement(Ht.a, null), d.a.createElement(Ut, {
+					}, d.a.createElement(jt, null, d.a.createElement(Dt, null, d.a.createElement(Ht.a, null), d.a.createElement(Ut, {
 						className: "replay-video"
 					}, C.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
@@ -1127,14 +1127,14 @@
 				ns = Object(c.b)(() => Object(u.c)({
 					isLoggedIn: U.S,
 					autoplayPref: U.d,
-					currentTime: W.c,
+					currentTime: D.c,
 					currentUser: U.m,
 					isOverlayOpen: j.i,
-					loadTimes: W.f,
-					metadata: W.h,
-					mutedInFeed: W.i,
+					loadTimes: D.f,
+					metadata: D.h,
+					mutedInFeed: D.i,
 					postUrl: A.H,
-					started: W.k,
+					started: D.k,
 					volume: O.f,
 					isReactionPillKillswitchEnabled: I.b
 				}), (e, t) => {
@@ -1886,7 +1886,7 @@
 					})), this.props.postId && r && !this.props.isReactionPillKillswitchEnabled && this.state.isHovered && d.a.createElement(M, {
 						reactPostInfo: r,
 						handleClick: this.onCreditPillClick
-					}), k ? d.a.createElement(Dt, {
+					}), k ? d.a.createElement(Wt, {
 						onClick: this.resetVideo,
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
@@ -2103,8 +2103,8 @@
 						pageLayer: j,
 						post: A,
 						postId: U,
-						posterUrl: W,
-						preventAutoplay: D,
+						posterUrl: D,
+						preventAutoplay: W,
 						scrubberThumbSource: z,
 						shouldCreateFakeThumbnail: G,
 						shouldUseInitializationOptimization: Y,
@@ -2117,7 +2117,7 @@
 					} = e || {},
 					$ = Object(d.e)(y.i),
 					ee = !T && $,
-					te = (w || !D && C && !T) && (Object(v.z)(j) || !(e.isSponsored && "undefined" != typeof document && Object(i.hasAcceptableAds)()));
+					te = (w || !W && C && !T) && (Object(v.z)(j) || !(e.isSponsored && "undefined" != typeof document && Object(i.hasAcceptableAds)()));
 				Object(r.useEffect)(() => {
 					"ready" === h && async function() {
 						try {
@@ -2317,9 +2317,9 @@
 						gif: w || void 0,
 						"packaged-media-json": oe,
 						"play-out-of-viewport": Object(v.z)(j) || void 0,
-						poster: W,
+						poster: D,
 						preview: z || void 0,
-						"show-autoplay-toggle": !D,
+						"show-autoplay-toggle": !W,
 						src: q,
 						ui: "desktop",
 						"use-init-optimization": Y || void 0
@@ -3069,7 +3069,7 @@
 			var i = s("./src/lib/constants/index.ts"),
 				o = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = [i.Tb.INDEX, i.Tb.COMMENTS, i.Tb.SUBREDDIT, ...i.Ib],
+			const n = [i.Sb.INDEX, i.Sb.COMMENTS, i.Sb.SUBREDDIT, ...i.Hb],
 				r = (e, t, s) => {
 					var i, o, a;
 					const r = "video" === (null === (i = null == s ? void 0 : s.media) || void 0 === i ? void 0 : i.type) && !(null === (o = null == s ? void 0 : s.media) || void 0 === o ? void 0 : o.isGif) && n.includes(null === (a = null == t ? void 0 : t.meta) || void 0 === a ? void 0 : a.name);
@@ -3077,12 +3077,12 @@
 				},
 				l = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: o.Yc
-				}) === o.Wd,
+					experimentName: o.Tc
+				}) === o.Rd,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: o.Qf
-				}) === o.Wd
+					experimentName: o.Lf
+				}) === o.Rd
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -3095,14 +3095,14 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/experiments/index.ts");
 			const n = e => Object(o.c)(e, {
-					experimentName: i.ub,
+					experimentName: i.pb,
 					experimentEligibilitySelector: a.e
-				}) === i.Wd,
+				}) === i.Rd,
 				r = e => Object(o.c)(e, {
-					experimentName: i.Fc,
+					experimentName: i.Ac,
 					experimentEligibilitySelector: o.a
-				}) === i.Wd
+				}) === i.Rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.4bd5a392abceaf53a083.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.a3a71c0621e50503f7eb.js.map

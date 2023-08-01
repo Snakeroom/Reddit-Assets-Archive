@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b037137dd0b92c549bcd.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c84af79d068dafa46b56.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -921,10 +921,10 @@
 				q = r("./src/reddit/helpers/trackers/gild.ts"),
 				D = r("./src/telemetry/index.ts"),
 				U = r("./src/reddit/endpoints/profile/info.ts"),
-				W = r("./src/reddit/actions/gold/constants.ts"),
-				z = r("./src/reddit/actions/gold/econPurchase.ts");
-			const K = Object(s.a)(W.r),
-				V = Object(s.a)(W.v),
+				z = r("./src/reddit/actions/gold/constants.ts"),
+				W = r("./src/reddit/actions/gold/econPurchase.ts");
+			const K = Object(s.a)(z.r),
+				V = Object(s.a)(z.v),
 				H = (e, t) => async (r, s) => {
 					const a = s(),
 						o = !Object(F.a)(e) && Object(O.g)(a, {
@@ -1033,17 +1033,17 @@
 					} finally {
 						Object(R.b)(R.a.GildingFlow)
 					}
-				}, Q = Object(s.a)(W.u), J = Object(s.a)(W.q), X = () => async (e, t) => {
+				}, Q = Object(s.a)(z.u), J = Object(s.a)(z.q), X = () => async (e, t) => {
 					e(J()), window.setTimeout(() => {
 						t().gild.api.pending && e(Q())
 					}, 2e3)
-				}, Y = Object(s.a)(W.p), Z = e => async (t, r) => {
+				}, Y = Object(s.a)(z.p), Z = e => async (t, r) => {
 					await t(Y(e)), t(Object(l.f)({
 						kind: v.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, $ = Object(s.a)(W.s), ee = (e, t) => {
+				}, $ = Object(s.a)(z.s), ee = (e, t) => {
 					const {
 						id: r
 					} = t, n = Object(F.a)(r) ? Object(C.F)(e, {
@@ -1152,7 +1152,7 @@
 					});
 					N && Object(I.a)(s, {
 						subredditId: N.id
-					}) && t(Object(z.a)(N.id, N.name, {
+					}) && t(Object(W.a)(N.id, N.name, {
 						force: !0
 					})), 0 === k && N && t(Object(o.a)(N.id, m, void 0, !0))
 				}
@@ -2010,9 +2010,9 @@
 				q = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/higherOrderComponents/makeAsync.tsx")),
 				D = r("./src/lib/loadWithRetries/index.ts"),
 				U = r("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const W = () => Object(D.a)(() => Promise.all([r.e("PennyPurchaseModal").then(r.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(U.d)().catch(() => {})])).then(e => e[0].default);
-			var z = Object(q.a)({
-					getComponent: W,
+			const z = () => Object(D.a)(() => Promise.all([r.e("PennyPurchaseModal").then(r.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(U.d)().catch(() => {})])).then(e => e[0].default);
+			var W = Object(q.a)({
+					getComponent: z,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -2661,8 +2661,8 @@
 			};
 			const De = (e, t) => e.length > f.m.length && !e.find(e => e.award.id === t.id);
 			var Ue = r("./src/reddit/components/GildModalContent/index.m.less"),
-				We = r.n(Ue);
-			const ze = (e, t) => {
+				ze = r.n(Ue);
+			const We = (e, t) => {
 					let {
 						thingId: r,
 						subredditId: n
@@ -2687,7 +2687,7 @@
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = ze(e, {
+						const s = We(e, {
 								thingId: r,
 								subredditId: n
 							}),
@@ -2702,7 +2702,7 @@
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = ze(e, {
+						const s = We(e, {
 								thingId: r,
 								subredditId: n
 							}),
@@ -2792,7 +2792,7 @@
 					},
 					userCoins: (e, t) => {
 						const r = Object(R.g)(e),
-							n = ze(e, t);
+							n = We(e, t);
 						return r + Object(S.a)(e, {
 							subredditId: n
 						})
@@ -2873,7 +2873,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.Ab)(e)
+					Object(p.zb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2903,7 +2903,7 @@
 					if (E && t(E), De(e, d) && (x(), c(f.o)), h || O) {
 						w(h ? h.name : O)
 					}
-					h && h.type !== g.g.User && y(h.id, h.name), s && (d.pennyPrice ? W() : Object(F.a)(), o || i(r))
+					h && h.type !== g.g.User && y(h.id, h.name), s && (d.pennyPrice ? z() : Object(F.a)(), o || i(r))
 				}
 				componentDidUpdate(e) {
 					e.awardingsPending && !this.props.awardingsPending && De(this.props.awardings, this.props.selectedAward) && (this.props.displayUnusableAwardError(), this.props.selectAward(f.o))
@@ -2935,7 +2935,7 @@
 						showPurchaseModalInThisInstance: E
 					} = this.state, I = h && E, C = I && !b.pennyPrice, P = I && !!b.pennyPrice, _ = (C || P) && !d;
 					if (C && _) return null;
-					if (P && _) return s.a.createElement(z, null);
+					if (P && _) return s.a.createElement(W, null);
 					const k = w ? w.name : y,
 						A = !(!o || !o.isGold),
 						N = {
@@ -2949,13 +2949,13 @@
 							thingId: j
 						};
 					return s.a.createElement("div", {
-						className: Object(c.a)(n, We.a.gildModalContent)
+						className: Object(c.a)(n, ze.a.gildModalContent)
 					}, s.a.createElement(qe, {
 						onCancel: a,
 						thingId: j,
 						userCoins: x
 					}), s.a.createElement("div", {
-						className: We.a.modalMainContent
+						className: ze.a.modalMainContent
 					}, s.a.createElement(Ne, {
 						awardIcons: t,
 						awardTotals: e,
@@ -2979,7 +2979,7 @@
 						gildButtonProps: N,
 						subredditName: k,
 						subredditCoins: v
-					})), P && s.a.createElement(z, null))
+					})), P && s.a.createElement(W, null))
 				}
 			}
 			t.a = Object(a.b)(Ke, (e, t) => {
@@ -3016,7 +3016,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(y.setIsAnonymous)(t)), Object(p.Ab)(t)
+						e(Object(y.setIsAnonymous)(t)), Object(p.zb)(t)
 					},
 					subredditAboutRequested: t => e(Object(C.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(v.a)(t, r)),
@@ -3204,7 +3204,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(u);
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: m,
 					data: l
 				}).then(c.a)
@@ -3221,7 +3221,7 @@
 					correlation_id: d
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(c.a)
@@ -3240,7 +3240,7 @@
 					thing_id: d
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(c.a)
@@ -3261,7 +3261,7 @@
 					correlation_id: u
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(c.a)
@@ -3290,7 +3290,7 @@
 					thing_id: f
 				};
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(c.a)
@@ -3313,7 +3313,7 @@
 					thing_id: m
 				};
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.ob.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.a)
@@ -3714,4 +3714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b037137dd0b92c549bcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c84af79d068dafa46b56.js.map

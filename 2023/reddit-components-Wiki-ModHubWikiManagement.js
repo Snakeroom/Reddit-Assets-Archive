@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ae401482029d37b1d444.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ae8632fec0f615a288a4.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1600,10 +1600,10 @@
 							});
 							break;
 						default:
-							return b === o.mc.WikiBanned ? s.a.createElement(se, {
+							return b === o.lc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === o.mc.WikiContributors ? s.a.createElement(pe, {
+							}) : b === o.lc.WikiContributors ? s.a.createElement(pe, {
 								subredditName: e.name
 							}) : p && g && k ? s.a.createElement(a.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -2535,7 +2535,7 @@
 				v = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var x = e => Object(g.a)(Object(k.a)(e.context, [f.a]), {
 					endpoint: Object(v.a)(`${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`),
-					method: b.ob.POST,
+					method: b.nb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -3098,8 +3098,8 @@
 					wikiPage: w.c,
 					isInShredditAutomodInsightsExperiment: e => (e => Object(W.c)(e, {
 						experimentEligibilitySelector: B.S,
-						experimentName: j.Kf
-					}) === j.Wd)(e)
+						experimentName: j.Ff
+					}) === j.Rd)(e)
 				}),
 				U = Object(r.b)(I, e => ({
 					onCopyPageUrl: t => e((e => async t => {
@@ -3332,7 +3332,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, c = n.authorInfo && n.authorInfo.name || l.G, p = new Date(Object(b.g)(n.revisedAt)), k = a.a.createElement(m.a, {
+					} = this.state, c = n.authorInfo && n.authorInfo.name || l.F, p = new Date(Object(b.g)(n.revisedAt)), k = a.a.createElement(m.a, {
 						tooltipId: "wikipage-revision-author",
 						user: c,
 						sendHoverCardEvent: s.a
@@ -3353,7 +3353,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(h.d, {
-						seconds: p.valueOf() / l.Xb
+						seconds: p.valueOf() / l.Wb
 					}), a.a.createElement(E, {
 						text: p.toString(),
 						isOpen: r,
@@ -3483,4 +3483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ae401482029d37b1d444.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ae8632fec0f615a288a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.4d49ab5365df0c92720c.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.eeddd647a9e68a7f9700.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -408,7 +408,7 @@
 						}, () => this.forceUnsticky = !1)) : y() >= O && this.setState({
 							sticky: !0
 						})
-					}, d.M), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -616,7 +616,7 @@
 				cursor: A.c,
 				earlierNotifications: A.b,
 				hasNextPage: A.d,
-				inboxBadgeCount: F.h,
+				inboxBadgeCount: F.f,
 				isInboxPostEmbedEnabled: P.a,
 				isPending: A.e,
 				todayNotifications: A.i,
@@ -711,7 +711,7 @@
 				}))))))
 			};
 			const K = Object(l.c)({
-				messagesTabBadgeCount: F.i,
+				messagesTabBadgeCount: F.g,
 				notificationsTabBadgeCount: F.a
 			});
 			var Z = Object(d.b)(K, e => ({
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.4d49ab5365df0c92720c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.eeddd647a9e68a7f9700.js.map

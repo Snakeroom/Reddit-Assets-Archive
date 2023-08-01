@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.43cd699b5850d9fbdb98.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.96354a833761573ed68b.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -67,10 +67,10 @@
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				g = n("./src/reddit/actions/toaster.ts"),
 				f = n("./src/lib/makeApiRequest/index.ts"),
-				C = n("./src/lib/omitHeaders/index.ts"),
-				v = n("./src/reddit/constants/headers.ts"),
-				O = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
-			var E = async (e, t, n, s, o, i) => {
+				v = n("./src/lib/omitHeaders/index.ts"),
+				C = n("./src/reddit/constants/headers.ts"),
+				k = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var O = async (e, t, n, s, o, i) => {
 				const c = {
 					recipient: n,
 					months: t,
@@ -78,31 +78,31 @@
 					message: o,
 					correlation_id: i
 				};
-				return Object(f.a)(Object(C.a)(e, [v.a]), {
-					method: b.ob.POST,
+				return Object(f.a)(Object(v.a)(e, [C.a]), {
+					method: b.nb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(O.a)(e)
+					error: Object(k.a)(e)
 				})
-			}, k = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), I = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(I.y), Object(x.a)(I.A), Object(x.a)(I.z), Object(x.a)(I.C);
-			const w = Object(x.a)(I.x),
-				j = Object(x.a)(I.w),
+			}, y = n("./src/reddit/helpers/correlationIdTracker.ts"), E = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(w.y), Object(x.a)(w.A), Object(x.a)(w.z), Object(x.a)(w.C);
+			const j = Object(x.a)(w.x),
+				I = Object(x.a)(w.w),
 				S = e => async (t, n) => {
-					await t(j(e));
-					const o = Object(y.a)(n());
+					await t(I(e));
+					const o = Object(_.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.K.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.J.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.K.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.J.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -111,36 +111,36 @@
 							}
 						})(e, o);
 						t(Object(g.f)({
-							kind: _.b.Error,
+							kind: E.b.Error,
 							duration: g.a,
 							text: n
 						}))
 					}
-				}, N = Object(x.a)(I.B), M = e => async (t, n) => {
+				}, N = Object(x.a)(w.B), M = e => async (t, n) => {
 					const o = n(),
-						i = Object(y.d)(o);
+						i = Object(_.d)(o);
 					t(N(e));
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
 					});
 					t(Object(g.f)({
-						kind: _.b.SuccessCommunity,
+						kind: E.b.SuccessCommunity,
 						text: c
 					}))
 				};
 			var P = n("./src/reddit/actions/gold/modals.ts"),
-				T = n("./src/reddit/components/CoinBalance/index.tsx"),
-				L = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				D = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				R = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				L = n("./src/reddit/components/CoinBalance/index.tsx"),
+				D = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				T = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				B = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				U = n("./src/reddit/models/Gold/Premium/index.ts"),
-				F = n("./src/reddit/selectors/user.ts");
+				G = n("./src/reddit/controls/TextButton/index.tsx"),
+				R = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				F = n("./src/reddit/models/Gold/Premium/index.ts"),
+				K = n("./src/reddit/selectors/user.ts");
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -148,27 +148,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = 10,
-				H = Object(a.c)({
-					coinBalance: F.g,
-					isEmployee: F.P,
-					isPending: y.b,
-					recipientName: y.d
+			const H = 10,
+				J = Object(a.c)({
+					coinBalance: K.g,
+					isEmployee: K.P,
+					isPending: _.b,
+					recipientName: _.d
 				}),
-				V = Object(c.b)(H, e => ({
+				U = Object(c.b)(J, e => ({
 					closeModal: () => e(Object(P.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
 							let {
 								apiContext: a
 							} = c;
-							o(w());
+							o(j());
 							try {
-								const i = await E(a(), t, e, n, s, Object(k.c)(k.a.GiftPremiumFlow));
+								const i = await O(a(), t, e, n, s, Object(y.c)(y.a.GiftPremiumFlow));
 								if (i.error) await o(S(i));
 								else {
 									const e = i.body;
-									await o(M(e)), Object(k.b)(k.a.GiftPremiumFlow)
+									await o(M(e)), Object(y.b)(y.a.GiftPremiumFlow)
 								}
 							} catch (r) {
 								await o(S(r))
@@ -176,14 +176,14 @@
 						})(t, n, s, o ? i : ""))
 					}
 				}));
-			class X extends i.a.PureComponent {
+			class z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: U.a.PREMIUM_1_MONTH
+						selectedPackage: F.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -254,15 +254,15 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.Ab)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.zb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(U.d)(e, t).map(e => ({
-						displayText: Object(U.e)(e),
+					return Object(F.d)(e, t).map(e => ({
+						displayText: Object(F.e)(e),
 						value: e
 					}))
 				}
@@ -277,41 +277,41 @@
 						isAnonymous: a,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(U.e)(d), p = c ? [l.a.messageInputOpen] : "";
-					return i.a.createElement(L.e, {
+					} = this.state, u = Object(F.e)(d), p = c ? [l.a.messageInputOpen] : "";
+					return i.a.createElement(D.e, {
 						className: e
-					}, i.a.createElement(L.i, null, i.a.createElement(K.a, null, i.a.createElement(L.q, null, s.fbt._("Give Premium", null, {
+					}, i.a.createElement(D.i, null, i.a.createElement(R.a, null, i.a.createElement(D.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
-					})), i.a.createElement(B.a, {
+					})), i.a.createElement(G.a, {
 						onClick: this.onClickClose
-					}, i.a.createElement(L.b, null)))), i.a.createElement("div", {
+					}, i.a.createElement(D.b, null)))), i.a.createElement("div", {
 						className: l.a.modalMain
 					}, i.a.createElement("span", {
 						className: l.a.description
 					}, s.fbt._("Use coins to give Premium to {recipient username}:", [s.fbt._param("recipient username", `u/${o}`)], {
 						hk: "1cRm3J"
-					})), i.a.createElement(R.b, {
+					})), i.a.createElement(B.b, {
 						className: l.a.dropdownSelector,
 						displayText: u,
 						options: this.getDropdownMenuItems(),
 						onSelect: this.onClickOption
 					}), i.a.createElement("div", {
 						className: Object(m.a)(l.a.menuContent, p)
-					}, i.a.createElement("div", null, i.a.createElement(D.a, {
+					}, i.a.createElement("div", null, i.a.createElement(T.a, {
 						className: l.a.checkbox,
 						isSelected: a,
 						text: s.fbt._("Make my gift anonymous", null, {
 							hk: "2XfgGX"
 						}),
 						onClick: this.handleToggleAnonymous
-					})), i.a.createElement("div", null, i.a.createElement(D.a, {
+					})), i.a.createElement("div", null, i.a.createElement(T.a, {
 						className: l.a.checkbox,
 						isSelected: c,
 						text: s.fbt._("Add a message", null, {
 							hk: "I4chZ"
 						}),
 						onClick: this.handleToggleIncludeMessage
-					})), i.a.createElement(L.t, {
+					})), i.a.createElement(D.t, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
 						value: r,
@@ -322,32 +322,32 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), i.a.createElement(L.g, null, i.a.createElement(K.a, {
+					}))), i.a.createElement(D.g, null, i.a.createElement(R.a, {
 						className: l.a.coinCountSection
-					}, i.a.createElement(T.a, {
+					}, i.a.createElement(L.a, {
 						className: l.a.coinCount,
 						coinBalance: t
 					}), i.a.createElement("div", {
 						className: l.a.actions
-					}, i.a.createElement(L.a, {
+					}, i.a.createElement(D.a, {
 						onClick: this.onClickClose
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), i.a.createElement(L.r, {
+					})), i.a.createElement(D.r, {
 						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onGivePremium
 					}, n ? i.a.createElement(A.a, {
 						className: l.a.loadingIcon,
-						sizePx: W
+						sizePx: H
 					}) : s.fbt._("Confirm", null, {
 						hk: "2nHzsu"
 					}))))))
 				}
 			}
-			const z = Object(d.a)(Object(u.c)(X));
-			t.default = V(e => i.a.createElement(z, G({}, e, {
+			const X = Object(d.a)(Object(u.c)(z));
+			t.default = U(e => i.a.createElement(X, W({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -572,53 +572,6 @@
 				}, e))
 			}
 		},
-		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return c
-			}));
-			var s = n("./src/lib/constants/index.ts");
-			const o = e => {
-					for (const t of e) {
-						const e = t[0] || "";
-						switch (e) {
-							case s.K.NO_STRIPE_SUBSCRIPTION:
-							case s.K.USER_DOESNT_EXIST:
-							case s.K.USER_REQUIRED_ERROR:
-							case s.K.VALIDATION_ERROR:
-								return e;
-							case s.K.NO_USER:
-							case s.K.NO_TEXT:
-							case s.K.NO_URL:
-								return s.K.VALIDATION_ERROR;
-							case s.K.CREDIT_CARD_FAILURE:
-							case s.K.CREDIT_CARD_FAILURE_GENERIC:
-								return s.K.CREDIT_CARD_FAILURE;
-							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.K.SUBMIT_VALIDATION_ERROR
-						}
-					}
-					return s.K.VALIDATION_ERROR
-				},
-				i = e => {
-					const t = e.body;
-					return {
-						type: o(t.json.errors),
-						fields: t.json.errors.map(e => ({
-							field: e[2] || "",
-							msg: e[1]
-						}))
-					}
-				},
-				c = e => {
-					const t = e.body;
-					return !e.ok && t && t.json && t.json.errors ? {
-						...e,
-						error: i(e)
-					} : e
-				};
-			t.a = i
-		},
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "clickGivePremiumEvent", (function() {
@@ -784,4 +737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.43cd699b5850d9fbdb98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.96354a833761573ed68b.js.map

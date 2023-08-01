@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.fc5390bbdf729af06de3.js
-// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.64092e4c1d48b31e86e2.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -76,7 +76,7 @@
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return p
+				return g
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
@@ -91,54 +91,54 @@
 				h = a("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				v = a("./src/reddit/selectors/subreddit.ts");
 			const {
-				fbt: g
+				fbt: p
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
-			function p(e) {
+			function g(e) {
 				var t, a;
 				const {
 					ratingResponse: n,
 					subredditId: o,
-					children: p
-				} = e, x = null !== (t = Object(r.e)(e => Object(v.X)(e, {
+					children: g
+				} = e, f = null !== (t = Object(r.e)(e => Object(v.X)(e, {
 					subredditId: o
-				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
+				}))) && void 0 !== t ? t : {}, x = Object(d.a)();
 				return s.a.createElement("div", {
 					className: c.a.ratingCard
 				}, "PENDING" === (null == n ? void 0 : n.status) && s.a.createElement("div", {
 					className: Object(i.a)(c.a.card, c.a.pending)
 				}, s.a.createElement(u.a, {
 					className: c.a.infoIcon
-				}), g._("Content tag is pending until reviewed", null, {
+				}), p._("Content tag is pending until reviewed", null, {
 					hk: "Umha7"
 				})), s.a.createElement("div", {
 					className: c.a.card
 				}, s.a.createElement("div", {
 					className: c.a.banner,
 					style: {
-						background: Object(m.g)(Object(h.a)({
-							theme: f
+						background: Object(m.f)(Object(h.a)({
+							theme: x
 						}).banner.backgroundColor, Object(h.a)({
-							theme: f
+							theme: x
 						}).banner.backgroundImage, Object(h.a)({
-							theme: f
+							theme: x
 						}).banner.backgroundImagePosition)
 					}
 				}, s.a.createElement(l.b, {
 					className: c.a.communityIcon,
-					iconUrl: null === (a = x.icon) || void 0 === a ? void 0 : a.url
+					iconUrl: null === (a = f.icon) || void 0 === a ? void 0 : a.url
 				})), s.a.createElement("h3", {
 					className: c.a.communityName
-				}, n ? s.a.createElement("span", null, x.displayText, s.a.createElement("img", {
+				}, n ? s.a.createElement("span", null, f.displayText, s.a.createElement("img", {
 					className: c.a.ratingImg,
 					src: n.rating.icon.png
-				})) : x.displayText), p))
+				})) : f.displayText), g))
 			}
 		},
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "default", (function() {
-				return U
+				return W
 			}));
 			var n = a("./node_modules/icepick/icepick.js"),
 				s = a("./node_modules/lodash/flatMap.js"),
@@ -152,13 +152,13 @@
 				m = a.n(u),
 				h = a("./src/lib/hooks/useMutation.ts"),
 				v = a("./src/lib/sentry/index.ts"),
-				g = a("./src/reddit/actions/subreddit/constants.ts"),
-				p = a("./src/reddit/actions/toaster.ts"),
-				x = a("./node_modules/fbt/lib/FbtPublic.js"),
-				f = a("./node_modules/lodash/range.js"),
-				w = a.n(f),
-				y = a("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				C = a.n(y),
+				p = a("./src/reddit/actions/subreddit/constants.ts"),
+				g = a("./src/reddit/actions/toaster.ts"),
+				f = a("./node_modules/fbt/lib/FbtPublic.js"),
+				x = a("./node_modules/lodash/range.js"),
+				y = a.n(x),
+				w = a("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				C = a.n(w),
 				b = a("./src/lib/classNames/index.ts");
 			var E = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = a("./src/reddit/controls/Button/index.tsx"),
@@ -179,7 +179,7 @@
 					onClose: u = (() => {})
 				} = e, m = function e(t) {
 					return i.Children.toArray(t).reduce((t, a) => a ? a.type === l.a.Fragment ? [...t, ...e(a.props.children)] : [...t, a] : t, [])
-				}(t), h = m.length, v = h > 1 && a > 0, g = null != n ? n : a + 1, p = null != s ? s : h;
+				}(t), h = m.length, v = h > 1 && a > 0, p = null != n ? n : a + 1, g = null != s ? s : h;
 				return l.a.createElement("div", {
 					className: C.a.container
 				}, l.a.createElement("div", {
@@ -189,12 +189,12 @@
 					onClick: d
 				}, l.a.createElement(N.f, {
 					className: C.a.backIcon
-				}), l.a.createElement("div", null, x.fbt._("Back", null, {
+				}), l.a.createElement("div", null, f.fbt._("Back", null, {
 					hk: "39TCGR"
 				}))) : l.a.createElement(k.a, {
 					className: C.a.headerButton,
 					onClick: u
-				}, l.a.createElement(E.b, null), l.a.createElement("div", null, x.fbt._("Close", null, {
+				}, l.a.createElement(E.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), l.a.createElement(j.a, {
 					className: C.a.snoo
@@ -212,29 +212,29 @@
 					className: C.a.footer
 				}, l.a.createElement("div", {
 					className: C.a.progressBar
-				}, p > 1 && w()(p).map((e, t) => l.a.createElement("div", {
+				}, g > 1 && y()(g).map((e, t) => l.a.createElement("div", {
 					key: t,
 					className: Object(b.a)(C.a.progressSegment, {
-						[C.a.active]: t < g
+						[C.a.active]: t < p
 					})
 				}))), l.a.createElement("div", {
 					className: C.a.progress
-				}, p > 1 ? x.fbt._("{current} of {total}", [x.fbt._param("current", g), x.fbt._param("total", p)], {
+				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", p), f.fbt._param("total", g)], {
 					hk: "pZU46"
 				}) : ""), l.a.createElement(_.t, {
 					redditStyle: !0,
 					className: C.a.footerButton,
 					onClick: c,
 					disabled: r
-				}, null != o ? o : a === h - 1 ? x.fbt._("Submit", null, {
+				}, null != o ? o : a === h - 1 ? f.fbt._("Submit", null, {
 					hk: "4aU3dh"
-				}) : x.fbt._("Next", null, {
+				}) : f.fbt._("Next", null, {
 					hk: "2mEXAi"
 				}))))
 			}
 			var S = a("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				O = a("./src/lib/makeGqlRequest/index.ts");
-			var L, A = (e, t) => Object(O.a)(e, {
+				L = a("./src/lib/makeGqlRequest/index.ts");
+			var O, A = (e, t) => Object(L.a)(e, {
 					...S,
 					variables: t
 				}),
@@ -242,7 +242,7 @@
 				Z = a("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(L || (L = {}));
+			}(O || (O = {}));
 			var I = a("./src/reddit/models/Toast/index.ts"),
 				F = a("./node_modules/lodash/mapValues.js"),
 				B = a.n(F),
@@ -296,35 +296,35 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var H;
 
-			function U(e) {
+			function W(e) {
 				var t, a;
 				const {
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, x] = Object(i.useState)({}), f = Object(d.d)(), w = D(null == r ? void 0 : r.questions, u), [{
-					surveyState: y,
+				} = e, [u, f] = Object(i.useState)({}), x = Object(d.d)(), y = D(null == r ? void 0 : r.questions, u), [{
+					surveyState: w,
 					activeSlide: C
 				}, b] = Object(i.useReducer)((e, t) => {
 					let {
 						activeSlide: a
 					} = e;
-					const n = "forward" === t ? Math.min(a + 1, w.length + 1) : Math.max(a - 1, 0);
+					const n = "forward" === t ? Math.min(a + 1, y.length + 1) : Math.max(a - 1, 0);
 					return {
-						surveyState: 0 === n ? H.Intro : n === w.length + 1 ? H.Tag : H.Survey,
+						surveyState: 0 === n ? H.Intro : n === y.length + 1 ? H.Tag : H.Survey,
 						activeSlide: n
 					}
 				}, {
 					surveyState: H.Intro,
 					activeSlide: 0
-				}), E = w[C - 1], _ = Object(Z.a)();
+				}), E = y[C - 1], _ = Object(Z.a)();
 				Object(i.useEffect)(() => {
 					switch (C) {
 						case 0:
 							return _(Object(T.c)());
 						case 1:
 							return _(Object(T.e)());
-						case w.length + 1:
+						case y.length + 1:
 							return _(Object(T.n)())
 					}
 					if (E) return _(Object(T.j)(E.pageType))
@@ -334,24 +334,24 @@
 					error: N
 				}] = Object(h.a)(A);
 				Object(i.useEffect)(() => {
-					N && (v.c.captureException(N), f(Object(p.f)(Object(p.e)(q._("An error occurred", null, {
+					N && (v.c.captureException(N), x(Object(g.f)(Object(g.e)(q._("An error occurred", null, {
 						hk: "1VDETi"
 					}), I.b.Error))))
-				}, [N, f]);
-				const [S, O] = Object(i.useState)(null);
+				}, [N, x]);
+				const [S, L] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
 				function F(e, t) {
-					x(Object(n.setIn)(u, [e], t)), _(Object(T.a)(E.pageType))
+					f(Object(n.setIn)(u, [e], t)), _(Object(T.a)(E.pageType))
 				}
 				const B = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
 					R = (null !== (a = null == E ? void 0 : E.answerOptions) && void 0 !== a ? a : []).map(e => e.id).some(e => B[e]),
-					z = y === H.Survey && C > 1;
+					z = w === H.Survey && C > 1;
 				return l.a.createElement(M, {
 					activeSlide: C,
 					advance: async function() {
-						if (y === H.Survey && C === w.length && O(function(e, t) {
+						if (w === H.Survey && C === y.length && L(function(e, t) {
 								var a;
 								let n = null,
 									s = [];
@@ -369,11 +369,11 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: L.Pending,
+									status: O.Pending,
 									rating: n,
 									ratingReasons: s
 								}
-							}(r, u)), y === H.Tag) {
+							}(r, u)), w === H.Tag) {
 							if (j) return;
 							return _(Object(T.m)()), await k({
 								input: {
@@ -384,10 +384,10 @@
 										answerIds: G(e, u).map(e => e.id)
 									}))
 								}
-							}), f(Object(p.f)(Object(p.e)(q._("Thanks for setting up your Content Tag!", null, {
+							}), x(Object(g.f)(Object(g.e)(q._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), I.b.SuccessCommunityGreen))), f({
-								type: g.E,
+							}), I.b.SuccessCommunityGreen))), x({
+								type: p.E,
 								payload: {
 									id: s,
 									response: S
@@ -401,9 +401,9 @@
 					},
 					onClose: o,
 					progressCurrent: z ? C - 1 : 0,
-					progressTotal: z ? w.length - 1 : 0,
-					disableNext: j || y === H.Survey && !R,
-					buttonText: W(y)
+					progressTotal: z ? y.length - 1 : 0,
+					disableNext: j || w === H.Survey && !R,
+					buttonText: U(w)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -452,7 +452,7 @@
 					hk: "4tG83R"
 				})))], {
 					hk: "2x33OC"
-				})), w.map(e => {
+				})), y.map(e => {
 					var t;
 					return l.a.createElement(P, {
 						key: e.id,
@@ -486,7 +486,7 @@
 				}, e.contentRatingReasonText)))))
 			}
 
-			function W(e) {
+			function U(e) {
 				switch (e) {
 					case H.Intro:
 						return q._("Start Survey", null, {
@@ -586,18 +586,6 @@
 				}) : s.a.createElement(c.a, null), e.children)
 			}
 		},
-		"./src/reddit/hooks/useTheme.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return r
-			}));
-			var n = a("./node_modules/react/index.js"),
-				s = a("./src/lib/CSSVariableProvider/index.tsx");
-
-			function r() {
-				return Object(n.useContext)(s.b)
-			}
-		},
 		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(e, t, a) {
 			e.exports = {
 				checkbox: "_1vmueUAOJJg7fhS7wxztWa"
@@ -660,59 +648,6 @@
 				fill: "inherit",
 				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M8.50575,15.1995 L15.797625,7.907625 C16.25325,7.452625 16.25325,6.71325 15.797625,6.25825 C15.342,5.802625 14.602625,5.802625 14.147625,6.25825 L7.7295,12.676375 L5.635125,10.327625 C5.20575,9.846375 4.46825,9.805125 3.987625,10.23325 C3.506375,10.662625 3.4645,11.400125 3.89325,11.88075 L6.810125,15.151375 C7.023875,15.39075 7.327,15.531375 7.647625,15.54075 C7.658875,15.54075 7.6695,15.541375 7.68075,15.541375 C7.990125,15.541375 8.287,15.41825 8.50575,15.1995 Z"
 			}))
-		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
-		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, a) {
-			e.exports = {
-				circle: "_17IuRdA-NY8vFk-Tt991sn"
-			}
-		},
-		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				r = a("./src/lib/classNames/index.ts"),
-				o = a("./src/reddit/icons/svgs/Circle/index.m.less"),
-				c = a.n(o);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.circle, e.className),
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 8 8"
-			}, s.a.createElement("g", {
-				fill: "inherit",
-				stroke: "none"
-			}, s.a.createElement("circle", {
-				r: "4",
-				cy: "4",
-				cx: "4"
-			})))
 		},
 		"./src/reddit/icons/svgs/DizzySnoo/index.tsx": function(e, t, a) {
 			"use strict";
@@ -1064,4 +999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.fc5390bbdf729af06de3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.64092e4c1d48b31e86e2.js.map

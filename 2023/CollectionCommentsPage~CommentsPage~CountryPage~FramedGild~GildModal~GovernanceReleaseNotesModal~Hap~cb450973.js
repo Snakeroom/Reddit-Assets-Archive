@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.548fb5c757596f78d175.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.9ddf8eb45b9238c981b0.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -149,6 +149,16 @@
 				function(e) {
 					e.Cropped = "CROPPED", e.FullBody = "FULL_BODY", e.ZoomIn = "ZOOM_IN", e.ZoomOut = "ZOOM_OUT"
 				}(a || (a = {}))
+		},
+		"./src/lib/isDefined.ts": function(e, t, n) {
+			"use strict";
+
+			function s(e) {
+				return !!e
+			}
+			n.d(t, "a", (function() {
+				return s
+			}))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -705,7 +715,7 @@
 						postId: h
 					}))
 				}
-				const H = r()(e => {
+				const D = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -713,8 +723,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && P(Object(u.D)(h))
 				}, 200);
 
-				function D(e) {
-					e.persist(), H(e)
+				function H(e) {
+					e.persist(), D(e)
 				}
 
 				function U(e) {
@@ -763,7 +773,7 @@
 						onLoadedMetadata: J,
 						onPause: F,
 						onPlaying: W,
-						onTimeUpdate: D,
+						onTimeUpdate: H,
 						shouldLoad: b,
 						shouldPause: O,
 						showCentered: T,
@@ -1266,7 +1276,7 @@
 		"./src/reddit/components/RichTextJson/media.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return D
+				return H
 			})), n.d(t, "b", (function() {
 				return A
 			}));
@@ -1404,7 +1414,7 @@
 				P = M.a.wrapped(l.a, "ImageBox", T.a),
 				B = M.a.wrapped(e => i.a.createElement("p", e), "Caption", T.a),
 				F = M.a.div("Placeholder", T.a),
-				H = M.a.wrapped(e => {
+				D = M.a.wrapped(e => {
 					let {
 						className: t,
 						e: n,
@@ -1440,7 +1450,7 @@
 						onClick: c
 					}))
 				}, "Placeholder", T.a),
-				D = (e, t) => {
+				H = (e, t) => {
 					let {
 						c: n,
 						x: s,
@@ -1491,7 +1501,7 @@
 					const E = g.G(r, t.id);
 					if (o) return [U(t, n, E)];
 					const _ = [];
-					return !E || E.e === g.t && null === E.s.x && null === E.s.y ? _.push(((e, t, n, s) => i.a.createElement(H, {
+					return !E || E.e === g.t && null === E.s.x && null === E.s.y ? _.push(((e, t, n, s) => i.a.createElement(D, {
 						e,
 						key: t,
 						renderSmallMedia: n,
@@ -1752,8 +1762,8 @@
 				P = n("./src/lib/collectible-expressions/types.ts"),
 				B = n("./src/lib/isDefined.ts"),
 				F = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				H = n("./src/reddit/components/RichTextJson/CollectibleExpression/index.m.less"),
-				D = n.n(H);
+				D = n("./src/reddit/components/RichTextJson/CollectibleExpression/index.m.less"),
+				H = n.n(D);
 			var U = e => {
 				let {
 					data: t
@@ -1770,7 +1780,7 @@
 					i = Object(R.d)(t.expression),
 					a = (null === (n = t.expression.find(e => Object(B.a)(e.n))) || void 0 === n ? void 0 : n.n) || "";
 				return o.a.createElement("div", null, o.a.createElement("div", {
-					className: D.a.container,
+					className: H.a.container,
 					style: {
 						"--avatar-position-alignment": s.alignment,
 						"--avatar-position-top": s.top,
@@ -1788,26 +1798,26 @@
 					srcSet: i[P.a.Back].srcSet
 				}), o.a.createElement("img", {
 					src: i[P.a.Back].fallback,
-					className: D.a.expressionLayer
+					className: H.a.expressionLayer
 				})), o.a.createElement("div", {
-					className: D.a.avatarWrapper
+					className: H.a.avatarWrapper
 				}, o.a.createElement("div", {
-					className: D.a.avatarInnerWrapper
+					className: H.a.avatarInnerWrapper
 				}, o.a.createElement("img", {
 					src: t.avatar.s.u,
-					className: D.a.avatar
+					className: H.a.avatar
 				}))), i[P.a.Front].srcSet && i[P.a.Front].fallback && o.a.createElement("picture", null, o.a.createElement("source", {
 					srcSet: i[P.a.Front].srcSet
 				}), o.a.createElement("img", {
 					src: i[P.a.Front].fallback,
-					className: D.a.expressionLayer
+					className: H.a.expressionLayer
 				}))), o.a.createElement("span", {
-					className: D.a.attribution
+					className: H.a.attribution
 				}, L.fbt._("via {attributionLink}", [L.fbt._param("attributionLink", o.a.createElement("a", {
 					href: "https://reddithelp.com/hc/articles/14430023441172",
 					target: "_blank",
 					rel: "noopener noreferrer",
-					className: D.a.attributionLink
+					className: H.a.attributionLink
 				}, L.fbt._("Collectible Expressions", null, {
 					hk: "3faisR"
 				})))], {
@@ -2215,12 +2225,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case b.gg.SmIcon:
+						case b.bg.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.gg.SmIconHc:
+						case b.bg.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2437,12 +2447,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Zf
+						experimentName: s.Uf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.gg.SmIcon || t === s.gg.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2468,4 +2478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.548fb5c757596f78d175.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.9ddf8eb45b9238c981b0.js.map

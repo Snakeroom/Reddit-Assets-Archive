@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.0acf1ab1b810c5337df7.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.64cfb7a15a6f596e090e.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -51,9 +51,9 @@
 				O = s("./src/reddit/components/InlineSubredditEditing/index.m.less"),
 				b = s.n(O);
 			const {
-				fbt: x
+				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			class g extends i.a.Component {
+			class x extends i.a.Component {
 				componentDidMount() {
 					this.props.sendEvent(m.e), this.props.onViewTooltip()
 				}
@@ -77,19 +77,19 @@
 					}, t), i.a.createElement(h.l, {
 						className: b.a.gotIt,
 						onClick: this.props.onDismissTooltip
-					}, s || x._("Got it", null, {
+					}, s || g._("Got it", null, {
 						hk: "4CoCjQ"
 					})))
 				}
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Eb)()
+					e(Object(c.i)()), Object(u.Db)()
 				},
 				onViewTooltip: () => {
-					Object(u.dc)()
+					Object(u.bc)()
 				}
-			}))(Object(p.c)(g));
+			}))(Object(p.c)(x));
 			const T = "editable-primary-topic-idcard";
 			var y = s("./src/reddit/controls/DropdownSelector/index.tsx"),
 				C = s("./src/reddit/models/Tags/index.ts"),
@@ -300,8 +300,8 @@
 					className: m.a.closeIcon
 				}))),
 				b = s("./src/reddit/helpers/trackers/communityTopics.ts"),
-				x = s("./src/reddit/models/Tags/index.ts"),
-				g = s("./src/reddit/models/Toast/index.ts"),
+				g = s("./src/reddit/models/Tags/index.ts"),
+				x = s("./src/reddit/models/Toast/index.ts"),
 				f = s("./src/reddit/selectors/tags.ts");
 			const T = Object(a.c)({
 					suggestedOptions: (e, t) => {
@@ -339,10 +339,10 @@
 								const a = r();
 								Object(f.r)(a, {
 									subredditId: s
-								}).length >= x.a ? e(Object(l.f)({
-									...Object(l.e)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", x.a.toString())], {
+								}).length >= g.a ? e(Object(l.f)({
+									...Object(l.e)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", g.a.toString())], {
 										hk: "1OySAh"
-									}), g.b.Error),
+									}), x.b.Error),
 									duration: l.a
 								})) : (e(Object(c.j)({
 									subredditId: s,
@@ -375,7 +375,7 @@
 		"./src/reddit/components/CommunityTopics/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return g
+				return x
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -391,7 +391,7 @@
 				m = s("./src/reddit/selectors/tags.ts"),
 				O = s("./src/reddit/components/CommunityTopics/index.m.less"),
 				b = s.n(O);
-			const x = Object(a.c)({
+			const g = Object(a.c)({
 				availableSubredditTags: (e, t) => {
 					let {
 						subredditId: s
@@ -434,7 +434,7 @@
 					})
 				}
 			});
-			class g extends i.a.Component {
+			class x extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionsChanged = e => {
 						const t = e.filter(e => e.selected),
@@ -493,7 +493,7 @@
 					}, this.props.children))
 				}
 			}
-			t.b = Object(r.b)(x, (e, t) => {
+			t.b = Object(r.b)(g, (e, t) => {
 				let {
 					subredditId: s,
 					context: o
@@ -540,7 +540,7 @@
 						}))
 					})
 				}
-			})(g)
+			})(x)
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -579,11 +579,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = {
+			const g = {
 					height: 200,
 					width: 200
 				},
-				g = e => {
+				x = e => {
 					switch (e) {
 						case "top":
 							return "bottom";
@@ -636,7 +636,7 @@
 					super(e), this.checkAndSetPosition = () => {
 						const {
 							tooltipId: e,
-							tooltipSizeEstimate: t = x
+							tooltipSizeEstimate: t = g
 						} = this.props;
 						l.a.read(() => {
 							const s = document.getElementById(e);
@@ -661,7 +661,7 @@
 									o = n.top > t.height
 							}
 							this.setState({
-								position: o ? this.props.defaultTooltipPosition : g(this.props.defaultTooltipPosition)
+								position: o ? this.props.defaultTooltipPosition : x(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -745,9 +745,9 @@
 				m = s("./src/reddit/components/CommunityTopics/SuggestedTopics/index.tsx"),
 				O = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/Placeholder/index.tsx"),
 				b = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				x = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				g = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/SelectedOptionComponent/index.m.less"),
-				f = s.n(g);
+				g = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				x = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/SelectedOptionComponent/index.m.less"),
+				f = s.n(x);
 
 			function T() {
 				return (T = Object.assign || function(e) {
@@ -790,7 +790,7 @@
 				}))
 			}, I = () => o.a.createElement("div", {
 				className: Object(a.a)(f.a.selectedOption, f.a.readOnlySelectedOption, f.a.fakeOption)
-			}, o.a.createElement(x.a, {
+			}, o.a.createElement(g.a, {
 				className: f.a.plusIcon
 			}), y._("Add subtopics", null, {
 				hk: "aLm7V"
@@ -1274,8 +1274,8 @@
 				O = s("./src/reddit/components/MultiOptionSelect/SelectedOption/index.m.less"),
 				b = s.n(O);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1283,7 +1283,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = e => {
+			var x = e => {
 					const {
 						className: t,
 						innerRef: s,
@@ -1292,7 +1292,7 @@
 						maxLength: i,
 						...d
 					} = e, c = [b.a.selectedOptionComponentContainer, t];
-					return i && i < o.displayText.length && c.push(b.a.selectedOptionComponentContainerError), r.a.createElement("div", x({
+					return i && i < o.displayText.length && c.push(b.a.selectedOptionComponentContainerError), r.a.createElement("div", g({
 						className: Object(a.a)(...c),
 						ref: s
 					}, d, {
@@ -1365,7 +1365,7 @@
 				render() {
 					const e = {};
 					Object(T.c)(this.props.readOnlyMode) || (e.tabIndex = 0);
-					const t = this.props.selectedOptionComponent || g,
+					const t = this.props.selectedOptionComponent || x,
 						s = "number" == typeof this.props.maxOptionsToDisplay && this.props.options.length > this.props.maxOptionsToDisplay;
 					return r.a.createElement("div", S({
 						"aria-invalid": this.props.isError,
@@ -1491,53 +1491,6 @@
 				}
 			}
 			t.a = _
-		},
-		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				i = s("./src/higherOrderComponents/asTooltip.tsx"),
-				r = s("./src/reddit/constants/elementIds.ts"),
-				a = s("./src/reddit/contexts/InsideOverlay.tsx");
-
-			function d() {
-				return (d = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-
-			function c(e, t) {
-				const s = Object(i.a)(e, t);
-				class n extends o.a.PureComponent {
-					constructor() {
-						super(...arguments), this.state = {
-							container: null
-						}
-					}
-					componentDidMount() {
-						if (this.props.isOverlay) {
-							const e = document.getElementById(r.e);
-							this.setState({
-								container: e
-							})
-						}
-					}
-					render() {
-						return o.a.createElement(s, d({}, this.props, {
-							container: this.state.container || this.props.container,
-							excludeContainerPosition: this.props.isOverlay
-						}))
-					}
-				}
-				return Object(a.b)(n)
-			}
 		},
 		"./src/reddit/controls/DropdownSelector/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1752,4 +1705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.0acf1ab1b810c5337df7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.64cfb7a15a6f596e090e.js.map

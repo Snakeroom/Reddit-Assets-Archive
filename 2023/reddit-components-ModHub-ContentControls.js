@@ -1,35 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.058b03a03963a4ef4a1e.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.115de3dd973d3d2132df.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
-		"./node_modules/lodash/negate.js": function(e, t) {
-			var n = "Expected a function";
-			e.exports = function(e) {
-				if ("function" != typeof e) throw new TypeError(n);
-				return function() {
-					var t = arguments;
-					switch (t.length) {
-						case 0:
-							return !e.call(this);
-						case 1:
-							return !e.call(this, t[0]);
-						case 2:
-							return !e.call(this, t[0], t[1]);
-						case 3:
-							return !e.call(this, t[0], t[1], t[2])
-					}
-					return !e.apply(this, t)
-				}
-			}
-		},
-		"./node_modules/lodash/omitBy.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseIteratee.js"),
-				i = n("./node_modules/lodash/negate.js"),
-				o = n("./node_modules/lodash/pickBy.js");
-			e.exports = function(e, t) {
-				return o(e, i(s(t)))
-			}
-		},
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -1621,9 +1593,9 @@
 				},
 				Vt = n("./src/telemetry/models/Event.ts");
 			const Zt = (e, t) => n => ({
-					source: Vt.f.CommunitySettings,
-					action: Vt.d.Save,
-					noun: Vt.e.HarassmentControlLevel,
+					source: Vt.e.CommunitySettings,
+					action: Vt.c.Save,
+					noun: Vt.d.HarassmentControlLevel,
 					setting: {
 						value: `${e}`,
 						oldValue: `${t}`
@@ -1853,4 +1825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.058b03a03963a4ef4a1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.115de3dd973d3d2132df.js.map

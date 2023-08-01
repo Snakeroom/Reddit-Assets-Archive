@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.83e0fecb406160e8bd37.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.3c59ba02afb6e4d55d26.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/PillButton/index.m.less": function(t, e, i) {
@@ -31,8 +31,8 @@
 			var n, s = i("./node_modules/react/index.js"),
 				o = i.n(s),
 				l = i("./src/lib/classNames/index.ts"),
-				r = i("./src/reddit/components/Pill/PillButton/index.m.less"),
-				a = i.n(r);
+				a = i("./src/reddit/components/Pill/PillButton/index.m.less"),
+				r = i.n(a);
 
 			function d() {
 				return (d = Object.assign || function(t) {
@@ -47,10 +47,10 @@
 			}(n || (n = {}));
 			const c = {
 					[n.BUTTON]: void 0,
-					[n.TAB_GROUP]: a.a.tabGroup
+					[n.TAB_GROUP]: r.a.tabGroup
 				},
 				u = (t, e) => {
-					if (e !== n.BUTTON) return t ? a.a.active : a.a.inactive
+					if (e !== n.BUTTON) return t ? r.a.active : r.a.inactive
 				},
 				p = t => {
 					let {
@@ -58,11 +58,11 @@
 						children: i,
 						className: n,
 						disabled: s = !1,
-						variant: r,
+						variant: a,
 						...p
 					} = t;
 					return o.a.createElement("button", d({}, p, {
-						className: Object(l.a)(a.a.primaryButton, c[r], u(e, r), n),
+						className: Object(l.a)(r.a.primaryButton, c[a], u(e, a), n),
 						disabled: s
 					}), i)
 				}
@@ -86,53 +86,17 @@
 				closeIcon: "_1P6W3uUZ7ehYwJrW6a7sfJ"
 			}
 		},
-		"./src/reddit/components/Pill/index.m.less": function(t, e, i) {
-			t.exports = {
-				pillContainer: "_3LO_LEpMLN8-uaedpg6nl4"
-			}
-		},
-		"./src/reddit/components/Pill/index.tsx": function(t, e, i) {
-			"use strict";
-			i.d(e, "a", (function() {
-				return d
-			}));
-			var n = i("./node_modules/react/index.js"),
-				s = i.n(n),
-				o = i("./src/lib/classNames/index.ts"),
-				l = i("./src/reddit/components/Pill/index.m.less"),
-				r = i.n(l);
-
-			function a() {
-				return (a = Object.assign || function(t) {
-					for (var e = 1; e < arguments.length; e++) {
-						var i = arguments[e];
-						for (var n in i) Object.prototype.hasOwnProperty.call(i, n) && (t[n] = i[n])
-					}
-					return t
-				}).apply(this, arguments)
-			}
-			const d = t => {
-				let {
-					children: e,
-					className: i,
-					...n
-				} = t;
-				return s.a.createElement("div", a({
-					className: Object(o.a)(r.a.pillContainer, i)
-				}, n), e)
-			}
-		},
 		"./src/reddit/components/TabBadger/Component.tsx": function(t, e, i) {
 			"use strict";
 			i.r(e), i.d(e, "SHORT_TIMER", (function() {
-				return f
+				return w
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/react/index.js"),
 				o = i.n(s),
 				l = i("./src/lib/classNames/index.ts"),
-				r = i("./src/lib/constants/index.ts"),
-				a = i("./src/reddit/components/Pill/index.tsx"),
+				a = i("./src/lib/constants/index.ts"),
+				r = i("./src/reddit/components/Pill/index.tsx"),
 				d = i("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = i("./src/reddit/components/Pill/PillButton/index.tsx"),
 				u = i("./src/reddit/components/Pill/PillButtonGroup/index.m.less"),
@@ -168,12 +132,12 @@
 					action: "click",
 					noun: B
 				});
-			var v = i("./src/reddit/components/TabBadger/index.m.less"),
-				T = i.n(v);
-			const C = 12 * r.U,
-				f = 2 * r.U,
-				j = 5e4;
-			class x extends s.Component {
+			var T = i("./src/reddit/components/TabBadger/index.m.less"),
+				v = i.n(T);
+			const C = 12 * a.T,
+				w = 2 * a.T,
+				f = 5e4;
+			class j extends s.Component {
 				constructor() {
 					super(...arguments), this.timer = 0, this.state = {
 						isPillHidden: !0
@@ -185,7 +149,7 @@
 							subredditName: e,
 							subscriberCount: i
 						} = this.props;
-						window.clearTimeout(this.timer), t || e === _.d.All || e === _.d.Popular ? this.timer = window.setTimeout(this.badgeFavicon, f) : i && i > j && (this.timer = window.setTimeout(this.badgeFavicon, C))
+						window.clearTimeout(this.timer), t || e === _.d.All || e === _.d.Popular ? this.timer = window.setTimeout(this.badgeFavicon, w) : i && i > f && (this.timer = window.setTimeout(this.badgeFavicon, C))
 					}, this.unbadgeFavicon = () => !this.props.tabBadged && Object(b.b)(!1), this.hidePill = () => this.setState({
 						isPillHidden: !0
 					}), this.activatePill = () => {
@@ -207,9 +171,9 @@
 				}
 				render() {
 					return o.a.createElement("div", {
-						className: T.a.pillContainer
-					}, o.a.createElement(a.a, {
-						className: Object(l.a)(T.a.pill, this.state.isPillHidden && T.a.pillHidden)
+						className: v.a.pillContainer
+					}, o.a.createElement(r.a, {
+						className: Object(l.a)(v.a.pill, this.state.isPillHidden && v.a.pillHidden)
 					}, o.a.createElement(h, {
 						onClick: this.handlePillClick,
 						onClickClose: this.hidePill
@@ -218,7 +182,7 @@
 					}))))
 				}
 			}
-			e.default = x
+			e.default = j
 		},
 		"./src/reddit/components/TabBadger/index.m.less": function(t, e, i) {
 			t.exports = {
@@ -229,4 +193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.83e0fecb406160e8bd37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.3c59ba02afb6e4d55d26.js.map

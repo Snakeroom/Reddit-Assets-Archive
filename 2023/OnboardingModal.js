@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.b7f725a36aa0b75690a8.js
-// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.06cba86db7764c074483.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -468,7 +468,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Ig)(p),
+						includeInterestTopics: !!p && !Object(b.Dg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -478,7 +478,7 @@
 						includeExposureEvents: !!t.isFirstLoad,
 						recentPostIds: e.posts.recent
 					};
-					return O ? (C.sort = U.N.Best, C.feedRankingContext.variant = "lo_d2x_def_pop") : d && (C.sort = d.toUpperCase()), C.feedRankingContext.loggedOutAllowNsfw = Object(M.a)(e), u && (C.range = u.toUpperCase()), o ? C.pageSize = Object(f.a)(i) : l && (C.pageSize = l), v && v.ad && (C.forceAds = {
+					return O ? (C.sort = U.M.Best, C.feedRankingContext.variant = "lo_d2x_def_pop") : d && (C.sort = d.toUpperCase()), C.feedRankingContext.loggedOutAllowNsfw = Object(M.a)(e), u && (C.range = u.toUpperCase()), o ? C.pageSize = Object(f.a)(i) : l && (C.pageSize = l), v && v.ad && (C.forceAds = {
 						ad: v.ad
 					}), r && (C.after = Object(c.a)(r)), C
 				},
@@ -727,7 +727,7 @@
 							meta: f.meta,
 							correlationId: O,
 							...s
-						})), n(Z.g(E)), s.geoFilter && n(Object(X.k)(s.geoFilter)), s.liveBarContent && n(Object(Ce.b)(Object(ie.b)(f) ? null !== (u = null === (d = null === (l = s.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = s.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
+						})), n(Z.g(E)), s.geoFilter && n(Object(X.k)(s.geoFilter)), s.liveBarContent && n(Object(Ce.b)(Object(ie.a)(f) ? null !== (u = null === (d = null === (l = s.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = s.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), n(Object(be.b)(ve.a.FRONTPAGE));
@@ -767,7 +767,7 @@
 						p = o.listings.postOrder.api.pending[d],
 						b = Object(ce.b)(o),
 						g = te.H in e.queryParams && e.queryParams[te.H].toUpperCase() || "",
-						f = g in l.oc && l.oc[g],
+						f = g in l.nc && l.nc[g],
 						h = Q.e();
 					if (p || u && !m && !t) return void(u && (n(J.n({
 						title: b ? Object(K.a)(o, h) : h
@@ -824,7 +824,7 @@
 						m = Object(pe.a)(ee.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[te.H] ? u[te.H].toUpperCase() : "",
-						g = b in l.oc && l.oc[b];
+						g = b in l.nc && l.nc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							s = i.listings.postOrder.fetchedTokens,
@@ -887,7 +887,7 @@
 						o = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						i = Object(pe.a)(ee.b, a, o),
 						c = o[te.H] ? o[te.H].toUpperCase() : "",
-						d = c in l.oc && l.oc[c],
+						d = c in l.nc && l.nc[c],
 						u = Object(re.a)(s),
 						m = Object(re.b)(u);
 					await t(we(i, {
@@ -1341,7 +1341,7 @@
 											let s;
 											(s = e.keyCode === u.i.ArrowUp || e.keyCode === u.i.ArrowLeft ? d.current[t ? t - 1 : n] : d.current[t === n ? 0 : t + 1]) && f(s)
 										}
-										e.keyCode === u.L && (null === (n = d.current[t]) || void 0 === n || n.focus())
+										e.keyCode === u.K && (null === (n = d.current[t]) || void 0 === n || n.focus())
 									}
 								})(e, n),
 								placeholder: e.displayText,
@@ -1823,8 +1823,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.h) === ke.od.TopTwo;
-					const f = Object(i.e)(Se.g) === ke.od.TopTwo;
+					let g = Object(i.e)(Se.h) === ke.jd.TopTwo;
+					const f = Object(i.e)(Se.g) === ke.jd.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -2138,12 +2138,12 @@
 			var ht = (e, t) => {
 					const n = (e => {
 						return {
-							[ke.ob.Default]: it,
-							[ke.ob.FruitVeg]: ut,
-							[ke.ob.Karma]: mt,
-							[ke.ob.Interactive]: pt(e),
-							[ke.ob.Randomizer]: bt,
-							[ke.ob.FruitVegWithBody]: gt
+							[ke.jb.Default]: it,
+							[ke.jb.FruitVeg]: ut,
+							[ke.jb.Karma]: mt,
+							[ke.jb.Interactive]: pt(e),
+							[ke.jb.Randomizer]: bt,
+							[ke.jb.FruitVegWithBody]: gt
 						}
 					})(t);
 					return e in n ? n[e] : it
@@ -2976,12 +2976,12 @@
 					(I || N) && async function() {
 						q(!0);
 						const e = await fn(t, he);
-						q(!1), e && (se(Date.now() / u.Xb), D(e))
+						q(!1), e && (se(Date.now() / u.Wb), D(e))
 					}()
 				}, [I, N, t, he]), Object(a.useEffect)(() => {
 					N && Object(vn.a)(null == S ? void 0 : S.genderCategory, N.success)
 				}, [N, S]);
-				const Oe = Object(i.e)(Se.i) === ke.pb.Removed;
+				const Oe = Object(i.e)(Se.i) === ke.kb.Removed;
 				Object(a.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3005,7 +3005,7 @@
 					xe = Object(i.e)(ye.k),
 					_e = Object(i.e)(Se.h),
 					Ee = Object(i.e)(Se.g),
-					Ce = _e === ke.od.TopTwo || _e === ke.od.All || Ee === ke.od.TopTwo || Ee === ke.od.All,
+					Ce = _e === ke.jd.TopTwo || _e === ke.jd.All || Ee === ke.jd.TopTwo || Ee === ke.jd.All,
 					je = Object(a.useCallback)(async e => {
 						ie(!0);
 						const n = await Object(On.c)(e, t, xe);
@@ -3024,9 +3024,9 @@
 					Ie = Object(i.e)(ee.U),
 					we = Object(i.e)(ye.g),
 					Pe = Object(i.e)(kn.a),
-					Re = Pe === ke.ng.CloseOnboarding,
-					Fe = Pe === ke.ng.SkipTopicSelection,
-					Ge = Pe === ke.ng.SmartSignal,
+					Re = Pe === ke.ig.CloseOnboarding,
+					Fe = Pe === ke.ig.SkipTopicSelection,
+					Ge = Pe === ke.ig.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, we, h, Te, r]),
@@ -3061,7 +3061,7 @@
 					}, [qe, r]),
 					ze = Object(a.useCallback)(async () => {
 						r(Object(F.u)());
-						const e = Date.now() / u.Xb - te;
+						const e = Date.now() / u.Wb - te;
 						Ge && e <= 5 ? (L(!0), U({}), Ve()) : (k(zt.COMMUNITIES), De())
 					}, [De, r, Ve, te, Ge]),
 					Ke = Object(a.useCallback)(async () => {
@@ -5071,10 +5071,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Ie
-					}) === s.Wd)
+						experimentName: s.De
+					}) === s.Rd)
 				},
-				i = Object(a.a)(s.Je)
+				i = Object(a.a)(s.Ee)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"d45d9e249839"}')
@@ -5108,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.b7f725a36aa0b75690a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.06cba86db7764c074483.js.map

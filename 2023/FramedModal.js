@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.435a12d613b2f4634987.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.f6cbe21f33bc68a3a74b.js
+// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/_CrisisFlow.m.less": function(e, s, t) {
@@ -55,7 +55,7 @@
 						const s = this.resolve(e);
 						return !1 !== this.resolved[s] && !!t.m[s]
 					},
-					importAsync: () => Promise.all([t.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), t.e("Governance~ModListing~Reddit~ReportFlow"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
+					importAsync: () => t.e("ReportFlow").then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
 					requireAsync(e) {
 						const s = this.resolve(e);
 						return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
@@ -95,8 +95,6 @@
 			t.d(s, "a", (function() {
 				return r
 			})), t.d(s, "b", (function() {
-				return o
-			})), t.d(s, "c", (function() {
 				return i
 			}));
 			var r, o, n;
@@ -159,7 +157,7 @@
 					PAYPAL_FINISH: "paypal-finish",
 					REPORT: "report"
 				};
-			class w extends i.a.Component {
+			class y extends i.a.Component {
 				constructor(e) {
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.onContentResize = () => {
 							this.maybeResize()
@@ -195,7 +193,7 @@
 						case F.REPORT: {
 							const e = this.queryParams.host_app_name;
 							return i.a.createElement(A.b, {
-								hostAppName: O.c.has(e) ? e : void 0,
+								hostAppName: O.b.has(e) ? e : void 0,
 								postId: this.queryParams.post_id,
 								commentId: this.queryParams.comment_id,
 								messageId: this.queryParams.message_id,
@@ -250,7 +248,7 @@
 					}))
 				}
 			}
-			s.default = w
+			s.default = y
 		},
 		"./src/reddit/pages/PaypalFinishPage/async.tsx": function(e, s, t) {
 			"use strict";
@@ -278,4 +276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.435a12d613b2f4634987.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.f6cbe21f33bc68a3a74b.js.map
