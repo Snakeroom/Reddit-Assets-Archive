@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fc296dcdb0a0724e6f82.js
-// Retrieved at 7/31/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4e72be69e2b7bcbb0f7a.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -568,8 +568,8 @@
 				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
 				D = a.n(R);
 			const {
-				fbt: L
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
+				fbt: G
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), L = e => {
 				let {
 					award: t,
 					coinBalance: a,
@@ -610,7 +610,7 @@
 						"data-redditstyle": !0,
 						disabled: d || s,
 						onClick: e
-					}, L._("Complete purchase", null, {
+					}, G._("Complete purchase", null, {
 						hk: "3d1QJR"
 					})))
 				}
@@ -809,7 +809,7 @@
 						stripe: a,
 						elements: r
 					} = t;
-					return o.a.createElement(G, {
+					return o.a.createElement(L, {
 						award: e.selectedAward,
 						coinBalance: e.coinBalance,
 						gildThingId: e.gildThingId,
@@ -2018,8 +2018,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.lf),
-				i = Object(o.a)(s.mf),
+			const c = Object(o.a)(s.if),
+				i = Object(o.a)(s.jf),
 				d = Object(r.a)([c, i], (e, t) => new Set([t && n.Mb, e && n.Nb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2029,7 +2029,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.Jd)
+			const s = Object(n.a)(r.Gd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2069,4 +2069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fc296dcdb0a0724e6f82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4e72be69e2b7bcbb0f7a.js.map

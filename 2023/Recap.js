@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.67bf4dc78e502e3e72f2.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.0f47b79aa8c04d8e3c8f.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -99,13 +99,13 @@
 			const S = e => Object(C.c)(e, {
 				experimentEligibilitySelector: N.S,
 				experimentName: k.Hb
-			}) === k.Zd;
+			}) === k.Wd;
 			var y = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(C.c)(e, {
-				experimentName: k.jc,
+				experimentName: k.ic,
 				experimentEligibilitySelector: C.a
-			}) === k.Zd;
+			}) === k.Wd;
 			var w = t("./src/reddit/selectors/meta.ts");
 			let R = !1;
 			const T = async (e, a) => {
@@ -759,12 +759,12 @@
 						hk: "2NAMZ4"
 					}))))
 				},
-				Z = t("./src/reddit/pages/Recap/Components/LoadingIcon/index.m.less"),
-				q = t.n(Z);
-			var z = () => c.a.createElement("div", {
-					className: q.a.circle
+				q = t("./src/reddit/pages/Recap/Components/LoadingIcon/index.m.less"),
+				z = t.n(q);
+			var Z = () => c.a.createElement("div", {
+					className: z.a.circle
 				}, c.a.createElement("img", {
-					className: q.a.image,
+					className: z.a.image,
 					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
 				V = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
@@ -2031,7 +2031,7 @@
 				[r.WHITE]: [Ue.MANGO_500, Ue.MANGO_300, Ue.MANGO_100],
 				[r.YELLOW]: [Ue.WHITE, Ue.MANGO_300, Ue.MANGO_500]
 			};
-			var Ze, qe = e => {
+			var qe, ze = e => {
 				let {
 					card: {
 						title: a,
@@ -2090,8 +2090,8 @@
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Ze || (Ze = {}));
-			const ze = [Ze.WHITE, Ze.MANGO_300, Ze.MANGO_500];
+			}(qe || (qe = {}));
+			const Ze = [qe.WHITE, qe.MANGO_300, qe.MANGO_500];
 			var Ve = e => {
 				let {
 					card: {
@@ -2120,7 +2120,7 @@
 					}),
 					style: {
 						width: `${s?Xe[a]:0}px`,
-						backgroundColor: ze[a],
+						backgroundColor: Ze[a],
 						transitionDelay: `${.25*a+.4}s`
 					}
 				}, c.a.createElement("div", {
@@ -2205,7 +2205,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === R)(a) ? c.a.createElement(qe, {
+					}) : (e => e.__typename === R)(a) ? c.a.createElement(ze, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2448,11 +2448,11 @@
 						}, 2e3, {
 							trailing: !1
 						})),
-						Z = Object(s.useRef)(null),
-						q = Object(s.useCallback)(() => {
-							(null == Z ? void 0 : Z.current) && y.length && (R(!1), F(Z.current.clientHeight / y.length))
+						q = Object(s.useRef)(null),
+						z = Object(s.useCallback)(() => {
+							(null == q ? void 0 : q.current) && y.length && (R(!1), F(q.current.clientHeight / y.length))
 						}, [y]);
-					Object(s.useEffect)(() => (q(), addEventListener("resize", q), () => removeEventListener("resize", q)), [Z, y.length, q]);
+					Object(s.useEffect)(() => (z(), addEventListener("resize", z), () => removeEventListener("resize", z)), [q, y.length, z]);
 					const V = Object(s.useCallback)(e => {
 							if (null !== e && y.length && !i) {
 								if (e.focus(), W && !N && !E) return S(!0);
@@ -2489,12 +2489,12 @@
 						}, [k, C, e, a]);
 					return o ? c.a.createElement(G, {
 						onRetry: H
-					}) : l || !T ? c.a.createElement(z, null) : c.a.createElement(c.a.Fragment, null, y.length ? c.a.createElement("div", {
+					}) : l || !T ? c.a.createElement(Z, null) : c.a.createElement(c.a.Fragment, null, y.length ? c.a.createElement("div", {
 						ref: V,
 						className: oa.a.cardsContainer,
 						tabIndex: 0
 					}, c.a.createElement("div", {
-						ref: Z,
+						ref: q,
 						className: Object(p.a)(oa.a.wrapper, {
 							[oa.a.animated]: w
 						}),
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.67bf4dc78e502e3e72f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.0f47b79aa8c04d8e3c8f.js.map

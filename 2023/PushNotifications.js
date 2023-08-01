@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.2e38ea94c7e1fa074339.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.ad62385b715b651ef14b.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -99,19 +99,19 @@
 			const q = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
 				experimentName: y.Hb
-			}) === y.Zd;
+			}) === y.Wd;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				F = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(w.c)(e, {
-				experimentName: y.jc,
+				experimentName: y.ic,
 				experimentEligibilitySelector: w.a
-			}) === y.Zd;
-			var C = i("./src/reddit/selectors/meta.ts");
-			let W = !1;
+			}) === y.Wd;
+			var W = i("./src/reddit/selectors/meta.ts");
+			let C = !1;
 			const D = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (W) return;
-				if (W = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (C) return;
+				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -134,7 +134,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, r) => {
 					const c = s(),
-						u = Object(C.f)(c),
+						u = Object(W.f)(c),
 						l = x(c),
 						b = !!Object(k.a)(c),
 						f = Object(N.a)(c),
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.2e38ea94c7e1fa074339.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.ad62385b715b651ef14b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.59b1f0eac0bad1c46e01.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bbe291b557062728e8ca.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -191,8 +191,8 @@
 				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				R = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				U = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				B = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(B),
+				W = n("./node_modules/lodash/sampleSize.js"),
+				B = n.n(W),
 				I = n("./node_modules/request-idle-callback/index.js"),
 				D = n("./src/lib/constants/index.ts"),
 				K = n("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -235,7 +235,7 @@
 					Object(I.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: W()(e, ee)
+							subredditNames: B()(e, ee)
 						})
 					})
 				}
@@ -613,19 +613,19 @@
 					}))))
 				}),
 				Ue = n("./src/reddit/constants/experiments.ts"),
-				Be = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				We = n("./src/reddit/selectors/user.ts");
+				We = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				Be = n("./src/reddit/selectors/user.ts");
 			var Ie = n("./src/reddit/selectors/seo/linksModule.ts"),
 				De = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ke = Object(o.c)({
-					isLoggedIn: We.R,
-					currentUser: We.m,
+					isLoggedIn: Be.R,
+					currentUser: Be.m,
 					frontpageLinks: Ie.b,
 					shouldShowTopicsWidget: e => (function(e) {
-						return Object(Be.c)(e, {
-							experimentEligibilitySelector: We.S,
-							experimentName: Ue.cd
-						}) === Ue.Zd
+						return Object(We.c)(e, {
+							experimentEligibilitySelector: Be.S,
+							experimentName: Ue.ad
+						}) === Ue.Wd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -921,4 +921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.59b1f0eac0bad1c46e01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bbe291b557062728e8ca.js.map

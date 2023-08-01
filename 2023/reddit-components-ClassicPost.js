@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6676bdbb986c1ce35c01.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4508cba853ecbc603399.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -751,9 +751,9 @@
 				z = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				q = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				X = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				Z = s("./src/reddit/helpers/trackers/creatorStats.ts"),
-				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				J = s.n(K),
+				K = s("./src/reddit/helpers/trackers/creatorStats.ts"),
+				Z = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				J = s.n(Z),
 				Q = s("./src/reddit/models/Post/index.ts"),
 				$ = s("./src/redditGQL/types.ts"),
 				ee = s("./src/reddit/components/LiveChatActiveUserCountWrapper/index.tsx"),
@@ -780,7 +780,7 @@
 					eventFactory: E,
 					flairStyleTemplate: O,
 					formatTitle: V,
-					hostPostData: K,
+					hostPostData: Z,
 					isCheckboxSelected: te,
 					isCurrentUserProfilePost: oe,
 					isFrontpage: re,
@@ -836,9 +836,9 @@
 					He = Object(r.t)(_e, de),
 					[ze, qe] = Object(n.useState)(!1),
 					Xe = Object(n.useCallback)(() => {
-						qe(!ze), Ie(Object(Z.d)(xe))
+						qe(!ze), Ie(Object(K.d)(xe))
 					}, [ze, xe, Ie]);
-				let Ze = o.a.createElement(W.a, {
+				let Ke = o.a.createElement(W.a, {
 					className: se.a.classicThumbnail,
 					crosspost: we && _e,
 					isMeta: _e.isMeta,
@@ -846,8 +846,8 @@
 					redditStyle: Ee,
 					templatePlaceholderImage: Le && Le.postPlaceholderImage
 				});
-				Object(F.b)(_e) ? Ze = o.a.createElement(C, null) : Object(B.G)(_e) && (Ze = o.a.createElement(h, null));
-				const Ke = Object(Q.r)(_e);
+				Object(F.b)(_e) ? Ke = o.a.createElement(C, null) : Object(B.G)(_e) && (Ke = o.a.createElement(h, null));
+				const Ze = Object(Q.r)(_e);
 				return o.a.createElement(L.b, {
 					className: Object(a.a)(J.a.classicPostStyles, se.a.postContainer, Object(X.a)(e), {
 						[se.a.shouldShowOverflow]: ye
@@ -880,7 +880,7 @@
 					className: se.a.mainBody
 				}, o.a.createElement("div", {
 					className: Ve ? se.a.expandoContainer : se.a.thumbnailContainer
-				}, !Ve && Ze, o.a.createElement(S.a, {
+				}, !Ve && Ke, o.a.createElement(S.a, {
 					crosspost: we,
 					className: se.a.rightExpando,
 					isExpanded: !!_,
@@ -891,7 +891,7 @@
 						[se.a.showBulkActionCheckbox]: Ce
 					}),
 					"data-click-id": "body"
-				}, Ke && o.a.createElement(I.a, {
+				}, Ze && o.a.createElement(I.a, {
 					content: _e.recommendationContext.content,
 					layout: Y.g.Classic,
 					post: _e
@@ -949,7 +949,7 @@
 					hasModFlairPerms: De,
 					hasModPostPerms: Ae,
 					hasModFullPerms: Me,
-					hostPostData: K,
+					hostPostData: Z,
 					isOverlay: !!ce,
 					modModeEnabled: ue,
 					onClickInsightsButton: Xe,
@@ -1641,8 +1641,8 @@
 				f = s("./node_modules/reselect/es/index.js");
 			const h = Object(f.a)(e => Object(b.c)(e, {
 				experimentEligibilitySelector: b.a,
-				experimentName: p.Fc
-			}), e => e === p.Zd);
+				experimentName: p.Ec
+			}), e => e === p.Wd);
 			var _ = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				E = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1747,9 +1747,9 @@
 				})))
 			};
 			var X = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				Z = s.n(X);
-			const K = Object(j.a)(null);
-			var J = Object(N.b)(K(e => {
+				K = s.n(X);
+			const Z = Object(j.a)(null);
+			var J = Object(N.b)(Z(e => {
 					let {
 						post: t
 					} = e;
@@ -1761,7 +1761,7 @@
 						"data-testid": `promoted-user-post-${t.id}`,
 						to: a ? Object(I.b)(t.permalink) : Object(P.a)(t.permalink, !1, r)
 					}, o.a.createElement("div", {
-						className: Z.a.container
+						className: K.a.container
 					}, o.a.createElement(R, {
 						post: t
 					}), o.a.createElement(q, {
@@ -2009,7 +2009,7 @@
 			s.d(t, "b", (function() {
 				return U
 			})), s.d(t, "a", (function() {
-				return K
+				return Z
 			}));
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/polished/dist/polished.es.js"),
@@ -2076,8 +2076,8 @@
 				q = s("./src/reddit/components/PostTitle/index.m.less"),
 				X = s.n(q);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -2087,7 +2087,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(U || (U = {}));
-			const K = e => {
+			const Z = e => {
 					let {
 						size: t,
 						titleColor: s,
@@ -2142,7 +2142,7 @@
 						children: o,
 						...r
 					} = e;
-					return a.a.createElement(c.a, Z({}, r, {
+					return a.a.createElement(c.a, K({}, r, {
 						className: Object(u.a)(t, X.a.styledLink, {
 							[X.a.isVisitedEnabled]: !s
 						})
@@ -2229,7 +2229,7 @@
 					})(o));
 					const r = e.isCommentsPage ? B.a.PostComments : B.a.PostItem,
 						i = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return a.a.createElement(K, {
+					return a.a.createElement(Z, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2320,7 +2320,7 @@
 						nowrap: !0,
 						post: c,
 						sendEvent: this.props.sendEvent
-					}), !Object(k.b)(c) && a.a.createElement(ee, Z({}, this.props, {
+					}), !Object(k.b)(c) && a.a.createElement(ee, K({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), i && a.a.createElement(F, {
 						className: X.a.pollMeta,
@@ -2351,7 +2351,7 @@
 					})),
 					r = Object(S.a)(),
 					c = Object(m.b)();
-				return n ? a.a.createElement(ne, Z({
+				return n ? a.a.createElement(ne, K({
 					pageLayer: t,
 					isCommentPermalink: s
 				}, n, o, e, {
@@ -3443,10 +3443,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.vg,
+					experimentName: o.sg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.pg)
+				i = Object(n.a)(a, e => e === o.mg)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3513,4 +3513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6676bdbb986c1ce35c01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4508cba853ecbc603399.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.453c9531cf98c01fd8f9.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f9f17024ea94eaa64f6c.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -53,7 +53,7 @@
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.S,
 				experimentName: f.dc
-			}), t => t === f.Zd);
+			}), t => t === f.Wd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -863,8 +863,8 @@
 			const F = Object(s.a)(M.w),
 				V = Object(s.a)(M.Q),
 				B = Object(s.a)(M.o),
-				$ = Object(s.a)(M.y),
-				W = Object(s.a)(M.eb),
+				W = Object(s.a)(M.y),
+				$ = Object(s.a)(M.eb),
 				z = Object(s.a)(M.K),
 				H = Object(s.a)(M.a),
 				K = Object(s.a)(M.G),
@@ -997,7 +997,7 @@
 					await e(Object(l.b)({
 						action: i.a.PostSubmit,
 						catchAndLogError: !0,
-						experiment: m.rf
+						experiment: m.of
 					}));
 					const u = r(),
 						b = Object(D.hb)(u, t),
@@ -1069,7 +1069,7 @@
 					} else {
 						if (p) {
 							const t = S.error;
-							e($(t))
+							e(W(t))
 						}
 						const t = S.error;
 						rt(e, t)
@@ -1079,7 +1079,7 @@
 						T = r();
 					I.C(T, v, C, b.destSubreddit.name, t.correlationId)
 				}, rt = (t, e) => {
-					e.type === n.K.BAD_CAPTCHA_ERROR ? t(H()) : e.type === n.K.VALIDATION_ERROR ? t(W(e)) : e.type === n.K.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t(B(e))
+					e.type === n.K.BAD_CAPTCHA_ERROR ? t(H()) : e.type === n.K.VALIDATION_ERROR ? t($(e)) : e.type === n.K.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t(B(e))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1482,7 +1482,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.ff.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.cf.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, A)(T)), e(U({
@@ -2968,4 +2968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.453c9531cf98c01fd8f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f9f17024ea94eaa64f6c.js.map

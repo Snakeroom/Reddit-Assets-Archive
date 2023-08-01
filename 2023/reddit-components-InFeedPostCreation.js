@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c46c2f87015cc5427994.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.582dbaf3ca685afe14de.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -75,19 +75,19 @@
 					subreddit: U.C,
 					subredditAboutInfo: U.z
 				}),
-				g = Object(o.b)(w, e => ({
+				y = Object(o.b)(w, e => ({
 					navigateTo: t => e(Object(c.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				y = () => r.fbt._("Create Media Post", null, {
+				L = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				L = () => r.fbt._("Create Link Post", null, {
+				g = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(g(e => {
+			t.default = Object(m.c)(y(e => {
 				let {
 					currentUser: t,
 					isNsfwCommunityMediaUploadKillSwitchEnabled: n,
@@ -162,7 +162,7 @@
 					type: "text"
 				}), U.media && i.a.createElement(I.t, {
 					className: j.a.Button,
-					"aria-label": y(),
+					"aria-label": L(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -176,13 +176,13 @@
 				}, i.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: y()
+					text: L()
 				})), U.link && i.a.createElement(I.t, {
 					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
-					"aria-label": L(),
+					"aria-label": g(),
 					id: P.Link,
 					onClick: () => C(a.bc.LINK_ONLY),
 					onMouseEnter: () => b(P.Link),
@@ -193,7 +193,7 @@
 				}, i.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: y()
+					text: L()
 				})))
 			}))
 		},
@@ -267,30 +267,30 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.uf
-					}) === r.Zd
+						experimentName: r.rf
+					}) === r.Wd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.tf
-					}) === r.Zd
+						experimentName: r.qf
+					}) === r.Wd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.hf
-					}) === r.Zd
+						experimentName: r.ef
+					}) === r.Wd
 				},
 				a = e => {
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.gf
-					}) === r.Zd
+						experimentName: r.df
+					}) === r.Wd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c46c2f87015cc5427994.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.582dbaf3ca685afe14de.js.map

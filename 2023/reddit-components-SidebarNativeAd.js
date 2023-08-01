@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3057a50334792ecb0ba0.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.8984916c5cbd9805e7ee.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1561,8 +1561,8 @@
 					X = D("Lock", G.id, W),
 					Y = D("Mod", G.id, W),
 					J = D("Remove", G.id, W),
-					Z = D("Report", G.id, W),
-					Q = D("Spam", G.id, W),
+					Q = D("Report", G.id, W),
+					Z = D("Spam", G.id, W),
 					$ = D("Sticky", G.id, W),
 					ee = D("Pinned", G.id, W);
 				return o.a.createElement("div", {
@@ -1649,21 +1649,21 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.spamIcon),
 					desc: Object(v.d)(G),
-					id: Q,
-					onMouseEnter: U(Q),
-					onMouseLeave: P
-				}), o.a.createElement(u.c, M({
-					tooltipId: Q,
-					text: Object(v.d)(G)
-				}, V)))), Object(_.a)(G) && !w && !q && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
-					isFilled: !0,
-					className: Object(c.a)(T.a.icon, T.a.reportIcon),
-					desc: Object(v.c)(G.numReports),
 					id: Z,
 					onMouseEnter: U(Z),
 					onMouseLeave: P
 				}), o.a.createElement(u.c, M({
 					tooltipId: Z,
+					text: Object(v.d)(G)
+				}, V)))), Object(_.a)(G) && !w && !q && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
+					isFilled: !0,
+					className: Object(c.a)(T.a.icon, T.a.reportIcon),
+					desc: Object(v.c)(G.numReports),
+					id: Q,
+					onMouseEnter: U(Q),
+					onMouseLeave: P
+				}), o.a.createElement(u.c, M({
+					tooltipId: Q,
 					text: Object(v.c)(G.numReports)
 				}, V))))
 			}))
@@ -1817,8 +1817,8 @@
 				f = n("./node_modules/reselect/es/index.js");
 			const h = Object(f.a)(e => Object(b.c)(e, {
 				experimentEligibilitySelector: b.a,
-				experimentName: p.Fc
-			}), e => e === p.Zd);
+				experimentName: p.Ec
+			}), e => e === p.Wd);
 			var v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				_ = n("./src/lib/classNames/index.ts"),
 				g = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1925,7 +1925,7 @@
 			var X = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				Y = n.n(X);
 			const J = Object(C.a)(null);
-			var Z = Object(P.b)(J(e => {
+			var Q = Object(P.b)(J(e => {
 					let {
 						post: t
 					} = e;
@@ -1944,13 +1944,13 @@
 						post: t
 					})))
 				})),
-				Q = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				$ = n.n(Q);
+				Z = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				$ = n.n(Z);
 			const ee = e => {
 				let {
 					postIds: t
 				} = e;
-				const n = t.map(e => s.a.createElement(Z, {
+				const n = t.map(e => s.a.createElement(Q, {
 					postId: e,
 					key: e
 				}));
@@ -2251,7 +2251,7 @@
 						type: r
 					}, o) : o)
 				},
-				Z = e => {
+				Q = e => {
 					let {
 						className: t,
 						disableVisited: n,
@@ -2265,7 +2265,7 @@
 						})
 					}), s)
 				},
-				Q = e => {
+				Z = e => {
 					let {
 						disableVisited: t,
 						nowrap: n,
@@ -2299,7 +2299,7 @@
 					} = t, r = Object(a.d)(), s = Object(x.a)(), o = Object(a.e)(G.b), c = Object(a.e)(G.c), d = e => {
 						(o || c) && (e.preventDefault(), r(Object(v.Z)(Object(g.b)(t.permalink), t.id))), t.isSponsored && Object(C.A)(t) && r(Object(v.y)(t, _.a.Click))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Q, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, i.a.createElement(te, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(b.b, {
@@ -2310,7 +2310,7 @@
 					}, i.a.createElement(te, e)); {
 						const r = t.permalink,
 							o = e.isCommentPermalink ? Object(g.b)(r) : Object(h.a)(r, void 0, s);
-						return i.a.createElement(Q, {
+						return i.a.createElement(Z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n && !Object(C.A)(t) ? ((e, t) => {
@@ -2323,7 +2323,7 @@
 								postId: e.id,
 								source: n
 							}, i.a.createElement(te, t)) : i.a.createElement(te, t)
-						})(t, e) : i.a.createElement(Z, {
+						})(t, e) : i.a.createElement(Q, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -2791,7 +2791,7 @@
 				X = m.a.wrapped(h.b, "PostContainer", B.a),
 				Y = 640,
 				J = e => Object(E.a)(e.title, 100),
-				Z = e => {
+				Q = e => {
 					if (e.post.isMediaOnly) return {};
 					const t = Object(j.a)(Object(O.a)(e), I.a.actionIcon, I.b.actionIcon);
 					return {
@@ -2799,7 +2799,7 @@
 						fill: t
 					}
 				},
-				Q = e => ({
+				Z = e => ({
 					background: Object(C.g)(Object(w.a)(e).body, null, null) || ""
 				});
 			class $ extends o.a.Component {
@@ -2832,7 +2832,7 @@
 					}, l = o.a.createElement(L, {
 						post: e
 					})) : (i = G, l = o.a.createElement(K, {
-						style: Q(this.props)
+						style: Z(this.props)
 					}, o.a.createElement(V, null, o.a.createElement(F, {
 						tooltipType: s ? d.f.Lightbox : void 0,
 						post: e,
@@ -2859,7 +2859,7 @@
 						post: e,
 						onClick: this.onClick,
 						eventFactory: n,
-						style: Z(this.props)
+						style: Q(this.props)
 					}, l))
 				}
 			}
@@ -5557,4 +5557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3057a50334792ecb0ba0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.8984916c5cbd9805e7ee.js.map

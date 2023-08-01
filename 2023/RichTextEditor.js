@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.85cba4d8d2516a139134.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.683e872c7440fdca2c62.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1940,8 +1940,8 @@
 				G = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				K = n("./src/realtime/GQLSubscription/async.tsx"),
 				V = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
-				Z = n("./src/reddit/constants/componentSizes.ts"),
-				X = n("./src/reddit/constants/componentTestIds.ts"),
+				X = n("./src/reddit/constants/componentSizes.ts"),
+				Z = n("./src/reddit/constants/componentTestIds.ts"),
 				J = n("./src/reddit/selectors/activeModalId.ts"),
 				Q = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/editorContent.ts"),
@@ -1986,7 +1986,7 @@
 						isUserTyping: !1
 					}), V.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < Z.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < X.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || w.a.write(() => {
 							this.setState({
@@ -2107,7 +2107,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + Z.n : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + X.n : void 0
 				}
 				render() {
 					const {
@@ -2139,7 +2139,7 @@
 						isUserTyping: P
 					} = this.state, B = Object(G.a)(l), L = d.draftType === se.c.edit;
 					return c.a.createElement("div", {
-						"data-test-id": X.b,
+						"data-test-id": Z.b,
 						className: Object(H.a)(ie.a.Wrapper, o, {
 							[ie.a.isTopLevelComment]: O,
 							[ie.a.mExpanded]: j,
@@ -2530,8 +2530,8 @@
 					onClick: n
 				})
 			}
-			var Z = n("./src/reddit/selectors/comments.ts"),
-				X = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
+			var X = n("./src/reddit/selectors/comments.ts"),
+				Z = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
 				J = n("./src/lib/constants/index.ts");
 
 			function Q(e) {
@@ -2547,7 +2547,7 @@
 				te = n.n(ee),
 				ne = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
 			const se = b.a.div("SectionSpacer", te.a),
-				oe = Object(d.a)(X.b, Z.C, L.c, M.d.spGiphy, (e, t, n, s) => e ? !!t || !!s : n);
+				oe = Object(d.a)(Z.b, X.C, L.c, M.d.spGiphy, (e, t, n, s) => e ? !!t || !!s : n);
 
 			function re(e) {
 				const {
@@ -2704,7 +2704,7 @@
 							id: n.id
 						} : void 0
 					},
-					draft: Z.i,
+					draft: X.i,
 					isCommentBeforeSignUpEnabled: Oe.a,
 					isLoggedIn: Te.S,
 					isLoginModalOpened: Object(ke.c)(ce.a.LOGIN_MODAL_ID),
@@ -2984,8 +2984,8 @@
 				Ge = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				Ke = n("./src/reddit/models/User/index.ts"),
 				Ve = n("./src/reddit/selectors/experiments/commentBox.ts"),
-				Ze = n("./src/reddit/selectors/posts.ts");
-			const Xe = Object(ye.v)(),
+				Xe = n("./src/reddit/selectors/posts.ts");
+			const Ze = Object(ye.v)(),
 				Je = Object(d.c)({
 					activeModalId: we.a,
 					contributorRequestPending: (e, t) => {
@@ -2997,17 +2997,17 @@
 					isCommentBoxDesignEnabled: Ve.a,
 					userName: e => e.user.account ? Object(Ke.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					hasError: Z.v,
-					errorMsgs: Z.M,
-					draft: Z.i,
-					disableAutofocus: Z.f,
+					hasError: X.v,
+					errorMsgs: X.M,
+					draft: X.i,
+					disableAutofocus: X.f,
 					showContributorRequestFlow: (e, t) => {
 						let {
 							pageLayer: n
 						} = t;
 						return Object(ye.gb)(e, n, g.e.Comment)
 					},
-					postAuthorIsBlocked: Ze.w
+					postAuthorIsBlocked: Xe.w
 				}),
 				Qe = Object(a.b)(Je, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
@@ -3124,7 +3124,7 @@
 					return e.contributorRequestPending ? i.a.createElement(Ge.a, null) : e.showContributorRequestFlow ? i.a.createElement(v, null) : e.draft.commentMode === be.i.RICH_TEXT ? i.a.createElement(qe, n) : i.a.createElement(h.b, n)
 				}
 			}
-			t.default = Xe(Qe(Ye))
+			t.default = Ze(Qe(Ye))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3760,8 +3760,8 @@
 			const G = P.a.div("BottomRow", A.a),
 				K = P.a.div("FormContent", A.a),
 				V = P.a.wrapped(M.l, "SubmitButton", A.a),
-				Z = P.a.wrapped(I.a, "LoadingIcon", A.a),
-				X = Object(k.v)(),
+				X = P.a.wrapped(I.a, "LoadingIcon", A.a),
+				Z = Object(k.v)(),
 				J = Object(l.c)({
 					destSubreddit: S.h,
 					editorMode: S.i,
@@ -3998,7 +3998,7 @@
 					})), a.a.createElement(V, {
 						disabled: !!i || !!j.length || !this.hasChanged() || S || c,
 						onClick: this.onSubmit
-					}, i ? a.a.createElement(Z, {
+					}, i ? a.a.createElement(X, {
 						sizePx: 10
 					}) : s.fbt._("Save", null, {
 						hk: "4yMsMq"
@@ -4012,7 +4012,7 @@
 					}))
 				}
 			}
-			t.default = X(Q(Y))
+			t.default = Z(Q(Y))
 		},
 		"./src/reddit/components/PostGuidance/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4645,20 +4645,20 @@
 			const i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Ae
-					}) === s.Zd
+						experimentName: s.xe
+					}) === s.Wd
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Be
-					}) === s.Zd
+						experimentName: s.ye
+					}) === s.Wd
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.je
-					}) === s.Zd
+						experimentName: s.ge
+					}) === s.Wd
 				},
 				c = (e, t) => {
 					let {
@@ -4696,29 +4696,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: s.Ag
-					}) === s.Zd
+						experimentName: s.xg
+					}) === s.Wd
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: s.Bg
-					}) === s.Zd
+						experimentName: s.yg
+					}) === s.Wd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: s.zg
+						experimentName: s.wg
 					});
-					return t === s.sg.TypingIndicators || t === s.sg.IndicatorsPlusCTA
+					return t === s.pg.TypingIndicators || t === s.pg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: s.zg
+						experimentName: s.wg
 					});
-					return (null == t ? void 0 : t.variant) === s.sg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === s.pg.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/PostGuidanceValidation.json": function(e) {
@@ -4726,4 +4726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.85cba4d8d2516a139134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.683e872c7440fdca2c62.js.map

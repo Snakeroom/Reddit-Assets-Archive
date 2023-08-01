@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.6b1a036d3d839c6f9dd9.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.14c92bf050d14feb0de5.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -218,8 +218,8 @@
 				z = o("./src/reddit/helpers/localStorage/index.ts"),
 				V = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				X = o("./src/reddit/helpers/trackers/commentsPage.ts"),
-				Z = o("./src/reddit/models/Comment/index.ts"),
-				Y = o("./src/reddit/models/PostDraft/index.ts"),
+				Y = o("./src/reddit/models/Comment/index.ts"),
+				Z = o("./src/reddit/models/PostDraft/index.ts"),
 				$ = o("./src/reddit/models/RichTextJson/index.ts"),
 				ee = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				te = o("./src/reddit/models/Toast/index.ts"),
@@ -232,7 +232,7 @@
 			const ae = Object(ie.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
 				experimentName: g.Mb
-			}), e => e === g.Zd);
+			}), e => e === g.Wd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -593,7 +593,7 @@
 					} = e;
 					return async (e, r) => {
 						const c = r(),
-							i = Object(s.a)(Y.c.replyToComment, o);
+							i = Object(s.a)(Z.c.replyToComment, o);
 						if (!Object(pe.S)(r()) && !Object(de.a)(c)) return e(Object(d.openRegisterModal)()), void e(Object(l.k)({
 							actionSource: l.a.Reply,
 							redirectUrl: Object(ne.m)(r(), {
@@ -626,12 +626,12 @@
 						let g;
 						if (g = O ? {
 								commentMode: h,
-								draftType: Y.c.replyToComment,
+								draftType: Z.c.replyToComment,
 								rtJson: b,
 								text: `${p}\n`
 							} : f || {
 								commentMode: h,
-								draftType: Y.c.replyToComment,
+								draftType: Z.c.replyToComment,
 								rtJson: b,
 								text: ""
 							}, Object(pe.U)(c)) {
@@ -689,7 +689,7 @@
 								text: s,
 								commentMode: o,
 								rteState: null,
-								draftType: Y.c.edit,
+								draftType: Z.c.edit,
 								hasFocus: !0
 							}
 						})))
@@ -800,7 +800,7 @@
 							error: u.error
 						}))
 					}
-				}, Xe = Object(r.a)(he.C), Ze = Object(r.a)(he.B), Ye = Object(r.a)(he.D), $e = (e, t) => async (o, n, r) => {
+				}, Xe = Object(r.a)(he.C), Ye = Object(r.a)(he.B), Ze = Object(r.a)(he.D), $e = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -825,10 +825,10 @@
 						...e,
 						error: e.error || Object(E.a)()
 					}))(s(), e);
-					i.ok ? o(Ye({
+					i.ok ? o(Ze({
 						id: e,
 						postId: t
-					})) : o(Ze({
+					})) : o(Ye({
 						id: e,
 						error: i.error
 					}))
@@ -857,7 +857,7 @@
 						hk: "3ebRql"
 					})));
 					else {
-						const s = t === Z.a.FOLLOWED,
+						const s = t === Y.a.FOLLOWED,
 							i = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -904,7 +904,7 @@
 					}));
 					const c = {
 						commentMode: s.media.rteMode,
-						draftType: s.parentId ? Y.c.replyToComment : Y.c.replyToPost,
+						draftType: s.parentId ? Z.c.replyToComment : Z.c.replyToPost,
 						rtJson: s.media.richtextContent,
 						hasFocus: !0,
 						text: ""
@@ -1187,7 +1187,7 @@
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class Z extends s.a.Component {
+			class Y extends s.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
@@ -1251,7 +1251,7 @@
 					})))
 				}
 			}
-			var Y = Z;
+			var Z = Y;
 			const $ = "CommentSort--SortPicker",
 				ee = "CommentSort--HighlightPicker",
 				te = "CommentSort--Tooltip",
@@ -1374,7 +1374,7 @@
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
-					}), Z = L ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
+					}), Y = L ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
 						hk: "3PXrGq"
 					}) : n.fbt._("Starting a contest will hide comment vote scores and randomize the order of the comments for non-mods.", null, {
 						hk: "EDqlf"
@@ -1466,7 +1466,7 @@
 						postId: this.props.postId
 					}))) : null), k && s.a.createElement("div", {
 						className: Q.a.containerRow
-					}, s.a.createElement(Y, {
+					}, s.a.createElement(Z, {
 						changeHighlightSort: t,
 						highlightIsOpen: b,
 						id: ee,
@@ -1476,7 +1476,7 @@
 					})), l && s.a.createElement(x.a, {
 						actionText: X,
 						headerText: V,
-						modalText: Z,
+						modalText: Y,
 						onConfirm: this.setContestMode,
 						toggleModal: D,
 						withOverlay: !0
@@ -2153,4 +2153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.6b1a036d3d839c6f9dd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.14c92bf050d14feb0de5.js.map

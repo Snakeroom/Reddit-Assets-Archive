@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.97d2ade3ab3d92631612.js
-// Retrieved at 7/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.30898a19d3368ff46a2a.js
+// Retrieved at 8/1/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -475,7 +475,7 @@
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "c", (function() {
-				return Z
+				return J
 			}));
 			var r = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -563,7 +563,7 @@
 						v = Object(C.a)(x.s, p),
 						h = Object(C.a)(x.t, p);
 					return {
-						canBoostPost: b === x.Zd || f === x.Zd || v === x.Zd || h === x.Zd
+						canBoostPost: b === x.Wd || f === x.Wd || v === x.Wd || h === x.Wd
 					}
 				},
 				R = e => {
@@ -725,7 +725,7 @@
 			});
 			z.displayName = "BoostPostIconButton";
 			var Y = n("./src/reddit/hooks/usePageLayer.ts");
-			const Z = e => {
+			const J = e => {
 				let {
 					children: t
 				} = e;
@@ -4084,8 +4084,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Hc
-					}) === r.td.Enabled
+						experimentName: r.Gc
+					}) === r.qd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -4098,8 +4098,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.sf
-				}) === r.Zd
+					experimentName: r.pf
+				}) === r.Wd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4420,4 +4420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.97d2ade3ab3d92631612.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.30898a19d3368ff46a2a.js.map
