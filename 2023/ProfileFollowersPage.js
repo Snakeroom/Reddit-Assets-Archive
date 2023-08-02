@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d030c058d55cabd5a6a6.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.293bff5083451ab1bc10.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1967,7 +1967,7 @@
 					collapsed: e.collapsed
 				});
 			t.a = Me(e => {
-				const t = Object(o.e)(p.o);
+				const t = Object(o.e)(p.p);
 				return Object(n.useEffect)(() => {
 					e.user && Object(u.a)({
 						sendEvent: e.sendEvent,
@@ -2766,47 +2766,47 @@
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
-				o = s("./src/config.ts"),
-				i = s("./src/lib/prettyPrintNumber/index.ts"),
-				a = s("./src/reddit/components/ProfileIdCard/index.m.less"),
-				d = s.n(a);
+				o = s("./node_modules/react-redux/es/index.js"),
+				i = s("./src/config.ts"),
+				a = s("./src/lib/prettyPrintNumber/index.ts"),
+				d = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				l = s("./src/reddit/components/ProfileIdCard/index.m.less"),
+				c = s.n(l);
 			const {
-				fbt: l
+				fbt: u
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			class c extends r.a.PureComponent {
-				render() {
-					const {
-						topAwardIcon: e,
-						recentAwardings: t,
-						username: s
-					} = this.props;
-					if (!t.topAward) return null;
-					const {
-						topAward: n,
-						totalCount: a
-					} = t, c = n.description ? n.description : n.name;
-					return r.a.createElement("a", {
-						className: d.a.AwardedLastMonth,
-						href: `${o.a.oldRedditUrl}/user/${s}/gilded`
-					}, r.a.createElement("div", {
-						className: d.a.iconColumn
-					}, r.a.createElement("img", {
-						alt: c,
-						className: d.a.icon,
-						src: e
-					}), a > 1 && r.a.createElement("span", {
-						className: d.a.count
-					}, `+${Object(i.b)(a-1)}`)), r.a.createElement("div", {
-						className: d.a.textColumn
-					}, l._({
-						"*": "Received the {award-name} Award and more in the past 30 days",
-						_1: "Received the {award-name} Award in the past 30 days"
-					}, [l._param("award-name", n.name), l._plural(a)], {
-						hk: "16MJHe"
-					})))
-				}
+			t.a = e => {
+				if (Object(o.e)(d.d)) return null;
+				const {
+					topAwardIcon: t,
+					recentAwardings: s,
+					username: n
+				} = e;
+				if (!s.topAward) return null;
+				const {
+					topAward: l,
+					totalCount: m
+				} = s, p = l.description ? l.description : l.name;
+				return r.a.createElement("a", {
+					className: c.a.AwardedLastMonth,
+					href: `${i.a.oldRedditUrl}/user/${n}/gilded`
+				}, r.a.createElement("div", {
+					className: c.a.iconColumn
+				}, r.a.createElement("img", {
+					alt: p,
+					className: c.a.icon,
+					src: t
+				}), m > 1 && r.a.createElement("span", {
+					className: c.a.count
+				}, `+${Object(a.b)(m-1)}`)), r.a.createElement("div", {
+					className: c.a.textColumn
+				}, u._({
+					"*": "Received the {award-name} Award and more in the past 30 days",
+					_1: "Received the {award-name} Award in the past 30 days"
+				}, [u._param("award-name", l.name), u._plural(m)], {
+					hk: "16MJHe"
+				})))
 			}
-			t.a = c
 		},
 		"./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3159,7 +3159,7 @@
 				const v = o && Object(u.d)(o),
 					g = b === c.a.Profile,
 					x = b === c.a.Hovercard,
-					C = Object(a.e)(m.o);
+					C = Object(a.e)(m.p);
 				return v ? i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)({
 						[h.a.profileTreatment]: g,
@@ -3328,7 +3328,7 @@
 					url: P,
 					isHovercard: T
 				} = e;
-				const R = Object(o.e)(e => !O && !!S && Object(l.f)(e));
+				const R = Object(o.e)(e => !O && !!S && Object(l.g)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!h,
@@ -6633,4 +6633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d030c058d55cabd5a6a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.293bff5083451ab1bc10.js.map

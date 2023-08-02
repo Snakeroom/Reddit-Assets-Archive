@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9ef551216f21a0bd18cb.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.5b7c03e71f484b02f6d6.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx": function(e, t, a) {
@@ -189,7 +189,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(r.e)(d.j) ? n.a.createElement(o, {
+					return Object(r.e)(d.k) ? n.a.createElement(o, {
 						className: t
 					}) : n.a.createElement(l, {
 						className: t
@@ -418,19 +418,19 @@
 					isQueried: A = !1
 				} = e;
 				const v = Object(f.a)(),
-					j = Object(m.a)(),
+					k = Object(m.a)(),
 					{
-						currentRank: k,
+						currentRank: j,
 						topPredictorsRank: L
 					} = a,
 					P = Object(r.e)(e => d ? Object(u.a)(e, d) : null),
 					O = Object(r.e)(e => Object(l.s)(e, {
-						pageLayer: j
+						pageLayer: k
 					}));
 				Object(c.useEffect)(() => {
 					v(d ? Object(i.g)(d, x, A) : Object(i.e)())
 				}, []);
-				const g = k && k.rank > 0;
+				const g = j && j.rank > 0;
 				return n.a.createElement("div", {
 					className: h.a.container
 				}, n.a.createElement("div", {
@@ -449,18 +449,18 @@
 				}, P ? P.name : null == O ? void 0 : O.displayText)), n.a.createElement("div", {
 					className: h.a.listContainer
 				}, n.a.createElement(p.a, {
-					currentRank: k,
+					currentRank: j,
 					topPredictorsRank: L,
 					tokenIcon: E
 				}), g && n.a.createElement("div", {
 					className: h.a.spacer
-				}, " ")), k && k.redditorInfo && g && n.a.createElement(b.a, {
+				}, " ")), j && j.redditorInfo && g && n.a.createElement(b.a, {
 					className: h.a.currentRank,
 					isCurrentUser: !0,
-					rank: k.rank,
-					redditor: k.redditor,
-					redditorInfo: k.redditorInfo,
-					score: k.score,
+					rank: j.rank,
+					redditor: j.redditor,
+					redditorInfo: j.redditorInfo,
+					score: j.score,
 					tokenIcon: E
 				}))
 			}), v = e => n.a.createElement(A, x({
@@ -518,7 +518,7 @@
 						name: A,
 						profile: v
 					} = f || {},
-					j = null != A ? A : b.displayName;
+					k = null != A ? A : b.displayName;
 				return n.a.createElement("div", {
 					className: Object(r.a)(u.a.predictor, t)
 				}, n.a.createElement("div", {
@@ -528,7 +528,7 @@
 					onClick: () => x(Object(i.f)({
 						targetUserId: b.id
 					})),
-					to: `/user/${j}`,
+					to: `/user/${k}`,
 					disabled: b.displayName === d.G || b.displayName === d.Qb
 				}, n.a.createElement("div", {
 					className: u.a.leaderboardIcon
@@ -536,7 +536,7 @@
 					className: Object(r.a)(u.a.userIcon, u.a.avatar),
 					iconUrl: null == _ ? void 0 : _.url,
 					isNSFW: !!(null == v ? void 0 : v.isNsfw),
-					userName: null != j ? j : ""
+					userName: null != k ? k : ""
 				}), n.a.createElement(l.a, {
 					className: u.a.rankBadge,
 					rank: c
@@ -544,7 +544,7 @@
 					className: u.a.name
 				}, n.a.createElement("div", {
 					className: u.a.userName
-				}, j), a && n.a.createElement("div", {
+				}, k), a && n.a.createElement("div", {
 					className: u.a.yourProfile
 				}, p._("Yep, thats you.", null, {
 					hk: "3DqdE1"
@@ -654,8 +654,8 @@
 				var x;
 				const A = Object(p.a)(),
 					v = Object(i.ib)(),
-					j = "true" === (null == v ? void 0 : v.queryParams["top-predictors"]),
-					[k, L, P] = Object(u.a)(j),
+					k = "true" === (null == v ? void 0 : v.queryParams["top-predictors"]),
+					[j, L, P] = Object(u.a)(k),
 					{
 						leaderboard: O,
 						error: g
@@ -695,7 +695,7 @@
 					}
 				}, c.fbt._("See All", null, {
 					hk: "1Ozf02"
-				}))), k && r.a.createElement(h.a, {
+				}))), j && r.a.createElement(h.a, {
 					className: _.a.modal,
 					leaderboard: O,
 					tournamentId: n,
@@ -883,4 +883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9ef551216f21a0bd18cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.5b7c03e71f484b02f6d6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.5f96c353a38cafbc0416.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.2a12109939edd1f32d09.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, i) {
@@ -63,7 +63,7 @@
 				} = e;
 				const d = Object(c.d)(),
 					v = Object(_.a)(),
-					y = Object(c.e)(C.d),
+					y = Object(c.e)(C.e),
 					I = Object(c.e)(N.i),
 					L = Object(c.e)(N.l),
 					S = Object(h.d)(h.a.GoldPayment, !1);
@@ -189,4 +189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.5f96c353a38cafbc0416.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.2a12109939edd1f32d09.js.map

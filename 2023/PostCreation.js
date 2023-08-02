@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.52dc75ba53db3fb970a9.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.47f6741cbd153c537e16.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1845,17 +1845,17 @@
 		"./src/reddit/actions/gold/modals.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "b", (function() {
 				return v
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return C
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return y
-			})), n.d(t, "a", (function() {
-				return O
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "c", (function() {
 				return k
+			})), n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "f", (function() {
+				return j
 			}));
 			var o = n("./src/lib/makeActionCreator/index.ts"),
 				s = n("./src/lib/postParentMessage/index.ts"),
@@ -1866,47 +1866,51 @@
 				l = n("./src/reddit/actions/gold/communityAwards/index.ts"),
 				d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/selectors/communityAwards.ts"),
-				p = n("./src/reddit/selectors/posts.ts"),
-				m = n("./src/reddit/selectors/subreddit.ts"),
-				h = n("./src/telemetry/index.ts"),
-				b = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(o.a)(b.J),
-				g = Object(o.a)(b.f),
-				v = () => async (e, t) => {
+				p = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				m = n("./src/reddit/selectors/posts.ts"),
+				h = n("./src/reddit/selectors/subreddit.ts"),
+				b = n("./src/telemetry/index.ts"),
+				f = n("./src/reddit/actions/gold/constants.ts");
+			const g = Object(o.a)(f.J),
+				v = e => async (t, n) => {
+					const o = n();
+					Object(p.d)(o) || t(g(e))
+				}, x = Object(o.a)(f.f), C = () => async (e, t) => {
 					const o = t();
-					e(g()), Object(c.b)(c.a.GiftPremiumFlow);
+					e(x()), Object(c.b)(c.a.GiftPremiumFlow);
 					const {
 						clickCloseModalEvent: s
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
-					Object(h.a)(s()(o))
-				}, x = Object(o.a)(b.I), C = e => {
+					Object(b.a)(s()(o))
+				}, E = Object(o.a)(f.I), y = e => {
 					let {
 						awardId: t,
 						correlationId: n,
 						thingId: o
 					} = e;
 					return async (e, s) => {
-						const a = s(),
-							c = t ? Object(u.a)(a, t) : void 0;
-						e(x({
+						const a = s();
+						if (Object(p.d)(a)) return;
+						const c = t ? Object(u.a)(a, t) : void 0;
+						e(E({
 							award: c && c.isEnabled ? c : void 0,
 							thingId: o,
 							correlationId: n
 						})), e(Object(d.h)(i.a.GOLD_GILD_MODAL));
-						const h = Object(m.O)(a, {
+						const b = Object(h.O)(a, {
 							thingId: o
 						});
-						let b = null;
-						if (h) b = h.id;
+						let f = null;
+						if (b) f = b.id;
 						else if (Object(r.a)(o)) {
-							const e = Object(p.F)(a, {
+							const e = Object(m.F)(a, {
 								postId: o
 							});
-							e && (b = e.belongsTo.id)
+							e && (f = e.belongsTo.id)
 						}
-						b && Object(l.a)(b, o)
+						f && Object(l.a)(f, o)
 					}
-				}, E = Object(o.a)(b.e), y = Object(o.a)(b.H), O = () => async (e, t) => {
+				}, O = Object(o.a)(f.e), k = Object(o.a)(f.H), _ = () => async (e, t) => {
 					const o = t(),
 						r = Object(a.d)(o);
 					if (Object(a.g)(o)) {
@@ -1915,12 +1919,12 @@
 							type: e
 						})
 					}
-					e(E()), e(Object(d.g)(i.a.GOLD_GILD_MODAL));
+					e(O()), e(Object(d.g)(i.a.GOLD_GILD_MODAL));
 					const {
 						clickCloseGildModalEvent: l
 					} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-					Object(h.a)(l(r)(o)), Object(c.b)(c.a.GildingFlow)
-				}, k = () => async () => {
+					Object(b.a)(l(r)(o)), Object(c.b)(c.a.GildingFlow)
+				}, j = () => async () => {
 					Object(s.a)({
 						type: "login.gild"
 					})
@@ -5175,7 +5179,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(r.e)(i.j) ? s.a.createElement(l, {
+					return Object(r.e)(i.k) ? s.a.createElement(l, {
 						className: t
 					}) : s.a.createElement(a, {
 						className: t
@@ -29903,7 +29907,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(r.d)(),
-						c = Object(r.e)(w.i),
+						c = Object(r.e)(w.j),
 						d = Object(r.e)(e => Object(On.b)(e, {
 							subredditId: n
 						})),
@@ -30497,8 +30501,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: w.u,
-					isScheduledTalksEnabled: w.n
+					isTalkTopicSelectionEnabled: w.v,
+					isScheduledTalksEnabled: w.o
 				});
 			class lu extends s.a.Component {
 				constructor(e) {
@@ -30837,7 +30841,7 @@
 					const t = Object(T.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(r.e)(e => Object(I.h)(e)),
-						c = Object(r.e)(w.v),
+						c = Object(r.e)(w.w),
 						l = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -33958,4 +33962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.52dc75ba53db3fb970a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.47f6741cbd153c537e16.js.map

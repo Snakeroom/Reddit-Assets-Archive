@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/mod-nav.34ef0578006f00c974ea.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/mod-nav.42231b60360ea0552b4d.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["mod-nav"], {
 		"./node_modules/@reddit/shreddit.components.mod-nav/dist/index.js": function(e, t, i) {
@@ -136,8 +136,8 @@
 			f("icon-topic", o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M19.567 18.683l-2.194-2.194a3.508 3.508 0 10-.884.885l2.194 2.193.884-.884zM14.5 16.75a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM5.5 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm0 5.75a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM12.125 9h4.75A1.127 1.127 0 0018 7.875v-4.75A1.127 1.127 0 0016.875 2h-4.75A1.127 1.127 0 0011 3.125v4.75A1.127 1.127 0 0012.125 9zm.125-5.75h4.5v4.5h-4.5v-4.5zM7.875 11h-4.75A1.127 1.127 0 002 12.125v4.75A1.127 1.127 0 003.125 18h4.75A1.127 1.127 0 009 16.875v-4.75A1.127 1.127 0 007.875 11zm-.125 5.75h-4.5v-4.5h4.5v4.5z"/></svg>')}`, o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M19.832 18.418l-2.266-2.266A3.45 3.45 0 0018 14.5a3.5 3.5 0 10-3.5 3.5 3.45 3.45 0 001.652-.434l2.266 2.266 1.414-1.414zM14.5 12.725a1.775 1.775 0 110 3.55 1.775 1.775 0 010-3.55zM9 5.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zm2 2.375v-4.75A1.127 1.127 0 0112.125 2h4.75A1.127 1.127 0 0118 3.125v4.75A1.127 1.127 0 0116.875 9h-4.75A1.127 1.127 0 0111 7.875zm-2 4.25v4.75A1.127 1.127 0 017.875 18h-4.75A1.127 1.127 0 012 16.875v-4.75A1.127 1.127 0 013.125 11h4.75A1.127 1.127 0 019 12.125z"/></svg>')}`);
 			f("icon-predictions", o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><g clip-path="url(#clip0_1578_253)"><path d="M15.255 15.712c-.353.23-.72.436-1.1.619l.735 1.978a.424.424 0 01-.038.375c-.015.019-.051.066-.09.066H5.142c-.038 0-.075-.047-.09-.066a.418.418 0 01-.037-.375l.735-1.978a9.754 9.754 0 01-1.1-.619l-.8 2.161a1.656 1.656 0 00.176 1.527 1.352 1.352 0 001.116.6h9.618a1.351 1.351 0 001.115-.6 1.657 1.657 0 00.184-1.523l-.803-2.165zM6.288 8A3.666 3.666 0 019.95 4.338v-1.25A4.917 4.917 0 005.038 8h1.25z"/><path d="M16.562 9.562a6.762 6.762 0 11-2.515-6.942l.208-.372c.14-.24.326-.452.546-.623a7.992 7.992 0 103.162 7.107 2.212 2.212 0 01-1.401.83z"/><path d="M18.646 4.6l-1.08-.6-.6-1.075a.864.864 0 00-1.508-.002L14.853 4l-1.082.6a.866.866 0 000 1.509l1.08.6.6 1.078a.867.867 0 001.191.323.865.865 0 00.317-.324l.6-1.077 1.08-.6a.865.865 0 000-1.51l.007.001zm-1.78 1.073a.877.877 0 00-.337.335l-.32.571-.316-.567a.876.876 0 00-.335-.337l-.574-.321.576-.321a.864.864 0 00.33-.331l.32-.571.323.578c.078.137.192.25.33.326l.573.32-.57.318z"/></g><defs><clipPath id="clip0_1578_253"><path d="M0 0h20v20H0z"/></clipPath></defs></svg>')}`, o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 17.384a9.32 9.32 0 005.271-1.628l.787 2.117a1.655 1.655 0 01-.184 1.523 1.351 1.351 0 01-1.115.6H5.141a1.352 1.352 0 01-1.116-.6 1.656 1.656 0 01-.183-1.523l.81-2.173A9.314 9.314 0 0010 17.384zm7.963-8.652A8.02 8.02 0 1114.8 1.625c-.22.171-.405.383-.546.623l-.413.739-.737.412a2.24 2.24 0 000 3.912l.74.413.412.739v.006a2.242 2.242 0 001.952 1.14h.006a2.221 2.221 0 001.75-.877zM9.95 3.088A4.917 4.917 0 005.038 8h1.25A3.666 3.666 0 019.95 4.338v-1.25zm8.7 1.513L17.567 4l-.6-1.077a.864.864 0 00-1.509-.002L14.852 4l-1.078.6a.863.863 0 000 1.509l1.08.6.6 1.079a.868.868 0 001.19.321.864.864 0 00.317-.323l.6-1.078 1.081-.6a.864.864 0 000-1.509l.008.002z"/></svg>')}`);
 			f("icon-wiki", o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M16.875 0H4.625A2.625 2.625 0 002 2.618v14.708h.018c0 .061-.018.118-.018.18A2.5 2.5 0 004.5 20h12.375A1.125 1.125 0 0018 18.878V1.122A1.125 1.125 0 0016.875 0zm-.125 18.753H4.5a1.247 1.247 0 010-2.494h12.25v2.494zM4.5 15.012c-.44.002-.872.122-1.25.347V2.618a1.375 1.375 0 011.375-1.371H16.75v13.765H4.5z"/></svg>')}`, o.g`${p('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.5 13.625a3.841 3.841 0 00-2.5.939V2.625A2.629 2.629 0 014.625 0h12.25A1.127 1.127 0 0118 1.125v12.5H4.5zM4.5 15a2.5 2.5 0 000 5h12.375A1.126 1.126 0 0018 18.875V15H4.5z"/></svg>')}`);
-			var z, A = i("./node_modules/@reddit/faceplate/lib/custom-event.js"),
-				b = function(e, t, i, o) {
+			var z, b = i("./node_modules/@reddit/faceplate/lib/custom-event.js"),
+				A = function(e, t, i, o) {
 					var n, s = arguments.length,
 						l = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, i) : o;
 					if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(e, t, i, o);
@@ -150,7 +150,7 @@
 			}(z || (z = {}));
 			let x = class extends o.a {
 				constructor() {
-					super(...arguments), this.subredditName = "", this.currentUrl = "", this.modPermissions = void 0, this.isDevPlatformEnabled = !1, this.isPostGuidanceEnabled = !1, this.isPredictionsTournamentAllowed = !1, this.isResponsive = !1, this.onClickLink = (e, t) => {
+					super(...arguments), this.subredditName = "", this.currentUrl = "", this.modPermissions = void 0, this.isDevPlatformEnabled = !1, this.isPostGuidanceEnabled = !1, this.isPredictionsTournamentAllowed = !1, this.isAwardsSunsetEnabled = !1, this.isBanEvasionAdoptionCampaignEnabled = !1, this.isResponsive = !1, this.onClickLink = (e, t) => {
 						if (this.dispatchEvent(new CustomEvent("mod-nav-click", {
 								bubbles: !0,
 								composed: !0,
@@ -168,38 +168,38 @@
 										name: this.subredditName
 									}
 								}),
-								i = Object(A.a)("track-event", {
+								i = Object(b.a)("track-event", {
 									bubbles: !0,
 									composed: !0,
 									details: e
 								});
 							this.dispatchEvent(i)
 						}
-					}, this.renderLink = (e, t) => {
-						const i = t[e],
-							n = !!i.href.find(e => this.currentUrl.includes(e)),
-							s = "/" !== i.href[0].charAt(0);
+					}, this.renderLink = (e, t, i) => {
+						const n = t[e],
+							s = !!n.href.find(e => this.currentUrl.includes(e)),
+							l = "/" !== n.href[0].charAt(0);
 						return o.c`
       <li class="mx-0 p-0 flex items-center z-10 text-neutral-content-weak w-100">
         <a
-          class="flex items-center text-neutral-content-weak w-100 no-underline ${n?"relative":""}"
-          href="${i.href[0]}"
-          target="${s?"_blank":"_self"}"
-          rel="${s?"noopener nofollow":""}"
-          @click="${()=>this.onClickLink(i.href[0],i.eventNoun)}"
+          class="flex items-center text-neutral-content-weak w-100 no-underline ${s?"relative":""}"
+          href="${n.href[0]}"
+          target="${l?"_blank":"_self"}"
+          rel="${l?"noopener nofollow":""}"
+          @click="${()=>this.onClickLink(n.href[0],n.eventNoun)}"
         >
           <div
-            class="w-xs h-2xl mr-md ${n?"selected":""}"
-            style="${n?"background-color: #FF4500;":""}"
+            class="w-xs h-2xl mr-md ${s?"selected":""}"
+            style="${s?"background-color: #FF4500;":""}"
           ></div>
           <span class="inline-flex text-neutral-content-weak">
-            ${n?i.iconFill:i.iconOutline}
+            ${s?n.iconFill:n.iconOutline}
           </span>
           <span
-            class="ml-md whitespace-nowrap items-center w-100 ${this.isResponsive?"hidden m:flex":"flex"}"
+            class="ml-md whitespace-nowrap items-center w-100 gap-xs ${this.isResponsive?"hidden m:flex":"flex"}"
           >
-            ${i.text}
-            ${s?o.c`<icon-external class="ml-auto pl-xs" size="md"></icon-external>`:""}
+            ${n.text} ${i}
+            ${l?o.c`<icon-external class="ml-auto pl-xs" size="md"></icon-external>`:""}
           </span>
         </a>
       </li>
@@ -208,7 +208,7 @@
 				}
 				render() {
 					var e, t, i, s, l, a, c, r, d, h, p, v, m, g, u, w;
-					const f = (e => ({
+					const f = ((e, t) => ({
 							[z.ModQueue]: {
 								eventNoun: "queue",
 								href: [`/r/${e}/about/modqueue`, `/r/${e}/about/reports`, `/r/${e}/about/spam`, `/r/${e}/about/edited`, `/r/${e}/about/unmoderated`],
@@ -400,10 +400,12 @@
 							},
 							[z.AwardsAndEmojis]: {
 								eventNoun: "awards_badges_and_emojis",
-								href: [`/r/${e}/about/awards`, `/r/${e}/about/badges`, `/r/${e}/about/emojis`, `/r/${e}/about/emotes`],
+								href: [t ? "" : `/r/${e}/about/awards`, `/r/${e}/about/emojis`, `/r/${e}/about/badges`, `/r/${e}/about/emotes`].filter(Boolean),
 								iconOutline: o.c`<icon-emoji size="md"></icon-emoji>`,
 								iconFill: o.c`<icon-emoji fill size="md"></icon-emoji>`,
-								text: Object(n.b)("Awards and Emojis", {
+								text: t ? Object(n.b)("Emojis", {
+									desc: "Link: to emoji pages"
+								}) : Object(n.b)("Awards and Emojis", {
 									desc: "Link: to awards and emoji pages"
 								})
 							},
@@ -461,8 +463,14 @@
 									desc: "Link: to automations pages"
 								})
 							}
-						}))(this.subredditName),
-						A = (new Date).getFullYear();
+						}))(this.subredditName, this.isAwardsSunsetEnabled),
+						b = (new Date).getFullYear(),
+						A = o.c`<span
+      class="text-brand-onBackground font-bold text-12 rounded-sm uppercase px-xs bg-brand-background"
+    >
+      ${Object(n.b)("New",{id:"new-link-label",desc:"Label for a link that is being highlighted as having new features available."})}
+    </span>`,
+						x = this.isBanEvasionAdoptionCampaignEnabled ? A : o.e;
 					return o.c`
       <div
         class="h-100 box-border bg-neutral-background text-neutral-content-weak overscroll-none flex flex-col items-start"
@@ -498,7 +506,7 @@
         ${null!==(l=this.modPermissions)&&void 0!==l&&l.isConfigEditingAllowed?this.renderLink(z.ContentControls,f):""}
         ${this.renderLink(z.ModLog,f)}
         ${null!==(a=this.modPermissions)&&void 0!==a&&a.isConfigEditingAllowed?this.renderLink(z.Automod,f):""}
-        ${this.renderLink(z.Safety,f)}
+        ${this.renderLink(z.Safety,f,x)}
         ${this.isPostGuidanceEnabled?this.renderLink(z.Automations,f):""}
         ${null!==(c=this.modPermissions)&&void 0!==c&&c.isWikiEditingAllowed||null!==(r=this.modPermissions)&&void 0!==r&&r.isFlairEditingAllowed&&null!==(d=this.modPermissions)&&void 0!==d&&d.isConfigEditingAllowed?o.c` <hr />
               <span
@@ -536,7 +544,7 @@
         ${this.renderLink(z.ContactReddit,f)}
         <div class="m-lg text-12 leading-4">
           <div>
-            ${Object(n.b)(o.c`Reddit Inc © ${A}`,{desc:"Copyright footer"})}
+            ${Object(n.b)(o.c`Reddit Inc © ${b}`,{desc:"Copyright footer"})}
           </div>
           <div>${Object(n.b)("All rights reserved",{desc:"Copyright footer"})}</div>
         </div>
@@ -555,29 +563,35 @@
       .selected {
         border-radius: 0 4px 4px 0;
       }
-    `, l.a], b([Object(s.b)({
+    `, l.a], A([Object(s.b)({
 				type: String,
 				attribute: "subreddit-name"
-			})], x.prototype, "subredditName", void 0), b([Object(s.b)({
+			})], x.prototype, "subredditName", void 0), A([Object(s.b)({
 				type: String,
 				attribute: "current-url"
-			})], x.prototype, "currentUrl", void 0), b([Object(s.b)({
+			})], x.prototype, "currentUrl", void 0), A([Object(s.b)({
 				type: Object,
 				attribute: "mod-permissions"
-			})], x.prototype, "modPermissions", void 0), b([Object(s.b)({
+			})], x.prototype, "modPermissions", void 0), A([Object(s.b)({
 				type: Boolean,
 				attribute: "dev-platform-enabled"
-			})], x.prototype, "isDevPlatformEnabled", void 0), b([Object(s.b)({
+			})], x.prototype, "isDevPlatformEnabled", void 0), A([Object(s.b)({
 				type: Boolean,
 				attribute: "post-guidance-enabled"
-			})], x.prototype, "isPostGuidanceEnabled", void 0), b([Object(s.b)({
+			})], x.prototype, "isPostGuidanceEnabled", void 0), A([Object(s.b)({
 				type: Boolean,
 				attribute: "predictions-tournament-allowed"
-			})], x.prototype, "isPredictionsTournamentAllowed", void 0), b([Object(s.b)({
+			})], x.prototype, "isPredictionsTournamentAllowed", void 0), A([Object(s.b)({
+				type: Boolean,
+				attribute: "awards-sunset-enabled"
+			})], x.prototype, "isAwardsSunsetEnabled", void 0), A([Object(s.b)({
+				type: Boolean,
+				attribute: "ban-evasion-adoption-campaign-enabled"
+			})], x.prototype, "isBanEvasionAdoptionCampaignEnabled", void 0), A([Object(s.b)({
 				type: Boolean,
 				attribute: "is-responsive"
-			})], x.prototype, "isResponsive", void 0), x = b([Object(s.a)("mod-nav")], x)
+			})], x.prototype, "isResponsive", void 0), x = A([Object(s.a)("mod-nav")], x)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/mod-nav.34ef0578006f00c974ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/mod-nav.42231b60360ea0552b4d.js.map

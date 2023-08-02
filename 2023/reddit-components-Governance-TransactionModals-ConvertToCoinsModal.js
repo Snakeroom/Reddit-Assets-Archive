@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.213d567763f42597e0c7.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.dc09fce6addb3ed5bca3.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -510,7 +510,7 @@
 						e(Object(u.stripeTokenPending)());
 						const k = Object(m.z)(j);
 						if (k || (w = await e(Object(u.validateAndCreateStripeToken)(t, n)), P = Object(m.w)(j), w))
-							if (r.type === b.c.Coinpack || r.type === b.c.Premium && Object(p.p)(j)) try {
+							if (r.type === b.c.Coinpack || r.type === b.c.Premium && Object(p.q)(j)) try {
 								const n = await Object(v.g)(f(), {
 									orderId: M,
 									provider: h.J.Stripe
@@ -2778,4 +2778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.213d567763f42597e0c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.dc09fce6addb3ed5bca3.js.map

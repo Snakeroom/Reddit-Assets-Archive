@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d2d4fbc39cf61eb497ab.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.abc2577c8aca30073113.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -553,13 +553,14 @@
 				we = n("./src/reddit/hooks/useLocalStorage.ts"),
 				Oe = n("./src/reddit/icons/svgs/Coin/index.tsx"),
 				Me = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				Ie = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
-				Pe = n.n(Ie);
+				Ie = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				Pe = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
+				Ae = n.n(Pe);
 			const {
-				fbt: Ae
+				fbt: Te
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Te(e) {
+			function Le(e) {
 				const [t, n] = Object(we.a)("MAINNET_ANNOUNCEMENT", !1), s = Object(i.d)(), {
 					pointsDetails: r
 				} = Object(l.c)(), {
@@ -571,7 +572,7 @@
 					transferEnabled: h
 				} = Object(i.e)(Object(b.c)({
 					isMainnetEnabled: m.a,
-					coinConversionEnabled: _.d.spPointsCoinConversion,
+					coinConversionEnabled: e => !Object(Ie.d)(e) && _.d.spPointsCoinConversion(e),
 					customCrypto: _.d.spCustomCrypto,
 					isEthereum: t => Object(l.a)(t, e.subredditId),
 					pointsTotal: t => Object(u.e)(t, e),
@@ -583,27 +584,27 @@
 				const x = h && !(p && v);
 				return (x || d) && f && "0" !== f ? a.a.createElement("div", {
 					className: e.className
-				}, a.a.createElement(he, null, Ae._("Use Points", null, {
+				}, a.a.createElement(he, null, Te._("Use Points", null, {
 					hk: "2Mco3v"
 				})), x && a.a.createElement(je.a, {
 					onClick: () => s(Object(C.f)())
 				}, a.a.createElement(Me.a, {
-					className: Pe.a.icon
-				}), c && (null == r ? void 0 : r.name) ? Ae._("Tip {Subreddit community point name}", [Ae._param("Subreddit community point name", r.name)], {
+					className: Ae.a.icon
+				}), c && (null == r ? void 0 : r.name) ? Te._("Tip {Subreddit community point name}", [Te._param("Subreddit community point name", r.name)], {
 					hk: "3CjOpO"
-				}) : Ae._("Tip", null, {
+				}) : Te._("Tip", null, {
 					hk: "7qTYq"
 				})), d && a.a.createElement(je.a, {
 					onClick: () => s(Object(_e.h)(Ne.a.CONVERT_TO_COINS))
 				}, a.a.createElement(Oe.a, {
-					className: Pe.a.icon
-				}), Ae._("Convert to Reddit Coins", null, {
+					className: Ae.a.icon
+				}), Te._("Convert to Reddit Coins", null, {
 					hk: "lqkYM"
 				}))) : null
 			}
-			var Le = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Ge = n.n(Le);
-			const Se = Object(b.c)({
+			var Ge = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Se = n.n(Ge);
+			const De = Object(b.c)({
 				isMainnet: m.a,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				pointsDetails: (e, t) => {
@@ -615,7 +616,7 @@
 				subreddit: (e, t) => e.subreddits.models[t.subredditId],
 				wallet: u.d
 			});
-			t.default = Object(i.b)(Se)((function(e) {
+			t.default = Object(i.b)(De)((function(e) {
 				const {
 					className: t,
 					distribution: n,
@@ -629,21 +630,21 @@
 						hk: "GZQW3"
 					})
 				}, n && s ? a.a.createElement(a.a.Fragment, null, a.a.createElement(ue, {
-					className: Ge.a.section,
+					className: Se.a.section,
 					distribution: n,
 					pointsDetails: s,
 					subredditId: o,
 					wallet: i
-				}), a.a.createElement(Te, {
-					className: Object(c.a)(Ge.a.section, {
-						[Ge.a.noborder]: e.isMainnet
+				}), a.a.createElement(Le, {
+					className: Object(c.a)(Se.a.section, {
+						[Se.a.noborder]: e.isMainnet
 					}),
 					subredditId: o
 				}), a.a.createElement(Ee, {
-					className: Ge.a.section,
+					className: Se.a.section,
 					subredditId: o
 				})) : a.a.createElement("div", {
-					className: Ge.a.loading
+					className: Se.a.loading
 				}))
 			}))
 		},
@@ -1212,4 +1213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d2d4fbc39cf61eb497ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.abc2577c8aca30073113.js.map

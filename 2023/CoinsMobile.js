@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.b8b97d4228a614ca0d5b.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.0ab7ade041e4576dda5d.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -152,7 +152,7 @@
 				N = a("./src/reddit/icons/fonts/Coin/index.tsx"),
 				w = a("./src/reddit/selectors/experiments/econ/index.ts");
 			const O = Object(c.c)({
-				isCoinsSunset: w.d
+				isCoinsSunset: w.e
 			});
 			class A extends r.a.Component {
 				componentDidMount() {
@@ -256,4 +256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.b8b97d4228a614ca0d5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.0ab7ade041e4576dda5d.js.map

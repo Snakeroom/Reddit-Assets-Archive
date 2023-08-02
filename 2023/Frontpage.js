@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8ba912163c302f55b78a.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2bd0746123196a2270f1.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -686,7 +686,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.Dg)(p),
+						includeInterestTopics: !!p && !Object(h.Eg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -2794,7 +2794,7 @@
 			const {
 				fbt: f
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), _ = Object(i.c)({
-				isCoinsSunsetEnabled: b.d
+				isCoinsSunsetEnabled: b.e
 			});
 			class x extends s.a.Component {
 				render() {
@@ -5443,7 +5443,7 @@
 				layout: B.U,
 				isBlockingInterstitialEnabled: Q.b,
 				isBlockingInterstitialV2Enabled: Q.c,
-				isTalkLiveBarEnabled: V.s,
+				isTalkLiveBarEnabled: V.t,
 				isTrendingHiddenEnabled: W.b,
 				interestTopicRecommendations: ae.b,
 				reonboardingFlow: J.j,
@@ -5848,7 +5848,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.Ad
 					});
-					return !(!t || Object(n.Dg)(t))
+					return !(!t || Object(n.Eg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5988,4 +5988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8ba912163c302f55b78a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2bd0746123196a2270f1.js.map

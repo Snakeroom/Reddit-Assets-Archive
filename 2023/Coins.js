@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.9a7e831d0e26e2bd113a.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.5ec61e4ae0998fd31868.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -605,7 +605,7 @@
 				k = Object(s.a)(E.c),
 				_ = e => async (t, n) => {
 					const r = n();
-					Object(v.d)(r) || (t(C(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE)))
+					Object(v.e)(r) || (t(C(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE)))
 				}, x = () => async (e, t) => {
 					e(k()), e(Object(d.g)(i.a.ECON_COIN_PURCHASE))
 				}, w = (e, t, n) => async (a, s) => {
@@ -2027,7 +2027,7 @@
 				me = Object(u.c)({
 					activeSaleConfig: L.a,
 					coinPackages: L.d,
-					isCoinsSunset: M.d,
+					isCoinsSunset: M.e,
 					isPremiumSubscriber: B.y,
 					isLoggedIn: B.S,
 					premiumPackages: L.i,
@@ -2287,4 +2287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.9a7e831d0e26e2bd113a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.5ec61e4ae0998fd31868.js.map

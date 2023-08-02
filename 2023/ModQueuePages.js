@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0a8017b4a991dc85af0c.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a507e8690f5114982e63.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4430,7 +4430,7 @@
 				}), [e.subredditId]), g = () => d.a.createElement(d.a.Fragment, null, t && d.a.createElement(E, {
 					subredditName: e.subredditName,
 					onDismiss: n
-				}), b ? d.a.createElement(d.a.Fragment, null, Object(w.b)(e.subredditName, e.pageName), d.a.createElement(d.a.Fragment, null, d.a.createElement(O.a, {
+				}), b ? d.a.createElement(d.a.Fragment, null, Object(w.c)(e.subredditName, e.pageName), d.a.createElement(d.a.Fragment, null, d.a.createElement(O.a, {
 					className: Object(l.a)(T.a.modActivity, `absolute right-0 ${t?"top-[128px]":"top-[30px]"}`)
 				}), d.a.createElement(u.a, {
 					variables: f,
@@ -4585,207 +4585,210 @@
 		},
 		"./src/reddit/components/ModHub/NewModNav/PageLinks.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
-				return u
-			})), n.d(t, "e", (function() {
+			n.d(t, "c", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return f
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return v
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "d", (function() {
 				return x
+			})), n.d(t, "b", (function() {
+				return E
+			})), n.d(t, "a", (function() {
+				return w
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				i = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/components/ModHub/Content/ModQueue.tsx"),
-				c = n("./src/reddit/controls/InternalLink/index.tsx"),
-				l = n("./src/reddit/helpers/trackers/modHub.ts"),
-				m = n("./src/reddit/hooks/useTracking.ts");
-			const u = (e, t, n) => r.a.createElement(P, {
-					links: A(e),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/constants/index.ts"),
+				c = n("./src/reddit/components/ModHub/Content/ModQueue.tsx"),
+				l = n("./src/reddit/controls/InternalLink/index.tsx"),
+				m = n("./src/reddit/helpers/trackers/modHub.ts"),
+				u = n("./src/reddit/hooks/useTracking.ts"),
+				A = n("./src/reddit/selectors/experiments/econ/index.ts");
+			const p = (e, t, n) => r.a.createElement(B, {
+					links: b(e),
 					currentPageName: t,
 					title: o.fbt._("Queues", null, {
 						hk: "2Olu9S"
 					}),
 					className: n
 				}),
-				A = e => [{
-					pageName: i.lc.Modqueue,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Modqueue),
+				b = e => [{
+					pageName: d.lc.Modqueue,
+					displayName: () => Object(c.getModHubPageName)(d.lc.Modqueue),
 					href: `/r/${e}/about/modqueue`,
 					eventNoun: "mod-queue"
 				}, {
-					pageName: i.lc.Reports,
+					pageName: d.lc.Reports,
 					displayName: () => o.fbt._("Reported", null, {
 						hk: "2XagIZ"
 					}),
 					href: `/r/${e}/about/reports`,
 					eventNoun: "report-queue"
 				}, {
-					pageName: i.lc.Spam,
+					pageName: d.lc.Spam,
 					displayName: () => o.fbt._("Removed", null, {
 						hk: "1qrEsN"
 					}),
 					href: `/r/${e}/about/spam`,
 					eventNoun: "spam-queue"
 				}, {
-					pageName: i.lc.Edited,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Edited),
+					pageName: d.lc.Edited,
+					displayName: () => Object(c.getModHubPageName)(d.lc.Edited),
 					href: `/r/${e}/about/edited`,
 					eventNoun: "edited-queue"
 				}, {
-					pageName: i.lc.Unmoderated,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Unmoderated),
+					pageName: d.lc.Unmoderated,
+					displayName: () => Object(c.getModHubPageName)(d.lc.Unmoderated),
 					href: `/r/${e}/about/unmoderated`,
 					eventNoun: "unmoderated-queue"
 				}],
-				p = (e, t) => r.a.createElement(P, {
-					links: b(e),
+				f = (e, t) => r.a.createElement(B, {
+					links: g(e),
 					currentPageName: t,
 					title: o.fbt._("User Management", null, {
 						hk: "4Ek5Ha"
 					})
 				}),
-				b = e => [{
-					pageName: i.lc.Banned,
+				g = e => [{
+					pageName: d.lc.Banned,
 					displayName: () => o.fbt._("Banned", null, {
 						hk: "4lYx7f"
 					}),
 					href: `/r/${e}/about/banned`,
 					eventNoun: "banned"
 				}, {
-					pageName: i.lc.Muted,
+					pageName: d.lc.Muted,
 					displayName: () => o.fbt._("Muted", null, {
 						hk: "4r3Lpj"
 					}),
 					href: `/r/${e}/about/muted`,
 					eventNoun: "muted"
 				}, {
-					pageName: i.lc.Contributors,
+					pageName: d.lc.Contributors,
 					displayName: () => o.fbt._("Approved", null, {
 						hk: "2sfe68"
 					}),
 					href: `/r/${e}/about/contributors`,
 					eventNoun: "approved"
 				}, {
-					pageName: i.lc.Moderators,
+					pageName: d.lc.Moderators,
 					displayName: () => o.fbt._("Moderators", null, {
 						hk: "Y1Jqo"
 					}),
 					href: `/r/${e}/about/moderators`,
 					eventNoun: "moderators"
 				}],
-				f = (e, t, n) => r.a.createElement(P, {
-					links: g(e),
+				v = (e, t, n) => r.a.createElement(B, {
+					links: h(e),
 					currentPageName: t,
 					title: o.fbt._("User Flair", null, {
 						hk: "1eHuzk"
 					}),
 					className: n
 				}),
-				g = e => [{
-					pageName: i.lc.UserFlair,
+				h = e => [{
+					pageName: d.lc.UserFlair,
 					displayName: () => o.fbt._("Setup", null, {
 						hk: "33R1cD"
 					}),
 					href: `/r/${e}/about/userflair`,
 					eventNoun: "user-flair-settings"
 				}, {
-					pageName: i.lc.Flair,
+					pageName: d.lc.Flair,
 					displayName: () => o.fbt._("Assign", null, {
 						hk: "23QqpZ"
 					}),
 					href: `/r/${e}/about/flair`,
 					eventNoun: "grant-user-flair"
 				}],
-				v = (e, t) => r.a.createElement(P, {
-					links: h(e),
+				x = (e, t) => r.a.createElement(B, {
+					links: C(e),
 					currentPageName: t,
 					title: o.fbt._("Rules and Removal Reasons", null, {
 						hk: "2NGFyL"
 					})
 				}),
-				h = e => [{
-					pageName: i.lc.SubredditRules,
+				C = e => [{
+					pageName: d.lc.SubredditRules,
 					displayName: () => o.fbt._("Rules", null, {
 						hk: "1wh4CY"
 					}),
 					href: `/r/${e}/about/rules`,
 					eventNoun: "rules"
 				}, {
-					pageName: i.lc.Removal,
+					pageName: d.lc.Removal,
 					displayName: () => o.fbt._("Removal Reasons", null, {
 						hk: "3so7Dm"
 					}),
 					href: `/r/${e}/about/removal`,
 					eventNoun: "removal-reasons"
 				}],
-				x = (e, t, n, s) => r.a.createElement(P, {
-					links: n ? C(e) : E(e),
-					currentPageName: t,
-					title: o.fbt._("Awards, Badges, Emoji, and more", null, {
-						hk: "1ZnFtn"
-					}),
-					className: s
-				}),
-				C = e => [{
-					pageName: i.lc.Awards,
-					displayName: () => o.fbt._("Awards", null, {
-						hk: "21lDrE"
-					}),
-					href: `/r/${e}/about/awards`,
-					eventNoun: "awards"
-				}, {
-					pageName: i.lc.Emojis,
-					displayName: () => o.fbt._("Emojis", null, {
-						hk: "4AReV1"
-					}),
-					href: `/r/${e}/about/emojis`,
-					eventNoun: "emojis"
-				}, {
-					pageName: i.lc.Badges,
+				E = e => {
+					let {
+						subredditName: t,
+						currentPageName: n,
+						includeBadgesAndEmotes: s,
+						className: i
+					} = e;
+					const c = Object(a.e)(A.d),
+						l = s ? P(t) : w(t),
+						m = c ? l.filter(e => e.pageName !== d.lc.Awards) : l;
+					return r.a.createElement(B, {
+						links: m,
+						currentPageName: n,
+						title: c ? o.fbt._("Badges, Emoji, and more", null, {
+							hk: "402v0r"
+						}) : o.fbt._("Awards, Badges, Emoji, and more", null, {
+							hk: "1ZnFtn"
+						}),
+						className: i
+					})
+				},
+				P = e => [...w(e), {
+					pageName: d.lc.Badges,
 					displayName: () => o.fbt._("Badges", null, {
 						hk: "2OUEVf"
 					}),
 					href: `/r/${e}/about/badges`,
 					eventNoun: "badges"
 				}, {
-					pageName: i.lc.Emotes,
+					pageName: d.lc.Emotes,
 					displayName: () => o.fbt._("Emotes", null, {
 						hk: "26Tr2v"
 					}),
 					href: `/r/${e}/about/emotes`,
 					eventNoun: "emotes"
 				}],
-				E = e => [{
-					pageName: i.lc.Awards,
+				w = e => [{
+					pageName: d.lc.Awards,
 					displayName: () => o.fbt._("Awards", null, {
 						hk: "21lDrE"
 					}),
 					href: `/r/${e}/about/awards`,
 					eventNoun: "awards"
 				}, {
-					pageName: i.lc.Emojis,
+					pageName: d.lc.Emojis,
 					displayName: () => o.fbt._("Emojis", null, {
 						hk: "4AReV1"
 					}),
 					href: `/r/${e}/about/emojis`,
 					eventNoun: "emojis"
 				}],
-				P = e => {
+				B = e => {
 					let {
 						links: t,
 						currentPageName: n,
 						title: o,
-						className: i
+						className: a
 					} = e;
-					const d = Object(m.a)(),
-						u = Object(s.useCallback)(e => {
-							d(Object(l.d)({
+					const d = Object(u.a)(),
+						c = Object(s.useCallback)(e => {
+							d(Object(m.d)({
 								source: "moderator",
 								action: "click",
 								noun: e,
@@ -4793,18 +4796,18 @@
 							}))
 						}, [d]);
 					return r.a.createElement("div", {
-						className: Object(a.a)(i, "mb-xs")
+						className: Object(i.a)(a, "mb-xs")
 					}, r.a.createElement("div", {
 						className: "font-bold text-18 leading-6"
 					}, o), r.a.createElement("div", {
 						className: "flex mt-sm overflow-auto"
 					}, t.map(e => {
 						const t = n === e.pageName;
-						return r.a.createElement(c.default, {
+						return r.a.createElement(l.default, {
 							className: `mr-md no-underline text-14 font-semibold py-sm px-md rounded-lg hover:no-underline cursor-pointer ${t?"bg-secondary-background-selected text-neutral-content-strong":"text-secondary-weak"}`,
 							to: e.href,
 							key: e.pageName,
-							onClick: () => u(e.eventNoun)
+							onClick: () => c(e.eventNoun)
 						}, e.displayName())
 					})))
 				}
@@ -8058,7 +8061,7 @@
 						className: e,
 						fitPageToContent: !0,
 						disableFullscreen: n === x.g.Large,
-						navBar: r ? Object(f.b)("mod", b, Object(m.a)(S.a.modNavLinks, S.a.innerContainer, S.a.mDisableFullScreen)) : d.a.createElement(L, {
+						navBar: r ? Object(f.c)("mod", b, Object(m.a)(S.a.modNavLinks, S.a.innerContainer, S.a.mDisableFullScreen)) : d.a.createElement(L, {
 							disableFullscreen: n === x.g.Large,
 							pageName: b
 						}),
@@ -8133,4 +8136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0a8017b4a991dc85af0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a507e8690f5114982e63.js.map

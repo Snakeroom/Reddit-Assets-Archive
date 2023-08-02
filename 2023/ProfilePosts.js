@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.9d3c1eaffe5d060a80d9.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.c26f6418a3d4dbcbf07a.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2174,7 +2174,8 @@
 					privateListingType: y.k
 				}),
 				T = Object(p.c)({
-					isCoinsSunsetEnabled: O.d,
+					isAwardsSunsetEnabled: O.d,
+					isCoinsSunsetEnabled: O.e,
 					isDropdownMenuOpen: e => Object(S.a)(e) === z,
 					isOwnProfile: (e, t) => Object(N.Y)(e, t.profileName),
 					isSnoovatar30Enabled: C.d.snoovatar30,
@@ -2196,23 +2197,25 @@
 						profileName: i,
 						routeName: a,
 						toggleTooltip: u,
-						isCoinsSunsetEnabled: m,
-						isSnoovatar30Enabled: p,
-						isSubscriptionsPinned: b,
-						viewBlockedConsent: h
+						isAwardsSunsetEnabled: m,
+						isCoinsSunsetEnabled: p,
+						isSnoovatar30Enabled: b,
+						isSubscriptionsPinned: h,
+						viewBlockedConsent: _
 					} = e;
-					const [_, g] = Object(d.useState)(!1), y = Object(d.useRef)(null), [k, E] = Object(d.useState)([]), [j, C] = Object(d.useState)([]);
+					const [g, y] = Object(d.useState)(!1), k = Object(d.useRef)(null), [E, j] = Object(d.useState)([]), [C, O] = Object(d.useState)([]);
 					return Object(d.useEffect)(() => {
 						const e = U({
 							profileName: i,
 							isOwnProfile: n,
 							routeName: a,
 							privateListingType: r,
-							isCoinsSunsetEnabled: m,
-							isSnoovatar30Enabled: p,
-							viewBlockedConsent: h
+							isCoinsSunsetEnabled: p,
+							isSnoovatar30Enabled: b,
+							viewBlockedConsent: _,
+							isAwardsSunsetEnabled: m
 						});
-						E(e.filter(e => e.position === M.MENU));
+						j(e.filter(e => e.position === M.MENU));
 						const t = [],
 							d = c()(() => {
 								const n = document.documentElement.clientWidth - 2 * x.p,
@@ -2224,12 +2227,12 @@
 									n.position = s > r ? M.DROPDOWN : M.MENU
 								});
 								const i = e.filter(e => e.position === M.MENU);
-								E(e => o()(i, e) ? e : i);
+								j(e => o()(i, e) ? e : i);
 								const a = e.filter(e => e.position === M.DROPDOWN);
-								C(e => o()(a, e) ? e : a), g(a.length > 0)
+								O(e => o()(a, e) ? e : a), y(a.length > 0)
 							}, 50);
 						return s.a.read(() => {
-							const e = y.current;
+							const e = k.current;
 							e && (e.childNodes.forEach((e, n) => {
 								t.push({
 									text: e.textContent.toLowerCase(),
@@ -2239,27 +2242,27 @@
 						}), window.addEventListener("resize", d), () => {
 							window.removeEventListener("resize", d)
 						}
-					}, [i, n, a, r, m, p, h]), l.a.createElement("div", {
+					}, [i, n, a, r, p, b, _, m]), l.a.createElement("div", {
 						className: I.a.container
 					}, l.a.createElement(v.a, {
 						bladeOpen: !1,
-						offsetLeft: b ? x.t : 0,
+						offsetLeft: h ? x.t : 0,
 						render: () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 							className: I.a.menuContainer,
-							ref: y
-						}, k.map(e => l.a.createElement(q, D({}, e, {
+							ref: k
+						}, E.map(e => l.a.createElement(q, D({}, e, {
 							key: e.key
-						})))), _ && l.a.createElement("button", {
+						})))), g && l.a.createElement("button", {
 							className: Object(f.a)(I.a.mainLink),
 							id: z,
 							onClick: () => u(z)
 						}, l.a.createElement(w.a, {
 							name: "overflow_horizontal"
-						})), _ && l.a.createElement(A, {
+						})), g && l.a.createElement(A, {
 							className: I.a.dropdown,
 							isOpen: t,
 							tooltipId: z
-						}, j.map(e => l.a.createElement(G, D({}, e, {
+						}, C.map(e => l.a.createElement(G, D({}, e, {
 							key: e.key
 						})))))
 					}))
@@ -2318,9 +2321,10 @@
 						privateListingType: i,
 						isCoinsSunsetEnabled: o,
 						isSnoovatar30Enabled: a,
-						viewBlockedConsent: c
+						viewBlockedConsent: c,
+						isAwardsSunsetEnabled: d
 					} = e;
-					const d = n ? [{
+					const l = n ? [{
 						internal: !0,
 						isActive: s === _.Sb.PROFILE_PRIVATE && i === j.b.Saved,
 						key: "profile.mainmenu.saved",
@@ -2357,7 +2361,7 @@
 						url: `/user/${t}/downvoted/`,
 						position: M.MENU
 					}] : [];
-					n ? (d.push({
+					d || (n ? (l.push({
 						internal: !0,
 						isActive: s === _.Sb.PROFILE_PRIVATE && i === j.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
@@ -2366,7 +2370,7 @@
 						}),
 						url: `/user/${t}/gilded/`,
 						position: M.MENU
-					}), d.push({
+					}), l.push({
 						internal: !0,
 						isActive: s === _.Sb.PROFILE_PRIVATE && i === j.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
@@ -2375,7 +2379,7 @@
 						}),
 						url: `/user/${t}/gilded/given/`,
 						position: M.MENU
-					})) : o || d.push({
+					})) : o || l.push({
 						internal: !1,
 						isActive: !1,
 						key: "profile.mainmenu.gildedLegacy",
@@ -2384,8 +2388,8 @@
 						}),
 						url: `${b.a.oldRedditUrl}/user/${t}/gilded/`,
 						position: M.MENU
-					});
-					const l = n ? [{
+					}));
+					const u = n ? [{
 							internal: !0,
 							isActive: s === _.Sb.PROFILE_PRIVATE && i === j.b.History,
 							key: "profile.mainmenu.history",
@@ -2395,7 +2399,7 @@
 							url: `/user/${t}/history/`,
 							position: M.MENU
 						}] : [],
-						u = a ? [{
+						m = a ? [{
 							internal: !0,
 							isActive: s === _.Sb.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
@@ -2405,7 +2409,7 @@
 							url: `/user/${t}/snoo/`,
 							position: M.MENU
 						}] : [],
-						m = c ? "?consent=true" : "";
+						p = c ? "?consent=true" : "";
 					return [{
 						internal: !0,
 						isActive: s === _.Sb.PROFILE_OVERVIEW,
@@ -2413,7 +2417,7 @@
 						text: r.fbt._("Overview", null, {
 							hk: "2IBbqy"
 						}),
-						url: `/user/${t}/${m}`,
+						url: `/user/${t}/${p}`,
 						position: M.MENU
 					}, {
 						internal: !0,
@@ -2422,7 +2426,7 @@
 						text: r.fbt._("Posts", null, {
 							hk: "a1BoF"
 						}),
-						url: `${Object(L.a)(t)}/${m}`,
+						url: `${Object(L.a)(t)}/${p}`,
 						position: M.MENU
 					}, {
 						internal: !0,
@@ -2431,9 +2435,9 @@
 						text: r.fbt._("Comments", null, {
 							hk: "2VwjOc"
 						}),
-						url: `/user/${t}/comments/${m}`,
+						url: `/user/${t}/comments/${p}`,
 						position: M.MENU
-					}, ...u, ...l, ...d]
+					}, ...m, ...u, ...l]
 				}
 		},
 		"./src/reddit/components/ProfileSidebar/index.tsx": function(e, t, n) {
@@ -4372,7 +4376,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Ad
 					});
-					return !(!t || Object(r.Dg)(t))
+					return !(!t || Object(r.Eg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -4470,4 +4474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.9d3c1eaffe5d060a80d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.c26f6418a3d4dbcbf07a.js.map

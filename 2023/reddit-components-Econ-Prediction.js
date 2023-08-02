@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.52c4b2662e4397c2f4a6.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d676bfc8989ca4f7742a.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, n) {
@@ -418,7 +418,7 @@
 						upvote: h
 					} = function(e) {
 						const t = Object(r.d)(),
-							n = Object(r.e)(P.h),
+							n = Object(r.e)(P.i),
 							{
 								startDelayedUpvoteAnimation: s
 							} = Object(g.a)(e.id);
@@ -1365,4 +1365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.52c4b2662e4397c2f4a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d676bfc8989ca4f7742a.js.map

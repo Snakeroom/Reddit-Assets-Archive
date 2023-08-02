@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c84af79d068dafa46b56.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.617bb5e23e9faf0e41de.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1219,7 +1219,7 @@
 				E = Object(a.a)(j.c),
 				I = e => async (t, r) => {
 					const n = r();
-					Object(v.d)(n) || (t(x(e)), t(Object(l.h)(i.a.ECON_COIN_PURCHASE)))
+					Object(v.e)(n) || (t(x(e)), t(Object(l.h)(i.a.ECON_COIN_PURCHASE)))
 				}, C = () => async (e, t) => {
 					e(E()), e(Object(l.g)(i.a.ECON_COIN_PURCHASE))
 				}, P = (e, t, r) => async (s, a) => {
@@ -2084,7 +2084,7 @@
 			const {
 				fbt: ce
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), de = 10, le = Object(o.c)({
-				isCoinsSunset: ie.d
+				isCoinsSunset: ie.e
 			});
 			class ue extends s.a.PureComponent {
 				renderButtonText() {
@@ -2605,7 +2605,7 @@
 					title: n,
 					buttonText: o
 				} = e;
-				const i = Object(a.e)(ie.d);
+				const i = Object(a.e)(ie.e);
 				return s.a.createElement("div", {
 					className: Me.a.gildHeader
 				}, s.a.createElement("button", {
@@ -3714,4 +3714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c84af79d068dafa46b56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.617bb5e23e9faf0e41de.js.map

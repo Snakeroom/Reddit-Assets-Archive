@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.a25f3802710b7c522307.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.22e382dceac7ee531a50.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -646,7 +646,7 @@
 						e(Object(u.stripeTokenPending)());
 						const C = Object(p.z)(P);
 						if (C || (w = await e(Object(u.validateAndCreateStripeToken)(t, r)), x = Object(p.w)(P), w))
-							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(m.p)(P)) try {
+							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(m.q)(P)) try {
 								const r = await Object(h.g)(f(), {
 									orderId: _,
 									provider: g.J.Stripe
@@ -2179,10 +2179,10 @@
 					s = Object(v.a)(),
 					c = Object(i.e)(E.j),
 					l = !!c,
-					u = Object(i.e)(e => !r && l && Object(k.l)(e)),
+					u = Object(i.e)(e => !r && l && Object(k.m)(e)),
 					m = Object(i.e)(E.g),
 					p = Object(i.e)(E.i),
-					f = Object(i.e)(k.d);
+					f = Object(i.e)(k.e);
 				if (!(null == p ? void 0 : p.length)) return o.a.createElement("div", null, o.a.createElement(g.a, {
 					sizePx: 80
 				}));
@@ -2379,7 +2379,7 @@
 				}),
 				R = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isCoinsSunsetEnabled: N.d,
+					isCoinsSunsetEnabled: N.e,
 					isGold: S.x,
 					isPremiumSubscriber: S.y,
 					isLoggedIn: S.S,
@@ -2638,4 +2638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.a25f3802710b7c522307.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.22e382dceac7ee531a50.js.map

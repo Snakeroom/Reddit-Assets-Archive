@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.ff9c8a0f09b7703c8731.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.743b0ecd5d256c24d814.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -462,7 +462,7 @@
 						e(Object(l.stripeTokenPending)());
 						const k = Object(f.z)(E);
 						if (k || (x = await e(Object(l.validateAndCreateStripeToken)(t, r)), S = Object(f.w)(E), x))
-							if (n.type === y.c.Coinpack || n.type === y.c.Premium && Object(p.p)(E)) try {
+							if (n.type === y.c.Coinpack || n.type === y.c.Premium && Object(p.q)(E)) try {
 								const r = await Object(b.g)(m(), {
 									orderId: w,
 									provider: g.J.Stripe
@@ -1052,4 +1052,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.ff9c8a0f09b7703c8731.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.743b0ecd5d256c24d814.js.map

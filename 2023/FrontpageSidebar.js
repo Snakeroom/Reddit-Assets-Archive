@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ef66d2d9d0f4198a1c3d.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.33e3b0d0447e56a3e1ee.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -23,7 +23,7 @@
 			const {
 				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = Object(o.c)({
-				isCoinsSunsetEnabled: _.d
+				isCoinsSunsetEnabled: _.e
 			});
 			class N extends a.a.Component {
 				render() {
@@ -921,4 +921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ef66d2d9d0f4198a1c3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.33e3b0d0447e56a3e1ee.js.map

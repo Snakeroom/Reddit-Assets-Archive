@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.67579df1e1d2ad2075ba.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.1fa69959ab84c6dfcd42.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -243,17 +243,17 @@
 		"./src/reddit/actions/gold/modals.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return j
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return x
-			})), n.d(t, "a", (function() {
-				return w
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "c", (function() {
 				return y
+			})), n.d(t, "a", (function() {
+				return C
+			})), n.d(t, "f", (function() {
+				return k
 			}));
 			var r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/lib/postParentMessage/index.ts"),
@@ -264,47 +264,51 @@
 				d = n("./src/reddit/actions/gold/communityAwards/index.ts"),
 				l = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/selectors/communityAwards.ts"),
-				m = n("./src/reddit/selectors/posts.ts"),
-				p = n("./src/reddit/selectors/subreddit.ts"),
-				b = n("./src/telemetry/index.ts"),
-				f = n("./src/reddit/actions/gold/constants.ts");
-			const v = Object(r.a)(f.J),
-				h = Object(r.a)(f.f),
-				g = () => async (e, t) => {
+				m = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				p = n("./src/reddit/selectors/posts.ts"),
+				b = n("./src/reddit/selectors/subreddit.ts"),
+				f = n("./src/telemetry/index.ts"),
+				v = n("./src/reddit/actions/gold/constants.ts");
+			const h = Object(r.a)(v.J),
+				g = e => async (t, n) => {
+					const r = n();
+					Object(m.d)(r) || t(h(e))
+				}, O = Object(r.a)(v.f), j = () => async (e, t) => {
 					const r = t();
-					e(h()), Object(c.b)(c.a.GiftPremiumFlow);
+					e(O()), Object(c.b)(c.a.GiftPremiumFlow);
 					const {
 						clickCloseModalEvent: o
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
-					Object(b.a)(o()(r))
-				}, O = Object(r.a)(f.I), j = e => {
+					Object(f.a)(o()(r))
+				}, _ = Object(r.a)(v.I), x = e => {
 					let {
 						awardId: t,
 						correlationId: n,
 						thingId: r
 					} = e;
 					return async (e, o) => {
-						const i = o(),
-							c = t ? Object(u.a)(i, t) : void 0;
-						e(O({
+						const i = o();
+						if (Object(m.d)(i)) return;
+						const c = t ? Object(u.a)(i, t) : void 0;
+						e(_({
 							award: c && c.isEnabled ? c : void 0,
 							thingId: r,
 							correlationId: n
 						})), e(Object(l.h)(a.a.GOLD_GILD_MODAL));
-						const b = Object(p.O)(i, {
+						const f = Object(b.O)(i, {
 							thingId: r
 						});
-						let f = null;
-						if (b) f = b.id;
+						let v = null;
+						if (f) v = f.id;
 						else if (Object(s.a)(r)) {
-							const e = Object(m.F)(i, {
+							const e = Object(p.F)(i, {
 								postId: r
 							});
-							e && (f = e.belongsTo.id)
+							e && (v = e.belongsTo.id)
 						}
-						f && Object(d.a)(f, r)
+						v && Object(d.a)(v, r)
 					}
-				}, _ = Object(r.a)(f.e), x = Object(r.a)(f.H), w = () => async (e, t) => {
+				}, w = Object(r.a)(v.e), y = Object(r.a)(v.H), C = () => async (e, t) => {
 					const r = t(),
 						s = Object(i.d)(r);
 					if (Object(i.g)(r)) {
@@ -313,12 +317,12 @@
 							type: e
 						})
 					}
-					e(_()), e(Object(l.g)(a.a.GOLD_GILD_MODAL));
+					e(w()), e(Object(l.g)(a.a.GOLD_GILD_MODAL));
 					const {
 						clickCloseGildModalEvent: d
 					} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-					Object(b.a)(d(s)(r)), Object(c.b)(c.a.GildingFlow)
-				}, y = () => async () => {
+					Object(f.a)(d(s)(r)), Object(c.b)(c.a.GildingFlow)
+				}, k = () => async () => {
 					Object(o.a)({
 						type: "login.gild"
 					})
@@ -4436,4 +4440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.67579df1e1d2ad2075ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.1fa69959ab84c6dfcd42.js.map

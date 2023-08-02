@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.9cbcab0b9a9b307a7727.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.68bf6bdf77273c453476.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1620,7 +1620,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(i.j) ? r.a.createElement(d, {
+					return Object(o.e)(i.k) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -8869,7 +8869,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: s.Ad
 					});
-					return !(!t || Object(s.Dg)(t))
+					return !(!t || Object(s.Eg)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -9445,4 +9445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9cbcab0b9a9b307a7727.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.68bf6bdf77273c453476.js.map

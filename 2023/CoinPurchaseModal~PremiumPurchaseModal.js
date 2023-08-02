@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.c962858353a4a4b03c9a.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.5a503d6e1ee692409d9d.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -712,7 +712,7 @@
 						e(Object(u.stripeTokenPending)());
 						const S = Object(m.z)(j);
 						if (S || (P = await e(Object(u.validateAndCreateStripeToken)(t, r)), _ = Object(m.w)(j), P))
-							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(p.p)(j)) try {
+							if (n.type === b.c.Coinpack || n.type === b.c.Premium && Object(p.q)(j)) try {
 								const r = await Object(y.g)(f(), {
 									orderId: w,
 									provider: h.J.Stripe
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.c962858353a4a4b03c9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.5a503d6e1ee692409d9d.js.map

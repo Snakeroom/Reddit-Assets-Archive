@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.6c62baaf1b6db87b6856.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3c12f59594441218c685.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -1760,7 +1760,7 @@
 						className: Object(r.a)(qt.a.contentContainer, {
 							[qt.a.newModNav]: s && f
 						})
-					}, s && n && f ? o.a.createElement(o.a.Fragment, null, Object(m.d)(n, i.lc.UserFlair), this.renderTopBar(!0)) : o.a.createElement(u.b, null, f ? A.fbt._("User flair management", null, {
+					}, s && n && f ? o.a.createElement(o.a.Fragment, null, Object(m.e)(n, i.lc.UserFlair), this.renderTopBar(!0)) : o.a.createElement(u.b, null, f ? A.fbt._("User flair management", null, {
 						hk: "2a4oeD"
 					}) : A.fbt._("Post flair", null, {
 						hk: "2EdNv9"
@@ -2265,4 +2265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.6c62baaf1b6db87b6856.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3c12f59594441218c685.js.map

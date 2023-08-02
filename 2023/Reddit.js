@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d048cc59a72aea0ca01e.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.80d87fc927c9bb37fc54.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11703,11 +11703,11 @@
 							r = new ro.a("id"),
 							o = Object(O.S)(e),
 							a = Object(eo.f)(e),
-							i = Object(to.d)(e),
+							i = Object(to.e)(e),
 							c = Object(O.sb)(e),
 							l = [];
 						i && l.push(Mr.Coins);
-						const d = (e => Object(to.m)(e) ? [fo, go, vo] : [go, fo, vo])(e),
+						const d = (e => Object(to.n)(e) ? [fo, go, vo] : [go, fo, vo])(e),
 							u = l.length ? d.filter(e => !l.includes(e(null).id)) : d;
 						if (o) {
 							const o = n.account;
@@ -13397,7 +13397,7 @@
 					a = Object(he.e)(sc),
 					i = Object(he.e)(Ki),
 					c = Object(he.e)(to.c),
-					l = Object(he.e)(to.d),
+					l = Object(he.e)(to.e),
 					d = Object(he.e)(no.a),
 					p = Object(he.e)(Qi.a),
 					b = Object(pr.a)(),
@@ -14565,47 +14565,48 @@
 					const {
 						closeUserDropdown: t,
 						dispatchOpenLoginModal: n,
-						isCommunityLinkVisible: r,
-						isNsfwBlocking: o,
-						logoutUser: a,
-						onClick: i,
-						openCommunityCreationModal: c,
-						sendEvent: l,
-						shouldShowCreateCommunityItem: d,
-						url: p,
-						user: b
-					} = e, [h, g] = Object(u.useState)(Dd.TermsAndPolicies), f = e => () => {
-						g(h === e ? null : e)
-					}, v = e => ({
-						onClick: f(e),
-						isOpen: h === e
-					}), O = !!b, C = () => {
-						t(), n(o)
-					}, y = () => m.a.createElement(Pd, {
+						isAwardsSunsetEnabled: r,
+						isCommunityLinkVisible: o,
+						isNsfwBlocking: a,
+						logoutUser: i,
+						onClick: c,
+						openCommunityCreationModal: l,
+						sendEvent: d,
+						shouldShowCreateCommunityItem: p,
+						url: b,
+						user: h
+					} = e, [g, f] = Object(u.useState)(Dd.TermsAndPolicies), v = e => () => {
+						f(g === e ? null : e)
+					}, O = e => ({
+						onClick: v(e),
+						isOpen: g === e
+					}), C = !!h, y = () => {
+						t(), n(a)
+					}, E = () => m.a.createElement(Pd, {
 						className: Wo.a.button,
 						icon: m.a.createElement(yr.a, {
 							name: "topic_activism"
 						}),
 						href: "https://ads.reddit.com?utm_source=d2x_consumer&utm_name=user_menu_cta",
-						onClick: () => l(Object(Yl.b)()),
+						onClick: () => d(Object(Yl.b)()),
 						title: s.fbt._("Advertise on Reddit", null, {
 							hk: "3R4KSI"
 						})
 					});
 					return m.a.createElement("div", {
 						onClick: Ld
-					}, m.a.createElement(_d, null), m.a.createElement(dd, null), m.a.createElement(ud, null), m.a.createElement(() => d ? m.a.createElement(Sd, {
+					}, m.a.createElement(_d, null), m.a.createElement(dd, null), m.a.createElement(ud, null), m.a.createElement(() => p ? m.a.createElement(Sd, {
 						className: Wo.a.button,
 						icon: m.a.createElement(yr.a, {
 							name: "community"
 						}),
 						onClick: () => {
-							c(), l(Object(fd.a)()), i()
+							l(), d(Object(fd.a)()), c()
 						},
 						title: s.fbt._("Create a Community", null, {
 							hk: "3QGru4"
 						})
-					}) : null, null), O && m.a.createElement(y, null), m.a.createElement(() => m.a.createElement(Pd, {
+					}) : null, null), C && m.a.createElement(E, null), !r && m.a.createElement(() => m.a.createElement(Pd, {
 						className: Wo.a.coinsLink,
 						icon: m.a.createElement(yr.a, {
 							name: "coins"
@@ -14615,7 +14616,7 @@
 							hk: "2g3szC"
 						})), m.a.createElement("span", {
 							className: Wo.a.meta
-						}, Fd(b))),
+						}, Fd(h))),
 						onClick: () => {
 							Object(ia.d)(ia.a.GoldPayment, !0), e.sendEvent(Object(Yl.d)())
 						},
@@ -14632,9 +14633,9 @@
 						title: s.fbt._("Premium", null, {
 							hk: "Ib64I"
 						})
-					}), null), !O && m.a.createElement(Td, v(Dd.RecentCommunitiesMenu)), m.a.createElement(oa, Rd({}, v(Dd.ExploreMenu), {
-						sendEvent: l
-					})), m.a.createElement(md, v(Dd.Settings)), !O && m.a.createElement(y, null), m.a.createElement(() => m.a.createElement(Pd, {
+					}), null), !C && m.a.createElement(Td, O(Dd.RecentCommunitiesMenu)), m.a.createElement(oa, Rd({}, O(Dd.ExploreMenu), {
+						sendEvent: d
+					})), m.a.createElement(md, O(Dd.Settings)), !C && m.a.createElement(E, null), m.a.createElement(() => m.a.createElement(Pd, {
 						className: Wo.a.button,
 						href: "https://www.reddithelp.com/hc/en-us",
 						icon: m.a.createElement(yr.a, {
@@ -14644,20 +14645,20 @@
 							hk: "4sGjc0"
 						}),
 						onClick: () => e.sendEventWithName("help_center")
-					}), null), m.a.createElement(wd, Rd({}, v(Dd.MoreMenu), {
-						isCommunityLinkVisible: r,
-						isLoggedIn: O,
-						url: p,
-						sendEvent: l
-					})), m.a.createElement(pd, Rd({}, v(Dd.TermsAndPolicies), {
-						sendEvent: l
-					})), m.a.createElement(() => O ? m.a.createElement(Sd, {
+					}), null), m.a.createElement(wd, Rd({}, O(Dd.MoreMenu), {
+						isCommunityLinkVisible: o,
+						isLoggedIn: C,
+						url: b,
+						sendEvent: d
+					})), m.a.createElement(pd, Rd({}, O(Dd.TermsAndPolicies), {
+						sendEvent: d
+					})), m.a.createElement(() => C ? m.a.createElement(Sd, {
 						className: Wo.a.button,
 						icon: m.a.createElement(yr.a, {
 							name: "logout"
 						}),
 						onClick: () => {
-							e.sendEventWithName("logout"), a()
+							e.sendEventWithName("logout"), i()
 						},
 						title: s.fbt._("Log Out", null, {
 							hk: "2SjIc8"
@@ -14667,7 +14668,7 @@
 						icon: m.a.createElement(yr.a, {
 							name: "profile"
 						}),
-						onClick: C,
+						onClick: y,
 						title: s.fbt._("Sign Up or Log In", null, {
 							hk: "3pedCU"
 						})
@@ -14843,6 +14844,7 @@
 				}, t)),
 				tu = Object(he.b)(() => Object(X.c)({
 					avatarPushcardBanner: Il.b,
+					isAwardsSunsetEnabled: to.d,
 					isCrawler: e => !!Object(Fl.a)(e),
 					isModModeEnabled: Ll.a,
 					isNsfwBlocking: e => {
@@ -14889,32 +14891,33 @@
 					pageLayer: e => e
 				})(tu(e => {
 					const {
-						isPresenceToggleEnabled: t,
-						requestAwardKarma: n,
-						showPresence: r,
-						user: o
-					} = e, a = Object(he.e)(e => e), i = Object(he.e)(Rl.b), [c, l] = Object(u.useState)(!1), d = o && o.id;
+						isAwardsSunsetEnabled: t,
+						isPresenceToggleEnabled: n,
+						requestAwardKarma: r,
+						showPresence: o,
+						user: a
+					} = e, i = Object(he.e)(e => e), c = Object(he.e)(Rl.b), [l, d] = Object(u.useState)(!1), p = a && a.id;
 					Object(u.useEffect)(() => {
-						n()
-					}, [d]);
-					const p = Object(u.useMemo)(() => ({
+						r()
+					}, [p]);
+					const b = Object(u.useMemo)(() => ({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
 									category: "USER_IS_ONLINE",
-									userID: d
+									userID: p
 								}
 							}
-						}), [d]),
-						b = Object(u.useCallback)(() => {
-							l("visible" === document.visibilityState)
+						}), [p]),
+						h = Object(u.useCallback)(() => {
+							d("visible" === document.visibilityState)
 						}, []);
-					return Object(kl.a)("visibilitychange", b), Object(u.useEffect)(() => {
-						l("visible" === document.visibilityState)
+					return Object(kl.a)("visibilitychange", h), Object(u.useEffect)(() => {
+						d("visible" === document.visibilityState)
 					}, []), m.a.createElement("div", {
 						className: Object(Ce.a)(Hd.a.container, jl.e)
-					}, r && c && i && m.a.createElement(Cl.a, {
-						variables: p,
+					}, o && l && c && m.a.createElement(Cl.a, {
+						variables: b,
 						onData: fl.a,
 						queryKey: "userIsOnline"
 					}), m.a.createElement(Ml.a, {
@@ -14922,29 +14925,29 @@
 						"aria-haspopup": !0,
 						className: Object(Ce.a)(e.className, Hd.a.inlineButton, {
 							[Hd.a.dropdownOpen]: e.isOpen,
-							[Hd.a.isLoggedOut]: !o,
+							[Hd.a.isLoggedOut]: !a,
 							[Hd.a.navbarLikeMweb]: e.navbarLikeMweb
 						}),
 						id: "USER_DROPDOWN_ID",
 						onClick: () => {
-							e.onClick(), e.sendEventWithName("self_user_icon"), e.avatarPushcardBanner && (Object(G.a)(Object(vl.b)(a)), e.dismissAvatarPushcardBanner(e.avatarPushcardBanner))
+							e.onClick(), e.sendEventWithName("self_user_icon"), e.avatarPushcardBanner && (Object(G.a)(Object(vl.b)(i)), e.dismissAvatarPushcardBanner(e.avatarPushcardBanner))
 						}
 					}, m.a.createElement(ql, null), m.a.createElement("span", {
 						className: Hd.a.accountDisplayText
-					}, (n => n ? m.a.createElement("span", {
+					}, (r => r ? m.a.createElement("span", {
 						className: Object(Ce.a)(Hd.a.accountWrapper, Hd.a.isLoggedIn),
 						id: "email-collection-tooltip-id"
-					}, n.accountIcon && m.a.createElement(m.a.Fragment, null, m.a.createElement(kr.a, {
+					}, r.accountIcon && m.a.createElement(m.a.Fragment, null, m.a.createElement(kr.a, {
 						className: Object(Ce.a)(Hd.a.imgIcon, {
 							[Hd.a.navbarLikeMweb]: e.navbarLikeMweb
 						}),
 						wrapperClassName: Hd.a.imgIconWrapper,
-						shouldShowPresenceIndicator: t && r
+						shouldShowPresenceIndicator: n && o
 					})), m.a.createElement("span", {
 						className: Hd.a.accountDetails
 					}, m.a.createElement("span", {
 						className: Hd.a.username
-					}, n.displayText, n.isGold && m.a.createElement(wl.a, {
+					}, r.displayText, r.isGold && m.a.createElement(wl.a, {
 						className: Hd.a.premiumFontIcon,
 						title: s.fbt._("Reddit Premium", null, {
 							hk: "4Dwpyn"
@@ -14965,7 +14968,7 @@
 						}, [s.fbt._plural(t, "karma count", n)], {
 							hk: "ndlXe"
 						})
-					})(n))), !!n.coins && m.a.createElement("span", {
+					})(r))), !t && !!r.coins && m.a.createElement("span", {
 						className: Hd.a.accountCoins
 					}, m.a.createElement(Nl.a, {
 						className: Hd.a.coinFontIcon,
@@ -14973,7 +14976,7 @@
 					}), m.a.createElement("span", null, (e => Object(Ol.b)(e.coins || 0, {
 						displayFull: !1,
 						roundDown: !0
-					}))(n))))) : e.navbarLikeMweb ? null : m.a.createElement("span", {
+					}))(r))))) : e.navbarLikeMweb ? null : m.a.createElement("span", {
 						className: Object(Ce.a)(Hd.a.accountWrapper, Hd.a.isLoggedOut)
 					}, m.a.createElement(yr.a, {
 						name: "user",
@@ -21868,4 +21871,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~Reddit", "vendors~CommentsPage~Reddit", "CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d048cc59a72aea0ca01e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.80d87fc927c9bb37fc54.js.map

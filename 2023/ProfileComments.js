@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.2bc6334557b4df069cb3.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.2069ae17f21f73b5b4d6.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1135,27 +1135,29 @@
 				h = n("./src/reddit/helpers/getClickInfo.ts"),
 				b = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/communityAwards.ts"),
-				g = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.m.less"),
-				v = n.n(y);
-			const x = u.a.div("ProfileOwnerCommentWrapper", v.a),
-				k = u.a.div("CommentContentWrapper", v.a),
-				C = u.a.div("Wrapper", v.a),
-				w = u.a.div("CommentSeparator", v.a),
-				E = Object(i.b)(() => Object(c.c)({
+				g = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
+				v = n("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.m.less"),
+				x = n.n(v);
+			const k = u.a.div("ProfileOwnerCommentWrapper", x.a),
+				C = u.a.div("CommentContentWrapper", x.a),
+				w = u.a.div("Wrapper", x.a),
+				E = u.a.div("CommentSeparator", x.a),
+				j = Object(i.b)(() => Object(c.c)({
 					comment: (e, t) => Object(b.c)(e, t),
 					isAwarded: (e, t) => {
+						if (Object(g.d)(e)) return !1;
 						const n = Object(b.c)(e, t);
 						return !(!n || !n.awardCountsById) && Object.keys(n.awardCountsById).some(t => {
 							const n = Object(f.a)(e, t);
 							return n && n.coinPrice >= l.g
 						})
 					},
-					isNightmodeOn: g.fb
+					isNightmodeOn: y.fb
 				}), e => ({
 					openPost: t => e(Object(_.K)(t))
 				}));
-			class j extends o.a.Component {
+			class F extends o.a.Component {
 				render() {
 					const {
 						comment: e,
@@ -1168,7 +1170,7 @@
 						isNightmodeOn: l,
 						profileName: u,
 						showModTools: p
-					} = this.props, _ = u === e.author ? F : O;
+					} = this.props, _ = u === e.author ? O : D;
 					return o.a.createElement(m.a, {
 						comment: e,
 						onClick: (e, t) => {
@@ -1180,20 +1182,20 @@
 								}
 							}), e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
 						}
-					}, o.a.createElement(C, {
+					}, o.a.createElement(w, {
 						className: Object(d.a)({
-							[v.a.isFirst]: i,
-							[v.a.isLast]: c,
-							[v.a.isAwarded]: a,
-							[v.a.isNightmodeOn]: l
+							[x.a.isFirst]: i,
+							[x.a.isLast]: c,
+							[x.a.isAwarded]: a,
+							[x.a.isNightmodeOn]: l
 						})
-					}, s()(n + 1, e => o.a.createElement(w, {
+					}, s()(n + 1, e => o.a.createElement(E, {
 						key: e
-					})), o.a.createElement(k, null, _(t, u, p))))
+					})), o.a.createElement(C, null, _(t, u, p))))
 				}
 			}
-			const F = (e, t, n) => o.a.createElement(x, null, O(e, t, n, !0, !0)),
-				O = function(e, t, n) {
+			const O = (e, t, n) => o.a.createElement(k, null, D(e, t, n, !0, !0)),
+				D = function(e, t, n) {
 					let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
 						s = arguments.length > 4 ? arguments[4] : void 0;
 					return o.a.createElement(p.a, {
@@ -1204,7 +1206,7 @@
 						isExpanded: !!s
 					})
 				};
-			t.a = E(j)
+			t.a = j(F)
 		},
 		"./src/reddit/components/ProfileCommentList/ListItem.m.less": function(e, t, n) {
 			e.exports = {
@@ -2241,4 +2243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.2bc6334557b4df069cb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.2069ae17f21f73b5b4d6.js.map

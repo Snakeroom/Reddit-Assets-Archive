@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.410d52c76766904e0967.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4a94d3c4952db147cb7e.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -558,7 +558,7 @@
 				P = Object(c.a)(_.c),
 				k = e => async (t, r) => {
 					const n = r();
-					Object(j.d)(n) || (t(E(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE)))
+					Object(j.e)(n) || (t(E(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE)))
 				}, w = () => async (e, t) => {
 					e(P()), e(Object(l.g)(s.a.ECON_COIN_PURCHASE))
 				}, C = (e, t, r) => async (o, c) => {
@@ -1596,4 +1596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.410d52c76766904e0967.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4a94d3c4952db147cb7e.js.map

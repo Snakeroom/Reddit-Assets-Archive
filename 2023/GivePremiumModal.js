@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.96354a833761573ed68b.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.7c3f6b901ca75b2612c0.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -12,25 +12,29 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
 				i = n.n(o),
-				c = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/helpers/createEmojiText/index.tsx"),
-				r = n("./src/reddit/icons/fonts/Coin/index.tsx"),
-				l = n("./src/reddit/components/CoinBalance/index.m.less"),
-				d = n.n(l);
-			t.a = e => i.a.createElement("div", {
-				className: Object(c.a)(d.a.coinBalance, e.className),
-				"data-redditstyle": !0
-			}, Object(a.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
-				hk: "2x0upn"
-			}), {
-				":coin:": i.a.createElement(r.a, null)
-			}), " ", i.a.createElement("a", {
-				href: "/coins",
-				onClick: e.onWhatAreCoinsLinkClick,
-				target: "_blank"
-			}, s.fbt._("What are Coins?", null, {
-				hk: "3fC6PF"
-			})))
+				c = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				r = n("./src/reddit/helpers/createEmojiText/index.tsx"),
+				l = n("./src/reddit/icons/fonts/Coin/index.tsx"),
+				d = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				m = n("./src/reddit/components/CoinBalance/index.m.less"),
+				u = n.n(m);
+			t.a = e => {
+				return Object(c.e)(d.d) ? null : i.a.createElement("div", {
+					className: Object(a.a)(u.a.coinBalance, e.className),
+					"data-redditstyle": !0
+				}, Object(r.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+					hk: "2x0upn"
+				}), {
+					":coin:": i.a.createElement(l.a, null)
+				}), " ", i.a.createElement("a", {
+					href: "/coins",
+					onClick: e.onWhatAreCoinsLinkClick,
+					target: "_blank"
+				}, s.fbt._("What are Coins?", null, {
+					hk: "3fC6PF"
+				})))
+			}
 		},
 		"./src/reddit/components/GivePremiumModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -737,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.96354a833761573ed68b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.7c3f6b901ca75b2612c0.js.map

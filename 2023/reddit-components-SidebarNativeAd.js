@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fb5812a8aae1e0bc8351.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2ca76c53d72f2702c8b1.js
+// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -651,17 +651,17 @@
 		"./src/reddit/actions/gold/modals.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return _
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return O
-			})), n.d(t, "a", (function() {
-				return j
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "c", (function() {
 				return k
+			})), n.d(t, "a", (function() {
+				return w
+			})), n.d(t, "f", (function() {
+				return P
 			}));
 			var r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/lib/postParentMessage/index.ts"),
@@ -672,47 +672,51 @@
 				d = n("./src/reddit/actions/gold/communityAwards/index.ts"),
 				l = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/selectors/communityAwards.ts"),
-				m = n("./src/reddit/selectors/posts.ts"),
-				p = n("./src/reddit/selectors/subreddit.ts"),
-				b = n("./src/telemetry/index.ts"),
-				f = n("./src/reddit/actions/gold/constants.ts");
-			const v = Object(r.a)(f.J),
-				h = Object(r.a)(f.f),
-				g = () => async (e, t) => {
+				m = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				p = n("./src/reddit/selectors/posts.ts"),
+				b = n("./src/reddit/selectors/subreddit.ts"),
+				f = n("./src/telemetry/index.ts"),
+				v = n("./src/reddit/actions/gold/constants.ts");
+			const h = Object(r.a)(v.J),
+				g = e => async (t, n) => {
+					const r = n();
+					Object(m.d)(r) || t(h(e))
+				}, x = Object(r.a)(v.f), _ = () => async (e, t) => {
 					const r = t();
-					e(h()), Object(c.b)(c.a.GiftPremiumFlow);
+					e(x()), Object(c.b)(c.a.GiftPremiumFlow);
 					const {
 						clickCloseModalEvent: o
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
-					Object(b.a)(o()(r))
-				}, x = Object(r.a)(f.I), _ = e => {
+					Object(f.a)(o()(r))
+				}, y = Object(r.a)(v.I), O = e => {
 					let {
 						awardId: t,
 						correlationId: n,
 						thingId: r
 					} = e;
 					return async (e, o) => {
-						const a = o(),
-							c = t ? Object(u.a)(a, t) : void 0;
-						e(x({
+						const a = o();
+						if (Object(m.d)(a)) return;
+						const c = t ? Object(u.a)(a, t) : void 0;
+						e(y({
 							award: c && c.isEnabled ? c : void 0,
 							thingId: r,
 							correlationId: n
 						})), e(Object(l.h)(i.a.GOLD_GILD_MODAL));
-						const b = Object(p.O)(a, {
+						const f = Object(b.O)(a, {
 							thingId: r
 						});
-						let f = null;
-						if (b) f = b.id;
+						let v = null;
+						if (f) v = f.id;
 						else if (Object(s.a)(r)) {
-							const e = Object(m.F)(a, {
+							const e = Object(p.F)(a, {
 								postId: r
 							});
-							e && (f = e.belongsTo.id)
+							e && (v = e.belongsTo.id)
 						}
-						f && Object(d.a)(f, r)
+						v && Object(d.a)(v, r)
 					}
-				}, y = Object(r.a)(f.e), O = Object(r.a)(f.H), j = () => async (e, t) => {
+				}, j = Object(r.a)(v.e), k = Object(r.a)(v.H), w = () => async (e, t) => {
 					const r = t(),
 						s = Object(a.d)(r);
 					if (Object(a.g)(r)) {
@@ -721,12 +725,12 @@
 							type: e
 						})
 					}
-					e(y()), e(Object(l.g)(i.a.GOLD_GILD_MODAL));
+					e(j()), e(Object(l.g)(i.a.GOLD_GILD_MODAL));
 					const {
 						clickCloseGildModalEvent: d
 					} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-					Object(b.a)(d(s)(r)), Object(c.b)(c.a.GildingFlow)
-				}, k = () => async () => {
+					Object(f.a)(d(s)(r)), Object(c.b)(c.a.GildingFlow)
+				}, P = () => async () => {
 					Object(o.a)({
 						type: "login.gild"
 					})
@@ -4558,4 +4562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fb5812a8aae1e0bc8351.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2ca76c53d72f2702c8b1.js.map
