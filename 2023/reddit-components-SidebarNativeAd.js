@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2ca76c53d72f2702c8b1.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.72f977bf31b0c0cf0f00.js
+// Retrieved at 8/2/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1156,17 +1156,13 @@
 				}, o.a.createElement("div", {
 					className: "flex flex-col text-center py-[48px]"
 				}, o.a.createElement("div", {
-					className: "max-w-[294px] my-md leading-5 text-neutral-content"
+					className: "my-md leading-5 text-neutral-content"
 				}, o.a.createElement("p", {
-					className: "text-[14px]"
-				}, c._("We're launching a new type of custom post. For now, it must be opened in a new window.", null, {
-					hk: "v8S8Z"
-				})), o.a.createElement("p", {
-					className: "text-[14px]"
-				}, c._("It's us, not you.", null, {
-					hk: "4wyEYD"
+					className: "text-[16px] max-w-[260px]"
+				}, c._("To view this interactive post, you'll need to open it in a new window.", null, {
+					hk: "27Ub4M"
 				}))), o.a.createElement(s.a, {
-					className: "m-auto mt-sm",
+					className: "m-auto",
 					kind: s.b.ExternalLink,
 					href: n,
 					target: "_blank",
@@ -4562,4 +4558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2ca76c53d72f2702c8b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.72f977bf31b0c0cf0f00.js.map

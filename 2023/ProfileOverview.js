@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.3ef5048b5dc2ad99ee43.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1b094cad51ac9427520f.js
+// Retrieved at 8/2/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2992,17 +2992,13 @@
 				}, r.a.createElement("div", {
 					className: "flex flex-col text-center py-[48px]"
 				}, r.a.createElement("div", {
-					className: "max-w-[294px] my-md leading-5 text-neutral-content"
+					className: "my-md leading-5 text-neutral-content"
 				}, r.a.createElement("p", {
-					className: "text-[14px]"
-				}, c._("We're launching a new type of custom post. For now, it must be opened in a new window.", null, {
-					hk: "v8S8Z"
-				})), r.a.createElement("p", {
-					className: "text-[14px]"
-				}, c._("It's us, not you.", null, {
-					hk: "4wyEYD"
+					className: "text-[16px] max-w-[260px]"
+				}, c._("To view this interactive post, you'll need to open it in a new window.", null, {
+					hk: "27Ub4M"
 				}))), r.a.createElement(o.a, {
-					className: "m-auto mt-sm",
+					className: "m-auto",
 					kind: o.b.ExternalLink,
 					href: s,
 					target: "_blank",
@@ -9144,4 +9140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.3ef5048b5dc2ad99ee43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1b094cad51ac9427520f.js.map
