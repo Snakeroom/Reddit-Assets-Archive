@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.abc2577c8aca30073113.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.25a9ae4c0585bcbc3512.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -193,8 +193,8 @@
 				R = n("./src/reddit/models/Toast/index.ts"),
 				W = n("./src/reddit/selectors/tooltip.ts"),
 				U = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				F = n.n(U);
-			const Z = Object(O.a)(L.a),
+				Z = n.n(U);
+			const F = Object(O.a)(L.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
 			class V extends a.a.PureComponent {
 				constructor() {
@@ -214,16 +214,16 @@
 						publicAddress: o
 					} = this.props;
 					return s && o ? a.a.createElement("div", {
-						className: F.a.publicAddressSection
+						className: Z.a.publicAddressSection
 					}, a.a.createElement("div", {
-						className: F.a.publicAddress,
+						className: Z.a.publicAddress,
 						title: o
 					}, "publicAddress"), a.a.createElement("div", {
-						className: F.a.yourWalletAddress
+						className: Z.a.yourWalletAddress
 					}, r.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && a.a.createElement("button", {
-						className: F.a.settingsButton,
+						className: Z.a.settingsButton,
 						title: r.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
@@ -231,8 +231,8 @@
 						onClick: n,
 						id: H
 					}, a.a.createElement(B.a, {
-						className: F.a.settingsIcon
-					})), t && a.a.createElement(Z, {
+						className: Z.a.settingsIcon
+					})), t && a.a.createElement(F, {
 						tooltipId: H,
 						isOpen: e,
 						renderContentsHidden: !0
@@ -1155,7 +1155,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Fe
+					experimentName: s.Ce
 				}) === s.Rd
 			}
 		},
@@ -1213,4 +1213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.abc2577c8aca30073113.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.25a9ae4c0585bcbc3512.js.map

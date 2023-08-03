@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2bd0746123196a2270f1.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.fc77a80fb354cbe4687d.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -686,7 +686,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.Eg)(p),
+						includeInterestTopics: !!p && !Object(h.Bg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -5728,7 +5728,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[a]),
 					h = Object(c.e)(e => e.subreddits.progressModule[a]),
 					b = Object(c.e)(m.a),
-					g = b !== l.Xe.NewModule;
+					g = b !== l.Ue.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(u, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: a,
@@ -5828,10 +5828,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.De
+						experimentName: n.Ae
 					}) === n.Rd)
 				},
-				i = Object(r.a)(n.Ee)
+				i = Object(r.a)(n.Be)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, a) {
 			"use strict";
@@ -5848,7 +5848,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.Ad
 					});
-					return !(!t || Object(n.Eg)(t))
+					return !(!t || Object(n.Bg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5869,13 +5869,13 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ne
+						experimentName: n.ke
 					}) === n.Rd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.oe
+						experimentName: n.le
 					}) === n.Rd
 				}
 		},
@@ -5988,4 +5988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2bd0746123196a2270f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fc77a80fb354cbe4687d.js.map

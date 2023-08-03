@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.26fafbd3d0a479646f19.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.105c1630653299acbfd5.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
@@ -462,21 +462,21 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(o) || !!e.match(a),
 				b = e => !e.match(a) && (!e.match(c) && (!!e.match(d) || !!e.match(l))),
-				p = (e, t) => !!m(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(s.c)(e, {
+				p = (e, t) => !!m(t) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
-					experimentName: r.If
+					experimentName: r.Ff
 				})),
-				f = (e, t) => !!t.match(c) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(s.c)(e, {
+				f = (e, t) => !!t.match(c) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
-					experimentName: r.Gf
+					experimentName: r.Df
 				})),
-				x = (e, t) => !!b(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(s.c)(e, {
+				x = (e, t) => !!b(t) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
-					experimentName: r.Hf
+					experimentName: r.Ef
 				})),
 				h = (e, t) => !(!b(t) && !m(t)) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
-					experimentName: r.pe
+					experimentName: r.me
 				}) === r.Rd,
 				E = (e, t) => (e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
@@ -484,17 +484,17 @@
 				g = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.f,
-						experimentName: r.Jf
+						experimentName: r.Gf
 					})
 				},
-				v = (e, t) => !!(e => !!e.match(u))(t) && (g(e) === r.Zf.Enabled || g(e) === r.Zf.HardReload),
+				v = (e, t) => !!(e => !!e.match(u))(t) && (g(e) === r.Wf.Enabled || g(e) === r.Wf.HardReload),
 				j = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.e,
-						experimentName: r.Mf
+						experimentName: r.Jf
 					})
 				},
-				S = (e, t) => !!(e => !!e.match(u))(t) && j(e) === r.Zf.Enabled
+				S = (e, t) => !!(e => !!e.match(u))(t) && j(e) === r.Wf.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -533,4 +533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.26fafbd3d0a479646f19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.105c1630653299acbfd5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.47f6741cbd153c537e16.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f6b6c08d705845c34963.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -30792,7 +30792,7 @@
 							})), e(Q.j(H.a, !0))
 						},
 						onClearErrors: (t, n) => t && e(a.i(n)),
-						onLoadRecaptchaEnterprise: () => e(Object(V.d)(g.jf, !0)),
+						onLoadRecaptchaEnterprise: () => e(Object(V.d)(g.gf, !0)),
 						onRequestDraftList: () => e(G.p()),
 						onSetDestCollection: t => e(z.d(t)),
 						onStartTypingInput: t => e((e, n) => D.s(n(), C.l.TYPE, t)),
@@ -33425,9 +33425,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.Ne,
+				experimentName: o.Ke,
 				experimentEligibilitySelector: s.a
-			}) === o.We.Enabled
+			}) === o.Te.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -33439,7 +33439,7 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.kf
+					experimentName: o.hf
 				}) === o.Rd
 			}
 		},
@@ -33462,29 +33462,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.sg
+						experimentName: o.pg
 					}) === o.Rd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.tg
+						experimentName: o.qg
 					}) === o.Rd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.rg
+						experimentName: o.og
 					});
-					return t === o.kg.TypingIndicators || t === o.kg.IndicatorsPlusCTA
+					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.rg
+						experimentName: o.og
 					});
-					return (null == t ? void 0 : t.variant) === o.kg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -33962,4 +33962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.47f6741cbd153c537e16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f6b6c08d705845c34963.js.map

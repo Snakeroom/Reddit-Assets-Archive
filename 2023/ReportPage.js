@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.bf2f76808efff5d261fd.js
-// Retrieved at 8/2/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.66cc443dad85798038ba.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -55,8 +55,8 @@
 				}).apply(this, arguments)
 			}
 			const h = m.a.div("Section", c.a),
-				g = m.a.wrapped(l.a, "ChevronUp", c.a),
-				f = m.a.wrapped(i.a, "ChevronDown", c.a),
+				f = m.a.wrapped(l.a, "ChevronUp", c.a),
+				g = m.a.wrapped(i.a, "ChevronDown", c.a),
 				x = m.a.wrapped(e => {
 					let {
 						className: t,
@@ -89,7 +89,7 @@
 					}
 				}
 				render() {
-					return s.a.createElement("div", null, s.a.createElement(h, null, this.props.open ? s.a.createElement(g, null) : s.a.createElement(f, null), s.a.createElement(C, {
+					return s.a.createElement("div", null, s.a.createElement(h, null, this.props.open ? s.a.createElement(f, null) : s.a.createElement(g, null), s.a.createElement(C, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
 					}, this.props.title), s.a.createElement(x, {
@@ -233,7 +233,7 @@
 					}, this.onCustomTextChange = e => {
 						this.setState({
 							customText: e.target.value,
-							...g(e.target.value)
+							...f(e.target.value)
 						}), this.props.onCustomTextChange(e.target.value)
 					}
 				}
@@ -260,7 +260,7 @@
 					}, `${t.displayLength}/${l.a}`))))
 				}
 			}
-			const g = e => {
+			const f = e => {
 				const t = {
 					displayLength: 0,
 					maxLength: l.d
@@ -268,7 +268,7 @@
 				if (!e) return t;
 				const n = l.a,
 					r = e.length,
-					s = Object(i.b)(e),
+					s = Object(i.a)(e),
 					a = s.reduce((e, t) => t ? e + t.url.length : e, 0);
 				return {
 					displayLength: Math.min(l.a, r - a + 15 * s.length),
@@ -421,9 +421,9 @@
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "a", (function() {
 				return f
+			})), n.d(t, "a", (function() {
+				return g
 			})), n.d(t, "b", (function() {
 				return C
 			})), n.d(t, "c", (function() {
@@ -450,21 +450,21 @@
 			const m = o.a.div("icon", c.a),
 				p = o.a.textarea("textarea", c.a),
 				h = o.a.span("Invalid", c.a);
-			var g, f;
+			var f, g;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
-			}(g || (g = {})),
+			}(f || (f = {})),
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
-			}(f || (f = {}));
+			}(g || (g = {}));
 			const x = e => s.a.createElement("div", {
 					className: Object(a.a)(e.isRequired && c.a.required, e.className, {
 						[c.a.container]: !e.isTextarea,
 						[c.a.textareaContainer]: !!e.isTextarea,
 						...!!e.isTextarea && {
-							[c.a.mValid]: e.state === g.Valid,
-							[c.a.mInvalid]: e.state === g.Invalid,
-							[c.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
+							[c.a.mValid]: e.state === f.Valid,
+							[c.a.mInvalid]: e.state === f.Invalid,
+							[c.a.mWhiteField]: e.backgroundColorState === g.WhiteFields
 						}
 					})
 				}, s.a.createElement("label", {
@@ -476,10 +476,10 @@
 					className: c.a.label
 				}, e.label), !!e.state && s.a.createElement(m, {
 					className: Object(a.a)({
-						[c.a.mValid]: e.state === g.Valid,
-						[c.a.mInvalid]: e.state === g.Invalid
+						[c.a.mValid]: e.state === f.Valid,
+						[c.a.mInvalid]: e.state === f.Invalid
 					})
-				}, e.state === g.Valid && s.a.createElement(l.a, null), e.state === g.Invalid && s.a.createElement(h, null, "!")))),
+				}, e.state === f.Valid && s.a.createElement(l.a, null), e.state === f.Invalid && s.a.createElement(h, null, "!")))),
 				C = e => {
 					const {
 						backgroundColorState: t,
@@ -526,7 +526,7 @@
 						isTextarea: !0
 					}, s.a.createElement(p, u({}, m, {
 						className: Object(a.a)({
-							[c.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
+							[c.a.mWhiteField]: e.backgroundColorState === g.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: r,
@@ -626,9 +626,9 @@
 			})), n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "g", (function() {
-				return g
-			})), n.d(t, "i", (function() {
 				return f
+			})), n.d(t, "i", (function() {
+				return g
 			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "b", (function() {
@@ -652,8 +652,8 @@
 				m = r.a.div("FormGroup", a.a),
 				p = r.a.h2("FormGroupTitle", a.a),
 				h = r.a.div("FormElement", a.a),
-				g = r.a.div("FormGroupDescription", a.a),
-				f = r.a.div("FormItem", a.a),
+				f = r.a.div("FormGroupDescription", a.a),
+				g = r.a.div("FormItem", a.a),
 				x = r.a.h3("FormElementTitle", a.a),
 				C = r.a.div("FormElementDescription", a.a),
 				b = r.a.div("FormElementError", a.a),
@@ -694,9 +694,9 @@
 			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "a", (function() {
-				return g
-			})), n.d(t, "b", (function() {
 				return f
+			})), n.d(t, "b", (function() {
+				return g
 			})), n.d(t, "i", (function() {
 				return x
 			})), n.d(t, "h", (function() {
@@ -716,8 +716,8 @@
 				m = r.a.input("Input", c.a),
 				p = r.a.wrapped(l.a, "RadioOn", c.a),
 				h = r.a.wrapped(i.a, "RadioOff", c.a),
-				g = r.a.wrapped(a.a, "Checkbox", c.a),
-				f = r.a.wrapped(o.a, "CheckboxSelected", c.a),
+				f = r.a.wrapped(a.a, "Checkbox", c.a),
+				g = r.a.wrapped(o.a, "CheckboxSelected", c.a),
 				x = r.a.textarea("Textarea", c.a),
 				C = r.a.label("StyledLabel", c.a),
 				b = r.a.input("StyledFileInput", c.a)
@@ -738,7 +738,7 @@
 			})), n.d(t, "b", (function() {
 				return p
 			})), n.d(t, "c", (function() {
-				return g
+				return f
 			}));
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/makeApiRequest/index.ts"),
@@ -789,18 +789,94 @@
 							}
 					}
 				},
-				g = (e, t, n) => Object(s.a)(Object(o.a)(e, [i.a]), {
+				f = (e, t, n) => Object(s.a)(Object(o.a)(e, [i.a]), {
 					method: r.nb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
-					data: f(t, n)
+					data: g(t, n)
 				}),
-				f = (e, t) => {
+				g = (e, t) => {
 					const n = {
 						...Object(d.b)(e),
 						api_type: "json"
 					};
 					return t && (n.from_help_desk = !0), n
 				}
+		},
+		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = n("./src/lib/env/index.ts"),
+				s = n("./src/reddit/helpers/parseUrl.ts");
+			const a = ["old", "new", "en", "www", "np", "m"],
+				o = ["reddit.com", "reddit.local", ..."undefined" != typeof window && Object(r.a)() ? [window.location.host] : []].concat("").concat(a.map((function(e) {
+					return e + ".reddit.com"
+				}))).concat(a.map((function(e) {
+					return e + ".reddit.local"
+				}))),
+				i = ["mod.reddit.com"],
+				l = {
+					subreddit: {
+						pathnameComponents: ["subredditName"],
+						pathname: /^\/r\/(\w+)\/?$/
+					},
+					user: {
+						pathnameComponents: ["username"],
+						pathname: /^\/(?:user|u)\/(\w+)\/?$/
+					},
+					postShortlink: {
+						hostnames: o.concat("redd.it"),
+						pathnameComponents: ["postID36"],
+						pathname: /^\/([A-Za-z0-9]+)\/?$/
+					},
+					postDetail: {
+						pathnameComponents: ["postID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)(?:\/\w+)?\/?$/
+					},
+					comment: {
+						pathnameComponents: ["postID36", "commentID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
+					},
+					modmailConversation: {
+						hostnames: i,
+						pathnameComponents: ["modmailConversationId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
+					},
+					modmailMessage: {
+						hostnames: i,
+						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
+					}
+				};
+
+			function d(e) {
+				return (e.match(new RegExp(s.b, "g")) || []).map((function(e) {
+					let t;
+					return Object.keys(l).some((function(n) {
+						return t = function(e, t) {
+							const n = l[e];
+							if (!l) throw new Error("Could not find reddit URL spec: " + e);
+							const r = Object(s.a)(t);
+							if (!r) return void console.error("Could not parse url", t);
+							if (-1 === (n.hostnames || o).indexOf(r.hostname)) return;
+							const a = r.pathname.match(n.pathname);
+							if (a) {
+								return {
+									url: t,
+									routeName: e,
+									components: n.pathnameComponents.reduce((function(e, t, n) {
+										return e[t] = a[n + 1], e
+									}), {})
+								}
+							}
+						}(n, e)
+					})), t
+				})).filter((function(e) {
+					return e
+				}))
+			}
 		},
 		"./src/reddit/helpers/reportPage/index.ts": function(e, t, n) {
 			"use strict";
@@ -811,9 +887,9 @@
 			})), n.d(t, "c", (function() {
 				return h
 			})), n.d(t, "b", (function() {
-				return g
-			})), n.d(t, "a", (function() {
 				return f
+			})), n.d(t, "a", (function() {
+				return g
 			}));
 			var r = n("./src/reddit/models/RulesSequence/index.ts");
 			const s = "(?:old\\.reddit\\.(?:com|local)|new\\.reddit\\.(?:com|local)|reddit\\.(?:com|local)|www\\.reddit\\.(?:com|local))",
@@ -827,31 +903,31 @@
 				m = `(?:${i}|${o}|${l}|${d}|${c}|${u})`,
 				p = `(?:(?:${a}?${s}/)?(?:user|u)/)?([\\w-]+)(?:/)?`,
 				h = `(?:(?:${a}?${s}/)?(?:r)/)?([\\w-]+)(?:/)?`,
-				g = e => {
+				f = e => {
 					const t = new RegExp(o),
 						n = new RegExp(i),
 						r = new RegExp(l),
 						s = new RegExp(u),
 						a = new RegExp(d),
 						m = new RegExp(c);
-					let g, f, x;
+					let f, g, x;
 					if (e.thingUrl) {
 						const o = e.thingUrl.trim();
 						if (t.test(o)) {
 							const e = t.exec(o);
-							e && e.length > 1 && (g = "t1_" + e[1])
+							e && e.length > 1 && (f = "t1_" + e[1])
 						} else if (n.test(o) || s.test(o)) {
 							const e = n.exec(o) || s.exec(o);
-							e && e.length > 1 && (g = "t3_" + e[1])
+							e && e.length > 1 && (f = "t3_" + e[1])
 						} else if (r.test(o)) {
 							const e = r.exec(o);
-							e && e.length > 1 && (g = "t4_" + e[1])
+							e && e.length > 1 && (f = "t4_" + e[1])
 						} else if (m.test(o)) {
 							const e = m.exec(o);
-							e && e.length > 2 && (f = e[1], x = e[2])
+							e && e.length > 2 && (g = e[1], x = e[2])
 						} else if (a.test(o)) {
 							const e = a.exec(o);
-							e && e.length > 1 && (f = e[1])
+							e && e.length > 1 && (g = e[1])
 						}
 					}
 					const C = new RegExp(p),
@@ -881,14 +957,14 @@
 						site_reason: R.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
-						modmail_conv_id: f,
+						modmail_conv_id: g,
 						modmail_msg_id: x,
 						sr_name: _,
-						thing_id: g,
+						thing_id: f,
 						usernames: E.length ? E.join(",") : void 0
 					}
 				},
-				f = (e, t) => {
+				g = (e, t) => {
 					const n = new r.a;
 					return x(n, e, t, 0), n
 				},
@@ -1039,16 +1115,16 @@
 				m = n.n(u),
 				p = n("./node_modules/fbt/lib/FbtPublic.js");
 			const h = c.a.header("Header", m.a),
-				g = c.a.div("Description", m.a),
-				f = c.a.div("LinkHolder", m.a),
+				f = c.a.div("Description", m.a),
+				g = c.a.div("LinkHolder", m.a),
 				x = c.a.footer("Footer", m.a),
 				C = c.a.a("FileAComplaintLink", m.a),
 				b = c.a.a("RedirectToRedditLink", m.a);
 			var E = e => s.a.createElement("div", {
 					className: e.className
-				}, s.a.createElement(h, null, e.complaintPageTitle), s.a.createElement(g, null, e.complaintPrompt || p.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
+				}, s.a.createElement(h, null, e.complaintPageTitle), s.a.createElement(f, null, e.complaintPrompt || p.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
-				})), s.a.createElement(f, null, s.a.createElement(C, {
+				})), s.a.createElement(g, null, s.a.createElement(C, {
 					href: e.complaintUrl
 				}, e.complaintButtonText)), s.a.createElement(x, null, s.a.createElement(b, {
 					href: `${d.a.redditUrl}`
@@ -1062,24 +1138,24 @@
 				S = c.a.div("OptionDescription", R.a),
 				P = c.a.header("Header", m.a),
 				F = c.a.footer("Footer", m.a),
-				k = c.a.div("Description", m.a),
-				O = c.a.a("Link", m.a),
-				w = c.a.a("RedirectToRedditLink", m.a),
+				w = c.a.div("Description", m.a),
+				k = c.a.a("Link", m.a),
+				O = c.a.a("RedirectToRedditLink", m.a),
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
 			class I extends s.a.Component {
 				constructor() {
 					super(...arguments), this.renderAbuseOfReportButtonOption = () => s.a.createElement(y, null, s.a.createElement(v, null, p.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
-					})), s.a.createElement(S, null, p.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [p.fbt._param("=visit the Help Center", s.a.createElement(O, {
+					})), s.a.createElement(S, null, p.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [p.fbt._param("=visit the Help Center", s.a.createElement(k, {
 						target: "_blank",
 						href: N
 					}, p.fbt._("visit the Help Center", null, {
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(w, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
-					})), s.a.createElement(F, null, s.a.createElement(w, {
+					})), s.a.createElement(F, null, s.a.createElement(O, {
 						href: "/"
 					}, p.fbt._("Redirect back to your home in Reddit universe", null, {
 						hk: "1pMLva"
@@ -1093,7 +1169,7 @@
 						className: e.className
 					}, s.a.createElement(P, null, p.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(w, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -1139,8 +1215,8 @@
 				W = n("./src/reddit/components/ReportPage/ReportLabeledControl/index.m.less"),
 				z = n.n(W);
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1148,7 +1224,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = c.a.div("icon", z.a),
+			const X = c.a.div("icon", z.a),
 				Q = (c.a.textarea("textarea", z.a), c.a.span("Invalid", z.a));
 			var Y, J;
 			! function(e) {
@@ -1174,7 +1250,7 @@
 					})
 				}, e.children, e.label && s.a.createElement("span", {
 					className: z.a.label
-				}, e.label), !!e.state && s.a.createElement(Z, {
+				}, e.label), !!e.state && s.a.createElement(X, {
 					className: Object(j.a)({
 						[z.a.mValid]: e.state === Y.Valid,
 						[z.a.mInvalid]: e.state === Y.Invalid
@@ -1197,7 +1273,7 @@
 						isRequired: a,
 						label: o,
 						state: l
-					}, s.a.createElement("input", X({}, d, {
+					}, s.a.createElement("input", Z({}, d, {
 						className: Object(j.a)(z.a.input, z.a.control, {
 							[z.a.hasState]: !!e.state,
 							[z.a.mWhiteField]: e.backgroundColorState === J.WhiteFields
@@ -1313,13 +1389,13 @@
 				me = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				pe = n("./src/reddit/components/ReportPage/UsernamesInput/index.m.less"),
 				he = n.n(pe);
-			const ge = 10,
-				fe = ["u/"],
+			const fe = 10,
+				ge = ["u/"],
 				xe = c.a.header("InputDescription", m.a);
 			class Ce extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
-						usernames: fe
+						usernames: ge
 					}, this.getAddUsernameButton = () => s.a.createElement("button", {
 						className: he.a.addUsernameButton,
 						onClick: this.handleAddUsername
@@ -1388,7 +1464,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.onUsernamesChange(fe)
+					this.props.onUsernamesChange(ge)
 				}
 				render() {
 					const {
@@ -1426,7 +1502,7 @@
 						}, i ? a ? o : "" : p.fbt._("Please match the requested format.", null, {
 							hk: "3TUeTn"
 						})))
-					}), !e.oneUsername && t.usernames.length < ge ? this.getAddUsernameButton() : null))
+					}), !e.oneUsername && t.usernames.length < fe ? this.getAddUsernameButton() : null))
 				}
 			}
 			var be = c.a.wrapped(Ce, "Component", he.a),
@@ -1566,12 +1642,12 @@
 			}
 			var Pe = n("./src/reddit/controls/Button/index.tsx"),
 				Fe = n("./src/reddit/helpers/reportPage/index.ts"),
-				ke = n("./src/reddit/layout/row/Inline/index.tsx"),
-				Oe = n("./src/reddit/models/RulesSequence/index.ts"),
-				we = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
-				Ne = n.n(we);
+				we = n("./src/reddit/layout/row/Inline/index.tsx"),
+				ke = n("./src/reddit/models/RulesSequence/index.ts"),
+				Oe = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
+				Ne = n.n(Oe);
 			const Ie = c.a.header("Header", m.a),
-				Te = c.a.wrapped(ke.a, "Footer", Ne.a),
+				Te = c.a.wrapped(we.a, "Footer", Ne.a),
 				Ue = c.a.wrapped(Pe.l, "SubmitButton", Ne.a),
 				je = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
@@ -1590,7 +1666,7 @@
 						})
 					}, this.state = {
 						gotInitialReason: !1,
-						rulesSequence: new Oe.a,
+						rulesSequence: new ke.a,
 						showErrors: !1
 					}
 				}
@@ -1677,8 +1753,8 @@
 				currentUser: Ge.m,
 				reportPageRules: e => e.reportPage.reportPageRules,
 				crisisFlowEnabled: He.b
-			}), Xe = Object(a.b)(ze);
-			class Ze extends s.a.Component {
+			}), Ze = Object(a.b)(ze);
+			class Xe extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dirtyFields: {},
@@ -1876,7 +1952,7 @@
 					})
 				}
 			}
-			t.default = Object(Me.b)(Xe(Ze))
+			t.default = Object(Me.b)(Ze(Xe))
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
 			"use strict";
@@ -1902,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.bf2f76808efff5d261fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.66cc443dad85798038ba.js.map

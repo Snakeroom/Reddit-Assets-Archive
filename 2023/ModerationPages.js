@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1c61a75efc66a208a30b.js
-// Retrieved at 8/2/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.01dd4b9653b15b5dfba2.js
+// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ModQueuePages~ProfileOverview~reddit-components-LargePost~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -13144,7 +13144,7 @@
 					} = t, P = Object(i.e)(Ge.c), M = Object(i.e)(Ge.a), T = Object(i.e)(Qe.c), B = Object(i.e)(Qe.a), D = Object(i.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), _ = Object(He.a)(Ue.Nf) === Ue.Rd, R = P && D, L = (null == v ? void 0 : v.allowedMediaTypes) || [], F = N, U = Object(r.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === G.X.All, Q = e => {
+					})(e, d)), _ = Object(He.a)(Ue.Kf) === Ue.Rd, R = P && D, L = (null == v ? void 0 : v.allowedMediaTypes) || [], F = N, U = Object(r.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === G.X.All, Q = e => {
 						const n = H(t[e]) ? G.X.Low : G.X.All;
 						s(n, e)
 					};
@@ -18059,19 +18059,15 @@
 				modalTitle: "_2C3YUpN8pGzseZOBK0tl0I",
 				modalCloseIcon: "_2BTQI8_1TIwwfdecOP_j6o",
 				modalListItem: "-sXLpWAGj2HMFvzRvH_bC",
-				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs",
-				garlicBreadBanner: "SVn8TtBVFQ-GZUhog511q",
-				bannerContainer: "V5Q75l1gWtGpBZEehJiGH",
-				bannerDataContainer: "SIz6ozr7aqewYGVSLfSf6",
-				bannerImage: "_2zetWw7f4W-0OWrUYJHPQ-"
+				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs"
 			}
 		},
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return q
+				return J
 			})), n.d(t, "b", (function() {
-				return ee
+				return Z
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
@@ -18358,14 +18354,12 @@
 					}, r.a.createElement("div", null)))
 				}
 			}
-			var z = n("./src/reddit/constants/localStorage.ts"),
-				W = n("./src/reddit/controls/InternalLink/index.tsx"),
-				K = n("./src/reddit/hooks/useLocalStorage.ts");
-			var Y = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				J = n("./src/reddit/helpers/localStorage/index.ts");
+			var z = n("./src/reddit/controls/InternalLink/index.tsx"),
+				W = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
+				K = n("./src/reddit/helpers/localStorage/index.ts");
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -18373,9 +18367,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const q = [],
-				V = l.a.div("StyledDropdown", w.a),
-				Z = e => {
+			const J = [],
+				X = l.a.div("StyledDropdown", w.a),
+				q = e => {
 					let {
 						isLoggedIn: t,
 						onMessagesClick: n,
@@ -18401,7 +18395,7 @@
 						className: w.a.topNavLinks
 					}, r.a.createElement("span", {
 						className: w.a.messagesLinkContainer
-					}, r.a.createElement(W.default, {
+					}, r.a.createElement(z.default, {
 						className: Object(d.a)(w.a.messagesLink, {
 							[w.a.mActive]: m
 						}),
@@ -18419,7 +18413,7 @@
 					}, r.a.createElement(v.a, {
 						name: "mark_read",
 						className: w.a.icon
-					})), r.a.createElement(W.default, {
+					})), r.a.createElement(z.default, {
 						className: w.a.navLink,
 						onClick: b,
 						to: "/settings/notifications"
@@ -18428,9 +18422,9 @@
 						className: w.a.icon
 					}))))
 				},
-				$ = e => r.a.createElement("div", {
+				V = e => r.a.createElement("div", {
 					className: w.a.bottomBar
-				}, r.a.createElement(W.default, {
+				}, r.a.createElement(z.default, {
 					className: w.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
@@ -18439,7 +18433,7 @@
 				}, s.fbt._("See All", null, {
 					hk: "3L3tFc"
 				}))),
-				ee = e => {
+				Z = e => {
 					const t = Object(f.a)(),
 						{
 							clearMessageTabBadgeCount: n,
@@ -18448,39 +18442,25 @@
 							messagesBadgeCount: l,
 							notifications: c,
 							hideTooltip: u,
-							isGarlicBreadEnabled: m,
-							isInboxPolicyBannerEnabled: p,
-							isLoggedIn: b,
-							isPushNotificationsSupported: h,
-							userId: v
+							isInboxPolicyBannerEnabled: m,
+							isLoggedIn: p,
+							isPushNotificationsSupported: b,
+							userId: h
 						} = e,
-						[A, x] = Object(Y.a)(v),
-						[C, E] = function(e) {
-							const [t, n] = Object(o.useState)(() => Object(J.w)(e));
+						[v, A] = Object(W.a)(h),
+						[x, C] = function(e) {
+							const [t, n] = Object(o.useState)(() => Object(K.w)(e));
 							return [t, Object(o.useCallback)(() => {
-								n(!0), Object(J.Cb)(e)
+								n(!0), Object(K.Cb)(e)
 							}, [e])]
-						}(v),
-						[k, y] = function(e) {
-							let {
-								key: t,
-								userId: n
-							} = e;
-							const [s, o] = Object(K.a)(t, []);
-							return [-1 !== s.indexOf(n), () => {
-								o([...s, n])
-							}]
-						}({
-							key: z.b.GARLIC_BREAD_BANNER_SEEN,
-							userId: v
-						}),
-						O = !(!c || !c.length),
-						j = Object(a.a)(),
-						I = j === i.a.Closed || j === i.a.Default || j === i.a.Denied,
-						N = h && I && !A;
-					return r.a.createElement(V, null, r.a.createElement("div", {
+						}(h),
+						E = !(!c || !c.length),
+						k = Object(a.a)(),
+						y = k === i.a.Closed || k === i.a.Default || k === i.a.Denied,
+						O = b && y && !v;
+					return r.a.createElement(X, null, r.a.createElement("div", {
 						className: w.a.tooltipContainer
-					}, r.a.createElement(Z, {
+					}, r.a.createElement(q, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(g.g)({
 								isMiniInbox: !0
@@ -18495,17 +18475,15 @@
 						},
 						sendInboxClickSettings: () => t(Object(g.m)(g.c.MiniInbox)),
 						onBarClick: u,
-						isLoggedIn: b
-					}), r.a.createElement(G, X({}, e, {
+						isLoggedIn: p
+					}), r.a.createElement(G, Y({}, e, {
 						isPending: d,
 						onItemClick: u,
-						setDesktopNotificationsPromptSeen: x,
-						isDNInboxPromptBannerEnabled: N,
-						isInboxPrivacyPolicyBannerEnabled: p && !C,
-						setInboxPrivacyPolicyBannerSeen: E,
-						isGarlicBreadEnabled: m && !k,
-						setGarlicBreadBannerSeen: y
-					})), (O || d) && r.a.createElement($, {
+						setDesktopNotificationsPromptSeen: A,
+						isDNInboxPromptBannerEnabled: O,
+						isInboxPrivacyPolicyBannerEnabled: m && !x,
+						setInboxPrivacyPolicyBannerSeen: C
+					})), (E || d) && r.a.createElement(V, {
 						sendInboxClickSeeAll: () => t(Object(g.l)()),
 						onBarClick: u
 					})))
@@ -20245,7 +20223,7 @@
 			}
 
 			function c() {
-				const e = Object(d.a)(a.le),
+				const e = Object(d.a)(a.ie),
 					t = Object(r.e)(i.d.hatefulContentFiltersEnabled);
 				return e === a.Rd && t
 			}
@@ -22610,7 +22588,7 @@
 					let {
 						content: t
 					} = e;
-					const n = Object(y.a)(k.me) === k.Rd,
+					const n = Object(y.a)(k.je) === k.Rd,
 						{
 							contentIds: u
 						} = A(),
@@ -42164,19 +42142,19 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.se
+						experimentName: s.pe
 					}) === s.Rd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.te
+						experimentName: s.qe
 					}) === s.Rd
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.be
+						experimentName: s.Zd
 					}) === s.Rd
 				},
 				l = (e, t) => {
@@ -42250,7 +42228,7 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.Kf
+				experimentName: s.Hf
 			}) === s.Rd
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -42262,10 +42240,10 @@
 				o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.ng,
+					experimentName: o.kg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(s.a)(a, e => e === o.hg)
+				i = Object(s.a)(a, e => e === o.eg)
 		},
 		"./src/reddit/selectors/moderationLog.ts": function(e, t, n) {
 			"use strict";
@@ -42771,4 +42749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1c61a75efc66a208a30b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.01dd4b9653b15b5dfba2.js.map
