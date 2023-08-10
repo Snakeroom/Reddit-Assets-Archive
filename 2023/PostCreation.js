@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.09dc613acf2cebc3ddc9.js
-// Retrieved at 8/10/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.edda28e0bc62665f305d.js
+// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -33474,29 +33474,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.pg
+						experimentName: o.qg
 					}) === o.Rd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.qg
+						experimentName: o.rg
 					}) === o.Rd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.og
+						experimentName: o.pg
 					});
-					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
+					return t === o.ig.TypingIndicators || t === o.ig.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.og
+						experimentName: o.pg
 					});
-					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ig.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -33974,4 +33974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.09dc613acf2cebc3ddc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.edda28e0bc62665f305d.js.map

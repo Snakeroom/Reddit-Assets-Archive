@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.01dd4b9653b15b5dfba2.js
-// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.99492645952362ca3244.js
+// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ModQueuePages~ProfileOverview~reddit-components-LargePost~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -13144,7 +13144,7 @@
 					} = t, P = Object(i.e)(Ge.c), M = Object(i.e)(Ge.a), T = Object(i.e)(Qe.c), B = Object(i.e)(Qe.a), D = Object(i.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), _ = Object(He.a)(Ue.Kf) === Ue.Rd, R = P && D, L = (null == v ? void 0 : v.allowedMediaTypes) || [], F = N, U = Object(r.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === G.X.All, Q = e => {
+					})(e, d)), _ = Object(He.a)(Ue.Lf) === Ue.Rd, R = P && D, L = (null == v ? void 0 : v.allowedMediaTypes) || [], F = N, U = Object(r.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === G.X.All, Q = e => {
 						const n = H(t[e]) ? G.X.Low : G.X.All;
 						s(n, e)
 					};
@@ -42228,7 +42228,7 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.Hf
+				experimentName: s.If
 			}) === s.Rd
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -42240,10 +42240,10 @@
 				o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.kg,
+					experimentName: o.lg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(s.a)(a, e => e === o.eg)
+				i = Object(s.a)(a, e => e === o.fg)
 		},
 		"./src/reddit/selectors/moderationLog.ts": function(e, t, n) {
 			"use strict";
@@ -42749,4 +42749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.01dd4b9653b15b5dfba2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.99492645952362ca3244.js.map

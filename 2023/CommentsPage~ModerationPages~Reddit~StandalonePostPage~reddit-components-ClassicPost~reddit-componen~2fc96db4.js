@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.f281d00a2b09001cf41e.js
-// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.20c0de99e92612e109d0.js
+// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -4440,4 +4440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.f281d00a2b09001cf41e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~ModerationPages~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-componen~2fc96db4.20c0de99e92612e109d0.js.map

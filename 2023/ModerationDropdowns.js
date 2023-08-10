@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6cd27365306518ed1d4c.js
-// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.90120ea1bb3107e69046.js
+// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -725,8 +725,8 @@
 				S = n("./src/reddit/models/Flair/index.ts"),
 				y = n("./src/reddit/models/Prediction/index.ts"),
 				T = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
-				F = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				I = n.n(F);
+				I = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
+				F = n.n(I);
 			const L = (e, t) => Object(D.b)({
 					breakpointType: D.a.HideIfVWLarger,
 					flatlistItem: e,
@@ -756,7 +756,7 @@
 						onOcPost: _,
 						onCcPost: C,
 						onRemovePost: D,
-						onModToMemberShareOpened: F,
+						onModToMemberShareOpened: I,
 						onSpamPost: R,
 						onStickyPost: B,
 						onSpoilerPost: W,
@@ -809,7 +809,7 @@
 						displayText: j.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
-						onClick: F
+						onClick: I
 					}, s.a.createElement(T.f, null)), !H.isRemoved && !H.isSpam && !d && s.a.createElement(w.a, {
 						isSelected: H.isStickied,
 						onClick: B,
@@ -828,7 +828,7 @@
 						}),
 						onClick: f
 					}, s.a.createElement(T.b, null)), q && s.a.createElement(T.e, {
-						textClassName: I.a.text,
+						textClassName: F.a.text,
 						onClick: b,
 						displayText: j.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
@@ -951,20 +951,20 @@
 					onStickyPost: S,
 					post: y,
 					sendEvent: T,
-					tooltipId: F
+					tooltipId: I
 				} = e;
-				const I = y.distinguishType === i.H.MODERATOR,
-					L = I ? i.H.NONE : i.H.MODERATOR,
+				const F = y.distinguishType === i.H.MODERATOR,
+					L = F ? i.H.NONE : i.H.MODERATOR,
 					A = Object(p.b)(y.id, c);
 				return s.a.createElement(G, {
 					className: W.a.dropdown,
 					isOpen: r,
-					tooltipId: F
+					tooltipId: I
 				}, s.a.createElement(R, {
 					canEditFlair: t,
 					hasModFullPerms: n,
 					hasModPostPerms: o,
-					isDistinguished: I,
+					isDistinguished: F,
 					isModToMemberShareEnabled: a,
 					isOverlay: c,
 					isPostAuthor: d,
@@ -990,7 +990,7 @@
 						w(), T(Object(v.n)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						O(L), T(Object(v.n)(I ? "undistinguish" : "distinguish", y.id))
+						O(L), T(Object(v.n)(F ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
 						C(A), T(Object(v.n)("post_flair", y.id))
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Hf
+				experimentName: o.If
 			}) === o.Rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6cd27365306518ed1d4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.90120ea1bb3107e69046.js.map
