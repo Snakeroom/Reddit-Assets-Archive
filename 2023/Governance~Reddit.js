@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6036b693100d0fc30906.js
-// Retrieved at 8/8/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ea6daf31e46193ecdd7a.js
+// Retrieved at 8/10/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -19,11 +19,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("188776"),
+				buildNumber: Object(r.c)("188811"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1691524205"),
+				buildTimestamp: Object(r.b)("1691676712"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3504,14 +3504,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8476a56b9aab7e5ebf4d45758b1e5f54ddecd249-production" + ` %cpublic url %c${E.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c531b6cdde7bd10d46ca03f25bd6b8d621d1c0150-production" + ` %cpublic url %c${E.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${E.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: E.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8476a56b9aab7e5ebf4d45758b1e5f54ddecd249-production",
+						release: "531b6cdde7bd10d46ca03f25bd6b8d621d1c0150-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -4054,7 +4054,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "8476a56b9aab7e5ebf4d45758b1e5f54ddecd249-production",
+							releaseClient: "531b6cdde7bd10d46ca03f25bd6b8d621d1c0150-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(c.a)(n)) : void 0
 						},
@@ -49875,11 +49875,19 @@
 					const i = l.e(e, {
 							subredditName: t
 						}),
-						n = l.g(e);
+						n = l.g(e),
+						r = null == i ? void 0 : i.postGuidanceConfig.map(e => {
+							let {
+								id: t,
+								name: i
+							} = e;
+							if (n.includes(t)) return i
+						}).filter(Boolean);
 					return {
 						automoderator: {
 							automod_post_guidance: !!i && i.postGuidanceConfig.length > 0,
-							automod_post_guidance_ids: n
+							automod_post_guidance_ids: n,
+							automod_post_guidance_names: r
 						}
 					}
 				},
@@ -49945,17 +49953,18 @@
 						...U(e, t.subredditId)
 					}
 				},
-				H = (e, t, i, r) => {
+				H = (e, t, i, r, s) => {
 					Object(m.a)({
 						noun: "post_guidance",
 						...g(e),
 						action: n.c.VIEW,
-						subreddit: i ? _.ob(e, i) : r ? _.pb(e, r) : void 0,
+						subreddit: r ? _.ob(e, r) : s ? _.pb(e, s) : void 0,
 						actionInfo: {
 							..._.d(e)
 						},
 						automoderator: {
-							automod_post_guidance_ids: t
+							automod_post_guidance_ids: t,
+							automod_post_guidance_names: i
 						}
 					})
 				},
@@ -93358,11 +93367,15 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Automoderator = function(e) {
-					this.rule_yaml = null, this.rule_hash_id = null, this.automod_post_guidance = null, this.automod_post_guidance_ids = null, e && (void 0 !== e.rule_yaml && null !== e.rule_yaml && (this.rule_yaml = e.rule_yaml), void 0 !== e.rule_hash_id && null !== e.rule_hash_id && (this.rule_hash_id = e.rule_hash_id), void 0 !== e.automod_post_guidance && null !== e.automod_post_guidance && (this.automod_post_guidance = e.automod_post_guidance), void 0 !== e.automod_post_guidance_ids && null !== e.automod_post_guidance_ids && (this.automod_post_guidance_ids = r.copyList(e.automod_post_guidance_ids, [null])))
+					this.rule_yaml = null, this.rule_hash_id = null, this.automod_post_guidance = null, this.automod_post_guidance_ids = null, this.automod_post_guidance_names = null, e && (void 0 !== e.rule_yaml && null !== e.rule_yaml && (this.rule_yaml = e.rule_yaml), void 0 !== e.rule_hash_id && null !== e.rule_hash_id && (this.rule_hash_id = e.rule_hash_id), void 0 !== e.automod_post_guidance && null !== e.automod_post_guidance && (this.automod_post_guidance = e.automod_post_guidance), void 0 !== e.automod_post_guidance_ids && null !== e.automod_post_guidance_ids && (this.automod_post_guidance_ids = r.copyList(e.automod_post_guidance_ids, [null])), void 0 !== e.automod_post_guidance_names && null !== e.automod_post_guidance_names && (this.automod_post_guidance_names = r.copyList(e.automod_post_guidance_names, [null])))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
 				if (e.writeStructBegin("Automoderator"), null !== this.rule_yaml && void 0 !== this.rule_yaml && (e.writeFieldBegin("rule_yaml", r.Type.STRING, 1), e.writeString(this.rule_yaml), e.writeFieldEnd()), null !== this.rule_hash_id && void 0 !== this.rule_hash_id && (e.writeFieldBegin("rule_hash_id", r.Type.STRING, 2), e.writeString(this.rule_hash_id), e.writeFieldEnd()), null !== this.automod_post_guidance && void 0 !== this.automod_post_guidance && (e.writeFieldBegin("automod_post_guidance", r.Type.BOOL, 3), e.writeBool(this.automod_post_guidance), e.writeFieldEnd()), null !== this.automod_post_guidance_ids && void 0 !== this.automod_post_guidance_ids) {
 					for (var t in e.writeFieldBegin("automod_post_guidance_ids", r.Type.LIST, 4), e.writeListBegin(r.Type.STRING, this.automod_post_guidance_ids.length), this.automod_post_guidance_ids) this.automod_post_guidance_ids.hasOwnProperty(t) && (t = this.automod_post_guidance_ids[t], e.writeString(t));
+					e.writeListEnd(), e.writeFieldEnd()
+				}
+				if (null !== this.automod_post_guidance_names && void 0 !== this.automod_post_guidance_names) {
+					for (var i in e.writeFieldBegin("automod_post_guidance_names", r.Type.LIST, 5), e.writeListBegin(r.Type.STRING, this.automod_post_guidance_names.length), this.automod_post_guidance_names) this.automod_post_guidance_names.hasOwnProperty(i) && (i = this.automod_post_guidance_names[i], e.writeString(i));
 					e.writeListEnd(), e.writeFieldEnd()
 				}
 				e.writeFieldStop(), e.writeStructEnd()
@@ -96231,7 +96244,8 @@
 			var Me = i("./src/telemetry/eventSchemas/automoderator_types.js");
 			const Ue = e => new Me.Automoderator({
 				automod_post_guidance: e.automod_post_guidance ? e.automod_post_guidance : null,
-				automod_post_guidance_ids: e.automod_post_guidance_ids ? e.automod_post_guidance_ids : null
+				automod_post_guidance_ids: e.automod_post_guidance_ids ? e.automod_post_guidance_ids : null,
+				automod_post_guidance_names: e.automod_post_guidance_names ? e.automod_post_guidance_names : null
 			});
 			var Ge = i("./src/telemetry/eventSchemas/banner_types.js");
 			const qe = e => new Ge.Banner({
@@ -97319,4 +97333,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6036b693100d0fc30906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ea6daf31e46193ecdd7a.js.map

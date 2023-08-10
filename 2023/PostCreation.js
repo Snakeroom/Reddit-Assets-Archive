@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f6b6c08d705845c34963.js
-// Retrieved at 8/3/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.09dc613acf2cebc3ddc9.js
+// Retrieved at 8/10/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428", "ModListing~Reddit~StandalonePostPage~Subreddit", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -9170,6 +9170,7 @@
 			n.d(t, "a", (function() {
 				return u
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -9186,13 +9187,24 @@
 				} = e;
 				const [u, p] = Object(s.useState)(!1), m = t.filter(e => e.actionType === i.N.Block), h = m.length > 0 ? m : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
 				return Object(s.useEffect)(() => {
-					const e = b.map(e => e.guidanceId),
-						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
-						o = e.filter(e => !(null == t ? void 0 : t.includes(e))),
-						s = [];
-					o.forEach(e => {
-						e && s.push(e)
-					}), n && o.length > 0 && n(s)
+					const e = new Map;
+					[...b, ...f || []].forEach(t => {
+						let {
+							guidanceId: n,
+							name: o
+						} = t;
+						n && o && e.set(n, o)
+					});
+					const t = b.map(e => e.guidanceId),
+						o = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
+						s = t.filter(e => !(null == o ? void 0 : o.includes(e))),
+						r = [];
+					s.filter(Boolean).forEach(t => {
+						if (t && e.has(t)) {
+							const n = e.get(t);
+							n && r.push(n)
+						}
+					}), n && s.length > 0 && n(s, r)
 				}, [t, b, f, n]), r.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, r.a.createElement("ol", null, b.map((e, t) => r.a.createElement("li", {
@@ -29455,8 +29467,8 @@
 								isContentChanged: o
 							})), s(() => e(za.a(r))), n()
 						},
-						onTrackPostGuidanceView: (t, n, o) => {
-							e((e, s) => D.B(s(), t, n, o))
+						onTrackPostGuidanceView: (t, n, o, s) => {
+							e((e, r) => D.B(r(), t, n, o, s))
 						},
 						onToggleEditorMode: (t, n) => e(qa.d(C.h.POST_CREATION, t, n)),
 						onTrackToolbarClick: (t, n) => e((e, o) => D.N(o(), t, n)),
@@ -30027,8 +30039,8 @@
 							e(a.h(t)), s(() => e(za.a(r))), n(t)
 						},
 						onInputFocus: () => e((e, t) => D.s(t(), C.l.CLICK, C.m.TITLE)),
-						onTrackPostGuidanceView: (t, n, o) => {
-							e((e, s) => D.B(s(), t, n, o))
+						onTrackPostGuidanceView: (t, n, o, s) => {
+							e((e, r) => D.B(r(), t, n, o, s))
 						}
 					}
 				});
@@ -33962,4 +33974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f6b6c08d705845c34963.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.09dc613acf2cebc3ddc9.js.map
