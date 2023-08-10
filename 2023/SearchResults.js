@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.626e25f22697c970832d.js
-// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d79e09bb2966cf84a00d.js
+// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1025,9 +1025,9 @@
 							o = Object(ue.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (o && (e => m.wf.Redirect === Object(ne.b)(e, {
+						if (o && (e => m.uf.Redirect === Object(ne.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: m.qf
+								experimentName: m.of
 							}))(s())) return void t(Object(r.c)(o.url));
 						if (T.belongsTo.type !== K.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === K.a.PROFILE) {
@@ -10508,10 +10508,10 @@
 					experimentName: Xs.Oc,
 					expEventOverride: !1
 				}), e => !!e),
-				yn = e => Object(vn.a)(e, Xs.Ie),
+				yn = e => Object(vn.a)(e, Xs.Ge),
 				En = Object(ae.a)(e => Object(Zs.c)(e, {
 					experimentEligibilitySelector: Zs.a,
-					experimentName: Xs.Ie,
+					experimentName: Xs.Ge,
 					expEventOverride: !1
 				}), e => !!e);
 			var _n, Sn = s("./src/reddit/components/SearchBanner/index.m.less"),
@@ -10826,10 +10826,10 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const i = Object(r.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: n.zf
+				experimentName: n.xf
 			}), e => ({
-				isSubEnlarged: e === n.Wf.Variant1 || e === n.Wf.Variant3,
-				withCommunityDescription: e === n.Wf.Variant2 || e === n.Wf.Variant3
+				isSubEnlarged: e === n.Uf.Variant1 || e === n.Uf.Variant3,
+				withCommunityDescription: e === n.Uf.Variant2 || e === n.Uf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -10845,7 +10845,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Cg)(t)
+					return Boolean(t) && !Object(o.Ag)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -10894,4 +10894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.626e25f22697c970832d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d79e09bb2966cf84a00d.js.map

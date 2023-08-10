@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.581d7b10a7eba6f27083.js
-// Retrieved at 8/1/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.69e004659a455b8ededb.js
+// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -214,7 +214,7 @@
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx": function(A, e, t) {
 			"use strict";
 			t.d(e, "a", (function() {
-				return dA
+				return cA
 			}));
 			var i = t("./node_modules/react/index.js"),
 				a = t.n(i),
@@ -229,74 +229,73 @@
 			var p = t("./src/reddit/hooks/useSafeState.ts"),
 				m = t("./src/reddit/hooks/useTracking.ts"),
 				I = t("./src/reddit/selectors/crypto/points.ts"),
-				E = t("./src/reddit/selectors/experiments/mainnet.ts"),
-				h = t("./src/reddit/selectors/gov.ts"),
-				g = t("./node_modules/fbt/lib/FbtPublic.js"),
-				k = t("./src/lib/classNames/index.ts"),
-				f = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				x = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BaseModal.m.less"),
-				b = t.n(x);
-			const y = () => g.fbt._("Continue in the Mobile App", null, {
+				E = t("./src/reddit/selectors/gov.ts"),
+				h = t("./node_modules/fbt/lib/FbtPublic.js"),
+				g = t("./src/lib/classNames/index.ts"),
+				k = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				f = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BaseModal.m.less"),
+				x = t.n(f);
+			const b = () => h.fbt._("Continue in the Mobile App", null, {
 				hk: "2NW6Oz"
 			});
 
-			function C(A) {
-				const e = A.title || g.fbt._("Approve Transaction with Your Vault", null, {
+			function y(A) {
+				const e = A.title || h.fbt._("Approve Transaction with Your Vault", null, {
 					hk: "1VEmdd"
 				});
 				return a.a.createElement("div", {
-					className: Object(k.a)(b.a.container, A.className)
+					className: Object(g.a)(x.a.container, A.className)
 				}, a.a.createElement("header", {
-					className: b.a.header
+					className: x.a.header
 				}, a.a.createElement("div", {
-					className: b.a.title
+					className: x.a.title
 				}, e), a.a.createElement("button", {
-					className: b.a.closeButton,
+					className: x.a.closeButton,
 					onClick: A.onClose
-				}, a.a.createElement(f.a, {
-					className: b.a.closeIcon
+				}, a.a.createElement(k.a, {
+					className: x.a.closeIcon
 				}))), a.a.createElement("div", {
-					className: b.a.body
+					className: x.a.body
 				}, A.children))
 			}
-			var B = t("./src/reddit/controls/Button/index.tsx"),
-				w = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				X = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
-				R = t.n(X);
+			var C = t("./src/reddit/controls/Button/index.tsx"),
+				B = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				w = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
+				X = t.n(w);
 			const {
-				fbt: v
+				fbt: R
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 
-			function O(A) {
-				const e = Object(r.e)(e => Object(h.e)(e, A));
+			function v(A) {
+				const e = Object(r.e)(e => Object(E.e)(e, A));
 				return a.a.createElement("div", {
-					className: R.a.approvalBar
+					className: X.a.approvalBar
 				}, a.a.createElement("div", {
-					className: R.a.pointsBalance
-				}, a.a.createElement(w.a, {
+					className: X.a.pointsBalance
+				}, a.a.createElement(B.a, {
 					amount: e,
-					className: R.a.amount,
+					className: X.a.amount,
 					subredditId: A.subredditId,
 					small: !0,
 					grey: !0
-				})), a.a.createElement(B.o, {
-					className: R.a.declineButton,
+				})), a.a.createElement(C.o, {
+					className: X.a.declineButton,
 					onClick: A.onDecline
-				}, v._("Decline", null, {
+				}, R._("Decline", null, {
 					hk: "2k3T9H"
-				})), a.a.createElement(B.o, {
+				})), a.a.createElement(C.o, {
 					disabled: A.disabled,
 					onClick: A.onApprove
-				}, v._("Approve", null, {
+				}, R._("Approve", null, {
 					hk: "rCtwS"
 				})))
 			}
-			var N = t("./src/reddit/controls/FormFields/index.tsx"),
-				j = t("./src/reddit/controls/LoadingIcon/index.tsx"),
-				D = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/VaultPasswordBar.m.less"),
-				Q = t.n(D);
+			var O = t("./src/reddit/controls/FormFields/index.tsx"),
+				N = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+				j = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/VaultPasswordBar.m.less"),
+				D = t.n(j);
 
-			function M(A) {
+			function Q(A) {
 				const [e, t] = Object(i.useState)(""), [r, n] = Object(i.useState)(!1), [s, o] = Object(i.useState)(!1), c = Object(i.useRef)(null);
 				Object(i.useEffect)(() => {
 					c.current && c.current.focus()
@@ -308,249 +307,249 @@
 					n(!1), i ? (t(""), A.onVaultDecrypted(i)) : o(!0)
 				};
 				return a.a.createElement("div", {
-					className: Q.a.passwordBar
+					className: D.a.passwordBar
 				}, a.a.createElement("div", {
-					className: Q.a.inputColumn
+					className: D.a.inputColumn
 				}, a.a.createElement("form", {
 					onSubmit: A => {
 						A.preventDefault(), l()
 					}
-				}, a.a.createElement(N.c, {
-					className: Q.a.input,
+				}, a.a.createElement(O.c, {
+					className: D.a.input,
 					inputRef: c,
 					isInvalid: s,
-					label: g.fbt._("Your Vault Password", null, {
+					label: h.fbt._("Your Vault Password", null, {
 						hk: "4yfBhL"
 					}),
 					onChange: A => t(A.currentTarget.value),
-					placeholder: g.fbt._("Password", null, {
+					placeholder: h.fbt._("Password", null, {
 						hk: "3n9LQx"
 					}),
 					redditStyle: !0,
 					type: "password",
 					value: e
 				}), a.a.createElement("div", {
-					className: Object(k.a)(Q.a.invalidPassword, {
-						[Q.a.hidden]: !s
+					className: Object(g.a)(D.a.invalidPassword, {
+						[D.a.hidden]: !s
 					})
-				}, g.fbt._("Wrong password", null, {
+				}, h.fbt._("Wrong password", null, {
 					hk: "2L9j8l"
-				})))), a.a.createElement(B.l, {
-					className: Q.a.approveButton,
+				})))), a.a.createElement(C.l, {
+					className: D.a.approveButton,
 					disabled: r,
 					onClick: l
-				}, r ? a.a.createElement(j.a, {
+				}, r ? a.a.createElement(N.a, {
 					sizePx: 14
-				}) : g.fbt._("Unlock", null, {
+				}) : h.fbt._("Unlock", null, {
 					hk: "3BMQg4"
 				})))
 			}
-			var L = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/index.m.less"),
-				V = t.n(L);
+			var M = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/index.m.less"),
+				L = t.n(M);
 
-			function F(A) {
+			function V(A) {
 				const {
 					onClose: e,
 					subredditId: t
 				} = A, [r, n] = Object(i.useState)("");
-				return a.a.createElement(C, {
+				return a.a.createElement(y, {
 					onClose: e,
 					title: A.title
 				}, A.overview, a.a.createElement("div", {
-					className: V.a.spacer
-				}), A.details, r ? a.a.createElement(O, {
+					className: L.a.spacer
+				}), A.details, r ? a.a.createElement(v, {
 					disabled: A.approveDisabled,
 					onApprove: () => A.onTransactionApproved(r),
 					onDecline: e,
 					subredditId: t
-				}) : a.a.createElement(M, {
+				}) : a.a.createElement(Q, {
 					backup: A.backup,
 					onVaultDecrypted: A => n(A)
 				}))
 			}
-			var H = t("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
-				U = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BackupRequired.m.less"),
-				T = t.n(U);
+			var F = t("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
+				H = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BackupRequired.m.less"),
+				U = t.n(H);
 			const {
-				fbt: K
+				fbt: T
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 
-			function J(A) {
-				return a.a.createElement(C, {
-					title: y(),
+			function K(A) {
+				return a.a.createElement(y, {
+					title: b(),
 					onClose: A.onClose
 				}, a.a.createElement("div", {
-					className: T.a.container
+					className: U.a.container
 				}, a.a.createElement("h2", {
-					className: T.a.header
-				}, K._("Back up your Vault on Reddit", null, {
+					className: U.a.header
+				}, T._("Back up your Vault on Reddit", null, {
 					hk: "2maHCq"
 				})), a.a.createElement("div", {
-					className: T.a.description
-				}, K._("Oh snap! Your Vault is currently locked on your mobile device. In order to use it in your browser, you first need to back it up to Reddit’s servers.", null, {
+					className: U.a.description
+				}, T._("Oh snap! Your Vault is currently locked on your mobile device. In order to use it in your browser, you first need to back it up to Reddit’s servers.", null, {
 					hk: "19qB2s"
 				})), a.a.createElement("div", {
-					className: T.a.howToHeader
-				}, K._("How to backup your Reddit Vault", null, {
+					className: U.a.howToHeader
+				}, T._("How to backup your Reddit Vault", null, {
 					hk: "1FM9k3"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "1"
-				}, K._("Open Reddit Vault on your mobile device", null, {
+				}, T._("Open Reddit Vault on your mobile device", null, {
 					hk: "2Fco4j"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "2"
-				}, K._('Proceed to Vault Settings by tapping the three dots at the top, next to "Vault"', null, {
+				}, T._('Proceed to Vault Settings by tapping the three dots at the top, next to "Vault"', null, {
 					hk: "2z4X2"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "3"
-				}, K._("Tap Reddit Backup", null, {
+				}, T._("Tap Reddit Backup", null, {
 					hk: "2MqJIb"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "4"
-				}, K._("Follow the instructions there to complete the backup process", null, {
+				}, T._("Follow the instructions there to complete the backup process", null, {
 					hk: "t9jEl"
 				}))))
 			}
-			var P = t("./node_modules/lottie-web/build/player/lottie.js"),
-				S = t.n(P),
-				G = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json"),
-				q = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
-				W = t.n(q);
+			var J = t("./node_modules/lottie-web/build/player/lottie.js"),
+				P = t.n(J),
+				S = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json"),
+				G = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
+				q = t.n(G);
 
-			function Y(A) {
-				return a.a.createElement(C, {
+			function W(A) {
+				return a.a.createElement(y, {
 					onClose: A.onClose
 				}, a.a.createElement("div", {
-					className: W.a.container
+					className: q.a.container
 				}, a.a.createElement("div", {
-					className: W.a.image,
+					className: q.a.image,
 					ref: A => {
-						A && !A.children.length && S.a.loadAnimation({
+						A && !A.children.length && P.a.loadAnimation({
 							container: A,
 							renderer: "svg",
 							loop: !0,
 							autoplay: !0,
-							animationData: G
+							animationData: S
 						})
 					}
 				})))
 			}
-			var Z = t("./src/lib/addQueryParams/index.ts"),
-				z = t("./src/reddit/selectors/user.ts"),
-				_ = t("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
-				$ = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/PushNotificationSent.m.less"),
-				AA = t.n($);
+			var Y = t("./src/lib/addQueryParams/index.ts"),
+				Z = t("./src/reddit/selectors/user.ts"),
+				z = t("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				_ = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/PushNotificationSent.m.less"),
+				$ = t.n(_);
 			const {
-				fbt: eA
+				fbt: AA
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 
-			function tA(A) {
-				const [e, t] = Object(i.useState)(!1), n = Object(r.e)(z.m), s = Object(Z.a)("http://www.reddit.com/vault/transaction?version=1", {
+			function eA(A) {
+				const [e, t] = Object(i.useState)(!1), n = Object(r.e)(Z.m), s = Object(Y.a)("http://www.reddit.com/vault/transaction?version=1", {
 					u: n ? n.id : ""
 				});
-				return a.a.createElement(C, {
-					className: AA.a.modal,
-					title: y(),
+				return a.a.createElement(y, {
+					className: $.a.modal,
+					title: b(),
 					onClose: A.onClose
 				}, a.a.createElement("div", {
-					className: AA.a.container
+					className: $.a.container
 				}, a.a.createElement("h2", {
-					className: AA.a.header
-				}, eA._("Continue with your Reddit Vault on mobile", null, {
+					className: $.a.header
+				}, AA._("Continue with your Reddit Vault on mobile", null, {
 					hk: "AnMN0"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "1"
-				}, eA._("Tap on the notification we just sent you", null, {
+				}, AA._("Tap on the notification we just sent you", null, {
 					hk: "4prB3n"
 				}), a.a.createElement("a", {
-					className: AA.a.didntReceiveLink,
+					className: $.a.didntReceiveLink,
 					href: "#",
 					onClick: A => {
 						t(!e), A.preventDefault()
 					}
-				}, eA._("Didn’t receive a push notification or weren’t able to complete it?", null, {
+				}, AA._("Didn’t receive a push notification or weren’t able to complete it?", null, {
 					hk: "1jYZjk"
 				})), e && a.a.createElement("div", {
-					className: AA.a.expandedSection
+					className: $.a.expandedSection
 				}, a.a.createElement("div", {
-					className: AA.a.approveManually
+					className: $.a.approveManually
 				}, a.a.createElement("p", {
-					className: AA.a.approveInstructions
-				}, eA._("You can approve this in your browser with your Vault Password instead.", null, {
+					className: $.a.approveInstructions
+				}, AA._("You can approve this in your browser with your Vault Password instead.", null, {
 					hk: "2IOdOY"
-				})), a.a.createElement(B.o, {
+				})), a.a.createElement(C.o, {
 					onClick: A.onNotificationNotReceived
-				}, eA._("Approve with Vault Password", null, {
+				}, AA._("Approve with Vault Password", null, {
 					hk: "1lwlYz"
 				}))), a.a.createElement("div", {
-					className: AA.a.approveWithQR
-				}, "Or scan this", a.a.createElement(_.a, {
+					className: $.a.approveWithQR
+				}, "Or scan this", a.a.createElement(z.a, {
 					url: s,
-					className: AA.a.qrCode
-				})))), a.a.createElement(H.a, {
+					className: $.a.qrCode
+				})))), a.a.createElement(F.a, {
 					index: "2"
-				}, eA._("Reddit Vault will open and ask for your approval", null, {
+				}, AA._("Reddit Vault will open and ask for your approval", null, {
 					hk: "1whAiD"
-				})), a.a.createElement(H.a, {
+				})), a.a.createElement(F.a, {
 					index: "3"
-				}, eA._("Verify and approve the transaction", null, {
+				}, AA._("Verify and approve the transaction", null, {
 					hk: "HDXIJ"
 				}))))
 			}
-			var iA = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/snag-animation.json"),
-				aA = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/SnagErrorModal.m.less"),
-				rA = t.n(aA);
+			var tA = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/snag-animation.json"),
+				iA = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/SnagErrorModal.m.less"),
+				aA = t.n(iA);
 			const {
-				fbt: nA
+				fbt: rA
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 
-			function sA(A) {
-				return a.a.createElement(C, {
-					title: y(),
+			function nA(A) {
+				return a.a.createElement(y, {
+					title: b(),
 					onClose: A.onClose
 				}, a.a.createElement("div", {
-					className: rA.a.container
+					className: aA.a.container
 				}, a.a.createElement("div", {
-					className: rA.a.snagImage,
+					className: aA.a.snagImage,
 					ref: A => {
-						A && !A.children.length && S.a.loadAnimation({
+						A && !A.children.length && P.a.loadAnimation({
 							container: A,
 							renderer: "svg",
 							loop: !0,
 							autoplay: !0,
-							animationData: iA
+							animationData: tA
 						})
 					}
 				}), a.a.createElement("h2", {
-					className: rA.a.header
-				}, nA._("Uh oh, we hit a snag.", null, {
+					className: aA.a.header
+				}, rA._("Uh oh, we hit a snag.", null, {
 					hk: "3ZShEY"
 				})), a.a.createElement("div", {
-					className: rA.a.description
-				}, nA._("Open Reddit Vault on your mobile device", null, {
+					className: aA.a.description
+				}, rA._("Open Reddit Vault on your mobile device", null, {
 					hk: "2DPLLp"
 				}))))
 			}
-			var oA, cA;
+			var sA, oA;
 
-			function dA(A) {
+			function cA(A) {
 				const {
 					onClose: e,
 					subredditId: t,
-					transaction: g,
-					transactionIntent: k
-				} = A, f = Object(i.useRef)(!0), [x, b] = Object(p.a)(cA.LOADING_BACKUP, f), [y, C] = Object(p.a)(oA.NOT_LOADED, f), [B, w] = Object(p.a)(null, f), [X, R] = Object(p.a)("", f), v = function() {
+					transaction: h,
+					transactionIntent: g
+				} = A, k = Object(i.useRef)(!0), [f, x] = Object(p.a)(oA.LOADING_BACKUP, k), [b, y] = Object(p.a)(sA.NOT_LOADED, k), [C, B] = Object(p.a)(null, k), [w, X] = Object(p.a)("", k), R = function() {
 					const {
 						apiContext: A
 					} = Object(i.useContext)(u.a);
 					return A
-				}(), O = Object(m.a)(), N = Object(r.e)(e => Object(h.g)(e, A)).toLowerCase(), j = Object(r.e)(e => Object(I.b)(e, A.subredditId)), D = Object(r.e)(E.a);
-				Object(i.useEffect)(() => (A.transactionIsBlockedOnIOS ? Q().then(A => {
-					A && Object(d.b)(A) ? b(cA.REQUEST_VAULT_PASSWORD) : M()
-				}) : M(), () => {
-					f.current = !1
+				}(), v = Object(m.a)(), O = Object(r.e)(e => Object(E.g)(e, A)).toLowerCase(), N = Object(r.e)(e => Object(I.b)(e, A.subredditId));
+				Object(i.useEffect)(() => (A.transactionIsBlockedOnIOS ? j().then(A => {
+					A && Object(d.b)(A) ? x(oA.REQUEST_VAULT_PASSWORD) : D()
+				}) : D(), () => {
+					k.current = !1
 				}), []);
-				const Q = async () => y !== oA.NOT_LOADED ? Promise.resolve(B) : (C(oA.LOADING), async function(A, e) {
+				const j = async () => b !== sA.NOT_LOADED ? Promise.resolve(C) : (y(sA.LOADING), async function(A, e) {
 					const t = await Object(c.a)(A, {
 						method: "get",
 						endpoint: `${s.a.metaUrl}/secure-storage/t5_0/me/ethereum-key-backup-${e}`
@@ -562,60 +561,59 @@
 					const i = t.body && t.body.wallet;
 					if (!i) throw new Error("Empty wallet backup response");
 					return JSON.parse(i)
-				}(v(), N).then(A => (w(A), C(oA.LOADED), A)).catch(A => {
-					console.error("Backup load failed", A), R(`Backup load failed: ${A}`), C(oA.FAILED)
-				})), M = async () => {
-					(await Object(n.n)(v(), k)).ok ? b(cA.PUSH_NOTIFICATION_SENT) : L()
-				}, L = async () => {
-					await Q() ? b(cA.REQUEST_VAULT_PASSWORD) : y === oA.FAILED ? (b(cA.TRANSACTION_FAILED), A.onTransactionFailure(X)) : b(cA.BACKUP_REQUIRED)
-				}, V = async e => {
+				}(R(), O).then(A => (B(A), y(sA.LOADED), A)).catch(A => {
+					console.error("Backup load failed", A), X(`Backup load failed: ${A}`), y(sA.FAILED)
+				})), D = async () => {
+					(await Object(n.n)(R(), g)).ok ? x(oA.PUSH_NOTIFICATION_SENT) : Q()
+				}, Q = async () => {
+					await j() ? x(oA.REQUEST_VAULT_PASSWORD) : b === sA.FAILED ? (x(oA.TRANSACTION_FAILED), A.onTransactionFailure(w)) : x(oA.BACKUP_REQUIRED)
+				}, M = async e => {
 					try {
-						b(cA.TRANSACTION_PENDING);
-						const i = "function" == typeof g ? await g() : g;
+						x(oA.TRANSACTION_PENDING);
+						const i = "function" == typeof h ? await h() : h;
 						if (!i) return;
 						const a = await Object(l.b)({
-							apiContext: v,
-							pointsDetails: j,
+							apiContext: R,
+							pointsDetails: N,
 							recoveryPhrase: e,
-							walletAddress: N,
+							walletAddress: O,
 							transaction: i,
 							subredditId: t,
-							isMainnetEnabled: D,
-							sendEvent: O
+							sendEvent: v
 						});
 						await A.onTransactionSuccess(a)
 					} catch (i) {
-						console.error("Error while submitting transaction", i), b(cA.TRANSACTION_FAILED), A.onTransactionFailure(i.toString())
+						console.error("Error while submitting transaction", i), x(oA.TRANSACTION_FAILED), A.onTransactionFailure(i.toString())
 					}
 				};
-				switch (x) {
-					case cA.LOADING_BACKUP:
-					case cA.TRANSACTION_PENDING:
-						return a.a.createElement(Y, {
+				switch (f) {
+					case oA.LOADING_BACKUP:
+					case oA.TRANSACTION_PENDING:
+						return a.a.createElement(W, {
 							onClose: e
 						});
-					case cA.PUSH_NOTIFICATION_SENT:
-						return a.a.createElement(tA, {
+					case oA.PUSH_NOTIFICATION_SENT:
+						return a.a.createElement(eA, {
 							onClose: e,
-							onNotificationNotReceived: L
+							onNotificationNotReceived: Q
 						});
-					case cA.BACKUP_REQUIRED:
-						return a.a.createElement(J, {
+					case oA.BACKUP_REQUIRED:
+						return a.a.createElement(K, {
 							onClose: e
 						});
-					case cA.REQUEST_VAULT_PASSWORD:
-						return a.a.createElement(F, {
-							approveDisabled: !g,
-							backup: B,
-							onTransactionApproved: V,
+					case oA.REQUEST_VAULT_PASSWORD:
+						return a.a.createElement(V, {
+							approveDisabled: !h,
+							backup: C,
+							onTransactionApproved: M,
 							onClose: e,
 							subredditId: t,
 							title: A.title,
 							overview: A.approvalOverview,
 							details: A.approvalDetails
 						});
-					case cA.TRANSACTION_FAILED:
-						return a.a.createElement(sA, {
+					case oA.TRANSACTION_FAILED:
+						return a.a.createElement(nA, {
 							onClose: e
 						});
 					default:
@@ -623,10 +621,10 @@
 				}
 			}! function(A) {
 				A[A.NOT_LOADED = 0] = "NOT_LOADED", A[A.LOADING = 1] = "LOADING", A[A.LOADED = 2] = "LOADED", A[A.FAILED = 3] = "FAILED"
-			}(oA || (oA = {})),
+			}(sA || (sA = {})),
 			function(A) {
 				A[A.LOADING_BACKUP = 0] = "LOADING_BACKUP", A[A.PUSH_NOTIFICATION_SENT = 1] = "PUSH_NOTIFICATION_SENT", A[A.BACKUP_REQUIRED = 2] = "BACKUP_REQUIRED", A[A.REQUEST_VAULT_PASSWORD = 3] = "REQUEST_VAULT_PASSWORD", A[A.TRANSACTION_PENDING = 4] = "TRANSACTION_PENDING", A[A.TRANSACTION_SUCCEEDED = 5] = "TRANSACTION_SUCCEEDED", A[A.TRANSACTION_FAILED = 6] = "TRANSACTION_FAILED"
-			}(cA || (cA = {}))
+			}(oA || (oA = {}))
 		},
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json": function(A) {
 			A.exports = JSON.parse('{"v":"5.6.5","fr":29.9700012207031,"ip":0,"op":40.0000016292334,"w":130,"h":130,"nm":"Comp 1","ddd":0,"assets":[{"id":"image_0","w":145,"h":145,"u":"","p":"data:image/png;base64,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","e":1}],"layers":[{"ddd":0,"ind":1,"ty":2,"nm":"Layer 15/Payment process.ai","cl":"ai","refId":"image_0","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":0,"s":[0]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":40,"s":[180]},{"t":80.0000032584668,"s":[360]}],"ix":10},"p":{"a":0,"k":[65,65,0],"ix":2},"a":{"a":0,"k":[72.5,72.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"ip":0,"op":40.0000016292334,"st":0,"bm":0}],"markers":[]}')
@@ -1128,43 +1126,42 @@
 					walletAddress: n,
 					transaction: s,
 					subredditId: o,
-					isMainnetEnabled: c,
-					sendEvent: d
+					sendEvent: c
 				} = A;
-				var l;
+				var d;
 				const {
-					allowedContractMethods: u,
-					blockchainProvider: p,
-					contracts: m,
-					gasLimit: I
-				} = t, E = p, h = new a.ethers.providers.JsonRpcProvider(Object(r.i)(E), Object(r.h)(E)), g = (null == m ? void 0 : m.timedForwarder.address) || "", k = M({
+					allowedContractMethods: l,
+					blockchainProvider: u,
+					contracts: p,
+					gasLimit: m
+				} = t, I = u, E = new a.ethers.providers.JsonRpcProvider(Object(r.i)(I), Object(r.h)(I)), h = (null == p ? void 0 : p.timedForwarder.address) || "", g = M({
 					recoveryPhrase: i,
 					expectedWalletAddress: n,
-					sendEvent: d
-				}).connect(h), {
-					contractAddress: f,
-					contractABI: x,
-					contractMethod: b
-				} = s, y = {
+					sendEvent: c
+				}).connect(E), {
+					contractAddress: k,
+					contractABI: f,
+					contractMethod: x
+				} = s, b = {
 					apiContext: e,
-					contract: new a.ethers.Contract(f, x, k),
-					contractAddress: f,
-					contractMethod: b,
-					ethereumNetwork: E,
-					gasLimit: I,
+					contract: new a.ethers.Contract(k, f, g),
+					contractAddress: k,
+					contractMethod: x,
+					ethereumNetwork: I,
+					gasLimit: m,
 					pointsDetails: t,
-					provider: h,
+					provider: E,
 					subredditId: o,
-					timedForwarderAddress: g,
+					timedForwarderAddress: h,
 					transaction: s,
-					wallet: k
-				}, C = null === (l = u[f]) || void 0 === l ? void 0 : l.find(A => {
+					wallet: g
+				};
+				return (null === (d = l[k]) || void 0 === d ? void 0 : d.find(A => {
 					let {
 						method: e
 					} = A;
-					return e === b
-				});
-				return c && C ? V(y) : async function(A) {
+					return e === x
+				})) ? V(b) : async function(A) {
 					let {
 						contract: e,
 						contractMethod: t,
@@ -1173,7 +1170,7 @@
 					const a = await e[t](...i.arguments);
 					if (!a.hash) throw new Error("Did not receive transaction hash from provider");
 					return a
-				}(y)
+				}(b)
 			}
 			const V = async A => {
 				const {
@@ -1341,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.581d7b10a7eba6f27083.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.69e004659a455b8ededb.js.map

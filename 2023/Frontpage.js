@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.aed9460c6699a55ccda8.js
-// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3d7d9c5b8e5bb3731fa1.js
+// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -686,7 +686,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.Cg)(p),
+						includeInterestTopics: !!p && !Object(h.Ag)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -879,8 +879,8 @@
 				};
 			var W = a("./src/lib/pageTitle/index.ts"),
 				Q = a("./src/lib/pageTitle/helpers.ts"),
-				J = a("./src/reddit/actions/login.ts"),
-				z = a("./src/reddit/actions/meta.ts"),
+				z = a("./src/reddit/actions/login.ts"),
+				J = a("./src/reddit/actions/meta.ts"),
 				X = a("./src/reddit/actions/platform.ts"),
 				Y = a("./src/reddit/actions/toaster.ts"),
 				$ = a("./src/reddit/constants/history.ts"),
@@ -945,7 +945,7 @@
 							meta: g.meta,
 							correlationId: f,
 							...n
-						})), a(Y.g(y)), n.geoFilter && a(Object(z.k)(n.geoFilter)), n.liveBarContent && a(Object(Oe.b)(Object(ie.a)(g) ? null !== (m = null === (d = null === (l = n.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== m ? m : [] : null === (p = n.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
+						})), a(Y.g(y)), n.geoFilter && a(Object(J.k)(n.geoFilter)), n.liveBarContent && a(Object(Oe.b)(Object(ie.a)(g) ? null !== (m = null === (d = null === (l = n.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== m ? m : [] : null === (p = n.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), a(Object(he.b)(_e.a.FRONTPAGE));
@@ -1011,7 +1011,7 @@
 						experimentName: "redesign_aa"
 					});
 					const E = Object(le.a)(c, {});
-					Object(le.e)(E) && a(Object(J.openRegisterModal)())
+					Object(le.e)(E) && a(Object(z.openRegisterModal)())
 				}, we = () => async (e, t) => {
 					var a, n;
 					const s = t();
@@ -2974,8 +2974,8 @@
 				K = a("./src/reddit/helpers/name/index.ts"),
 				W = a("./src/lib/makeApiRequest/index.ts"),
 				Q = a("./src/lib/omitHeaders/index.ts"),
-				J = a("./src/reddit/constants/headers.ts");
-			const z = e => Object(W.a)(Object(Q.a)(e, [J.a]), {
+				z = a("./src/reddit/constants/headers.ts");
+			const J = e => Object(W.a)(Object(Q.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: q.nb.GET,
 				type: "json"
@@ -2994,7 +2994,7 @@
 				async getSubredditForAdoption() {
 					let e = ne.cachedData || Object(G.F)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > te) {
-						const t = await z(this.props.apiContext());
+						const t = await J(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
@@ -5391,8 +5391,8 @@
 				K = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				W = a("./src/reddit/selectors/experiments/i18n/hideTrending.ts"),
 				Q = a("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				J = a("./src/reddit/selectors/experiments/onboarding.ts"),
-				z = a("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				z = a("./src/reddit/selectors/experiments/onboarding.ts"),
+				J = a("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				X = a("./src/reddit/selectors/features/liveBar/index.ts"),
 				Y = a("./src/reddit/selectors/frontpage.ts"),
 				$ = a("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
@@ -5434,10 +5434,10 @@
 					return a.params.sort || n
 				}
 			}), be = Object(m.c)({
-				isCommentCountAnimationEnabled: z.d,
+				isCommentCountAnimationEnabled: J.d,
 				shouldRenderLoggedOutHomeFeed: Y.b,
-				isVoteCountAnimationEnabled: z.h,
-				isCountAnimShadowTestEnabled: z.e,
+				isVoteCountAnimationEnabled: J.h,
+				isCountAnimShadowTestEnabled: J.e,
 				isLoggedIn: ne.S,
 				isPopular: B.H,
 				layout: B.U,
@@ -5446,7 +5446,7 @@
 				isTalkLiveBarEnabled: V.t,
 				isTrendingHiddenEnabled: W.b,
 				interestTopicRecommendations: ae.b,
-				reonboardingFlow: J.j,
+				reonboardingFlow: z.j,
 				marketplaceFeedUnit: e => Object(K.a)(e) ? Object($.a)(e) : null,
 				merchandasingUnitAnnouncements: ee.a,
 				liveBarItems: X.a
@@ -5728,7 +5728,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[a]),
 					h = Object(c.e)(e => e.subreddits.progressModule[a]),
 					b = Object(c.e)(m.a),
-					g = b !== l.Ue.NewModule;
+					g = b !== l.Se.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(u, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: a,
@@ -5828,10 +5828,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ae
+						experimentName: n.ze
 					}) === n.Rd)
 				},
-				i = Object(r.a)(n.Be)
+				i = Object(r.a)(n.Ae)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, a) {
 			"use strict";
@@ -5848,7 +5848,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.Ad
 					});
-					return !(!t || Object(n.Cg)(t))
+					return !(!t || Object(n.Ag)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5988,4 +5988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.aed9460c6699a55ccda8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3d7d9c5b8e5bb3731fa1.js.map

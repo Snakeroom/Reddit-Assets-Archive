@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.90120ea1bb3107e69046.js
-// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fdc9368038617f9668b4.js
+// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -725,8 +725,8 @@
 				S = n("./src/reddit/models/Flair/index.ts"),
 				y = n("./src/reddit/models/Prediction/index.ts"),
 				T = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
-				I = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				F = n.n(I);
+				F = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
+				I = n.n(F);
 			const L = (e, t) => Object(D.b)({
 					breakpointType: D.a.HideIfVWLarger,
 					flatlistItem: e,
@@ -756,15 +756,15 @@
 						onOcPost: _,
 						onCcPost: C,
 						onRemovePost: D,
-						onModToMemberShareOpened: I,
+						onModToMemberShareOpened: F,
 						onSpamPost: R,
 						onStickyPost: B,
 						onSpoilerPost: W,
 						post: H
 					} = e;
-					var V, U, G, K, Q;
-					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
-						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
+					var V, G, U, K, Q;
+					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
+						q = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && null !== H.pollData.resolvedOptionId,
 						z = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
 						J = Object(M.b)(H),
 						Y = !(!H.approvedBy || !J),
@@ -809,7 +809,7 @@
 						displayText: j.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
-						onClick: I
+						onClick: F
 					}, s.a.createElement(T.f, null)), !H.isRemoved && !H.isSpam && !d && s.a.createElement(w.a, {
 						isSelected: H.isStickied,
 						onClick: B,
@@ -828,7 +828,7 @@
 						}),
 						onClick: f
 					}, s.a.createElement(T.b, null)), q && s.a.createElement(T.e, {
-						textClassName: F.a.text,
+						textClassName: I.a.text,
 						onClick: b,
 						displayText: j.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
@@ -890,7 +890,7 @@
 					},
 					isModToMemberShareEnabled: O.d.modToMemberShare
 				}),
-				U = Object(r.b)(V, (e, t) => {
+				G = Object(r.b)(V, (e, t) => {
 					let {
 						post: n
 					} = t;
@@ -921,8 +921,8 @@
 						onStickyPost: () => e(Object(l.gb)(n.id))
 					}
 				}),
-				G = Object(m.a)(h.a);
-			t.default = H(U(Object(b.c)(e => {
+				U = Object(m.a)(h.a);
+			t.default = H(G(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
 					hasModFullPerms: n,
@@ -951,20 +951,20 @@
 					onStickyPost: S,
 					post: y,
 					sendEvent: T,
-					tooltipId: I
+					tooltipId: F
 				} = e;
-				const F = y.distinguishType === i.H.MODERATOR,
-					L = F ? i.H.NONE : i.H.MODERATOR,
+				const I = y.distinguishType === i.H.MODERATOR,
+					L = I ? i.H.NONE : i.H.MODERATOR,
 					A = Object(p.b)(y.id, c);
-				return s.a.createElement(G, {
+				return s.a.createElement(U, {
 					className: W.a.dropdown,
 					isOpen: r,
-					tooltipId: I
+					tooltipId: F
 				}, s.a.createElement(R, {
 					canEditFlair: t,
 					hasModFullPerms: n,
 					hasModPostPerms: o,
-					isDistinguished: F,
+					isDistinguished: I,
 					isModToMemberShareEnabled: a,
 					isOverlay: c,
 					isPostAuthor: d,
@@ -990,7 +990,7 @@
 						w(), T(Object(v.n)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						O(L), T(Object(v.n)(F ? "undistinguish" : "distinguish", y.id))
+						O(L), T(Object(v.n)(I ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
 						C(A), T(Object(v.n)("post_flair", y.id))
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.If
+				experimentName: o.Gf
 			}) === o.Rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.90120ea1bb3107e69046.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.fdc9368038617f9668b4.js.map

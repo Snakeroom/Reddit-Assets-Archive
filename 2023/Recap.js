@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.3dd568eeccdcc3fa2425.js
-// Retrieved at 8/10/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.1f3609f507ec9b84899c.js
+// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/reddit/actions/notifications/index.ts": function(e, a, t) {
@@ -2542,4 +2542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.3dd568eeccdcc3fa2425.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.1f3609f507ec9b84899c.js.map
