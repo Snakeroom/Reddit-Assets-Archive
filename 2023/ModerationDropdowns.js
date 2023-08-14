@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fdc9368038617f9668b4.js
-// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6d4f4ba8efee159036fe.js
+// Retrieved at 8/14/2023, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -762,9 +762,9 @@
 						onSpoilerPost: W,
 						post: H
 					} = e;
-					var V, G, U, K, Q;
-					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
-						q = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && null !== H.pollData.resolvedOptionId,
+					var V, U, G, K, Q;
+					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
+						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
 						z = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
 						J = Object(M.b)(H),
 						Y = !(!H.approvedBy || !J),
@@ -890,7 +890,7 @@
 					},
 					isModToMemberShareEnabled: O.d.modToMemberShare
 				}),
-				G = Object(r.b)(V, (e, t) => {
+				U = Object(r.b)(V, (e, t) => {
 					let {
 						post: n
 					} = t;
@@ -921,8 +921,8 @@
 						onStickyPost: () => e(Object(l.gb)(n.id))
 					}
 				}),
-				U = Object(m.a)(h.a);
-			t.default = H(G(Object(b.c)(e => {
+				G = Object(m.a)(h.a);
+			t.default = H(U(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
 					hasModFullPerms: n,
@@ -956,7 +956,7 @@
 				const I = y.distinguishType === i.H.MODERATOR,
 					L = I ? i.H.NONE : i.H.MODERATOR,
 					A = Object(p.b)(y.id, c);
-				return s.a.createElement(U, {
+				return s.a.createElement(G, {
 					className: W.a.dropdown,
 					isOpen: r,
 					tooltipId: F
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Gf
+				experimentName: o.Hf
 			}) === o.Rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.fdc9368038617f9668b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6d4f4ba8efee159036fe.js.map

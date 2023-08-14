@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428.6578098d0babd6991163.js
-// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428.5ea336134e8b35425f8a.js
+// Retrieved at 8/14/2023, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428.6578098d0babd6991163.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~cad4f428.5ea336134e8b35425f8a.js.map

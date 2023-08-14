@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.97715dad458de6788a81.js
-// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.f363e1cbd6bda2226560.js
+// Retrieved at 8/14/2023, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -591,11 +591,11 @@
 			})), n.d(t, "morePostsPending", (function() {
 				return B
 			})), n.d(t, "morePostsLoaded", (function() {
-				return V
-			})), n.d(t, "morePostsFailed", (function() {
 				return H
+			})), n.d(t, "morePostsFailed", (function() {
+				return V
 			})), n.d(t, "moreModListingRequested", (function() {
-				return A
+				return q
 			})), n.d(t, "hideSubredditSuccess", (function() {
 				return U
 			})), n.d(t, "hideSubredditPending", (function() {
@@ -609,9 +609,9 @@
 			})), n.d(t, "unhideSubredditFailed", (function() {
 				return J
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
-				return Q
-			})), n.d(t, "hideSubreddit", (function() {
 				return W
+			})), n.d(t, "hideSubreddit", (function() {
+				return Q
 			})), n.d(t, "unhideSubreddit", (function() {
 				return Y
 			}));
@@ -695,7 +695,7 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const x = q(e.queryParams);
+					const x = A(e.queryParams);
 					await n(F(b, {
 						...i()(e.queryParams, m.p),
 						...i()(e.queryParams, m.o),
@@ -708,7 +708,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(I.g)(s(), !0)
-				}, B = Object(a.a)(P.i), V = Object(a.a)(P.h), H = Object(a.a)(P.g), A = e => async (t, n, r) => {
+				}, B = Object(a.a)(P.i), H = Object(a.a)(P.h), V = Object(a.a)(P.g), q = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -723,7 +723,7 @@
 						y = a.listings.postOrder.fetchedTokens,
 						_ = !(!y[f] || !y[f][g.token]);
 					if (x || _) return;
-					const E = q(p);
+					const E = A(p);
 					t(B({
 						key: f,
 						fetchedToken: g.token
@@ -741,12 +741,12 @@
 							...O.body,
 							postIds: (O.body.postIds || []).filter(e => !S || !S.includes(e))
 						};
-					O.ok ? t(V({
+					O.ok ? t(H({
 						key: f,
 						fetchedToken: g.token,
 						meta: a.meta,
 						...C
-					})) : t(H({
+					})) : t(V({
 						key: f,
 						error: O.error,
 						fetchedToken: g.token,
@@ -754,7 +754,7 @@
 					}))
 				};
 
-			function q(e) {
+			function A(e) {
 				const t = m.H in e && e[m.H].toUpperCase() || "";
 				return t in o.nc && o.nc[t]
 			}
@@ -764,7 +764,7 @@
 				G = Object(a.a)(P.l),
 				X = Object(a.a)(P.k),
 				J = Object(a.a)(P.j),
-				Q = (e, t) => async (n, r, s) => {
+				W = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -779,7 +779,7 @@
 					n(d(e));
 					const p = await u(i(), a.displayText, e);
 					p.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(l(p.body))
-				}, W = e => Q(e, !0), Y = e => Q(e, !1)
+				}, Q = e => W(e, !0), Y = e => W(e, !1)
 		},
 		"./src/reddit/components/BackToSubreddit/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2174,15 +2174,15 @@
 				}, h, n && s.a.createElement(v, {
 					subredditName: n
 				}), b);
-				let V;
-				V = P ? s.a.createElement(s.a.Fragment, null, P[0], B, P[1]) : C ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
-				const H = x ? `${I||l.a+2*d.l}px` : "100%",
-					A = Object(r.useContext)(u.a);
+				let H;
+				H = P ? s.a.createElement(s.a.Fragment, null, P[0], B, P[1]) : C ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
+				const V = x ? `${I||l.a+2*d.l}px` : "100%",
+					q = Object(r.useContext)(u.a);
 				return s.a.createElement(_.a, {
 					subredditId: w
 				}, s.a.createElement("div", {
 					className: Object(a.a)(O.a.outerContainer, c.i, m, {
-						[O.a.outerContainerExp]: A
+						[O.a.outerContainerExp]: q
 					}),
 					ref: p
 				}, s.a.createElement(i.a, {
@@ -2193,14 +2193,14 @@
 					className: O.a.innerContainer
 				}, k, g, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
-						maxWidth: H
+						maxWidth: V
 					}
 				}, M), s.a.createElement("div", {
 					className: O.a.body,
 					style: {
-						maxWidth: H
+						maxWidth: V
 					}
-				}, V))))
+				}, H))))
 			}
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
@@ -2310,17 +2310,17 @@
 				F = n("./node_modules/react-router-redux/es/index.js"),
 				R = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				V = n("./src/reddit/controls/Button/index.tsx"),
-				H = n("./src/reddit/helpers/trackers/modListing.ts"),
-				A = n("./src/reddit/routes/modListing/index.ts");
-			const q = e => e.modListingPage.filteredSubreddits.api.pending;
+				H = n("./src/reddit/controls/Button/index.tsx"),
+				V = n("./src/reddit/helpers/trackers/modListing.ts"),
+				q = n("./src/reddit/routes/modListing/index.ts");
+			const A = e => e.modListingPage.filteredSubreddits.api.pending;
 			var U = n("./src/reddit/constants/keycodes.ts"),
 				D = n("./src/reddit/layout/row/Inline/index.tsx"),
 				K = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				G = n.n(K);
 			const X = Object(d.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: q
+				isApiPending: A
 			});
 			class J extends o.a.Component {
 				constructor() {
@@ -2333,7 +2333,7 @@
 							subredditInput: e
 						})
 					}, this.submitInput = () => {
-						this.canSubmitInput() && (this.props.sendEvent(Object(H.d)()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
+						this.canSubmitInput() && (this.props.sendEvent(Object(V.d)()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
@@ -2352,7 +2352,7 @@
 							hk: "4ceDB9"
 						}),
 						value: this.state.subredditInput
-					}), o.a.createElement(V.l, {
+					}), o.a.createElement(H.l, {
 						"aria-label": x.fbt._("Hide", null, {
 							hk: "1BnFmX"
 						}),
@@ -2366,19 +2366,19 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var Q = Object(a.b)(X, e => ({
+			var W = Object(a.b)(X, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(J)),
-				W = n("./src/lib/lessComponent.tsx"),
+				Q = n("./src/lib/lessComponent.tsx"),
 				Y = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
 				Z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = W.a.wrapped(Y.b, "SubredditIcon", te.a),
+			const ne = Q.a.wrapped(Y.b, "SubredditIcon", te.a),
 				re = Object(d.c)({
-					isApiPending: q,
+					isApiPending: A,
 					subredditOrProfile: (e, t) => {
 						const n = Object($.C)(e, {
 							subredditName: t.subredditName
@@ -2395,7 +2395,7 @@
 			class se extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(Object(H.f)()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(Object(V.f)()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -2447,14 +2447,14 @@
 			const {
 				fbt: me
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), pe = Object(B.v)({
-				filtered: e => !!e && Object(A.d)(e.url)
+				filtered: e => !!e && Object(q.d)(e.url)
 			}), be = Object(d.c)({
 				hiddenSubredditsNames: e => e.modListingPage.filteredSubreddits.names
 			});
 			class he extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(Object(H.c)(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(Object(V.c)(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -2467,7 +2467,7 @@
 						className: ue.a.hideCommunitiesHeader
 					}, me._("Hide communities", null, {
 						hk: "15OtHo"
-					})), o.a.createElement(V.r, {
+					})), o.a.createElement(H.r, {
 						className: ue.a.tertiaryButton,
 						onClick: this.onToggleFiltered
 					}, e.filtered ? me._("Go to unfiltered r/Mods", null, {
@@ -2476,7 +2476,7 @@
 						hk: "YdVw7"
 					})), e.filtered && o.a.createElement("div", {
 						className: ue.a.inputContainer
-					}, o.a.createElement(Q, null), o.a.createElement(ce, {
+					}, o.a.createElement(W, null), o.a.createElement(ce, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -2486,7 +2486,7 @@
 						filtered: n
 					} = t;
 					return {
-						toggleFiltered: () => e(Object(F.b)(n ? A.a : A.b))
+						toggleFiltered: () => e(Object(F.b)(n ? q.a : q.b))
 					}
 				})(Object(R.c)(he))),
 				ge = n("./src/reddit/components/SidebarContainer/index.tsx"),
@@ -2516,7 +2516,7 @@
 					let {
 						match: n
 					} = t;
-					return Object(A.d)(n.path)
+					return Object(q.d)(n.path)
 				}, Se.k, Se.d, (e, t, n, r, i) => {
 					const o = s()([...Object(l.a)(e)]),
 						a = Ee.H in o && o[Ee.H].toUpperCase(),
@@ -2550,7 +2550,7 @@
 					})
 				}
 				render() {
-					const e = this.props.filtered ? A.b : A.a;
+					const e = this.props.filtered ? q.b : q.a;
 					return o.a.createElement("div", null, this.props.isModeratorWithPostPerms ? o.a.createElement(je.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
@@ -2715,7 +2715,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Ad
 					});
-					return !(!t || Object(r.Ag)(t))
+					return !(!t || Object(r.Bg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -2760,20 +2760,22 @@
 		},
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "c", (function() {
-				return h
 			})), n.d(t, "d", (function() {
+				return h
+			})), n.d(t, "e", (function() {
 				return f
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "f", (function() {
-				return y
-			})), n.d(t, "a", (function() {
-				return v
+			})), n.d(t, "b", (function() {
+				return x
 			})), n.d(t, "g", (function() {
+				return v
+			})), n.d(t, "a", (function() {
 				return _
+			})), n.d(t, "h", (function() {
+				return E
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -2786,36 +2788,43 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(o) || !!e.match(d),
 				p = e => !e.match(d) && (!e.match(a) && (!!e.match(c) || !!e.match(l))),
-				b = (e, t) => !!m(t) && [r.Vf.Enabled, r.Vf.HardReload].includes(Object(s.c)(e, {
+				b = (e, t) => !!m(t) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
-					experimentName: r.Ef
+					experimentName: r.Ff
 				})),
-				h = (e, t) => !!t.match(a) && [r.Vf.Enabled, r.Vf.HardReload].includes(Object(s.c)(e, {
-					experimentEligibilitySelector: i.f,
-					experimentName: r.Cf
-				})),
-				f = (e, t) => !!p(t) && [r.Vf.Enabled, r.Vf.HardReload].includes(Object(s.c)(e, {
+				h = (e, t) => !!t.match(a) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Df
+				})),
+				f = (e, t) => !!p(t) && [r.Wf.Enabled, r.Wf.HardReload].includes(Object(s.c)(e, {
+					experimentEligibilitySelector: i.f,
+					experimentName: r.Ef
 				})),
 				g = (e, t) => !(!p(t) && !m(t)) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.me
 				}) === r.Rd,
-				x = e => {
-					return Object(s.c)(e, {
-						experimentEligibilitySelector: i.f,
-						experimentName: r.Ff
-					})
-				},
-				y = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === r.Vf.Enabled || x(e) === r.Vf.HardReload),
-				v = e => {
+				x = (e, t) => {
+					if (!t.match(a) && !m(t)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.e,
-						experimentName: r.If
+						experimentName: r.Cf
+					}) === r.Rd
+				},
+				y = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: i.f,
+						experimentName: r.Gf
 					})
 				},
-				_ = (e, t) => !!(e => !!e.match(u))(t) && v(e) === r.Vf.Enabled
+				v = (e, t) => !!(e => !!e.match(u))(t) && (y(e) === r.Wf.Enabled || y(e) === r.Wf.HardReload),
+				_ = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: i.e,
+						experimentName: r.Jf
+					})
+				},
+				E = (e, t) => !!(e => !!e.match(u))(t) && _(e) === r.Wf.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -2842,7 +2851,7 @@
 							experimentName: a.Bf
 						})
 					})(e);
-					return n === a.Vf.Enabled || n === a.Vf.HardReload
+					return n === a.Wf.Enabled || n === a.Wf.HardReload
 				},
 				m = Object(s.a)(i.S, e => !e),
 				p = (e, t) => {
@@ -2850,16 +2859,18 @@
 					e.block(e => {
 						let t = !1;
 						if (Object(i.S)(n)) {
-							Object(o.g)(n, e.pathname) && (t = !0)
+							const r = Object(o.h)(n, e.pathname),
+								s = Object(o.b)(n, e.pathname);
+							(r || s) && (t = !0)
 						} else {
 							const r = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-								s = Object(o.b)(n, e.pathname),
-								i = Object(o.e)(n, e.pathname),
-								a = Object(o.c)(n, e.pathname),
-								d = Object(o.d)(n, e.pathname),
+								s = Object(o.c)(n, e.pathname),
+								i = Object(o.f)(n, e.pathname),
+								a = Object(o.d)(n, e.pathname),
+								d = Object(o.e)(n, e.pathname),
 								m = ((e, t) => l(t) && Object(c.f)(e))(n, e.pathname),
 								p = u(n, e.pathname),
-								b = Object(o.f)(n, e.pathname);
+								b = Object(o.g)(n, e.pathname);
 							(s || r || i || a || d || m || p || b) && (t = !0)
 						}
 						if (t) {
@@ -2907,4 +2918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.97715dad458de6788a81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f363e1cbd6bda2226560.js.map

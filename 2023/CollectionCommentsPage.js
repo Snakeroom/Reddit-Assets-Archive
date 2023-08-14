@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4e368fd5d1cf11008244.js
-// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c8dab348000a950e5b05.js
+// Retrieved at 8/14/2023, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7840,14 +7840,14 @@
 			const Ke = e => {
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ue.mg
+						experimentName: Ue.ng
 					}) === Ue.Rd
 				},
 				ze = e => {
 					if (Object(Ve.a)(e)) return !1;
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ue.lg
+						experimentName: Ue.mg
 					}) === Ue.Rd
 				},
 				He = (e, t) => {
@@ -7859,7 +7859,7 @@
 					});
 					return !(Object(Ve.a)(e) || !n || n.isSponsored) && Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ue.kg
+						experimentName: Ue.lg
 					}) === Ue.Rd
 				};
 			var qe = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -9279,7 +9279,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(x.Ag)(s) && !Object(I.a)(s),
+							shouldShowLinkedPosts: !Object(x.Bg)(s) && !Object(I.a)(s),
 							subreddit: r
 						}
 					}
@@ -9342,7 +9342,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(x.Ag)(d) && !Object(I.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(x.Bg)(d) && !Object(I.a)(d) && !i) return a.a.createElement("div", {
 						className: H.a.smallBanner
 					});
 					const {
@@ -17389,8 +17389,8 @@
 				experimentEligibilitySelector: r.a,
 				experimentName: n.xf
 			}), e => ({
-				isSubEnlarged: e === n.Uf.Variant1 || e === n.Uf.Variant3,
-				withCommunityDescription: e === n.Uf.Variant2 || e === n.Uf.Variant3
+				isSubEnlarged: e === n.Vf.Variant1 || e === n.Vf.Variant3,
+				withCommunityDescription: e === n.Vf.Variant2 || e === n.Vf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -17447,13 +17447,13 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Of
+						experimentName: n.Pf
 					}) === n.Rd
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.Nf
+						experimentName: n.Of
 					}) === n.Rd
 				}
 		},
@@ -17476,29 +17476,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.og
+						experimentName: n.pg
 					}) === n.Rd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.pg
+						experimentName: n.qg
 					}) === n.Rd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.ng
+						experimentName: n.og
 					});
-					return t === n.gg.TypingIndicators || t === n.gg.IndicatorsPlusCTA
+					return t === n.hg.TypingIndicators || t === n.hg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.d)(e, {
-						experimentName: n.ng
+						experimentName: n.og
 					});
-					return (null == t ? void 0 : t.variant) === n.gg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.hg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -17514,7 +17514,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Ag)(t)
+					return Boolean(t) && !Object(r.Bg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -17622,4 +17622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4e368fd5d1cf11008244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c8dab348000a950e5b05.js.map
