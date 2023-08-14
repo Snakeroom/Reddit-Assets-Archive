@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.27fdc06781a93cfc9eb4.js
-// Retrieved at 8/10/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3a0a8b877a2dbc6cebc5.js
+// Retrieved at 8/14/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -19,11 +19,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("188815"),
+				buildNumber: Object(r.c)("188857"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1691704984"),
+				buildTimestamp: Object(r.b)("1692028130"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3504,14 +3504,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9ecb2e8716cdf41ee51e4ac7cb7f6e3673c93c6d-production" + ` %cpublic url %c${E.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2250c3fb081c743473532aba596e32612088b0d8-production" + ` %cpublic url %c${E.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${E.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: E.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9ecb2e8716cdf41ee51e4ac7cb7f6e3673c93c6d-production",
+						release: "2250c3fb081c743473532aba596e32612088b0d8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -4054,7 +4054,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "9ecb2e8716cdf41ee51e4ac7cb7f6e3673c93c6d-production",
+							releaseClient: "2250c3fb081c743473532aba596e32612088b0d8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(c.a)(n)) : void 0
 						},
@@ -49637,45 +49637,45 @@
 			})), i.d(t, "r", (function() {
 				return q
 			})), i.d(t, "B", (function() {
-				return H
-			})), i.d(t, "j", (function() {
 				return W
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "j", (function() {
 				return K
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return z
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "h", (function() {
 				return Q
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "d", (function() {
 				return Y
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "I", (function() {
 				return $
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "i", (function() {
 				return J
+			})), i.d(t, "c", (function() {
+				return X
 			})), i.d(t, "v", (function() {
-				return Z
-			})), i.d(t, "u", (function() {
 				return ee
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "u", (function() {
 				return te
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "H", (function() {
 				return ie
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "w", (function() {
 				return ne
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "k", (function() {
 				return re
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "G", (function() {
 				return se
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "y", (function() {
 				return oe
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "b", (function() {
 				return de
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "n", (function() {
 				return ae
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "x", (function() {
 				return ce
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "l", (function() {
 				return le
+			})), i.d(t, "K", (function() {
+				return ue
 			}));
 			var n = i("./src/reddit/constants/tracking.ts"),
 				r = i("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -49949,12 +49949,20 @@
 						...U(e, t.subredditId)
 					}
 				},
-				H = (e, t, i, r, s) => {
+				H = (e, t, i) => {
+					const n = t ? _.ob(e, t) : i ? _.pb(e, i) : null;
+					return n || (!n && t ? {
+						id: t
+					} : !n && i ? {
+						name: i
+					} : void 0)
+				},
+				W = (e, t, i, r, s) => {
 					Object(m.a)({
 						noun: "post_guidance",
 						...g(e),
 						action: n.c.VIEW,
-						subreddit: r ? _.ob(e, r) : s ? _.pb(e, s) : void 0,
+						subreddit: H(e, r, s),
 						actionInfo: {
 							..._.d(e)
 						},
@@ -49964,14 +49972,14 @@
 						}
 					})
 				},
-				W = (e, t) => {
+				K = (e, t) => {
 					Object(m.a)({
 						noun: "draft_load",
 						...g(e),
 						...q(e, t)
 					})
 				},
-				K = (e, t, i) => {
+				z = (e, t, i) => {
 					Object(m.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...g(e),
@@ -49979,28 +49987,28 @@
 						...G(e, i)
 					})
 				},
-				z = (e, t) => {
+				Q = (e, t) => {
 					Object(m.a)({
 						noun: "draft_delete",
 						...g(e),
 						...V(e, t)
 					})
 				},
-				Q = e => {
+				Y = e => {
 					Object(m.a)({
 						...g(e),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				Y = (e, t) => {
+				$ = (e, t) => {
 					Object(m.a)({
 						...g(e),
 						noun: "twitter_share_checkbox",
 						action: Object(h.getToggleAction)(t)
 					})
 				},
-				$ = (e, t, i) => {
+				J = (e, t, i) => {
 					Object(m.a)({
 						...g(e),
 						...q(e, t),
@@ -50008,7 +50016,7 @@
 						action: i ? n.c.ENABLE : n.c.DISABLE
 					})
 				},
-				J = e => {
+				X = e => {
 					Object(m.a)({
 						...g(e),
 						noun: "create_community",
@@ -50018,19 +50026,19 @@
 						}
 					})
 				},
-				X = "community_recommendation",
-				Z = () => e => ({
+				Z = "community_recommendation",
+				ee = () => e => ({
 					...g(e),
 					action: n.c.VIEW,
-					noun: X,
+					noun: Z,
 					listing: {
 						links: Object(a.c)(e).map(t => Object(u.I)(e, t.name))
 					}
 				}),
-				ee = (e, t) => i => ({
+				te = (e, t) => i => ({
 					...g(i),
 					action: n.c.CLICK,
-					noun: X,
+					noun: Z,
 					actionInfo: {
 						..._.d(i),
 						position: t
@@ -50040,17 +50048,17 @@
 						id: Object(u.I)(i, e)
 					}
 				}),
-				te = e => {
+				ie = e => {
 					Object(m.a)({
 						...g(e),
 						action: n.c.SKIP,
-						noun: X
+						noun: Z
 					})
 				},
-				ie = (e, t) => i => ({
+				ne = (e, t) => i => ({
 					...g(i),
 					action: n.c.VIEW,
-					noun: `${X}_hover`,
+					noun: `${Z}_hover`,
 					actionInfo: {
 						..._.d(i),
 						position: t
@@ -50060,7 +50068,7 @@
 						id: Object(u.I)(i, e)
 					}
 				}),
-				ne = e => t => ({
+				re = e => t => ({
 					...g(t),
 					action: n.c.CLICK,
 					noun: "draft_preview",
@@ -50069,28 +50077,28 @@
 						count: e
 					}
 				}),
-				re = e => t => ({
+				se = e => t => ({
 					...g(t),
 					action: "add",
 					noun: "flair",
 					subreddit: _.ob(t, e)
 				}),
-				se = () => e => ({
+				oe = () => e => ({
 					...g(e),
 					action: n.c.CLICK,
 					noun: "flair_dropdown"
 				}),
-				oe = () => e => ({
+				de = () => e => ({
 					...g(e),
 					action: "clear",
 					noun: "flair"
 				}),
-				de = () => e => ({
+				ae = () => e => ({
 					...g(e),
 					action: "search",
 					noun: "flair"
 				}),
-				ae = e => {
+				ce = e => {
 					let {
 						actionInfoType: t,
 						subredditId: i = "",
@@ -50108,12 +50116,12 @@
 						subreddit: i ? _.ob(e, i) : void 0
 					})
 				},
-				ce = () => e => ({
+				le = () => e => ({
 					...g(e),
 					action: n.c.CLICK,
 					noun: "edit_post"
 				}),
-				le = e => t => ({
+				ue = e => t => ({
 					...g(t),
 					action: "type",
 					noun: "subreddit_search",
@@ -89427,7 +89435,7 @@
 						n = Object(Oe.X)(e, {
 							subredditId: i
 						}),
-						r = e.subreddits.about[n.id];
+						r = e.subreddits.about[null == n ? void 0 : n.id];
 					return n && {
 						id: n.id,
 						name: n.name.toLowerCase(),
@@ -97329,4 +97337,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.27fdc06781a93cfc9eb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3a0a8b877a2dbc6cebc5.js.map
